@@ -1,0 +1,87 @@
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+ 
+      "children": [
+{
+"type": "TabLayoutView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+          "orientation": "vertical",
+"Tab_Content":{
+
+    "Content_Type":"1",
+    "Content_Fragment":"mtab",
+    "Content_Pager":"mcont",
+    "Content_Radius":"5",
+    "Content_Select_Start":1,
+    "Content_Color":"438afe#ffffff#438afe#438afe#438afe#438afe",
+    
+"Content_Data":"
+[
+{%1$sContentTitle%1$s:%1$الرئيسية%1$s,%1$sContentColor%1$s:%1$s438afe%1$s,%1$sContentMain%1$s:%1$shttp://0.0.0.0:8080/admin3/up/chat.html%1$s,%1$sContentMainCount%1$s:2,%1$sContentType%1$s:%1$swebb%1$s,%1$sContentView%1$s:%1$shttp://0.0.0.0:8080/admin3/up/uploadfilee.html%1$s,%1$sImageSelect%1$s:%1$sicon1%1$s,%1$sImageUnSelect%1$s:%1$sicon2%1$s },
+
+
+]
+",
+"Content_Title":"الmمجموعات#الاللللللوحدات#الاصناق #المجعات٢",
+    "Content_View":"webm#mmn#RecyclerViewExampleProdact#RecyclerViewExampleProdactk"
+    },
+
+    
+    
+    "data_primary":"mfragmenttk8kkkly"
+    
+
+
+
+      
+     
+},
+
+]
+      
+      
+  }
+  
+  
+  
+  {
+"type": "TabLayoutView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+          "orientation": "vertical",
+"Tab_Content":{
+
+    "Content_Type":"1",
+    "Content_Fragment":"mtab",
+    "Content_Pager":"mcont",
+    "Content_Radius":"5",
+    "Content_Select_Start":1,
+    "Content_Color":"438afe#ffffff#438afe#438afe#438afe#438afe",
+    
+"Content_Data":"
+[
+{%1$sContentTitle%1$s:%1$s6aii%1$s,%1$sContentColor%1$s:%1$s438afe%1$s,%1$sContentMain%1$s:%1$sitem-layoutt#item-layoutt#my#card2#card1#card2#card1#card2#card1%1$s,%1$sContentMainCount%1$s:3,%1$sContentType%1$s:%1$saa%1$s,%1$sContentView%1$s:%1$stt%1$s,%1$sImageSelect%1$s:%1$sicon1%1$s,%1$sImageUnSelect%1$s:%1$sicon2%1$s },
+{%1$sContentTitle%1$s:%1$sasnafbb%1$s,%1$sContentColor%1$s:%1$s438afe%1$s,%1$sContentMain%1$s:%1$sno%1$s,%1$sContentMainCount%1$s:2,%1$sContentType%1$s:%1$sno%1$s,%1$sContentView%1$s:%1$smmn%1$s,%1$sImageSelect%1$s:%1$sicon1%1$s,%1$sImageUnSelect%1$s:%1$sicon2%1$s }
+
+]
+",
+"Content_Title":"الmمجموعات#الاللللللوحدات#الاصناق #المجعات٢",
+    "Content_View":"webm#mmn#RecyclerViewExampleProdact#RecyclerViewExampleProdactk"
+    },
+
+    
+    
+    "data_primary":"mfragmenttk8kkk"
+    
+
+
+
+      
+     
+},

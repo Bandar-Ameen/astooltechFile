@@ -1,0 +1,824 @@
+{
+  "Style_Layout": {
+    "money": {
+      "textColor": "#56a411",
+      "textSize": "28sp"
+    },
+    "center": {
+      "layout_gravity": "center"
+    },
+    "mini": {
+      "textSize": "8sp",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "layout_margin": "4dp"
+    },
+    "blue": {
+      "textColor": "#027cd5"
+    },
+    "default": {
+      "textColor": "#323232",
+      "textSize": "14sp"
+    }
+  },
+  "Data_Layout": {
+    "0": {
+      "name": "John Doe",
+      "location": {
+        "country": "India",
+        "city": "Bengaluru",
+        "pincode": "560103"
+      },
+      "credits": 39550.00,
+      "level": 4,
+      "achievements": {
+        "current": 16,
+        "max": 48
+      },
+      "experience": {
+        "current": 4561,
+        "max": 9999
+      },
+      "tags": [
+        "alpha",
+        "beta",
+        "gamma",
+        "delta",
+        "niner"
+      ],
+      "type": null
+    },
+    "theme": {
+      "color": "#88ee99"
+    },
+    "sec": {
+      "ll": "2017-01-01 12:01:37",
+      "loc": "BLR, IND"
+    },
+    "datam": {
+      "achievementsm": [
+        {
+          "name": "zaaed",
+          "age": "88"
+        },
+        {
+          "name": "ahmed",
+          "age": "99"
+        },
+        {
+          "name": "raz",
+          "age": "77"
+        },
+        {
+          "name": "poon",
+          "age": "66"
+        },
+        {
+          "name": "very",
+          "age": "55"
+        },
+        {
+          "name": "zaaM",
+          "age": "33"
+        },
+        {
+          "name": "Fuad",
+          "age": "33"
+        },
+        {
+          "name": "مسعد",
+          "age": "44"
+        }
+      ]
+    },
+    "datamm": {
+      "achievementsmm": [
+        {
+          "name": "اvvvvل",
+          "parent": "1",
+          "child": "1"
+        },
+        {
+          "name": "الاصول الثابتة",
+          "parent": "1",
+          "child": "2"
+        },
+        {
+          "name": "المصروvvvفات",
+          "parent": "2",
+          "child": "3"
+        },
+        {
+          "name": "الايرادات",
+          "parent": "3",
+          "child": "4"
+        },
+        {
+          "name": "zaaed1",
+          "parent": "4",
+          "child": "5"
+        },
+        {
+          "name": "zaaed2",
+          "parent": "5",
+          "child": "6"
+        },
+        {
+          "name": "zaaed3",
+          "parent": "6",
+          "child": "7"
+        },
+        {
+          "name": "zaaed4",
+          "parent": "7",
+          "child": "8"
+        },
+        {
+          "name": "zaaed5",
+          "parent": "8",
+          "child": "9"
+        },
+        {
+          "name": "zaaed6",
+          "parent": "9",
+          "child": "10"
+        },
+        {
+          "name": "zaaed7",
+          "parent": "10",
+          "child": "11"
+        },
+        {
+          "name": "zaaed8",
+          "parent": "11",
+          "child": "12"
+        },
+        {
+          "name": "zaaed9",
+          "parent": "12",
+          "child": "13"
+        },
+        {
+          "name": "المصروvvvفات10",
+          "parent": "2",
+          "child": "3"
+        },
+        {
+          "name": "الايرادات11",
+          "parent": "3",
+          "child": "4"
+        },
+        {
+          "name": "zaaed12",
+          "parent": "4",
+          "child": "5"
+        },
+        {
+          "name": "zaaed13",
+          "parent": "5",
+          "child": "6"
+        },
+        {
+          "name": "zaaed14",
+          "parent": "6",
+          "child": "7"
+        },
+        {
+          "name": "zaaed15",
+          "parent": "7",
+          "child": "8"
+        },
+        {
+          "name": "zaaed16",
+          "parent": "8",
+          "child": "9"
+        },
+        {
+          "name": "zaaed17",
+          "parent": "9",
+          "child": "10"
+        },
+        {
+          "name": "zaaed18",
+          "parent": "10",
+          "child": "11"
+        },
+        {
+          "name": "zaaed19",
+          "parent": "11",
+          "child": "12"
+        },
+        {
+          "name": "zaaed20",
+          "parent": "12",
+          "child": "13"
+        },
+        {
+          "name": "الاصول الثابتة21",
+          "parent": "1",
+          "child": "2"
+        },
+        {
+          "name": "المصروvvvفات22",
+          "parent": "2",
+          "child": "3"
+        },
+        {
+          "name": "الايرادات23",
+          "parent": "3",
+          "child": "4"
+        },
+        {
+          "name": "zaaed24",
+          "parent": "4",
+          "child": "5"
+        },
+        {
+          "name": "zaaed25",
+          "parent": "5",
+          "child": "6"
+        },
+        {
+          "name": "zaaed26",
+          "parent": "6",
+          "child": "7"
+        },
+        {
+          "name": "zaaed27",
+          "parent": "7",
+          "child": "8"
+        },
+        {
+          "name": "zaaed28",
+          "parent": "8",
+          "child": "9"
+        },
+        {
+          "name": "zaaed29",
+          "parent": "9",
+          "child": "10"
+        },
+        {
+          "name": "zaaed30",
+          "parent": "10",
+          "child": "11"
+        },
+        {
+          "name": "zaaed31",
+          "parent": "11",
+          "child": "12"
+        },
+        {
+          "name": "zaaed32",
+          "parent": "12",
+          "child": "13"
+        },
+        {
+          "name": "المصروvvvفات33",
+          "parent": "2",
+          "child": "3"
+        },
+        {
+          "name": "الايرادات34",
+          "parent": "3",
+          "child": "4"
+        },
+        {
+          "name": "zaaed35",
+          "parent": "4",
+          "child": "5"
+        },
+        {
+          "name": "zaabbdbdbbdbvdhdhdvvsvsvxjdjdudhdhdvdbdbbxhdidieuudhdvdbxbsbbdjdusysvdvsbzbed",
+          "parent": "5",
+          "child": "6"
+        },
+        {
+          "name": "zaaed112",
+          "parent36": "6",
+          "child": "7"
+        },
+        {
+          "name": "zaaed433",
+          "parent37": "7",
+          "child": "8"
+        },
+        {
+          "name": "zaaed38",
+          "parent": "8",
+          "child": "9"
+        },
+        {
+          "name": "zaaed39",
+          "parent": "9",
+          "child": "10"
+        },
+        {
+          "name": "zaaed40",
+          "parent": "10",
+          "child": "11"
+        },
+        {
+          "name": "zaaed41",
+          "parent": "11",
+          "child": "12"
+        },
+        {
+          "name": "zaaedmmm42",
+          "parent": "12",
+          "child": "13"
+        }
+      ]
+    },
+    "datamk": {
+      "achievementsm": [
+        {
+          "name": "zaaedm",
+          "age": "88"
+        },
+        {
+          "name": "ahmed",
+          "age": "99"
+        },
+        {
+          "name": "razm",
+          "age": "77"
+        },
+        {
+          "name": "poonm",
+          "age": "66"
+        },
+        {
+          "name": "verym",
+          "age": "55"
+        },
+        {
+          "name": "zaaMv",
+          "age": "33"
+        },
+        {
+          "name": "Fuadm",
+          "age": "33"
+        },
+        {
+          "name": "مهسعد",
+          "age": "44"
+        }
+      ]
+    },
+    "data": {
+      "achievements": [
+        "Malcontent",
+        "Trusty Hardware",
+        "Anchor's Aweigh!",
+        "Heavy Weapons",
+        "Revenge!",
+        "Submissive",
+        "Zero-Point Energy",
+        "Hallowed Ground",
+        "Where Cubbage Fears to Tread",
+        "Barnacle Bowling",
+        "Bug Hunt",
+        "Defiant",
+        "Warden Freeman",
+        "Follow Freeman",
+        "Radiation Levels Detected",
+        "Plaza Defender",
+        "Blast from the Past",
+        "One Man Army",
+        "Fight the Power",
+        "Giant Killer",
+        "Singularity Collapse",
+        "OSHA Violation",
+        "Targetted Advertising",
+        "Atomizer",
+        "What cat?",
+        "Counter-Sniper",
+        "Two Points",
+        "Vorticough",
+        "Flushed",
+        "Hack Attack!",
+        "Zombie Chopper",
+        "Keep Off the Sand!",
+        "Lambda Locator",
+        "⚘⚘⚘⚘⚘",
+        "Trusty Hardware",
+        "Anchor's Aweigh!",
+        "Heavy Weapons",
+        "Revenge!",
+        "Submissive",
+        "Zero-Point Energy",
+        "Hallowed Ground",
+        "Where Cubbage Fears to Tread",
+        "Barnacle Bowling",
+        "Bug Hunt",
+        "Defiant",
+        "Warden Freeman",
+        "Follow Freeman",
+        "Radiation Levels Detected",
+        "Plaza Defender",
+        "Blast from the Past",
+        "One Man Army",
+        "Fight the Power",
+        "Giant Killer",
+        "Singularity Collapse",
+        "OSHA Violation",
+        "Targetted Advertising",
+        "Atomizer",
+        "77881234",
+        "771991234",
+        "What cat?",
+        "Counter-Sniper",
+        "وليد",
+        "مسعد",
+        "Two Points",
+        "Vorticough",
+        "Flushed",
+        "Hack Attack!",
+        "Zombie Chopper",
+        "Keep Off the Sand!",
+        "Lambda Locator"
+      ]
+    }
+  },
+  "Root_Layout": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "allview",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "cardheader": {
+    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_height": "120dp",
+    "layout_width": "match_parent",
+    
+    "children": [
+      {
+        "type": "CircleImageView",
+        "layout_marginLeft": "30dp",
+        "src": "@drawable/ic_chat",
+        "layout_marginBottom": "0dp",
+        "layout_width": "60dp",
+        "layout_marginTop": "-5dp",
+        "marginBottom": "0dp",
+        "layout_height": "60dp",
+        "backgroundd": "@color/green_A200",
+        "layout_gravity": "center"
+      }
+    ]
+  },
+  "cardfooter": {
+    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_height": "50dp",
+    "paddingTop": "10dp",
+    "layout_width": "match_parent",
+    "background": "#000000",
+    "children": []
+  },
+  "cardbody": {
+    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_height": "150dp",
+    "paddingTop": "10dp",
+    "layout_width": "match_parent",
+    "background": "#ffffff",
+    "children": [
+      
+    ]
+  },
+  "card1": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginButtom":"90dp",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "elevation": "20dp",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffcc33",
+              "angle": 20,
+              "radius": "50dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "include",
+                "layout": "cardheader",
+                "tname": "SimpleDataBindingExample",
+                "paddingBottom": "0dp"
+              },
+              {
+                "type": "include",
+                "layout": "cardbody",
+                "tname": "SimpleDataBindingExample",
+                "paddingBottom": "0dp"
+              }
+              
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "card2": {
+    "type": "RippleLayout",
+    "ralfa": "0",
+    "rdrotion": "0",
+    "roverlay": "false",
+    "rround": "0",
+    "layout_width": "match_parent",
+    "layout_height": "200dp",
+    "rhover": "false",
+    "rcolor": "#ffaa77",
+    "layout_marginTop":"-190dp",
+    "layout_marginRight": "0dp",
+      
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "elevation": "50dp",
+
+        "layout_marginRight": "10dp",
+        "layout_marginLeft": "10dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "300dp",
+            
+            "layout_width": "match_parent",
+                  "background":"#f1d130",
+            "children": [
+              {
+                "type": "include",
+                "layout": "cardfooterr",
+                "tname": "SimpleDataBindingExample",
+                "paddingBottom": "0dp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "allview": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "card1",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "card2",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "layfina",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "layfina": {
+    "type": "HorizontalScrollView",
+    "orientation": "horizontal",
+    "scrollbars": "none",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    
+    "Setting": {
+      "ScrollModes": 3
+    },
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "horizontal",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "laya",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "include",
+            "layout": "laya",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "include",
+            "layout": "laya",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "include",
+            "layout": "laya",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "include",
+            "layout": "laya",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "include",
+            "layout": "laya",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "include",
+            "layout": "laya",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "laya": {
+    "type": "LinearLayout",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "paddingLeft": "15dp",
+    "orientation": "vertical",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "ex",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "paddingTop": "-5dp",
+        "data_primary": "midelk",
+        "text": "name text",
+        "textColor": "@color/blue_A200",
+        "textSize": "12sp"
+      }
+    ]
+  },
+  "ex": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "450",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "FrameLayout",
+        "layout_width": "60dp",
+        "layout_height": "60dp",
+        "padding": "16dp",
+        "paddingBottom": "0dp",
+        "background": {
+          "type": "shape",
+          "shape": "oval",
+          "children": [
+            {
+              "type": "gradient",
+              "startColor": "#44e73827",
+              "endColor": "@color/green",
+              "angle": 270
+            }
+          ]
+        },
+        "children": [
+          {
+            "type": "CircleImageView",
+            "src": "@drawable/ic_chat",
+            "layout_marginBottom": "0dp",
+            "layout_width": "30dp",
+            "layout_marginTop": "-5dp",
+            "marginBottom": "0dp",
+            "layout_height": "30dp",
+            "backgroundd": "@color/red_A200",
+            "layout_gravity": "center"
+          }
+        ]
+      }
+    ]
+  }
+}

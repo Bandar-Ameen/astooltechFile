@@ -1,0 +1,616 @@
+{
+"Root_Layout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_marginTop": "70dp",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "y",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "y":{
+  "type": "VideoLayout",
+  "orientation": "vertical",
+  "layout_width": "match_parent",
+  "layout_height": "100dp",
+  "Video_url": "https://youtu.be/3Oc-e7-l45o",
+  "Video_sound": true
+},
+  "kkn":{
+  "type": "SwipeRefreshLayout",
+  "layout_width": "match_parent",
+  "layout_height": "wrap_content",
+  "padding": "0dp",
+  "data_primary": "recyuuiop",
+  "on_sweep": "recycleserchhm",
+  "on_sweep_typ": "1",
+  "paddingBottom": "0dp",
+  "children": [
+    {
+      "type": "SliderView",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "background": "@color/green",
+      "filter": "drugName_ar",
+      "lhint": "hh50djhhhhp",
+      "data_primary": "myautoprimary",
+      "Set_data_when_click_item": "[\n{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#drugName_ar#},\n{#data_id#:#myautoprimary#,#data_set#:#myautoprimary#,#data_get#:#drugName_ar#},\n{#data_id#:#vvbibmm#,#data_set#:#vvbibmm#,#data_get#:#drugName_ar#}\n]",
+      "enble_cach": "1",
+      "TreeViews": "0",
+      "Key_from_response": "data",
+      "d_key": "loveem",
+      "tname": "tt",
+      "data_id": "[\n{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}\n\n,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}\n,\n{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}\n,\n{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#},\n{#data_id#:#Count_Element#,#data_set#:#Count_Element#,#data_get#:#Count_Element#},\n{#data_id#:#Total_Element#,#data_set#:#Total_Element#,#data_get#:#Total_Element#}\n\n]",
+      "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+      "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+      "api_method": "post",
+      "api_url": "http://astooltech.com/api/v1/test2.json",
+      "data": {
+        "items": "@{loveem}"
+      },
+      "layout_manager": {
+        "type": "LinearLayoutManager",
+        "orientation": "vertical",
+        "reverse": false,
+        "space": "50",
+        "time": 2,
+        "anmationType": "FILL",
+        "Typedir": 2,
+        "runAuto": true,
+        "use_realod": "1",
+        "prograss": "myprog",
+        "show_prograss": "1",
+        "tname": "SimpleDataBindingExample",
+        "Key_from_response": "data",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "get",
+        "api_url": "http://0.0.0.0:8080/admin3/test2.json"
+      },
+      "adapter": {
+        "@": {
+          "type": "SimpleListAdapter",
+          "item-count": "@{items.$length}",
+          "tname": "DataDrivenExamplevmy",
+          "animation": {
+            "a_enter": false,
+            "a_enter_step": false,
+            "a_expand": false,
+            "a_expand_out": false,
+            "a_anim_rev": false,
+            "a_anim_for": false,
+            "a_load_start": false,
+            "a_drage": true,
+            "CountItem": 2,
+            "a_endless_count": 0,
+            "a_endless_page": 0,
+            "a_use_endless": true,
+            "a_use_offline": true
+          },
+          "UseMultiple": {
+            "a_enable": true,
+            "a_View": "[{#v_Name#:#tt#, #v_ColumnName#:#id#,#v_EqualValue#:#20#,#v_id#:#1#},\n{#v_Name#:#SimpleDataBindingExample#,#v_ColumnName#:#id#, #v_EqualValue#:#50#,#v_id#:#2#},\n{#v_Name#:#card2#,#v_ColumnName#:#id#, #v_EqualValue#:#100#,#v_id#:#3#},\n{#v_Name#:#web#,#v_ColumnName#:#id#, #v_EqualValue#:#150#,#v_id#:#4#}\n\n\n]"
+          },
+          "tlayout": "0",
+          "tlayoutcount": "2",
+          "item-layout": {
+            "type": "include",
+            "layout": "kk",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp",
+            "data": {
+              "user": "@{items}",
+              "my": "@{items[$index]}"
+            }
+          },
+          "Prograss-layout": {
+            "type": "ProgressBar",
+            "layout_height": "50dp",
+            "layout_width": "90dp",
+            "layout_weight": 10,
+            "mm": 2,
+            "data_primary": "myprogvv",
+            "style_bar": {
+              "color_bar": "#2cdb81",
+              "typ_bar": "2"
+            },
+            "typ_bar": "2",
+            "text": "ADD gh CART"
+          }
+        }
+      }
+    }
+  ]
+}
+  
+  ,
+
+"kk":{
+  "type": "PagerLinearLayout",
+  "layout_width": "match_parent",
+  "layout_height": "wrap_content",
+  "orientation": "vertical",
+  "ViewPagers": {
+    "Pager_Views": {
+      "type": "ViewPager",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "background": "@color/green"
+    },
+    "Linear_Views": {
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "orientation": "vertical"
+    },
+    "ColorA": "ffcc33",
+    "ColorB": "ffcc33",
+    "ColorC": "ffcc33",
+    "Content_Radius": "5",
+    "Comman_Views": {
+      "type": "CommonLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "background": "@color/green",
+      "Common_data": {
+        "Common_UnderLine": 80,
+        "Common_UnderLineGravity": 0,
+        "Common_UnderLineH": 0,
+        "Common_UnderLineIconMargin": 5,
+        "Common_UnderLineColor": "#ffcc44",
+        "Common_UnderLineTextColor": "#ffcc33",
+        "Common_UnderLineSelectTextColor": "#FF2E0"
+      }
+    },
+    "ShowViews": [
+      {
+        "Name_View": {
+          "type": "LinearLayout",
+          "layout_width": "match_parent",
+          "layout_height": "100dp",
+          "background": "@color/black",
+          "orientation": "vertical"
+        },
+        "Title_Views": "القائمة",
+        "Icon_Select": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#438afe"
+        },
+        "Icon_UnSelect": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#c48866"
+        }
+      },
+      {
+        "Name_View": {
+          "type": "LinearLayout",
+          "layout_width": "100dp",
+          "layout_height": "100dp",
+          "background": "#ffcc33",
+          "orientation": "vertical"
+        },
+        "Title_Views": "الرئيسية ",
+        "Icon_Select": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#438afe"
+        },
+        "Icon_UnSelect": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#c48866"
+        }
+      },
+      {
+        "Name_View": {
+          "type": "LinearLayout",
+          "layout_width": "match_parent",
+          "layout_height": "100dp",
+          "background": "#ffe135",
+          "orientation": "vertical",
+          "children": [
+            {
+              "type": "include",
+              "layout": "myAutoTexttk"
+            },
+            {
+              "type": "TextInputLayout",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "paddingLeft": "16dp",
+              "d_onErrorText": "يرجي ادخال البريد الالكتروني ",
+              "layout_marginEnd": "50dp",
+              "starticon": "@drawable/addbtn",
+              "lboxcolor": "@color/green",
+              "lhint": "الuuuuuuuبريد الالكتروني ",
+              "id": "emailgg",
+              "data_primary": "emailgg",
+              "d_NullValue": false,
+              "d_OnErrorText": "يرجي ادخال البريد الالكتروني ",
+              "endicon": "@drawable/addbbtn",
+              "gravity": "right",
+              "paddingRight": "16dp",
+              "paddingTop": "8dp",
+              "children": [
+                {
+                  "type": "TextInputEditText",
+                  "tooltipText": "البريد الإلكتروني ",
+                  "text": "@{AlertDialogLayout.my[0].email}",
+                  "paddingRight": "15dp",
+                  "textAligment": "center",
+                  "layout_width": "match_parent",
+                  "layout_height": "match_parent",
+                  "background": "@drawable/h_round",
+                  "textSize": "18dp",
+                  "gravity": "right"
+                }
+              ]
+            }
+          ]
+        },
+        "Title_Views": "الاسعار",
+        "Icon_Select": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#438afe"
+        },
+        "Icon_UnSelect": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#c48866"
+        }
+      }
+    ]
+  }
+}
+
+,
+
+
+  "k":{
+  "type": "SwipeRefreshLayout",
+  "layout_width": "match_parent",
+  "layout_height": "50dp",
+  "padding": "0dp",
+  "data_primary": "recyuuiop",
+  "on_sweep": "recycleserchhm",
+  "on_sweep_typ": "1",
+  "paddingBottom": "0dp",
+  "children": [
+    {
+      "type": "AutoText",
+      "layout_width": "match_parent",
+      "layout_height": "50dp",
+      "background": "#ffffff",
+      "filter": "drugName_ar",
+      "data_primary": "myouto",
+      "Recycle": {
+        "typ": "1"
+      },
+      "mdata": {
+        "Data_From": {
+          "Event_Type": "CheckNull",
+          "animation": {
+            "a_enter": false,
+            "a_enter_step": false,
+            "a_expand": false,
+            "a_expand_out": false,
+            "a_anim_rev": false,
+            "a_anim_for": false,
+            "a_load_start": true,
+            "a_drage": true,
+            "CountItem": 2,
+            "a_endless_count": 0,
+            "a_endless_page": 0,
+            "a_use_endless": true,
+            "a_use_offline": true,
+            "a_use_top": true
+          },
+          "Set_Data": [
+            {
+              "View_Id": "emailgg",
+              "Type_Process": "5",
+              "Key_Process": "5uurrrthello_hello_hello",
+              "Value_Key": "drugName_ar"
+            },
+            {
+              "View_Id": "emailgg",
+              "Type_Process": "5",
+              "Key_Process": "5uurrrthello_hello_hello",
+              "Value_Key": "drugName_ar"
+            },
+            {
+              "View_Id": "emailgg",
+              "Type_Process": "5",
+              "Key_Process": "5uurrrthello_hello_hello",
+              "Value_Key": "drugName_ar"
+            }
+          ],
+          "Name": "pic",
+          "Multiple_Views": {
+            "Filter_Views": [
+              {
+                "Key_Name": "drugName_ar"
+              }
+            ],
+            "Def_Views": {
+              "type": "include",
+              "layout": "DataDrivenExamplevmy",
+              "tname": "SimpleDataBindingExample",
+              "KeyName": "recycleserchhm",
+              "paddingBottom": "0dp",
+              "FilterName": "drugName_ar",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "a_enable": "1",
+            "MultipleViews": [
+              {
+                "v_Name": "SimpleDataBindingExample",
+                "v_ColumnName": "id",
+                "v_EqualValue": "20",
+                "v_id": "1"
+              }
+            ]
+          },
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "55",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "0",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "GET",
+                  "Type_Url": "url",
+                  "Url": "http://0.0.0.0:8080/admin3/test2.json",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Select_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "1",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "mmnuuuk",
+                      "Key_Value": "1",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%1$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "vvvvvvv",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+,  "flow":{
+  "type": "FlowerLayout",
+  "layout_width": "match_parent",
+  "layout_height": "wrap_content",
+  "proper": {
+    "View_Space": 50,
+    "View_SpaceRow": 50,
+    "View_Row": 50,
+    "View_RowMax": 100,
+    "Use_Flow": true,
+    "Use_FlowRtl": true
+  },
+  "children": [
+    {
+      "type": "TextView",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "id": "kk",
+      "background": "@color/green",
+      "table_column": "0",
+      "focusable": false,
+      "table_filedname": "name",
+      "layout_marginRight": "0dp",
+      "text": "65555@{name}"
+    },
+    {
+      "type": "TextView",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "id": "kk",
+      "background": "@color/green",
+      "table_column": "0",
+      "focusable": false,
+      "table_filedname": "name",
+      "layout_marginRight": "0dp",
+      "text": "65555@{name}"
+    },
+    {
+      "type": "TextView",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "id": "kk",
+      "background": "@color/green",
+      "table_column": "0",
+      "focusable": false,
+      "table_filedname": "name",
+      "layout_marginRight": "0dp",
+      "text": "65555@{name}"
+    },
+    {
+      "type": "TextView",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "id": "kk",
+      "background": "@color/green",
+      "table_column": "0",
+      "focusable": false,
+      "table_filedname": "name",
+      "layout_marginRight": "0dp",
+      "text": "65555@{name}"
+    },
+    {
+      "type": "TextView",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "id": "kk",
+      "background": "@color/green",
+      "table_column": "0",
+      "focusable": false,
+      "table_filedname": "name",
+      "layout_marginRight": "0dp",
+      "text": "65555765@{name}"
+    }
+  ]
+}
+  
+
+
+
+}

@@ -1,0 +1,2457 @@
+{
+  "RelativeLayoutExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RelativeLayout",
+        "layout_width": "match_parent",
+        "layout_height": "100dp",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "id": "center",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "text": "Center",
+            "textColor": "#323232",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginBottom": "4dp",
+            "layout_above": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginTop": "4dp",
+            "layout_below": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginLeft": "4dp",
+            "layout_toRightOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginRight": "4dp",
+            "layout_toLeftOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "layout_height": "70dp",
+            "layout_width": "120dp",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitCenter",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+          }
+        ]
+      }
+    ]
+  },
+  "Root_Layout": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "AlertDialogLayout",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "SimpleDataBindingExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "background": {
+      "type": "shape",
+      "shape": "corners",
+      "children": [
+        {
+          "type": "solid",
+          "startColor": "#44e73827",
+          "endColor": "@color/green",
+          "angle": 270
+        }
+      ]
+    },
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "orientation": "vertical",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginBottom": "0dp",
+            "text": "Profile",
+            "style": "mini.blue"
+          },
+          {
+            "type": "RelativeLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextView",
+                "id": "k",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{name}"
+              },
+              {
+                "type": "TextView",
+                "id": "location",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_below": "name",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{fn:format('%s, %s', @{user.location.city}, @{user.location.country})}"
+              },
+              {
+                "type": "TextView",
+                "text": "@{fn:format('(%s)',@{user.level})}",
+                "textColor": "#c48866",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_toRightOf": "name"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "children": [
+              {
+                "type": "HorizontalProgressBar",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "max": "@{user.experience.max}",
+                "progress": "@{user.experience.current}"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "layout_marginBottom": "32dp",
+                "padding": "8dp",
+                "paddingTop": "16dp",
+                "paddingBottom": "16dp",
+                "text": "@{fn:number(@{user.credits})}",
+                "style": "money.center",
+                "background": {
+                  "type": "shape",
+                  "shape": "shape_font",
+                  "draw": {
+                    "icon_size": 90,
+                    "icon_name": "",
+                    "icon_color": "#44e73827"
+                  },
+                  "children": [
+                    {
+                      "type": "gradient",
+                      "startColor": "#44e73827",
+                      "endColor": "@color/green",
+                      "angle": 270
+                    }
+                  ]
+                },
+                "animation": {
+                  "interpolator": {
+                    "type": "anticipateOvershootInterpolator"
+                  },
+                  "type": "rotate",
+                  "fromDegrees": -720,
+                  "toDegrees": 0,
+                  "pivotX": "50%",
+                  "pivotY": "50%",
+                  "duration": 1500
+                }
+              }
+            ]
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "data": {
+              "date": "@{fn:date(@{sec.ll},'E, d MMM')}",
+              "loc": "@{sec.loc}"
+            },
+            "text": "@{fn:format('last login: %s from %s',@{date},@{loc})}",
+            "style": "blue"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "text": "@{user.type}",
+            "visibility": "@{fn:ternary(@{user.type}, 'visible', 'gone')}"
+          }
+        ]
+      }
+    ]
+  },
+  "DataDrivenExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#ffffff",
+        "padding": "16dp",
+        "children": {
+          "@": {
+            "collection": "@{fn:slice(@{user.tags},0,4)}",
+            "layout": {
+              "type": "LinearLayout",
+              "data": {
+                "tag": "@{user.tags[$index]}"
+              },
+              "layout_marginRight": "8dp",
+              "layout_height": "32dp",
+              "textSize": "12sp",
+              "textColor": "@color/colorAccent",
+              "children": [
+                {
+                  "type": "TextView",
+                  "text": "@{tag}",
+                  "padding": "8dp",
+                  "gravity": "center",
+                  "onClick": "@{tag}"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "Tableviews": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "TableViews",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "table_show_view": "kk#child",
+        "paddingBottom": "0dp",
+        "Table_data": {
+          "table_ClickCell": true,
+          "table_ClickHead": true,
+          "table_ClickInCell": false,
+          "table_LayoutCell": "1",
+          "table_show_view": "kk#child",
+          "table_Layout": "vv",
+          "table_Name_data": "datamm",
+          "table_row": "vv",
+          "table_corner": "corner",
+          "table_column_typ": "DataDrivenExamplevmykk#DataDrivenExamplevmy#DataDrivenExamplevmymm",
+          "data": {
+            "items": "@{datamm.achievementsmm}"
+          }
+        }
+      }
+    ]
+  },
+  "DataDrivenExampleoo": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#ffffff",
+        "padding": "16dp",
+        "children": {
+          "layout_marginRight": "8dp",
+          "layout_height": "32dp",
+          "textSize": "12sp",
+          "textColor": "@color/colorAccent",
+          "children": [
+            {
+              "type": "TextView",
+              "text": "@{my.name}",
+              "padding": "8dp",
+              "gravity": "center",
+              "onClick": "@{tag}"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "DataDrivenExampleook": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "padding": "16dp",
+        "children": {
+          "type": "ProgressBar",
+          "layout_height": "50dp",
+          "layout_width": "90dp",
+          "gravity": "center",
+          "mm": 2,
+          "data_primary": "myprogvv",
+          "paddingBottom": "0dp",
+          "style_bar": {
+            "color_bar": "#2cdb81",
+            "typ_bar": "2"
+          },
+          "typ_bar": "2",
+          "text": "ADD gh CART"
+        }
+      }
+    ]
+  },
+  "DataDrivenExamplev": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RippleLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "vertical",
+                        "gravity": "right",
+                        "children": [
+                          {
+                            "type": "TextView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "layout_marginRight": "10dp",
+                            "text": "@{my.a_email}"
+                          },
+                          {
+                            "type": "TextView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "50dp",
+                            "layout_marginRight": "10dp",
+                            "text": "@{my.a_resttime}"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "CircleImageView",
+                        "layout_width": "50dp",
+                        "layout_height": "50dp",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "onClick": {
+                          "someKey": "someValue"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "WebView",
+                    "url": "@{my.a_picuser}",
+                    "layout_height": "300dp",
+                    "layout_width": "match_parent",
+                    "padding": "4dp",
+                    "background": "#000000",
+                    "scaleType": "fitXY",
+                    "layout_alignParentTop": true,
+                    "layout_alignParentRight": true
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "orientation": "horizontal",
+                    "gravity": "right",
+                    "children": [
+                      {
+                        "type": "RippleLayout",
+                        "ralfa": "10",
+                        "rdrotion": "10",
+                        "roverlay": "false",
+                        "rround": "50",
+                        "layout_width": "35dp",
+                        "layout_height": "35dp",
+                        "rhover": "true",
+                        "rcolor": "#fada65",
+                        "tooltipText": "تعديل",
+                        "layout_marginRight": "50dp",
+                        "children": [
+                          {
+                            "type": "Button",
+                            "text": "",
+                            "layout_height": "35dp",
+                            "layout_width": "35dp",
+                            "click_from": "5",
+                            "typeAction": "View_Edit",
+                            "typeActionName": "AlertDialogLayout",
+                            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                            "click_from_datak": "{#my#:[{medata:#name#}]}",
+                            "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+                            "onClick": "m@{tag}",
+                            "background": "https://icons.iconarchive.com/icons/aniket-suvarna/box/32/bxs-edit-alt-icon.png"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RippleLayout",
+                        "ralfa": "10",
+                        "rdrotion": "10",
+                        "roverlay": "false",
+                        "rround": "50",
+                        "layout_width": "35dp",
+                        "layout_height": "35dp",
+                        "rhover": "true",
+                        "rcolor": "#fada65",
+                        "tooltipText": "حذف",
+                        "layout_marginRight": "50dp",
+                        "children": [
+                          {
+                            "type": "Button",
+                            "text": "",
+                            "layout_height": "35dp",
+                            "layout_width": "35dp",
+                            "click_from": "5",
+                            "typeAction": "View_Edit",
+                            "typeActionName": "delete",
+                            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                            "click_from_datak": "{#my#:[{medata:#name#}]}",
+                            "click_from_data": "@{fn:format('{#my#:[{#typ#:#3#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+                            "onClick": "m@{tag}",
+                            "background": "@drawableFont/fa_user/1/50/#ffaa77"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "DataDrivenExamplevmy": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "paddingBottom": "0dp",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "focusable": false,
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "focusable": false,
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "focusable": false,
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "focusable": false,
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kk",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "focusable": false,
+                        "table_filedname": "name",
+                        "layout_marginRight": "0dp",
+                        "text": "@{drugName_ar}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "focusable": false,
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تعععععديل",
+                            "layout_marginRight": "0dp",
+                            "focusable": false,
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "SelectItem",
+                                "focusable": false,
+                                "typeActionName": "myautoprimary",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_edit/2/40/#438afe"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "focusable": false,
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "focusable": false,
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_trash_alt/2/60/#438afe"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "DataDrivenExamplevmymm": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kkv#child#parent",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "table_show_view": "kkv#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "table_show_view": "kkv#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kkv",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "table_filedname": "child",
+                        "layout_marginRight": "0dp",
+                        "text": "@{name}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "mmتعديل",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "typeActionName": "AlertDialogLayout",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#14#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "https://icons.iconarchive.com/icons/aniket-suvarna/box/32/bxs-edit-alt-icon.png"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/128/delete-icon.png"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "DataDrivenExamplevmykk": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "120dp",
+    "table_show_view": "kkm#childm#parentt",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kkm",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "table_filedname": "parent",
+                        "layout_marginRight": "0dp",
+                        "text": "@{name}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تعديل",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "typeActionName": "AlertDialogLayout",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#14#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "https://icons.iconarchive.com/icons/aniket-suvarna/box/32/bxs-edit-alt-icon.png"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/128/delete-icon.png"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mfragment": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingBottom": "0dp"
+  },
+  "RecyclerViewExampleAuto": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "AutoText",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "background": "@drawable/h_round",
+        "lhint": "hh50djhhhhp",
+        "data_primary": "myautoprimary",
+        "Set_data_when_click_item": "[\n{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#name#},\n{#data_id#:#myautoprimary#,#data_set#:#myautoprimary#,#data_get#:#name#},\n{#data_id#:#myautoprimaryv#,#data_set#:#myautoprimaryv#,#data_get#:#name#}\n]",
+        "filter": "name#age",
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager"
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "item-layout": {
+              "type": "TextView",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              },
+              "d_UseClickItem": "0",
+              "typeAction": "Set_Data",
+              "layout_width": "match_parent",
+              "padding": "12dp",
+              "layout_marginBottom": "4dp",
+              "gravity": "center",
+              "text": "@{my}",
+              "textSize": "14sp",
+              "textColor": "#323232"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "RecyclerViewExampleSpinner": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "Sppiner",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "background": "@drawable/h_round",
+        "lhint": "hh50djhhhhp",
+        "data_primary": "myautoprimaryv",
+        "ID_Select": "name",
+        "Set_data_when_click_item": "[\n\n{#data_id#:#selectspinner#,#data_set#:#selectspinner#,#data_get#:#name#}\n\n]",
+        "filter": "name#age",
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager"
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "item-layout": {
+              "type": "TextView",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              },
+              "d_UseClickItem": "0",
+              "typeAction": "Set_Data",
+              "layout_width": "match_parent",
+              "padding": "12dp",
+              "layout_marginBottom": "4dp",
+              "gravity": "center",
+              "text": "@{my}",
+              "textSize": "14sp",
+              "textColor": "#323232"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "RecyclerViewExampleProdactk": {
+    "type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+    "data_primary": "recyuuiop",
+    "on_sweep": "recycleserchhm",
+    "on_sweep_typ": "1",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RecyclerView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+        "data_primary": "recycleserchhmk",
+        "filter": "drugName_ar",
+        "enble_cach": "1",
+        "TreeViews": "0",
+        "Key_from_response": "data",
+        "d_key": "loveem",
+        "tname": "tt",
+        "data_id": "[\n{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}\n\n,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}\n,\n{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}\n,\n{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#},\n{#data_id#:#Count_Element#,#data_set#:#Count_Element#,#data_get#:#Count_Element#},\n{#data_id#:#Total_Element#,#data_set#:#Total_Element#,#data_get#:#Total_Element#}\n\n]",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "http://astooltech.com/api/v1/test2.json",
+        "data": {
+          "items": "@{loveem}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager",
+          "orientation": "vertical",
+          "reverse": false,
+          "space": "0",
+          "use_realod": "1",
+          "prograss": "myprog",
+          "show_prograss": "1",
+          "tname": "SimpleDataBindingExample",
+          "Key_from_response": "data",
+          "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+          "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+          "api_method": "post",
+          "api_url": "http://astooltech.com/api/v1/test2.json"
+        },
+        "adapter": {
+          "@": {
+            "type": "Adapter2",
+            "item-count": "@{items.$length}",
+            "tname": "DataDrivenExamplevmy",
+            "animation": {
+              "a_enter": false,
+              "a_enter_step": false,
+              "a_expand": false,
+              "a_expand_out": false,
+              "a_anim_rev": false,
+              "a_anim_for": false,
+              "a_load_start": false,
+              "a_drage": true,
+              "CountItem": 2,
+              "a_endless_count": 0,
+              "a_endless_page": 0,
+              "a_use_endless": true
+            },
+            "UseMultiple": {
+              "a_enable": true,
+              "a_View": "[{#v_Name#:#tt#, #v_ColumnName#:#id#,#v_EqualValue#:#20#,#v_id#:#1#},\n{#v_Name#:#SimpleDataBindingExample#,#v_ColumnName#:#id#, #v_EqualValue#:#50#,#v_id#:#2#},\n{#v_Name#:#card2#,#v_ColumnName#:#id#, #v_EqualValue#:#100#,#v_id#:#3#},\n{#v_Name#:#web#,#v_ColumnName#:#id#, #v_EqualValue#:#150#,#v_id#:#4#}\n\n\n]"
+            },
+            "tlayout": "0",
+            "tlayoutcount": "2",
+            "item-layout": {
+              "type": "include",
+              "layout": "DataDrivenExamplevmy",
+              "tname": "SimpleDataBindingExample",
+              "paddingBottom": "0dp",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "Prograss-layout": {
+              "type": "ProgressBar",
+              "layout_height": "50dp",
+              "layout_width": "90dp",
+              "layout_weight": 10,
+              "mm": 2,
+              "data_primary": "myprogvv",
+              "style_bar": {
+                "color_bar": "#2cdb81",
+                "typ_bar": "2"
+              },
+              "typ_bar": "2",
+              "text": "ADD gh CART"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "RecyclerViewExampleProdact": {
+    "type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "55dp",
+    "padding": "0dp",
+    "data_primary": "recyuuiop",
+    "on_sweep": "recycleserchhm",
+    "on_sweep_typ": "1",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "Sppiner",
+        "layout_width": "match_parent",
+        "layout_height": "55dp",
+        "background": "@color/green",
+        "filter": "drugName_ar",
+        "lhint": "hh50djhhhhp",
+        "data_primary": "myautoprimary",
+        "Set_data_when_click_item": "[\n{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#drugName_ar#},\n{#data_id#:#myautoprimary#,#data_set#:#myautoprimary#,#data_get#:#drugName_ar#},\n{#data_id#:#vvbibmm#,#data_set#:#vvbibmm#,#data_get#:#drugName_ar#}\n]",
+        "enble_cach": "1",
+        "TreeViews": "0",
+        "Key_from_response": "data",
+        "d_key": "loveem",
+        "tname": "tt",
+        "data_id": "[\n{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}\n\n,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}\n,\n{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}\n,\n{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#},\n{#data_id#:#Count_Element#,#data_set#:#Count_Element#,#data_get#:#Count_Element#},\n{#data_id#:#Total_Element#,#data_set#:#Total_Element#,#data_get#:#Total_Element#}\n\n]",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "http://astooltech.com/api/v1/test2.json",
+        "data": {
+          "items": "@{loveem}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager",
+          "orientation": "vertical",
+          "reverse": false,
+          "space": "0",
+          "use_realod": "1",
+          "prograss": "myprog",
+          "show_prograss": "1",
+          "tname": "SimpleDataBindingExample",
+          "Key_from_response": "data",
+          "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+          "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+          "api_method": "post",
+          "api_url": "http://astooltech.com/api/v1/test2.json"
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "tname": "DataDrivenExamplevmy",
+            "animation": {
+              "a_enter": false,
+              "a_enter_step": false,
+              "a_expand": false,
+              "a_expand_out": false,
+              "a_anim_rev": false,
+              "a_anim_for": false,
+              "a_load_start": false,
+              "a_drage": true,
+              "CountItem": 2,
+              "a_endless_count": 0,
+              "a_endless_page": 0,
+              "a_use_endless": true,
+              "a_use_offline": true
+            },
+            "UseMultiple": {
+              "a_enable": true,
+              "a_View": "[{#v_Name#:#tt#, #v_ColumnName#:#id#,#v_EqualValue#:#20#,#v_id#:#1#},\n{#v_Name#:#SimpleDataBindingExample#,#v_ColumnName#:#id#, #v_EqualValue#:#50#,#v_id#:#2#},\n{#v_Name#:#card2#,#v_ColumnName#:#id#, #v_EqualValue#:#100#,#v_id#:#3#},\n{#v_Name#:#web#,#v_ColumnName#:#id#, #v_EqualValue#:#150#,#v_id#:#4#}\n\n\n]"
+            },
+            "tlayout": "0",
+            "tlayoutcount": "2",
+            "item-layout": {
+              "type": "include",
+              "layout": "DataDrivenExamplevmy",
+              "tname": "SimpleDataBindingExample",
+              "paddingBottom": "0dp",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "Prograss-layout": {
+              "type": "ProgressBar",
+              "layout_height": "50dp",
+              "layout_width": "90dp",
+              "layout_weight": 10,
+              "mm": 2,
+              "data_primary": "myprogvv",
+              "style_bar": {
+                "color_bar": "#2cdb81",
+                "typ_bar": "2"
+              },
+              "typ_bar": "2",
+              "text": "ADD gh CART"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "RecyclerViewExampleProdactkk": {
+    "type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+    "data_primary": "recyuuiop",
+    "on_sweep": "recycleserchhm",
+    "on_sweep_typ": "1",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RecyclerView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+        "filter": "drugName_ar",
+        "lhint": "hh50djhhhhp",
+        "data_primary": "myautoprimary",
+        "Set_data_when_click_item": "[\n{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#drugName_ar#},\n{#data_id#:#myautoprimary#,#data_set#:#myautoprimary#,#data_get#:#drugName_ar#},\n{#data_id#:#vvbibmm#,#data_set#:#vvbibmm#,#data_get#:#drugName_ar#}\n]",
+        "enble_cach": "1",
+        "TreeViews": "0",
+        "Key_from_response": "data",
+        "d_key": "loveem",
+        "tname": "tt",
+        "data_id": "[\n{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}\n\n,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}\n,\n{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}\n,\n{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#},\n{#data_id#:#Count_Element#,#data_set#:#Count_Element#,#data_get#:#Count_Element#},\n{#data_id#:#Total_Element#,#data_set#:#Total_Element#,#data_get#:#Total_Element#}\n\n]",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "http://astooltech.com/api/v1/test2.json",
+        "data": {
+          "items": "@{loveem}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager",
+          "orientation": "vertical",
+          "reverse": false,
+          "space": "0",
+          "use_realod": "1",
+          "prograss": "myprog",
+          "show_prograss": "1",
+          "tname": "SimpleDataBindingExample",
+          "Key_from_response": "data",
+          "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}",
+          "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+          "api_method": "post",
+          "api_url": "http://astooltech.com/api/v1/test2.json"
+        },
+        "adapter": {
+          "@": {
+            "type": "Adapter2",
+            "item-count": "@{items.$length}",
+            "tname": "DataDrivenExamplevmy",
+            "animation": {
+              "a_enter": false,
+              "a_enter_step": false,
+              "a_expand": false,
+              "a_expand_out": false,
+              "a_anim_rev": false,
+              "a_anim_for": false,
+              "a_load_start": false,
+              "a_drage": true,
+              "CountItem": 2,
+              "a_endless_count": 0,
+              "a_endless_page": 0,
+              "a_use_endless": true,
+              "a_use_offline": true
+            },
+            "UseMultiple": {
+              "a_enable": true,
+              "a_View": "[{#v_Name#:#tt#, #v_ColumnName#:#id#,#v_EqualValue#:#20#,#v_id#:#1#},\n{#v_Name#:#SimpleDataBindingExample#,#v_ColumnName#:#id#, #v_EqualValue#:#50#,#v_id#:#2#},\n{#v_Name#:#card2#,#v_ColumnName#:#id#, #v_EqualValue#:#100#,#v_id#:#3#},\n{#v_Name#:#web#,#v_ColumnName#:#id#, #v_EqualValue#:#150#,#v_id#:#4#}\n\n\n]"
+            },
+            "tlayout": "0",
+            "tlayoutcount": "2",
+            "item-layout": {
+              "type": "include",
+              "layout": "DataDrivenExamplevmy",
+              "tname": "SimpleDataBindingExample",
+              "paddingBottom": "0dp",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "Prograss-layout": {
+              "type": "ProgressBar",
+              "layout_height": "50dp",
+              "layout_width": "90dp",
+              "layout_weight": 10,
+              "mm": 2,
+              "data_primary": "myprogvv",
+              "style_bar": {
+                "color_bar": "#2cdb81",
+                "typ_bar": "2"
+              },
+              "typ_bar": "2",
+              "text": "ADD gh CART"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "RecyclerViewExampleslider": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "SliderView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+        "data_primary": "recycleserchhk",
+        "filter": "a_email",
+        "d_key": "loveem",
+        "data_id": "[\n{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}\n\n,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}\n,\n{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}\n,\n{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#},\n{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}\n\n]",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager",
+          "orientation": "vertical",
+          "reverse": false,
+          "time": 2,
+          "anmationType": "FILL",
+          "Typedir": 2,
+          "runAuto": true,
+          "space": "50",
+          "use_realod": "1",
+          "prograss": "myprog",
+          "show_prograss": "1",
+          "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",
+          "api_method": "post",
+          "api_url": "https://www.astooltech.com/api/v1/customerastool"
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "item-layout": {
+              "type": "include",
+              "layout": "DataDrivenExamplev",
+              "paddingBottom": "0dp",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "Prograss-layout": {
+              "type": "ProgressBar",
+              "layout_height": "50dp",
+              "layout_width": "90dp",
+              "layout_weight": 10,
+              "mm": 2,
+              "data_primary": "myprogvv",
+              "style_bar": {
+                "color_bar": "#2cdb81",
+                "typ_bar": "2"
+              },
+              "typ_bar": "2",
+              "text": "ADD gh CART"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "AlertDialogLayout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "background": {
+      "type": "shape",
+      "shape": "oval",
+      "children": [
+        {
+          "type": "gradient",
+          "startColor": "#44e73827",
+          "endColor": "@color/green",
+          "angle": 270
+        }
+      ]
+    },
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "oval",
+          "children": [
+            {
+              "type": "gradient",
+              "startColor": "#44e73827",
+              "endColor": "@color/green",
+              "angle": 270
+            }
+          ]
+        },
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "id": "mykk",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].name}"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "d_onErrorText": "الاسم",
+        "layout_marginEnd": "50dp",
+        "endticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "الاسم",
+        "id": "name",
+        "data_primary": "name",
+        "d_NullValue": true,
+        "d_OnErrorText": "يرجي إدخال الاسم",
+        "starticon": "@drawableFont/fa_user/1/50/#ffaa77",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "InputType": "text",
+            "tooltipText": "mmmmm",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "text": "@{AlertDialogLayout.my[0].name}",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "d_onErrorText": "يرجي ادخال البريد الالكتروني ",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawableFont/fa_star/1/30/#ffbb77",
+        "lboxcolor": "@color/green",
+        "lhint": "البريد الالكتروني ",
+        "id": "email",
+        "data_primary": "email",
+        "d_NullValue": true,
+        "d_OnErrorText": "يرجي ادخال البريد الالكتروني ",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "tooltipText": "البريد الإلكتروني ",
+            "text": "@{AlertDialogLayout.my[0].email}",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "d_onErrorText": "عنوان الصورة",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "عنوان الصورة",
+        "id": "pic",
+        "data_primary": "pic",
+        "d_NullValue": true,
+        "d_OnErrorText": " عنوان الصورة",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "tooltipText": "عنوان الصورة",
+            "text": "@{AlertDialogLayout.my[0].pic}",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "حفظ",
+        "PrograssName": "saveprograss",
+        "key_value_show": "0",
+        "enabled": true,
+        "Save_before_refresh": "0",
+        "DisableWehen": "vvbbii",
+        "Key_from_response": "data",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},\n{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}\n\n]",
+        "api_body": "\n                  {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#%5$s#,#pic#:#%4$s#,#typ#:#%3$s#,#name#:#%1$s#,                   #email#:#%2$s#,#prodID#:#0#,#barcode#:#0#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeAction": "SaveData",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbii",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "خروج",
+        "PrograssName": "saveprograss",
+        "key_value_show": "data",
+        "enabled": true,
+        "DisableWehen": "1",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}\n,\n{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}\n\n]",
+        "typeAction": "Cancel",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#@mid@#,#pic#:#@pic@#,#typ#:#@op@#,#name#:#%1$s#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",
+        "api_method": "POST",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbcancelk",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "موافق",
+        "PrograssName": "saveprograss",
+        "key_value_show": "message",
+        "enabled": true,
+        "DisableWehen": "1",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}\n\n]",
+        "typeAction": "OK",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1377#,#pic#:#@pic@#,#typ#:#1#,#name#:#@name@#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",
+        "api_method": "POST",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbcancelm",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "data_primary": "op",
+        "text": "@{fn:isNull(@{AlertDialogLayout.my[0].typ}, '1',@{AlertDialogLayout.my[0].typ})}"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "data_primary": "mid",
+        "text": "@{fn:isNull(@{AlertDialogLayout.my[0].id}, '0',@{AlertDialogLayout.my[0].id})}"
+      },
+      {
+        "type": "ProgressBar",
+        "layout_height": "50dp",
+        "layout_width": "90dp",
+        "gravity": "center",
+        "mm": 1,
+        "data_primary": "saveprograss",
+        "visibility": "gone",
+        "style_bar": {
+          "color_bar": "#2cdb81",
+          "typ_bar": "1"
+        },
+        "text": "ADD gh CART"
+      }
+    ]
+  },
+  "childd": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "table_show_view": "mchild",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "table_show_view": "mchild",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "id": "mchild",
+            "gravity": "center",
+            "table_filedname": "child",
+            "textSize": "18sp",
+            "text": ""
+          }
+        ]
+      }
+    ]
+  },
+  "Main": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+  },
+  "mcont": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "id": "hhhhhhhhhh",
+    "table_show_view": "kk#child#parent",
+    "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+  },
+  "mtab": {
+    "type": "SegmentLayout",
+    "layout_width": "match_parent",
+    "km": "55",
+    "layout_height": "50dp",
+    "layout_margin": "10dp",
+    "table_show_view": "kk#child#parent",
+    "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+  },
+  "DrawerHeader": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "background": "@drawable/blue_btn_bkg",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "background": "#ffffff",
+        "layout_margin": "10dp",
+        "gravity": "center",
+        "bringToFront": "1",
+        "children": [
+          {
+            "type": "FrameLayout",
+            "layout_width": "match_parent",
+            "layout_height": "90dp",
+            "bringToFront": "1"
+          }
+        ]
+      },
+      {
+        "type": "CircleImageView",
+        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+        "layout_marginBottom": "-50dp",
+        "layout_width": "120dp",
+        "layout_marginTop": "-70dp",
+        "marginBottom": "20dp",
+        "layout_height": "120dp",
+        "layout_gravity": "center"
+      },
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "50dp",
+        "layout_gravity": "center",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginRight": "10dp",
+            "layout_marginLeft": "10dp",
+            "textSize": "15sp",
+            "data_primary": "op",
+            "textColor": "#ffffff",
+            "text": "محمد علي سعيد",
+            "layout_gravity": "center"
+          }
+        ]
+      },
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginRight": "10dp",
+            "layout_marginLeft": "10dp",
+            "textSize": "15sp",
+            "data_primary": "op",
+            "textColor": "#ffffff",
+            "text": "الفرع"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginRight": "10dp",
+            "layout_marginLeft": "10dp",
+            "textSize": "15sp",
+            "data_primary": "op",
+            "textColor": "#ffffff",
+            "text": "الفرع الرئيسي"
+          }
+        ]
+      },
+      {
+        "type": "ProgressBar",
+        "layout_height": "50dp",
+        "layout_width": "90dp",
+        "gravity": "center",
+        "mm": 1,
+        "data_primary": "saveprograss",
+        "visibility": "gone",
+        "style_bar": {
+          "color_bar": "#2cdb81",
+          "typ_bar": "1"
+        },
+        "text": "ADD gh CART"
+      }
+    ]
+  },
+  "vv": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "44dp",
+    "table_show_view": "ll",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_height": "44dp",
+        "table_show_view": "ll",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "id": "ll",
+            "gravity": "center",
+            "textSize": "12sp",
+            "text": ""
+          }
+        ]
+      }
+    ]
+  },
+  "corner": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "wrap_content",
+    "layout_height": "40dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_height": "40dp",
+        "background": "#c48866",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "40dp",
+            "id": "llk",
+            "gravity": "center",
+            "textSize": "18sp",
+            "text": "Row"
+          }
+        ]
+      }
+    ]
+  },
+  "video": {
+    "type": "VideoLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "100dp",
+    "Video_url": "https://youtu.be/pzxwGsCi-OU",
+    "Video_sound": true
+  },
+  "tt": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#c48866",
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "d_onErrorText": "يرجي ادخال اسم الصنف",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "اسم الصنف",
+        "id": "hellv",
+        "data_primary": "hellv",
+        "d_NullValue": true,
+        "d_OnErrorText": "يرجي ادخال اسم الصنف",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "tooltipText": "mmmmm",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "text": "@{AlertDialogLayout.my[0].data}",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "d_onErrorText": "يرجي ادخال اسم الصنف",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "اسم الصنف",
+        "id": "hell",
+        "data_primary": "hell",
+        "d_NullValue": true,
+        "d_OnErrorText": "يرجي ادخال اسم الصنف",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "tooltipText": "mmmmm",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "Input_Type": "Url",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "EditText",
+        "data_primary": "bbkk",
+        "layout_height": "55dp",
+        "layout_width": "90dp",
+        "padding": "0dp",
+        "margin": "50dp",
+        "gravity": "center",
+        "mm": "0",
+        "background": "@color/green"
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "إلغاء",
+        "typeAction": "Ok3",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbii869",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "yyموافق",
+        "typeAction": "Ok2",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbii89",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "textColor": "#ffaa77",
+        "textSize": "32sp",
+        "text": "g"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "text": "press ok to continue."
+      }
+    ]
+  },
+  "webk": {
+    "type": "FrameLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent"
+  },
+  "web": {
+    "type": "FrameLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "data": {
+      "user": "@{0}",
+      "sec": "@{sec}"
+    },
+    "children": [
+      {
+        "type": "WebView",
+        "orientation": "vertical",
+        "layout_height": "match_parent",
+        "layout_width": "match_parent",
+        "click_from_data": "@{user.name}",
+        "web_get_data": "@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+        "turl": "file:///android_asset/themes/bootstrap.min.css",
+        "DataUrl": {
+          "use_get_data": false,
+          "update": false,
+          "enab_port": true,
+          "enab_back": true,
+          "enab_long_click": false,
+          "enab_stor_dom": true,
+          "scroll_V": false,
+          "scroll_H": false,
+          "scroll_On_touch": false,
+          "enab_desktop": false,
+          "enab_cookies": false,
+          "enab_multiplwindow": true,
+          "enab_OverViewMode": true,
+          "enab_Open_window_Auto": true,
+          "use_error": true,
+          "m_error": "\n<!DOCTYPE html>\n<html lang=%1$sen%1$s>\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=%1$sutf-8%1$s>\n  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>\n  </head>\n<body>\n<div class=%1$sjumbotron text-center%1$s>\n  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>\n  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> \n</div>\n</body>\n</html>\n",
+          "m_html": "\n<!DOCTYPE html>\n<html>\n<head>\n    <base href=%1$shttps://demos.telerik.com/kendo-ui/grid/index%1$s>\n    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>\n    <title></title>\n        <style>%3$s</style>\n    <script>%4$s</script>\n       <script>%5$s</script>\n     \n\n</head>\n<body>\n    \n<div id=%1$sexample%1$s>\n    <div id=%1$sgrid%1$s></div>\n    <script>\n        $(document).ready(function () {\n            var crudServiceBaseUrl = %1$shttps://demos.telerik.com/kendo-ui/service%1$s,\n                dataSource = new kendo.data.DataSource({\n                    transport: {\n                        read: {\n                            url: crudServiceBaseUrl + %1$s/detailproducts%1$s,\n                            dataType: %1$sjsonp%1$s\n                        },\n                        update: {\n                            url: crudServiceBaseUrl + %1$s/detailproducts/Update%1$s,\n                            dataType: %1$sjsonp%1$s\n                        },\n                        destroy: {\n                            url: crudServiceBaseUrl + %1$s/detailproducts/Destroy%1$s,\n                            dataType: %1$sjsonp%1$s\n                        },\n                        parameterMap: function (options, operation) {\n                            if (operation !== %1$sread%1$s && options.models) {\n                                return { models: kendo.stringify(options.models) };\n                            }\n                        }\n                    },\n                    batch: true,\n                    pageSize: 20,\n                    autoSync: true,\n                    aggregate: [{\n                        field: %1$sTotalSales%1$s,\n                        aggregate: %1$ssum%1$s\n                    }],\n                    group: {\n                        field: %1$sCategory.CategoryName%1$s,\n                        dir: %1$sdesc%1$s,\n                        aggregates: [\n                            { field: %1$sTotalSales%1$s, aggregate: %1$ssum%1$s }\n                        ]\n                    },\n                    schema: {\n                        model: {\n                            id: %1$sProductID%1$s,\n                            fields: {\n                                ProductID: { editable: false, nullable: true },\n                                Discontinued: { type: %1$sboolean%1$s, editable: false },\n                                TotalSales: { type: %1$snumber%1$s, editable: false },\n                                TargetSales: { type: %1$snumber%1$s, editable: false },\n                                LastSupply: { type: %1$sdate%1$s },\n                                UnitPrice: { type: %1$snumber%1$s },\n                                UnitsInStock: { type: %1$snumber%1$s },\n                                Category: {\n                                    defaultValue: {\n                                        CategoryID: 8,\n                                        CategoryName: %1$sSeafood%1$s\n                                    }\n                                },\n                                Country: {\n                                    defaultValue: {\n                                        CountryNameLong: %1$sBulgaria%1$s,\n                                        CountryNameShort: %1$sbg%1$s\n                                    }\n                                }\n                            }\n                        }\n                    }\n                });\n\n            $(%1$s#grid%1$s).kendoGrid({\n                dataSource: dataSource,\n                columnMenu: {\n                    filterable: false\n                },\n                height: 680,\n                editable: %1$sincell%1$s,\n                pageable: true,\n                sortable: true,\n                navigatable: true,\n                resizable: true,\n                reorderable: true,\n                groupable: true,\n                filterable: true,\n                dataBound: onDataBound,\n                toolbar: [%1$sexcel%1$s, %1$spdf%1$s, %1$ssearch%1$s],\n                columns: [{\n                    selectable: true,\n                    width: 75,\n                    attributes: {\n                        %1$sclass%1$s: %1$scheckbox-align%1$s,\n                    },\n                    headerAttributes: {\n                        %1$sclass%1$s: %1$scheckbox-align%1$s,\n                    }\n                }, {\n                    field: %1$sProductName%1$s,\n                    title: %1$sProduct Name%1$s,\n                    template: %1$s<div class='product-photo' style='background-image: url(../content/web/foods/#:data.ProductID#.jpg);'></div><div class='product-name'>#: ProductName #</div>%1$s,\n                    width: 300\n                }, {\n                    field: %1$sUnitPrice%1$s,\n                    title: %1$sPrice%1$s,\n                    format: %1$s{0:c}%1$s,\n                    width: 105\n                }, {\n                    field: %1$sDiscontinued%1$s,\n                    title: %1$sIn Stock%1$s,\n                    template: %1$s<span id='badge_#=ProductID#' class='badgeTemplate'></span>%1$s,\n                    width: 130,\n                }, {\n                    field: %1$sCategory.CategoryName%1$s,\n                    title: %1$sCategory%1$s,\n                    editor: clientCategoryEditor,\n                    groupHeaderTemplate: %1$sCategory: #=data.value#, Total Sales: #=kendo.format('{0:c}', aggregates.TotalSales.sum)#%1$s,\n                    width: 125\n                }, {\n                    field: %1$sCustomerRating%1$s,\n                    title: %1$sRating%1$s,\n                    template: %1$s<input id='rating_#=ProductID#' data-bind='value: CustomerRating' class='rating'/>%1$s,\n                    editable: returnFalse,\n                    width: 140\n                }, {\n                    field: %1$sCountry.CountryNameLong%1$s,\n                    title: %1$sCountry%1$s,\n                    template: %1$s<div class='k-text-center'><img src='../content/web/country-flags/#:data.Country.CountryNameShort#.png' alt='Kendo UI for jQuery Grid #: data.Country.CountryNameLong# Flag' title='#: data.Country.CountryNameLong#' width='30' /></div>%1$s,\n                    editor: clientCountryEditor,\n                    width: 120\n                }, {\n                    field: %1$sUnitsInStock%1$s,\n                    title: %1$sUnits%1$s,\n                    width: 105\n                }, {\n                    field: %1$sTotalSales%1$s,\n                    title: %1$sTotal Sales%1$s,\n                    format: %1$s{0:c}%1$s,\n                    width: 140,\n                    aggregates: [%1$ssum%1$s],\n                }, {\n                    field: %1$sTargetSales%1$s,\n                    title: %1$sTarget Sales%1$s,\n                    format: %1$s{0:c}%1$s,\n                    template: %1$s<span id='chart_#= ProductID#' class='sparkline-chart'></span>%1$s,\n                    width: 220\n                },\n                { command: %1$sdestroy%1$s, title: %1$s&nbsp;%1$s, width: 120 }],\n            });\n        });\n\n        function onDataBound(e) {\n            var grid = this;\n            grid.table.find(%1$str%1$s).each(function () {\n                var dataItem = grid.dataItem(this);\n                var themeColor = dataItem.Discontinued ? 'success' : 'error';\n                var text = dataItem.Discontinued ? 'available' : 'not available';\n\n                $(this).find(%1$s.badgeTemplate%1$s).kendoBadge({\n                    themeColor: themeColor,\n                    text: text,\n                });\n\n                $(this).find(%1$s.rating%1$s).kendoRating({\n                    min: 1,\n                    max: 5,\n                    label: false,\n                    selection: %1$scontinuous%1$s\n                });\n\n                $(this).find(%1$s.sparkline-chart%1$s).kendoSparkline({\n                    legend: {\n                        visible: false\n                    },\n                    data: [dataItem.TargetSales],\n                    type: %1$sbar%1$s,\n                    chartArea: {\n                        margin: 0,\n                        width: 180,\n                        background: %1$stransparent%1$s\n                    },\n                    seriesDefaults: {\n                        labels: {\n                            visible: true,\n                            format: '{0}',\n                            background: 'none'\n                        }\n                    },\n                    categoryAxis: {\n                        majorGridLines: {\n                            visible: false\n                        },\n                        majorTicks: {\n                            visible: false\n                        }\n                    },\n                    valueAxis: {\n                        type: %1$snumeric%1$s,\n                        min: 0,\n                        max: 130,\n                        visible: false,\n                        labels: {\n                            visible: false\n                        },\n                        minorTicks: { visible: false },\n                        majorGridLines: { visible: false }\n                    },\n                    tooltip: {\n                        visible: false\n                    }\n                });\n\n                kendo.bind($(this), dataItem);\n            });\n        }\n\n        function returnFalse() {\n            return false;\n        }\n\n        function clientCategoryEditor(container, options) {\n            $('<input required name=%1$sCategory%1$s>')\n                .appendTo(container)\n                .kendoDropDownList({\n                    autoBind: false,\n                    dataTextField: %1$sCategoryName%1$s,\n                    dataValueField: %1$sCategoryID%1$s,\n                    dataSource: {\n                        data: categories\n                    }\n                });\n        }\n\n        function clientCountryEditor(container, options) {\n            $('<input required name=%1$sCountry%1$s>')\n                .appendTo(container)\n                .kendoDropDownList({\n                    dataTextField: %1$sCountryNameLong%1$s,\n                    dataValueField: %1$sCountryNameShort%1$s,\n                    template: %1$s<div class='dropdown-country-wrap'><img src='../content/web/country-flags/#:CountryNameShort#.png' alt='Kendo UI for jQuery Grid #: CountryNameLong# Flag' title='#: CountryNameLong#' width='30' /><span>#:CountryNameLong #</span></div>%1$s,\n                    dataSource: {\n                        transport: {\n                            read: {\n                                url: %1$s https://demos.telerik.com/kendo-ui/service/countries%1$s,\n                                dataType: %1$sjsonp%1$s\n                            }\n                        }\n                    },\n                    autoWidth: true\n                });\n        }\n\n        var categories = [{\n            %1$sCategoryID%1$s: 1,\n            %1$sCategoryName%1$s: %1$sBeverages%1$s\n        }, {\n            %1$sCategoryID%1$s: 2,\n            %1$sCategoryName%1$s: %1$sCondiments%1$s\n        }, {\n            %1$sCategoryID%1$s: 3,\n            %1$sCategoryName%1$s: %1$sConfections%1$s\n        }, {\n            %1$sCategoryID%1$s: 4,\n            %1$sCategoryName%1$s: %1$sDairy Products%1$s\n        }, {\n            %1$sCategoryID%1$s: 5,\n            %1$sCategoryName%1$s: %1$sGrains/Cereals%1$s\n        }, {\n            %1$sCategoryID%1$s: 6,\n            %1$sCategoryName%1$s: %1$sMeat/Poultry%1$s\n        }, {\n            %1$sCategoryID%1$s: 7,\n            %1$sCategoryName%1$s: %1$sProduce%1$s\n        }, {\n            %1$sCategoryID%1$s: 8,\n            %1$sCategoryName%1$s: %1$sSeafood%1$s\n        }];\n    </script>\n\n    <style type=%1$stext/css%1$s>\n        .customer-photo {\n            display: inline-block;\n            width: 32px;\n            height: 32px;\n            border-radius: 50;\n            background-size: 32px 35px;\n            background-position: center center;\n            vertical-align: middle;\n            line-height: 32px;\n            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);\n            margin-left: 5px;\n        }\n\n        .customer-name {\n            display: inline-block;\n            vertical-align: middle;\n            line-height: 32px;\n            padding-left: 3px;\n        }\n\n        .k-grid tr .checkbox-align {\n            text-align: center;\n            vertical-align: middle;\n        }\n\n        .product-photo {\n            display: inline-block;\n            width: 32px;\n            height: 32px;\n            border-radius: 50;\n            background-size: 32px 35px;\n            background-position: center center;\n            vertical-align: middle;\n            line-height: 32px;\n            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);\n            margin-right: 5px;\n        }\n\n        .product-name {\n            display: inline-block;\n            vertical-align: middle;\n            line-height: 32px;\n            padding-left: 3px;\n        }\n\n        .k-rating-container .k-rating-item {\n            padding: 4px 0;\n        }\n\n        .k-rating-container .k-rating-item .k-icon {\n            font-size: 16px;\n        }\n\n        .dropdown-country-wrap {\n            display: flex;\n            flex-wrap: nowrap;\n            align-items: center;\n            white-space: nowrap;\n        }\n\n        .dropdown-country-wrap img {\n            margin-right: 10px;\n        }\n\n        #grid .k-grid-edit-row > td > .k-rating {\n            margin-left: 0;\n            width: 100;\n        }\n    </style>\n</div>\n\n\n\n</body>\n</html>\n\n\n\n",
+          "html_value": "[\n{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#QMark#, #ViewName#:#name#},\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#},\n{#keyName#:#Authorization#,#KeyValue#:#https://kendo.cdn.telerik.com/themes/6.6.0/default/default-ocean-blue.css#,#KeyType#:#htmltag#, #ViewName#:#nameu#},\n{#keyName#:#Authorization#,#KeyValue#:#https://kendo.cdn.telerik.com/2023.2.718/js/jquery.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},\n{#keyName#:#Authorization#,#KeyValue#:#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#}\n\n\n\n]",
+          "m_url": "file:///android_asset6/themes/bootstrap.min.css",
+          "Use_Url": false,
+          "image_auto": true,
+          "enab_java": true
+        }
+      }
+    ]
+  },
+  "delete": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "80dp",
+    "layout_height": "wrap_content",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#c48866",
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{delete.my[0].data}"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "@{delete.my[0].data}"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "TextView",
+        "data_primary": "bbkkuuip",
+        "layout_height": "55dp",
+        "layout_width": "match_parent",
+        "padding": "0dp",
+        "margin": "50dp",
+        "gravity": "center",
+        "text": "هل تريد الحذف",
+        "mm": "0"
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "خروج",
+        "PrograssName": "saveprograss",
+        "key_value_show": "message",
+        "enabled": true,
+        "DisableWehen": "1",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "typeAction": "Cancel",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#@mid@#,#pic#:#@pic@#,#typ#:#@op@#,#name#:#@name@#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",
+        "api_method": "POST",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbcancelk",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "حفظ",
+        "PrograssName": "saveprograss",
+        "key_value_show": "0",
+        "enabled": true,
+        "Save_before_refresh": "0",
+        "DisableWehen": "vvbbii",
+        "Key_from_response": "data",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#mideltyp#,#data_set#:#mideltyp#,#data_get#:#mideltyp#},\n\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},\n{#data_id#:#midel#,#data_set#:#midel#,#data_get#:#midel#}\n\n]",
+        "api_body": "\n          [{#head#:[{#typ1#:#1#,#userID#:#0#,#alfraID#:#0#,#stockID#:#0#,#username#:#0#,#enab#:#0#,#typ2#:#0#,#IDforupdate#:#0#,#allwith#:#0#,#sandookID#:#0#,#parcount#:#0#,#parmnam#:#24#}],#pramname#:[{#paramvalue#:[#%3$s#,#%1$s#,#%1$s#, #%5$s#,#%1$s#,#%1$s#,#%1$s#,#%1$s#, #%5$s#]}]}]",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "http://0.168.1.101:80/api/desin/uidesin",
+        "typeAction": "SaveData",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbii",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "ProgressBar",
+        "layout_height": "50dp",
+        "layout_width": "90dp",
+        "gravity": "center",
+        "mm": 2,
+        "data_primary": "delprograss",
+        "visibility": "gone",
+        "style_bar": {
+          "color_bar": "#2cdb99",
+          "typ_bar": "3"
+        },
+        "typ_bar": "3",
+        "text": "ADD gh CART"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "data_primary": "midel",
+        "visibility": "gone",
+        "text": "@{fn:isNull(@{delete.my[0].id}, '0',@{delete.my[0].id})}",
+        "textColor": "#ffaa77",
+        "textSize": "32sp"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "visibility": "gone",
+        "textSize": "22sp",
+        "data_primary": "mideltyp",
+        "text": "@{fn:isNull(@{delete.my[0].typ}, '0',@{delete.my[0].typ})}"
+      }
+    ]
+  },
+  "card1": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "150dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#eff4ff",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "data_primary": "midelk",
+                    "text": "العنوان",
+                    "textColor": "@color/blue_A200",
+                    "textSize": "25sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "card2": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "150dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#eff4ff",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "data_primary": "midelk",
+                    "text": "المجموعة",
+                    "textColor": "@color/blue_A200",
+                    "textSize": "25sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

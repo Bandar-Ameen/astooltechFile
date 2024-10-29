@@ -1,0 +1,295 @@
+{
+
+
+  "web": {
+    "type": "FrameLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+      "data": {
+            "user": "@{0}",
+            "sec": "@{sec}"
+          },
+  
+    "children": [
+     
+ {    "type": "WebView",
+    "orientation": "vertical",
+    "data_primary":"myweb", 
+
+    "layout_height": "match_parent",
+    "layout_width": "match_parent",
+    "click_from_data":"@{user.name}",
+    "web_get_data":"@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+  "turl":"file:///android_asset/themes/bootstrap.min.css",  
+    "DataUrl":{
+    "m_urls":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+        
+        
+        
+        
+        
+        
+  
+        
+        
+        
+
+"use_get_data":true,
+    "update":false,
+    "enab_port":false,
+        "enab_back":true,
+        "Use_Service":true
+,
+"Use_Service_Filter":true,
+        "Use_Service_Filter_Name":"android.net.conn.CONNECTIVITY_CHANGE",
+              "Use_Service_Function":"servi",
+   "enab_long_click":false, 
+    "scroll_V":false,
+        "scroll_H":false,
+        "scroll_On_touch":false,
+    "enab_desktop":false,
+    "enab_cookies":false,
+    "enab_multiplwindow":true,
+    "enab_OverViewMode":true,
+     "enab_Open_window_Auto":true,
+    "use_error":true,
+    "m_error":"
+<!DOCTYPE html>
+<html lang=%1$sen%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+%4$s
+
+</style>
+<style>
+%6$s
+
+</style>
+
+<style>
+%9$s
+
+</style>
+
+  <script>
+%3$s
+</script>
+<script>
+%5$s
+</script>
+
+<script>
+%7$s
+</script>
+<script>
+%8$s
+</script>
+
+
+</head>
+<body>
+<div class=%1$sjumbotron text-center%1$s>
+  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>
+  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> 
+</div>
+</body>
+</html>
+",
+
+
+"m_html":"
+<!DOCTYPE html>
+<html lang=%1$sen%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+@font-face{
+    font-family:%1$smmy%1$s;
+    src:url(themes/fonts/Cairo-Bold.ttf)format(%1$struetype%1$s);
+    font-style: normal;
+    }
+    
+    
+    
+    *{
+     font-family: 'mmy';
+     -webkit-user-select: none;
+    }
+
+
+</style>
+
+<style>%3$s</style>
+    <script>%4$s</script>
+       <script>%5$s</script>
+
+
+</head>
+<body>
+
+<div id=%1$sexample%1$s>
+    <div class=%1$sdemo-section%1$s>
+        <div id=%1$schat%1$s></div>
+        <input name=%1$sfiles%1$s id=%1$sfiles%1$s type=%1$sfile%1$s />
+        <div class=%1$sdemo-hint%1$s>You can use the Image tool in the toolbar to send an image. Or drop an image on the Chat component.</div>
+    </div>
+
+    <script>
+      
+function servi(gv) {
+   /*var chat = $('#chat').getKendoChat();
+
+  chat.postMessage(%1$sHello!%1$s);
+  chat.postMessage(%1$sPlease, select a date from the Calendar.%1$s);
+*/
+var chat = $(%1$s#chat%1$s).data(%1$skendoChat%1$s);
+
+//var chat = $(%1$s#chat%1$s).data(%1$skendoChat%1$s);
+
+    chat.renderMessage({
+        type: %1$stext%1$s,
+        text: gv
+    }, {
+        id: kendo.guid(),
+        name: %1$sSample User%1$s,
+        iconUrl: %1$shttps://demos.telerik.com/kendo-ui/content/web/chat/avatar.png%1$s
+    });
+
+/*chat.renderAttachments({
+        attachments: [{
+            contentType: %1$sheroCard%1$s,
+            content: {
+                title: %1$sNinja Title%1$s,
+                subtitle: %1$sThe Telerik Ninja%1$s,
+                text: %1$sThis is an example.%1$s,
+                images: [{
+                    url: %1$shttps://docs.telerik.com/kendo-ui/images/ninja-icon.png%1$s,
+                    alt: %1$sNinja%1$s
+                }]
+            }
+        }],
+        attachmentLayout: %1$scarousel%1$s
+    }, chat.getUser());*/
+  /*chat.renderAttachments({
+        attachments: [{
+            contentType: %1$sheroCard%1$s,
+            content: {
+                title: %1$sAttachment Title%1$s,
+                subtitle: %1$sAttachment Subtitle%1$s,
+                text: %1$sSample text%1$s
+            }
+        }],
+        attachmentLayout: %1$scarousel%1$s
+    }, chat.getUser());
+*/
+    }  
+
+  var chat;
+
+        $(document).ready(function () {
+            chat = $(%1$s#chat%1$s).kendoChat({
+                toolClick: function (ev) {
+                    if (ev.name === %1$ssendimage%1$s) {
+                        $(%1$s#files%1$s).click();
+                    }
+                },
+                toolbar: {
+                    toggleable: true,
+                    buttons: [
+                        { name: %1$ssendimage%1$s, iconClass: %1$sk-icon k-i-image%1$s }
+                    ]
+                }
+            }).data(%1$skendoChat%1$s);
+
+            var upload = $(%1$s#files%1$s).kendoUpload({
+                async: {
+                    saveUrl: %1$s../upload/save%1$s,
+                    removeUrl: %1$s../upload/remove%1$s,
+                    autoUpload: true
+                },
+                validation: {
+                    allowedExtensions: [%1$s.jpg%1$s, %1$s.jpeg%1$s, %1$s.png%1$s, %1$s.bmp%1$s, %1$s.gif%1$s]
+                },
+                success: onSuccess,
+                showFileList: false,
+                dropZone: %1$s#chat%1$s
+            }).data(%1$skendoUpload%1$s);
+
+            upload.wrapper.hide();
+        });
+
+        function onSuccess(e) {
+            if (e.operation === %1$supload%1$s) {
+                for (var i = 0; i < e.files.length; i++) {
+                    var file = e.files[i].rawFile;
+
+                    if (file) {
+                        var reader = new FileReader();
+
+                        reader.onloadend = function () {
+                            chat.renderAttachments({
+                                attachments: [{
+                                    contentType: %1$simage_card%1$s,
+                                    content: {
+                                        image: this.result
+                                    }
+                                }],
+                                attachmentLayout: %1$slist%1$s
+                            }, chat.getUser());
+                        };
+
+                        reader.readAsDataURL(file);
+                    }
+                }
+            }
+        }
+
+        var IMAGE_CARD_TEMPLATE = kendo.template(
+            '<div class=%1$sk-card k-card-type-rich%1$s>' +
+            '<div class=%1$sk-card-body quoteCard%1$s>' +
+            '<img alt=%1$sKendo UI for jQuery Chat Toolbar Custom Tool Image%1$s class=%1$simage-attachment%1$s src=%1$s#: image #%1$s />' +
+            '</div>' +
+            '</div>'
+        );
+
+        kendo.chat.registerTemplate(%1$simage_card%1$s, IMAGE_CARD_TEMPLATE);
+    </script>
+
+    <style>
+        .k-card .image-attachment {
+            max-height: 120px;
+        }
+    </style>
+</div>
+
+
+  
+</body>
+</html>
+
+",
+"html_value":[
+{"key_Name":"name","Key_Value":"name","Key_Type":"QMark", "View_Name":"name"},
+{"key_Name":"Authorization","Key_Value":"nameu","Key_Type":"apikey", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://kendo.cdn.telerik.com/themes/6.6.0/default/default-ocean-blue.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://kendo.cdn.telerik.com/2023.2.718/js/jquery.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js","Key_Type":"htmltag", "View_Name":"nameu"}
+
+
+
+
+],
+
+"m_url":"http://0.0.0.0:8080/admin3/chat/index.html",
+"Use_Url":false,
+"image_auto":true,
+"enab_java":true
+
+}
+    }]}}

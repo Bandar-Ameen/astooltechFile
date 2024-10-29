@@ -1,0 +1,1831 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_marginTop": "3dp",
+    "layout_alignParentBottom":true,
+        "layout_alignParentTop":true,
+    "id":"roooof",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+     "layout_alignParentBottom":true,
+        "layout_alignParentTop":true,
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "id": "ioop",
+        "children": [
+          {
+            "type": "include",
+            "layout": "mainmnue",
+            "id": "ioopvv",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "Unit_ID": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "16dp",
+    "d_onErrorText": "يرجي اختيار المعرف ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawable/addbtn",
+    "lboxcolor": "@color/green",
+    "lhint": "رقم الوحدة",
+    "idg": "email",
+    "id": "Id_unit",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي اختيار المعرف ",
+    "endicon": "@drawable/addbbtn",
+    "gravity": "right",
+    "paddingRight": "16dp",
+    "paddingTop": "8dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "With_Search": {
+          "ViewID": "myouto"
+        },
+        "tooltipText": "رقم الوحدة",
+        "text": "@{AlertDialogLayout.my[0].email}",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffcc33",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffcc33",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": false
+  },
+  "Unit_Name": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "16dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawable/addbtn",
+    "lboxcolor": "@color/green",
+    "lhint": "اسم الوحدة",
+    "idl": "email",
+    "id": "Unit_Name",
+    "d_NullValue": true,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawable/addbbtn",
+    "gravity": "right",
+    "paddingRight": "16dp",
+    "paddingTop": "8dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "With_Search": {
+          "ViewID": "myouto"
+        },
+        "tooltipText": "اسم الوحدة",
+        "text": "@{AlertDialogLayout.my[0].email}",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffcc33",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffcc33",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": true
+  },
+  "RelativeLttayoutExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RelativeLayout",
+        "layout_width": "match_parent",
+        "layout_height": "100dp",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "id": "center",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "text": "Center",
+            "textColor": "#323232",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginBottom": "4dp",
+            "layout_above": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginTop": "4dp",
+            "layout_below": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginLeft": "4dp",
+            "layout_toRightOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginRight": "4dp",
+            "layout_toLeftOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "layout_height": "70dp",
+            "layout_width": "120dp",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitCenter",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+          }
+        ]
+      }
+    ]
+  },
+  "Data_Layout": {
+    "tags": [
+      "alpha",
+      "beta",
+      "gamma",
+      "delta",
+      "niner"
+    ]
+  },
+  "card1": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#ff0000",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "id": "midelk",
+                    "text": "الاسم الاول",
+                    "textColor": "@color/white",
+                    "textSize": "14sp"
+                  }
+                ]
+              },
+              
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop":"10dp",
+                "layout_width": "match_parent",
+                "background": "#ffffff",
+                "children": [
+                  
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop":"10dp",
+                "layout_width": "match_parent",
+                "background": "#000000",
+                
+                "children": [
+                  
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "itemacrol":{
+            "type": "HorizontalScrollView",
+            "orientation": "horizontal",
+            "scrollbars": "none",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "children": [
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card2",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card2",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  }
+                  ]
+}]},
+                  
+  
+  
+  "card2": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#eff4ff",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "id": "midelk",
+                    "text": "@{k[1]}",
+                    "textColor": "@color/blue_A200",
+                    "textSize": "20sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  
+  "expandmy": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginTop": "10dp",
+    "gravity": "right",
+    "orientation": "vertical",
+    "ViewEx": {
+      "Expand": {
+        "type": "ExpandLayoutView",
+        "layout_width": "30dp",
+        "layout_height": "30dp",
+        "ViewEx": {
+          "ViewEx_View": {
+            "type": "HorizontalScrollView",
+            "orientation": "horizontal",
+            "scrollbars": "none",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "children": [
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  }
+                ]
+              }
+            ]
+          },
+          "ViewEx_Color": "@color/green",
+          "ViewEx_down": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "30dp",
+            "background": "@drawableFont/fa_arrow_up_solid/3/40/#ffffff"
+          },
+          "ViewEx_up": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "30dp",
+            "background": "@drawableFont/fa_arrow_down_solid/3/40/#ffffff"
+          }
+        },
+        "orientation": "vertical"
+      },
+      "index_icon": 1,
+      "ExpandIconLayout": {
+        "type": "LinearLayout",
+        "layout_width": "wrap_content",
+        "layout_marginRight": "5dp",
+        "layout_height": "wrap_content",
+        "background": "@color/blue_A200",
+        "elevation": "10dp",
+        "gravity": "center",
+        "orientation": "horizontal",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_weight": 2,
+            "gravity": "center",
+            "id": "midelkui",
+            "text": "       ",
+            "textColor": "@color/white",
+            "textSize": "15sp"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_weight": 2,
+            "gravity": "center",
+            "id": "midelkui",
+            "text": "باقات يمن موبايل",
+            "textColor": "@color/white",
+            "textSize": "15sp"
+          }
+        ]
+      }
+    }
+  },
+  "mainmnue": {
+    "type": "TabLayoutView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+    "orientation": "vertical",
+    "id":"helloygg",
+    "Tab_Content1": {
+      "Content_Type": "2",
+      "Header_ID": "hello1258", 
+      "Body_ID": "hello127",
+      "mchild": { 
+        "type": "LinearLayout",
+        "id": "hellgochhhh126",
+        "idk": "hellog126",
+        "orientation": "vertical",
+        "background":"@color/red_A200",
+        "layout_width": "match_parent",
+        "layout_height": "400dp",
+        "tname": "SimpleDataBindingExample",
+        "children": [
+          {
+            "type": "ScrollView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "id":"vcxdd",
+            "Setting": {
+              "ScrollModes": 2
+            },
+            "children": [
+              {
+                "type": "RelativeLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "paddingTop": "0dp",
+                "orientation": "vertical",
+                "gravity": "right",
+                "id":"ujjuy",
+                "children": [
+                  {
+                    "type": "CardView",
+                    "click_from": "5",
+                    "typeAction": "View_Edit",
+                    "click_from_datak": "{#my#:[{medata:#name#}]}",
+                    "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+                    "orientation": "vertical",
+                    "layout_gravity": "center",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "id": "kf",
+                    "layout_alignParentBottom": false,
+                    "layout_alignParentRight": true,
+                    "layout_marginBottom": "-50dp",
+                    "elevation": "20dp",
+                    "background": "@drawable/blue_btn_bkg",
+                    "layout_marginLeft": "20dp",
+                    "layout_marginRight": "20dp",
+                    "gravity": "right",
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "gravity": "center",
+                        "direction": "right",
+                        "paddingTop": "0dp",
+                        "orientation": "vertical",
+                        "id": "hello1258"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "CardView",
+                    "text": "fabsggggffff",
+                    "layout_alignParentBottom": false,
+                    "layout_alignParentRight": true,
+                    "id":"frtyu",
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "gravity": "center",
+                        "direction": "right",
+                        "id":"kuyttt",
+                        "paddingTop": "50dp",
+                        "layout_marginLeft": "10dp",
+                        "layout_marginRight": "10dp",
+                        "paddingBottom": "10dp",
+                        "orientation": "vertical",
+                        "children": [
+                          {
+                            "type": "ScrollView",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "id":"iuyvgyyy",
+                            "Setting": {
+                              "ScrollModes": 2
+                            },
+                            "children": [
+                              {
+                                "type": "LinearLayout",
+                                "layout_width": "match_parent",
+                                "layout_height": "wrap_content",
+                                "gravity": "center",
+                                "direction": "right",
+                                "paddingTop": "10dp",
+                                "layout_marginLeft": "0dp",
+                                "layout_marginRight": "0dp",
+                                "paddingBottom": "10dp",
+                                "orientation": "vertical",
+                                "id": "hello127"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "backgroundx": {
+                      "@": {
+                        "type": "shape",
+                        "content": {
+                          "type": "shape",
+                          "shape": "rectangle",
+                          "children": [
+                            {
+                              "type": "solid",
+                              "color": "#ffcc33"
+                            },
+                            {
+                              "type": "corners",
+                              "color": "#ffcc33",
+                              "angle": 20,
+                              "radius": 30,
+                              "topLeftRadius": 10,
+                              "topRightRadius": 10,
+                              "bottomLeftRadius": 10,
+                              "bottomRightRadius": 50
+                            }
+                          ]
+                        },
+                        "color": "#ffcc33"
+                      }
+                    },
+                    "layout_below": "k",
+                    "layout_centerHorizontal": true,
+                    "id": "m",
+                    "layout_marginBottom": "0dp",
+                    "layout_marginLeft": "5dp",
+                    "layout_marginRight": "5dp",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample",
+                    "background": {
+                      "type": "shape",
+                      "shape": "rectangle",
+                      "Shape_Path": {
+                        "Path_Width": 14,
+                        "Path_Height": 14,
+                        "Path_WidthA": 24,
+                        "Path_HeightA": 164,
+                        "Path_Object": [
+                          {
+                            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                            "Path_color": "7cb342"
+                          }
+                        ]
+                      },
+                      "children": [
+                        {
+                          "type": "corners",
+                          "color": "#ffcc33",
+                          "angle": 20,
+                          "radius": "10dp",
+                          "topLeftRadius": "10dp",
+                          "topRightRadius": "10dp",
+                          "bottomLeftRadius": "10dp",
+                          "bottomRightRadius": "10dp"
+                        },
+                        {
+                          "type": "solid",
+                          "color": "#ffcc33",
+                          "angle": 20,
+                          "radius": 10,
+                          "topLeftRadius": 50,
+                          "topRightRadius": 50,
+                          "bottomLeftRadius": 50,
+                          "bottomRightRadius": 50
+                        },
+                        {
+                          "type": "stroke",
+                          "color": "#E52B50",
+                          "width": "0dp",
+                          "dashWidth": "0dp",
+                          "radius": 10,
+                          "topLeftRadius": 50,
+                          "topRightRadius": 50,
+                          "bottomLeftRadius": 50,
+                          "bottomRightRadius": 50
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Content_Fragment": {
+        "type": "CommonLayout",
+        "id": "bandbavvndf",
+        "layout_width": "match_parent",
+        "background": "@drawable/blue_btn_bkg",
+        "kmm": "55",
+        "layout_alignParentBottom":true,
+        "layout_alignParentTop":true,
+        "layout_height": "120dp",
+        "layout_margin": "10dp",
+        "Common_data": {
+          "Common_UnderLine": 80,
+          "Common_UnderLineGravity": 0,
+          "Common_UnderLineH": 0,
+          "Common_UnderLineIconMargin": 0,
+          "Common_UnderLineColor": "#ffcc44",
+          "Common_UnderLineTextColor": "#ffffff",
+          "Common_UnderLineSelectTextColor": "#ffffff"
+        },
+        "table_show_view": "kk#child#parent",
+        "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+      },
+      "Content_Pager": {
+        "type": "CardView",
+        "orientation":"vertical", 
+        "layout_alignParentBottom":true,
+        "layout_alignParentTop":true,
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background":"#ffcc33",
+        "id": "iuegggggxzzqq",
+        "table_show_view": "kk#child#parent",
+        "main_bodyg": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+      },
+      "Content_Radius": "5",
+      "Content_Style": "0",
+      "Content_margin": "0",
+      "Content_Color": "ffffff#ffffff#ffffff#438afe#438afe#ffffff",
+      "Content_Data": [
+        {
+          "ContentTitle": "الرئيسية",
+          "ContentColor": "#438afe",
+          "ContentMain": "2",
+          "ContentMainCount": 3,
+          "Content_Select_Start": false,
+          "ContentType": "card1",
+          "ContentView": "card1",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "المنتجات",
+          "ContentColor": "#438afe",
+          "ContentMain": "2",
+          "ContentMainCount": 3,
+          "Content_Select_Start": false,
+          "ContentType": "card",
+          "ContentView": "itemacrol",
+          
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "الرصيد",
+          "ContentColor": "#438afe",
+          "ContentMain": "card1#card2#card1#card2#card1#card2#card1#card2#card1",
+          "ContentMainCount": 3,
+          "Content_Select_Start": true,
+          "ContentType": "form",
+          "ContentView": "form",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "الرصيد",
+          "ContentColor": "#438afe",
+          "ContentMain": "card1#card2#card1#card2#card1#card2#card1#card2#card1",
+          "ContentMainCount": 3,
+          "Content_Select_Start": true,
+          "ContentType": "form",
+          "ContentView": "form",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        }
+      ]
+    },
+    "id": "mfragmegggnttk8kkk"
+  },
+  "form": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "id": "tt",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "10dp",
+          "topRightRadius": "10dp",
+          "bottomLeftRadius": "10dp",
+          "bottomRightRadius": "10dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    },
+    "layout_height": "700dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "0dp",
+              "dashWidth": "0dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "include",
+        "layout": "Unit_ID",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "Unit_Name",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "RecycleUnit",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "yyموافق",
+        "typeAction": "Ok2",
+        "typeActionName": "AlertDialogLayoutkk",
+        "id": "vvbbii89",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "textColor": "#ffaa77",
+        "textSize": "32sp",
+        "text": "g"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "text": "press ok to continue."
+      }
+    ]
+  },
+  "RecycleUnit": {
+    "type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+    "id": "recyuuiopxxx",
+    "on_sweep": "recycleserchhm",
+    "on_sweep_typ": "myouto",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "ARecyclerView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+        "filter": "drugName_ar",
+        "id": "myouto",
+        "Error_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "@{Result.Message}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+          ]
+        },
+        "Recycle": {
+          "typ": "1"
+        },
+        "mdata": {
+          "Layout_manager": {
+            "Layout_Type": "LinearLayoutManager",
+            "Orientation": "vertical",
+            "Reverse": false,
+            "Layout_Space": 10,
+            "Layout_Row": 3
+          },
+          "Data_From": {
+            "Event_Type": "CheckNull",
+            "animation": {
+              "a_enter": true,
+              "a_enter_step": true,
+              "a_expand": true,
+              "a_expand_out": true,
+              "a_anim_rev": true,
+              "a_anim_for": true,
+              "a_load_start": true,
+              "a_drage": true,
+              "CountItem": 5,
+              "a_endless_count": 20,
+              "a_endless_page": 20,
+              "a_use_endless": true,
+              "a_use_offline": false,
+              "a_use_top": false
+            },
+            "Set_Data": [
+              {
+                "View_Id": "myouto",
+                "Type_Process": "5",
+                "Key_Process": "5uurrrthello_hello_hello",
+                "Value_Key": "drugName_ar"
+              }
+            ],
+            "Name": "pic",
+            "Custome_Dataa": [
+              {
+                "Name": "helloooo"
+              }
+            ],
+            "Multiple_Views": {
+              "Filter_Views": [
+                {
+                  "Key_Name": "drugName_ar"
+                }
+              ],
+              "Def_Views": {
+                "type": "include",
+                "layout": "Item_A",
+                "tname": "SimpleDataBindingExample",
+                "KeyName": "recycleserchhm",
+                "paddingBottom": "0dp",
+                "FilterName": "drugName_ar",
+                "data": {
+                  "user": "@{items}",
+                  "my": "@{items[$index]}"
+                }
+              },
+              "a_enable": "1",
+              "MultipleViews": [
+                {
+                  "v_Name": "Item_B",
+                  "v_ColumnName": "id",
+                  "v_EqualValue": "20",
+                  "v_id": "1"
+                }
+              ]
+            },
+            "Return_Data": [
+              {
+                "Return_Type": "55",
+                "Return_To_Message": [
+                  {
+                    "Response_Key_Name": "0",
+                    "View_Id": "55",
+                    "Message_Text": "hhhh",
+                    "View_Type": "A"
+                  }
+                ]
+              }
+            ],
+            "Return_To_View": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              }
+            ],
+            "Use_Volley": true,
+            "Before_Process": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "vvbbiikk",
+                "Type_Process": "3",
+                "Value_Process": "3",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "bandband",
+                "Type_Process": "15",
+                "Value_Process": "0",
+                "Custome_Value": {
+                  "Tab_Id": 2,
+                  "Tab_count": 20
+                },
+                "View_Type": "2"
+              }
+            ],
+            "After_Process": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "2",
+                "Value_Process": "2",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "bandband",
+                "Type_Process": "15",
+                "Value_Process": "0",
+                "Custome_Value": {
+                  "Tab_Id": 2,
+                  "Tab_count": 20
+                },
+                "View_Type": "2"
+              },
+              {
+                "View_Id": "vvbbiikk",
+                "Type_Process": "4",
+                "Value_Process": "4",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "recyuuiopxxx",
+                "Type_Process": "5",
+                "Value_Process": "5",
+                "View_Type": "A"
+              }
+            ],
+            "Finsh_Process": [
+              {
+                "View_Id": "recyuuiopxxx",
+                "Type_Process": "22",
+                "Value_Process": "55",
+                "View_Type": "A"
+              }
+            ],
+            "Sender_Data": [
+              {
+                "Data_From_View": [
+                  {
+                    "View_Id": "0",
+                    "View_Type": "5",
+                    "Index_ID": 0
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "6",
+                    "Index_ID": 1
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "6",
+                    "Index_ID": 2
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "API_Acess",
+                    "Index_ID": 3
+                  }
+                ],
+                "API_Data": [
+                  {
+                    "Method_Type": "POST",
+                    "Type_Url": "local0",
+                    "Url": "https://astooltech.com/api/v1/u",
+                    "Response_Data": [
+                      {
+                        "Key_Name": "FromMyRecycle",
+                        "Key_Value": "data",
+                        "Key_Type": "Select_Key"
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "1",
+                        "Key_Type": "Refresh_Key"
+                      },
+                      {
+                        "Key_Name": "mmnuuuuugggkccv",
+                        "Key_Value": "1",
+                        "Key_Type": "Offline_Key"
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "0",
+                        "Key_Type": "Show_As_Message"
+                      }
+                    ],
+                    "Request_Header": [
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "%1$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "heeemmm",
+                        "Key_Value": "%2$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "heeettff",
+                        "Key_Value": "%3$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "vvvvvvv",
+                        "Key_Value": "%4$s",
+                        "Key_Type": "5555"
+                      }
+                    ],
+                    "Request_Body": [],
+                    "Request_Query": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Item_A": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation": "@anim/fade_in",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "focusable": false,
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "focusable": false,
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "focusable": false,
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "focusable": false,
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kk",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "focusable": false,
+                        "table_filedname": "name",
+                        "layout_marginRight": "0dp",
+                        "text": "@{drugName_ar}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "focusable": false,
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تعععععديل",
+                            "layout_marginRight": "0dp",
+                            "focusable": false,
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "SelectItem",
+                                "focusable": false,
+                                "typeActionName": "myautoprimary",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+                                "onClickk": "m@{tag}",
+                                "background": "@drawableFont/fa_edit/2/40/#438afe",
+                                "Event": {
+                                  "Event_Type": "Show_Dialog_With_Set_Data",
+                                  "Name": "AlertDialogLayout",
+                                  "Set_Data": [
+                                    {
+                                      "View_Id": "name",
+                                      "Type_Process": "5",
+                                      "Value_Process": "drugName_ar",
+                                      "View_Type": "A"
+                                    },
+                                    {
+                                      "View_Id": "email",
+                                      "Type_Process": "5",
+                                      "Value_Process": "id",
+                                      "View_Type": "A"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "focusable": false,
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "focusable": false,
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_trash_alt/2/60/#438afe"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Item_B": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation": "@anim/fade_in",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "focusable": false,
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "focusable": false,
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "focusable": false,
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "focusable": false,
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kk",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "focusable": false,
+                        "table_filedname": "name",
+                        "layout_marginRight": "0dp",
+                        "text": "@{drugName_ar}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "focusable": false,
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تعععععديل",
+                            "layout_marginRight": "0dp",
+                            "focusable": false,
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "SelectItem",
+                                "focusable": false,
+                                "typeActionName": "myautoprimary",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+                                "onClickk": "m@{tag}",
+                                "background": "@drawableFont/fa_edit/2/40/#438afe",
+                                "Event": {
+                                  "Event_Type": "Show_Dialog_With_Set_Data",
+                                  "Name": "AlertDialogLayout",
+                                  "Set_Data": [
+                                    {
+                                      "View_Id": "name",
+                                      "Type_Process": "5",
+                                      "Value_Process": "drugName_ar",
+                                      "View_Type": "A"
+                                    },
+                                    {
+                                      "View_Id": "email",
+                                      "Type_Process": "5",
+                                      "Value_Process": "id",
+                                      "View_Type": "A"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "focusable": false,
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "focusable": false,
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_trash_alt/2/60/#438afe"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

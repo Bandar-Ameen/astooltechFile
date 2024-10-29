@@ -1,0 +1,472 @@
+{
+  "type": "dy_scaffold",
+  "data": {
+    "key": "144534534535",
+    "appBar": {
+      "pageTitle": "Flutterfffffffff List View Screen"
+    },
+    "nextUrl": "assets/json/sample1.json",
+    "scrollable": true,
+    "children": [
+      {
+        "type": "dy_carousel",
+        "data": {
+          "key": "213234324324",
+          "reusable": true,
+          "carouselOptions": {
+            "autoPlay": true,
+            "enlargeCenterPage": false,
+            "scrollDirection": "horizontal",
+            "reverse": false,
+            "enableInfiniteScroll": false,
+            "padEnds": false
+          },
+          "children": [
+            {
+              "type": "dy_card",
+              "data": {
+                "key": "123454545234343",
+                "color": "0xffff0000",
+                "margin": "10",
+                "elevation": 10,
+                "width": -1,
+                "linearGradient": "-1.0,0.0;1.0,0.0;0xff6D59D4,0xff879CFB",
+                "borderRadius": 20,
+                "child": {
+                  "type": "dy_text",
+                  "data": {
+                    "key": "34454534344",
+                    "text": "Card",
+                    "height": 400,
+                    "width": 200,
+                    "textAlign": "center",
+                    "style": {
+                      "color": "0xffffffff",
+                      "fontSize": 25,
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "dy_card",
+              "data": {
+                "key": "4454545",
+                "color": "0xffff0000",
+                "margin": "10",
+                "elevation": 10,
+                "width": -1,
+                "linearGradient": "-1.0,0.0;1.0,0.0;0xff6D59D4,0xff879CFB",
+                "borderRadius": 20,
+                "child": {
+                  "type": "dy_text",
+                  "data": {
+                    "key": "45454545",
+                    "text": "Cardgggg",
+                    "height": 400,
+                    "width": 200,
+                    "textAlign": "center",
+                    "style": {
+                      "color": "0xffffffff",
+                      "fontSize": 25,
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "dy_card",
+              "data": {
+                "key": "44543434545",
+                "color": "0xffff0000",
+                "margin": "10",
+                "elevation": 10,
+                "width": -1,
+                "linearGradient": "-1.0,0.0;1.0,0.0;0xff6D59D4,0xff879CFB",
+                "borderRadius": 20,
+                "child": {
+                  "type": "dy_text",
+                  "data": {
+                    "key": "454343454545",
+                    "text": "Card",
+                    "height": 400,
+                    "width": 200,
+                    "textAlign": "center",
+                    "style": {
+                      "color": "0xffffffff",
+                      "fontSize": 25,
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "dy_card",
+              "data": {
+                "key": "44543445545",
+                "color": "0xffff0000",
+                "margin": "10",
+                "elevation": 10,
+                "width": -1,
+                "linearGradient": "-1.0,0.0;1.0,0.0;0xff6D59D4,0xff879CFB",
+                "borderRadius": 20,
+                "child": {
+                  "type": "dy_text",
+                  "data": {
+                    "key": "45454454545",
+                    "text": "Card",
+                    "height": 400,
+                    "width": 200,
+                    "textAlign": "center",
+                    "style": {
+                      "color": "0xffffffff",
+                      "fontSize": 25,
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "dy_card",
+              "data": {
+                "key": "4454545452345",
+                "color": "0xffff0000",
+                "margin": "10",
+                "elevation": 10,
+                "width": -1,
+                "linearGradient": "-1.0,0.0;1.0,0.0;0xff6D59D4,0xff879CFB",
+                "borderRadius": 20,
+                "child": {
+                  "type": "dy_text",
+                  "data": {
+                    "key": "454545454545",
+                    "text": "Card",
+                    "height": 400,
+                    "width": 200,
+                    "textAlign": "center",
+                    "style": {
+                      "color": "0xffffffff",
+                      "fontSize": 25,
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+      "type": "dy_card",
+      "data": {
+        "key": "123991234343",
+        "color": "0xffff0000",
+        "margin": "10",
+        "elevation": 10,
+        "linearGradient": "-1.0,0.0;1.0,0.0;0xff6D59D4,0xff879CFB",
+        "borderRadius": 20,
+        "child": {
+          "type": "dy_text",
+          "data": {
+            "key": "343234344",
+            "text": "Card",
+            "height": 400,
+            "width": 200,
+            "textAlign": "center",
+            "style": {
+              "color": "0xffffffff",
+              "fontSize": 25,
+              "fontWeight": "bold"
+            }
+          }
+        }
+      }
+    },{
+      "type": "dy_container",
+      "data": {
+        "key": "234234234",
+        "height": -1,
+        "width": -1,
+        "child": {
+          "type": "dy_list",
+          "data": {
+            "key": "12324241245453",
+            "shrinkWrap": false,
+            "isScrollable": true,
+            "listItems": [
+              {
+                "type": "dy_text",
+                "data": {
+                  "key": "123242424123",
+                  "text": "This is a text",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "bold"
+                  }
+                }
+              },
+              {
+                "type": "dy_text",
+                "data": {
+                  "key": "123242421323",
+                  "text": "<h1 style='color: white; font-size:50px; font-style:italic; \n    background-color: rgb(0,122,255); font-weight:100;)'> HTML Text </h1>",
+                  "isHtmlText": true
+                }
+              },
+              {
+                "type": "dy_container",
+                "data": {
+                  "key": "1231242423",
+                  "child": {
+                    "type": "dy_card",
+                    "data": {
+                      "key": "12394449123",
+                      "color": "0xffff0000",
+                      "margin": "10",
+                      "elevation": 10,
+                      "linearGradient": "-1.0,0.0;1.0,0.0;0xff6D59D4,0xff879CFB",
+                      "borderRadius": 20,
+                      "child": {
+                        "type": "dy_text",
+                        "data": {
+                          "key": "3443443324",
+                          "text": "Card",
+                          "height": 100,
+                          "width": 200,
+                          "textAlign": "center",
+                          "style": {
+                            "color": "0xffffffff",
+                            "fontSize": 25,
+                            "fontWeight": "bold"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "dy_container",
+                "data": {
+                  "key": "1234454123",
+                  "child": {
+                    "type": "dy_image",
+                    "data": {
+                      "key": "2122245456323233",
+                      "src": "https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png",
+                      "height": 250,
+                      "width": 250,
+                      "imageType": "network",
+                      "fit": "fill",
+                      "placeholderImagePath": "assets/images/icon_placeholder.png"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "dy_column",
+                "data": {
+                  "key": "123454325213",
+                  "children": [
+                    {
+                      "type": "dy_container",
+                      "data": {
+                        "key": "3422454534",
+                        "width": 200,
+                        "child": {
+                          "type": "dy_text_field",
+                          "data": {
+                            "key": "134524514234",
+                            "initialText": "",
+                            "textFieldDecoration": {
+                              "textAlign": "start",
+                              "obscureText": true,
+                              "maxLines": 1,
+                              "decoration": {
+                                "hintText": "enter text value",
+                                "suffixIcon": {
+                                  "type": "dy_image",
+                                  "data": {
+                                    "key": "2122245456323233",
+                                    "src": "assets/images/ic_eyes_closed.png",
+                                    "imageType": "asset",
+                                    "fit": "contain",
+                                    "height": 1,
+                                    "width": 1,
+                                    "placeholderImagePath": "assets/images/icon_placeholder.png"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "dy_sized_box",
+                      "data": {
+                        "key": "131454534",
+                        "height": 10
+                      }
+                    },
+                    {
+                      "type": "dy_button",
+                      "data": {
+                        "key": "2237756454572355",
+                        "buttonColor": "0xff90EE90",
+                        "buttonBorderRadius": 10,
+                        "padding": "10",
+                        "child": {
+                          "type": "dy_text",
+                          "data": {
+                            "key": "232454542342",
+                            "text": "click to submit input value",
+                            "style": {
+                              "color": "0xffffffff",
+                              "fontWeight": "bold",
+                              "fontSize": 20
+                            }
+                          }
+                        },
+                        "action": {
+                          "actionString": "/moveToScreen?popStrategy=POP_CURRENT",
+                          "extras": {
+                            "url": "assets/json/container.json",
+                            "urlType": "local",
+                            "navigationType": "screen",
+                            "navigationStyle": "push"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "dy_text",
+                      "data": {
+                        "key": "134545424",
+                        "text": "Check console after clicking button",
+                        "style": {
+                          "color": "0xff000000",
+                          "fontWeight": "bold",
+                          "fontSize": 20
+                        }
+                      }
+                    },
+                    {
+                      "type": "dy_sized_box",
+                      "data": {
+                        "key": "131454534",
+                        "height": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "dy_container",
+                "data": {
+                  "key": "1245453123",
+                  "margin": "10",
+                  "child": {
+                    "type": "dy_row",
+                    "data": {
+                      "key": "13145434",
+                      "mainAxisAlignment": "spaceBetween",
+                      "children": [
+                        {
+                          "type": "dy_text",
+                          "data": {
+                            "key": "1234545123",
+                            "text": "This is a text in a row",
+                            "style": {
+                              "fontSize": 10,
+                              "fontWeight": "bold"
+                            }
+                          }
+                        },
+                        {
+                          "type": "dy_image",
+                          "data": {
+                            "key": "2124545226323233",
+                            "src": "https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png",
+                            "height": 150,
+                            "width": 150,
+                            "imageType": "network",
+                            "fit": "fill",
+                            "placeholderImagePath": "assets/images/icon_placeholder.png"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type": "dy_text",
+                "data": {
+                  "key": "123245453123",
+                  "text": "This is a text",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "bold"
+                  }
+                }
+              },
+              {
+                "type": "dy_text",
+                "data": {
+                  "key": "123454545123",
+                  "text": "This is a text",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "bold"
+                  }
+                }
+              },
+              {
+                "type": "dy_text",
+                "data": {
+                  "key": "15623445455123",
+                  "text": "This is a text",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "bold"
+                  }
+                }
+              },
+              {
+                "type": "dy_text",
+                "data": {
+                  "key": "12234545345123",
+                  "text": "This is a text",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "bold"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }],
+    "paginated": true,
+    "showPaginatedLoaderOnTop": false,
+    "paginatedLoaderWidget": {
+      "type": "dy_loader",
+      "data": {
+        "key": "131454531",
+        "mainAxisAlignment": "center",
+        "crossAxisAlignment": "center",
+        "loadingText": "Loading...",
+        "style": {
+          "color": "0xFF000000",
+          "fontSize": 20
+        }
+      }
+    }
+  }
+}

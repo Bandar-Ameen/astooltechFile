@@ -1,0 +1,1128 @@
+{
+  "Root_Layout": {
+    "type": "ScrollView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTogp": "0dp",
+    "orientation": "vertical",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTohp": "0dp",
+        "orientation": "vertical",
+        "gravityg": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "post",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          
+          {
+            "type": "include",
+            "layout": "post",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+          
+        ]
+      }
+    ]
+  },
+  "post": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingTohp": "0dp",
+    "orientation": "vertical",
+      "layout_marginBottom": "10dp",
+    "gravityg": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "header",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "body",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "footer",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "comment",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "header": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginLeft": "3dp",
+    "layout_marginRight": "3dp",
+    "orientation": "horizontal",
+    "gravitgy": "right",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc44",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "3dp",
+          "topRightRadius": "3dp",
+          "bottomLeftRadius": "3dp",
+          "bottomRightRadius": "3dp"
+        },
+        {
+          "type": "solid",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        }
+      ]
+    },
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "paddingTogp": "0dp",
+        "orientation": "horizontal",
+        "layout_weight": "0",
+        "gravitgy": "right",
+        "children": [
+          {
+            "type": "RelativeLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "match_parent",
+            "marginTop": "-10dp",
+            "orientation": "horizontal",
+            "gravity": "center",
+            "children": [
+              {
+                "type": "CircleImageView",
+                "layout_width": "40dp",
+                "layout_height": "40dp",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "scaleType": "centerCrop",
+                "id": "ag5kn5",
+                "layout_gravity": "center",
+                "view_id_startg": "vvow",
+                "view_id_failedg": "vvow",
+                "Topg": "10dp",
+                "backgroundv": "@drawable/shimmer",
+                "circleCrop": true,
+                "loader": {
+                  "hid_view_when_start": false,
+                  "delay": 50
+                }
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "paddingTogp": "0dp",
+            "orientation": "vertical",
+            "gravitgy": "right",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "paddingTogp": "0dp",
+                "orientation": "horizontal",
+                "gravitgy": "right",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "srgc": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "scaleType": "centerCrop",
+                    "id": "ag5kn5",
+                    "text": "إسم المستخدم",
+                    "view_id_failedg": "vvow",
+                    "textColor": "@color/white",
+                    "backgroundv": "@drawable/shimmer",
+                    "circleCrop": true,
+                    "loader": {
+                      "hid_view_when_start": false,
+                      "delay": 50
+                    }
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "text": ".",
+                    "textSize": "20sp",
+                    "id": "followdot",
+                    "textColor": "@color/white",
+                    "paddingLeft": "2dp",
+                    "paddingRight": "2dp"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "text": "Follow",
+                    "textSize": "16sp",
+                    "id": "follow",
+                    "textColor": "@color/white"
+                  }
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "30dp",
+                "paddingTogp": "0dp",
+                "orientation": "horizontal",
+                "gravitgy": "right",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "srgc": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "scaleType": "centerCrop",
+                    "id": "ag5kn5",
+                    "text": "2024-01-01",
+                    "layout_marginTop": "-6dp",
+                    "layout_paddingRight": "-5dp",
+                    "view_id_failedg": "vvow",
+                    "textColor": "#BEBEBE",
+                    "textSize": "14sp",
+                    "textStyle": "bold",
+                    "font_name": "Cairo-Regular",
+                    "backgroundv": "@drawable/shimmer",
+                    "circleCrop": true,
+                    "loader": {
+                      "hid_view_when_start": false,
+                      "delay": 50
+                    }
+                  },
+                  {
+                    "type": "ImageView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "text": ".",
+                    "textSize": "20sp",
+                    "id": "followdot",
+                    "textColor": "@color/white",
+                    "layout_marginLeft": "9dp",
+                    "background": "@drawableFont/fa_globe_solid/1/15/#BEBEBE"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "View",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_weighth": "1"
+      },
+      {
+        "type": "LinearLayout",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "orientation": "horizontal",
+        "layout_weight": "1",
+        "id": "hellkuuvgu",
+        "layout_marginRight": "20dp",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "wrap_content",
+            "layout_height": "50dp",
+            "text": "...",
+            "id": "vvow",
+            "textSize": "25sp",
+            "textStyle": "bold",
+            "layout_marginRight": "20dp",
+            "layout_marginTop": "-5dp",
+            "background": "@drawableFont/fa_ellipsis_h_solid/1/20/#BEBEBE",
+            "font_name": "Cairo-Regular",
+            "textColor": "@color/white",
+            "layout_weighgt": "1"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "50dp",
+            "text": "X",
+            "id": "vvow",
+            "textSize": "20sp",
+            "textStyle": "bold",
+            "backgroundd": "@drawableFont/fa_closed_captioning_solid/2/20/#BEBEBE",
+            "font_name": "Cairo-Regular",
+            "textColor": "@color/white",
+            "layout_weighht": "1",
+            "layout_paddingRight": "10dp"
+          }
+        ]
+      }
+    ]
+  },
+  "body": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginLeft": "3dp",
+    "layout_marginRight": "3dp",
+    "orientation": "vertical",
+    "gravitgy": "right",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc44",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "3dp",
+          "topRightRadius": "3dp",
+          "bottomLeftRadius": "3dp",
+          "bottomRightRadius": "3dp"
+        },
+        {
+          "type": "solid",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        }
+      ]
+    },
+    "children": [
+      {
+        "type": "TextViewReadMore",
+        "layout_width": "match_parent",
+        "paddingLeft": "10dp",
+        "paddingRight": "10dp",
+        "text": "هلا وسهلا\n      هلا وسهلا\n      هلا وسهلا\n      🌷🌷🌷🌷🌷\n      ",
+        "font_name": "Cairo-Regular",
+        "textColor": "@color/white",
+        "layout_height": "wrap_content",
+        "proper": {
+          "TrimLength": 100,
+          "TrimLines": 2,
+          "Textcolor": "#BEBEBE"
+        }
+      },
+      {
+        "type": "ImageView",
+        "layout_width": "match_parent",
+        "layout_height": "150dp",
+        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+        "scaleType": "fit_xy",
+        "id": "ag5kn5",
+        "layout_gravity": "center",
+        "view_id_startg": "vvow",
+        "view_id_failedg": "vvow",
+        "Topg": "10dp",
+        "backgroundv": "@drawable/shimmer",
+        "circleCrop": true,
+        "loader": {
+          "hid_view_when_start": false,
+          "delay": 50
+        }
+      }
+    ]
+  },
+  "footer": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginLeft": "3dp",
+    "layout_marginRight": "3dp",
+    "orientation": "vertical",
+    "gravitgy": "right",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc44",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "0dp",
+          "topRightRadius": "0dp",
+          "bottomLeftRadius": "3dp",
+          "bottomRightRadius": "3dp"
+        },
+        {
+          "type": "solid",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        }
+      ]
+    },
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "30dp",
+        "layout_marginLeftg": "3dp",
+        "layout_marginRightg0": "3dp",
+        "orientation": "horizontal",
+        "gravitgy": "right",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeftg": "3dp",
+            "layout_marginRightg0": "3dp",
+            "orientation": "horizontal",
+            "gravitgy": "right",
+            "layout_weight": "1",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "15dp",
+                "layout_height": "15dp",
+                "text": "...",
+                "id": "vvow",
+                "textSize": "25sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "5dp",
+                "layout_marginTop": "5dp",
+                "background": "@drawableFont/fa_thumbs_up/1/15/#ffffff",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weightg": "1"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "50dp",
+                "text": "100k Like",
+                "id": "vvow",
+                "textSize": "15sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginRight": "10dp",
+                "backgroundc": "@drawableFont/fa_thumbs_up/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weighgt": "1"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeftg": "3dp",
+            "layout_marginRightg0": "3dp",
+            "orientation": "horizontal",
+            "gravitgy": "right",
+            "layout_weight": "1",
+            "children": [
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "50dp",
+                "text": "0 comments",
+                "id": "vvow",
+                "textSize": "15sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginRight": "10dp",
+                "backgroundc": "@drawableFont/fa_thumbs_up/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weighgt": "1"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeftg": "3dp",
+            "layout_marginRightg0": "3dp",
+            "orientation": "horizontal",
+            "gravitgy": "right",
+            "layout_weight": "1",
+            "children": [
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "50dp",
+                "text": "0 Share",
+                "id": "vvow",
+                "textSize": "15sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginRight": "10dp",
+                "backgroundc": "@drawableFont/fa_thumbs_up/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weighgt": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginLeftg": "3dp",
+        "layout_marginRightg0": "3dp",
+        "orientation": "horizontal",
+        "gravitgy": "right",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeftg": "3dp",
+            "layout_marginRightg0": "3dp",
+            "orientation": "horizontal",
+            "gravitgy": "right",
+            "layout_weight": "1",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "25dp",
+                "layout_height": "25dp",
+                "text": "...",
+                "id": "vvow",
+                "textSize": "25sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginTop": "2dp",
+                "background": "@drawableFont/fa_thumbs_up/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weightg": "1"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "50dp",
+                "text": "Like",
+                "id": "vvow",
+                "textSize": "15sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginRight": "10dp",
+                "backgroundc": "@drawableFont/fa_thumbs_up/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weighgt": "1"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeftg": "3dp",
+            "layout_marginRightg0": "3dp",
+            "orientation": "horizontal",
+            "gravitgy": "right",
+            "layout_weight": "1",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "25dp",
+                "layout_height": "25dp",
+                "text": "...",
+                "id": "vvow",
+                "textSize": "25sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "20dp",
+                "layout_marginTop": "2dp",
+                "background": "@drawableFont/fa_comment/2/20/#ffffff",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weightg": "1"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "50dp",
+                "text": "Command",
+                "id": "vvow",
+                "textSize": "15sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginRight": "10dp",
+                "backgroundc": "@drawableFont/fa_ellipsis_h_solid/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weighgt": "1"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeftg": "3dp",
+            "layout_marginRightg0": "3dp",
+            "orientation": "horizontal",
+            "gravitgy": "right",
+            "layout_weight": "1",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "25dp",
+                "layout_height": "25dp",
+                "text": "...",
+                "id": "vvow",
+                "textSize": "25sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginTop": "2dp",
+                "background": "@drawableFont/fa_share_solid/1/20/#ffffff",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weightg": "1"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "50dp",
+                "text": "Share",
+                "id": "vvow",
+                "textSize": "15sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginRight": "10dp",
+                "backgroundc": "@drawableFont/fa_share_solid/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weighgt": "1"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeftg": "3dp",
+            "layout_marginRightg0": "3dp",
+            "orientation": "horizontal",
+            "gravitgy": "right",
+            "layout_weight": "1",
+            "visibility": "gone",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "25dp",
+                "layout_height": "25dp",
+                "text": "...",
+                "id": "vvow",
+                "textSize": "25sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginTop": "2dp",
+                "background": "@drawable/ic_send",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weightg": "1"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "50dp",
+                "text": "send",
+                "id": "vvow",
+                "textSize": "15sp",
+                "textStyle": "bold",
+                "layout_marginLeft": "10dp",
+                "layout_marginRight": "10dp",
+                "backgroundc": "@drawableFont/fa_share_solid/1/20/#BEBEBE",
+                "font_name": "Cairo-Regular",
+                "textColor": "@color/white",
+                "layout_weighgt": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  
+  "comment":{
+"type": "ScrollView",
+            "orientation": "ver",
+            "scrollbars": "none",
+            "layout_width": "match_parent",
+            "layout_height": "200dp",
+            "on_custome_touch":{
+        "ScrollModes":3
+},
+            "children": [{
+                     "type": "include",
+        "layout": "com",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }]},
+  
+  "com": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginLeft": "3dp",
+    "layout_marginRight": "3dp",
+    "on_custome_touch":{
+        "ScrollModes":3
+},
+    "orientation": "vertical",
+    "gravitgy": "right",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc44",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "0dp",
+          "topRightRadius": "0dp",
+          "bottomLeftRadius": "3dp",
+          "bottomRightRadius": "3dp"
+        },
+        {
+          "type": "solid",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        }
+      ]
+    },
+    "children": [
+   
+
+
+   {
+        "type": "include",
+        "layout": "replay",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "replay",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "replay",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "replay",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+      
+      
+    ]
+    
+    
+  },
+  "replay": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginLeft": "10dp",
+    "layout_marginRight": "5dp",
+    "on_custome_touch":{
+        "ScrollModes":3
+},
+    "orientation": "horizontal",
+    "gravitgy": "right",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc44",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "0dp",
+          "topRightRadius": "0dp",
+          "bottomLeftRadius": "0dp",
+          "bottomRightRadius": "0dp"
+        },
+        {
+          "type": "solid",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10
+        }
+      ]
+    },
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTogp": "0dp",
+        "orientation": "horizontal",
+        "layout_weight": "0",
+        "gravitgy": "right",
+        "children": [
+          {
+            "type": "RelativeLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "match_parent",
+            "marginTop": "-10dp",
+            "orientation": "horizontal",
+            "layout_marginRight": "10dp",
+            "gravity": "Top",
+            "children": [
+              {
+                "type": "CircleImageView",
+                "layout_width": "40dp",
+                "layout_height": "40dp",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "scaleType": "centerCrop",
+                "id": "ag5kn5",
+                "layout_gravity": "center",
+                "view_id_startg": "vvow",
+                "view_id_failedg": "vvow",
+                "Topg": "10dp",
+                "backgroundv": "@drawable/shimmer",
+                "circleCrop": true,
+                "loader": {
+                  "hid_view_when_start": false,
+                  "delay": 50
+                }
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingTogp": "0dp",
+            "orientation": "vertical",
+            "layout_marginRight": "10dp",
+            "gravitgy": "right",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "paddingTogp": "0dp",
+                "orientation": "vertical",
+                "gravitgy": "right",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "srgc": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "scaleType": "centerCrop",
+                    "id": "ag5kn5",
+                    "text": "إسم المستخدم",
+                    "view_id_failedg": "vvow",
+                    "textColor": "@color/white",
+                    "backgroundv": "@drawable/shimmer",
+                    "circleCrop": true,
+                    "loader": {
+                      "hid_view_when_start": false,
+                      "delay": 50
+                    }
+                  },
+                  {
+                    "type": "TextViewReadMore",
+                    "layout_width": "match_parent",
+                    "paddingLeft": "0dp",
+                    "paddingRight": "0dp",
+                    "on_custome_touchh":{
+        "ScrollModes":3
+},
+                    "background": {
+                      "type": "shape",
+                      "shape": "rectangle",
+                      "Shape_Path": {
+                        "Path_Width": 14,
+                        "Path_Height": 14,
+                        "Path_WidthA": 24,
+                        "Path_HeightA": 164,
+                        "Path_Object": [
+                          {
+                            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                            "Path_color": "7cb342"
+                          }
+                        ]
+                      },
+                      "children": [
+                        {
+                          "type": "corners",
+                          "color": "#ffcc44",
+                          "angle": 20,
+                          "radius": "10dp",
+                          "topLeftRadius": "5dp",
+                          "topRightRadius": "5dp",
+                          "bottomLeftRadius": "5dp",
+                          "bottomRightRadius": "5dp"
+                        },
+                        {
+                          "type": "solid",
+                          "color": "#1868c1",
+                          "angle": 20,
+                          "radius": 10,
+                          "topLeftRadius": 10,
+                          "topRightRadius": 10,
+                          "bottomLeftRadius": 10,
+                          "bottomRightRadius": 10
+                        },
+                        {
+                          "type": "stroke",
+                          "color": "#E52B50",
+                          "width": "0dp",
+                          "dashWidth": "0dp",
+                          "radius": 10,
+                          "topLeftRadius": 10,
+                          "topRightRadius": 10,
+                          "bottomLeftRadius": 10,
+                          "bottomRightRadius": 10
+                        }
+                      ]
+                    },
+                    "text": "هلا وسهلا\n      هلا وسهلا\n      هلا وسهلا\n      🌷🌷🌷🌷🌷\n      ",
+                    "font_name": "Cairo-Bold",
+                    "textColor": "@color/white",
+                    "layout_height": "wrap_content",
+                    "textStylre": "bold",
+                    "proper": {
+                      "TrimLength": 100,
+                      "TrimLines": 2,
+                      "Textcolor": "#BEBEBE"
+                    }
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "30dp",
+                    "paddingTogp": "0dp",
+                    "orientation": "horizontal",
+                    "gravitgy": "right",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": "Like",
+                        "textSize": "15sp",
+                        "font_name": "Cairo-Bold",
+                        "id": "followdot",
+                        "textColor": "@color/white",
+                        "paddingLeft": "2dp",
+                        "paddingRight": "2dp",
+                        "layout_marginRight": "10dp"
+                      },
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": "Replay",
+                        "textSize": "15sp",
+                        "id": "followdot",
+                        "font_name": "Cairo-Bold",
+                        "textColor": "@color/white",
+                        "paddingLeft": "2dp",
+                        "paddingRight": "2dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "View",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_weighth": "1"
+      }
+    ]
+  }
+}

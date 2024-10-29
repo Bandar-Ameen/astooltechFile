@@ -1,0 +1,2924 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    
+    "id": "hdjjjjcgbcf",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "id": "hdjjjggjyucg",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "app",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "HorizontalScrollView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "scrollbars": "none",
+            "visibilityc": "gone",
+            "id": "hjjjj",
+            "orientation": "vertical",
+            "view_from_sources": {
+              "delay": 1000,
+              "source_name": "source1"
+            }
+          },
+          {
+            "type": "ScrollView",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "paddingTop": "0dp",
+            "orientation": "vertical",
+            "id": "hdjjjggjyucg",
+            "scrollbars": "none",
+            "gravity": "right",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "id": "hjjjj",
+                "orientation": "vertical",
+                "view_from_sources": {
+                  "delay": 1000,
+                  "source_name": "source1"
+                },
+                "children": [
+                  {
+                    "type": "include",
+                    "layout": "myinclu",
+                    "focusable": false,
+                    "tname": "SimpleDataBindingExample",
+                    "paddingBottom": "0dp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "myinclu": {
+    "type": "RelativeLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "backgroungd": "@color/red_A200",
+    "id": "hgell",
+    "src_xml": {
+      "xml_src": "<ScrollView\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:fillViewport=\"true\"\n    android:padding=\"8dp\">\n\n    <android.widget.LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"vertical\">\n\n        <!-- Card 1 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"100dp\"\n                android:orientation=\"vertical\"\n         android:id=\"@+id/titleCardv1\"\n          android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard1\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 1 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard1\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 1\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 2 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard2\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 2 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard2\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 2\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 3 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard3\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 3 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard3\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 3\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 4 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard4\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 4 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard4\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 4\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 5 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard5\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 5 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard5\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 5\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n    </android.widget.LinearLayout>\n\n</ScrollView>\n",
+      "view_to_xml": [
+        {
+          "xml_id": "titleCardv1",
+          "child_view": {
+            "type": "CardView",
+            "layout_width": "100dp",
+            "layout_height": "100dp",
+            "text": "اسم الصنف تجريلي",
+            "textSize": "16sp",
+            "textStyle": "bold",
+            "font_name": "Cairo-Regular",
+            "textColor": "@color/green"
+          }
+        }
+      ]
+    },
+    "children": []
+  },
+  "card_view": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "orientation": "vertical",
+    "focusable": false,
+    "padding": "10dp",
+    "animationn": {
+      "interpolator": {
+        "type": "anticipateOvershootInterpolator"
+      },
+      "type": "rotate",
+      "fromDegrees": -720,
+      "toDegrees": 0,
+      "pivotX": "50%",
+      "pivotY": "50%",
+      "duration": 1500
+    },
+    "children": [
+      {
+        "type": "CardView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "cardCornerRadius": "8dp",
+        "focusable": false,
+        "Evenvt": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": false,
+                "const_value": "1",
+                "use_data_from_source": true,
+                "source_key": "drugName_en",
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": false,
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": true,
+                "source_key": "id",
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "horizontal",
+            "padding": "16dp",
+            "children": [
+              {
+                "type": "CircleImageView",
+                "layout_width": "40dp",
+                "layout_height": "40dp",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "scaleType": "centerCrop",
+                "circleCrop": true
+              },
+              {
+                "type": "LinearLayout",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "padding_start": "16dp",
+                "children": [
+                  {
+                    "type": "HorizontalProgressBar",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "8dp",
+                    "max": "@{user.experience.max}",
+                    "progress": "@{user.experience.current}"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "text": "@{user.experience.max}",
+                    "textSize": "16sp",
+                    "textStyle": "bold",
+                    "font_name": "Cairo-Regular",
+                    "textColor": "@color/white"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "text": "@{drugName_ar}",
+                    "textSize": "12sp",
+                    "textColor": "@color/white"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "app": {
+    "type": "AppBarLayout",
+    "layout_width": "match_parent",
+    "layout_height": "50dp",
+    "style": "mini",
+    "textColor": "#000000",
+    "textSize": "12sp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "orientation": "horizontal",
+        "children": [
+          {
+            "type": "include",
+            "layout": "btn1",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "150dp",
+            "layout_height": "wrap_content",
+            "gravity": "center",
+            "layout_gravity": "center",
+            "id": "midelk",
+            "text": "نظام المبيعات",
+            "layout_weight": "2",
+            "textColor": "@color/white",
+            "textSize": "14sp"
+          },
+          {
+            "type": "include",
+            "layout": "btn2",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "tool": {
+    "type": "MToolbar",
+    "orientation": "horizontal",
+    "scrollbars": "none",
+    "menu": {},
+    "background": "#ffcc33",
+    "layout_width": "match_parent",
+    "layout_height": "50dp",
+    "children": [
+      {
+        "type": "include",
+        "layout": "btn1",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "btn1",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "btn1",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "itemacrol": {
+    "type": "HorizontalScrollView",
+    "orientation": "horizontal",
+    "scrollbars": "none",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "children": [
+          {
+            "type": "include",
+            "layout": "card1",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card2",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card1",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card2",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card1",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          }
+        ]
+      }
+    ]
+  },
+  "card1": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#ff0000",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "id": "midelk",
+                    "text": "الاسم الاول",
+                    "textColor": "@color/white",
+                    "textSize": "14sp"
+                  }
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "#ffffff",
+                "children": []
+              },
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "#000000",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "card2": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#eff4ff",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "id": "midelk",
+                    "text": "@{k[1]}",
+                    "textColor": "@color/blue_A200",
+                    "textSize": "20sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Confirm_Message": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "id": "tt",
+    "layout_height": "wrap_content",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffcc33",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "50dp",
+              "topRightRadius": "50dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 10,
+              "topRightRadius": 10,
+              "bottomLeftRadius": 10,
+              "bottomRightRadius": 10
+            },
+            {
+              "type": "stroke",
+              "color": "#E52B50",
+              "width": "0dp",
+              "dashWidth": "0dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "هل تريد الخروج من الشاشة"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "children": [
+          {
+            "type": "Button",
+            "layout_height": "?Theme_AppCompat:actionBarSize",
+            "layout_width": "match_parent",
+            "gravity": "center",
+            "layout_marginTop": "0dp",
+            "layout_weight": "1",
+            "text": "موافق",
+            "Event": {
+              "Event_Type": "OkDialog",
+              "Name": "tt"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#ffcc33",
+                  "angle": 20,
+                  "radius": "10dp",
+                  "topLeftRadius": "10dp",
+                  "topRightRadius": "10dp",
+                  "bottomLeftRadius": "10dp",
+                  "bottomRightRadius": "10dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#ffffff",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#E52B50",
+                  "width": "0dp",
+                  "dashWidth": "0dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            }
+          },
+          {
+            "type": "Button",
+            "layout_height": "?Theme_AppCompat:actionBarSize",
+            "layout_width": "match_parent",
+            "gravity": "center",
+            "layout_weight": "1",
+            "layout_marginTop": "0dp",
+            "text": "إلغاء",
+            "Event": {
+              "Event_Type": "CloseDialog",
+              "Name": "tt"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#ffcc33",
+                  "angle": 20,
+                  "radius": "50dp",
+                  "topLeftRadius": "50dp",
+                  "topRightRadius": "50dp",
+                  "bottomLeftRadius": "50dp",
+                  "bottomRightRadius": "50dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#ffffff",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#E52B50",
+                  "width": "0dp",
+                  "dashWidth": "0dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            }
+          }
+        ],
+        "layout_height": "50dp"
+      }
+    ],
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 50,
+          "radius": "50dp",
+          "topLeftRadius": "50dp",
+          "topRightRadius": "50dp",
+          "bottomLeftRadius": "50dp",
+          "bottomRightRadius": "50dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    }
+  },
+  "web": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjggjyggucg",
+    "gravity": "right",
+ 
+       "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffcc33",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 10,
+              "topRightRadius": 10,
+              "bottomLeftRadius": 10,
+              "bottomRightRadius": 10
+            },
+            {
+              "type": "stroke",
+              "color": "#E52B50",
+              "width": "0dp",
+              "dashWidth": "0dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+    "children": [
+      {
+        "type": "include",
+        "layout": "myinclu",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "btn2": {
+    "type": "Button",
+    "layout_height": "30dp",
+    "layout_width": "40dp",
+    "layout_weight": "0",
+    "layout_gravity": "center",
+    "padding": "10dp",
+    "background": "@drawableFont/fa_ellipsis_v_solid/1/30/#ffffff",
+    "Event": {
+      "Event_Type": "ShowShitDialog",
+      "Data_Value": {
+        "hh": "mnnb"
+      },
+      "Name": "web"
+    }
+  },
+  "btn1": {
+    "type": "Button",
+    "layout_height": "30dp",
+    "layout_width": "40dp",
+    "layout_weight": "0",
+    "layout_gravity": "center",
+    "layout_marginTop": "8dp",
+    "background": "@drawableFont/fa_arrow_left_solid/1/30/#ffffff",
+    "Event": {
+      "Event_Type": "Close_Activity",
+      "back_type": "1",
+      "Show_Confirm": {
+        "type": "include",
+        "layout": "Confirm_Message",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "tname": "SimpleDataBindingExample"
+      },
+      "Value_Activity": "0",
+      "Show_Toolbar": true,
+      "Show_Drawer": false,
+      "Use_Volley": false,
+      "Name": "@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.SegmentTabActivity",
+      "Return_Data": [
+        {
+          "Return_Type": "55",
+          "Return_To_Message": [
+            {
+              "Response_Key_Name": "0",
+              "View_Id": "55",
+              "Message_Text": "hhhh",
+              "View_Type": "A"
+            }
+          ]
+        }
+      ],
+      "Return_To_View": [
+        {
+          "View_Id": "saveprograss",
+          "Type_Process": "1",
+          "Value_Process": "1",
+          "View_Type": "A"
+        }
+      ],
+      "Before_Process": {
+        "get_set_to_view": {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": true,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "Unit_NameSearch",
+              "View_Type": "0",
+              "index_id": 0
+            },
+            {
+              "View_Id": "myouto",
+              "View_Type": "0",
+              "index_id": 0
+            },
+            {
+              "View_Id": "idid",
+              "View_Type": "0",
+              "index_id": 1
+            }
+          ]
+        }
+      },
+      "After_Process": {
+        "get_set_to_view": {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            },
+            {
+              "View_Id": "0",
+              "index_id": 2,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "data#message",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            },
+            {
+              "View_Id": "0",
+              "index_id": 2,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "data#message",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ]
+        }
+      },
+      "Finsh_Process": [
+        {
+          "View_Id": "55",
+          "Type_Process": "22",
+          "Value_Process": "55",
+          "View_Type": "A"
+        }
+      ],
+      "Sender_Data": [
+        {
+          "Data_From_View": [
+            {
+              "View_Id": "name",
+              "View_Type": "5",
+              "index_id": 0,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "email",
+              "View_Type": "6",
+              "index_id": 1,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "email",
+              "View_Type": "6",
+              "index_id": 4,
+              "use_const": true,
+              "const_value": "mypagesave"
+            },
+            {
+              "View_Id": "pic",
+              "View_Type": "6",
+              "index_id": 2,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "API_Acess",
+              "index_id": 3,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "A",
+              "index_id": 5,
+              "use_const": true,
+              "const_value": "1"
+            }
+          ],
+          "API_Data": [
+            {
+              "Method_Type": "POST",
+              "Type_Url": "local0",
+              "Url": "url",
+              "Response_Data": [
+                {
+                  "Key_Name": "#{datxa}",
+                  "Key_Value": "data#message",
+                  "Key_Type": "Select_Key",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeerefresh",
+                  "Key_Value": "1",
+                  "Key_Type": "Refresh_Key",
+                  "index_id": 5,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeerefresh",
+                  "Key_Value": "1",
+                  "Key_Type": "Offline_Key",
+                  "index_id": 5,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Show_As_Message",
+                  "index_id": 1,
+                  "use_format": false
+                }
+              ],
+              "Request_Header": [
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeemmm",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeettff",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "vvvvvvv",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                }
+              ],
+              "Request_Body": [],
+              "Request_Query": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pag1": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyucg",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "btn1",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "pag3": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "700dp",
+    "background": "@color/green",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvgggucg",
+    "gravity": "right",
+    "children": [],
+    "view_from_source": {
+      "delay": 1000,
+      "source_name": "source5"
+    }
+  },
+  "pag22": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvxvuhhhhcg",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "itemacrol",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "allk": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvxvucvvgg",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "250dp",
+        "background": "@color/green",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "id": "chdjjjjyvgggucg",
+        "gravity": "right",
+        "children": [],
+        "view_from_source": {
+          "delay": 1000,
+          "source_name": "source4"
+        }
+      },
+      {
+        "type": "include",
+        "layout": "xx",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "background": "@drawable/blue_btn_bkg",
+        "id": "mpag",
+        "gravity": "right"
+      }
+    ]
+  },
+  "xx": {
+    "type": "CommonLayout",
+    "id": "bandbandf",
+    "layout_width": "match_parent",
+    "kmm": "55",
+    "layout_marginBottom": "20dp",
+    "layout_marginTop": "20dp",
+    "layout_marginLeft": "10dp",
+    "layout_marginRight": "10dp",
+    "background": "@drawable/blue_btn_bkg",
+    "layout_height": "85dp",
+    "Common_data": {
+      "fragments": [
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag1",
+          "type_fragment": "0"
+        },
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag22",
+          "type_fragment": "0"
+        },
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag3",
+          "type_fragment": "0"
+        }
+      ],
+      "Tabs": [
+        {
+          "ContentTitle": "page1",
+          "ContentColog": "#ffcc33",
+          "Content_Select_Start": true,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag1",
+          "ContentViewB": "pag1",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "page2",
+          "ContentColor": "#ffcc33",
+          "Content_Select_Start": false,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag22",
+          "ContentViewB": "pag22",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "page3",
+          "ContentColor": "#ffcc33",
+          "Content_Select_Start": false,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag3",
+          "ContentViewB": "pag3",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        }
+      ],
+      "pager_id": "mpag",
+      "Common_UnderLine": 1,
+      "Common_UnderLineGravity": 0,
+      "Common_UnderLineH": 0,
+      "Common_UnderLineIconMargin": 0,
+      "Common_UnderLineColor": "#ffcc44",
+      "Common_UnderLineTextColor": "#ffffff",
+      "Common_UnderLineSelectTextColor": "#ffffff",
+      "Common_ShowIcon": true,
+      "use_delay": true,
+      "use_delay_value": 10
+    }
+  },
+  "col": {
+    "type": "CoordinatorLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "backgrounfd": "#ffaa77",
+    "id": "hdjjjjuucg",
+    "fitSystemWindowgs": true,
+    "children": [
+      {
+        "type": "AppBarLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "expanded": true,
+        "orientation": "vertical",
+        "id": "juggguvi",
+        "children": [
+          {
+            "type": "CollapsingToolbarLayout",
+            "layout_width": "match_parent",
+            "collapsedTitleGravityf": "center",
+            "layout_height": "200dp",
+            "contentScrim": "#3F51B5",
+            "title": "Collapsing Toolbar",
+            "id": "hivvvviii",
+            "titleEnabled": true,
+            "layout_scrollFlagss": {
+              "na": 0
+            },
+            "expandedTitleMargin": "10dp",
+            "scrimAnimationDuration": 0,
+            "childrecn": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "id": "hjjjj",
+                "orientation": "vertical",
+                "view_from_sourcce": {
+                  "delay": 1000,
+                  "source_name": "source2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "NestedScrollView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "id": "hdjjjjyvfgggucg",
+        "layout_alignParentBottom": true,
+        "layout_alignParentTop": true,
+        "layout_behavior": "@string/appbar_scrolling_view_behavior",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingTop": "0dp",
+            "orientation": "vertical",
+            "layout_alignParentBottom": true,
+            "layout_alignParentTop": true,
+            "id": "hdjjjhhhjygucg",
+            "gravity": "right",
+            "children": [
+              {
+                "type": "include",
+                "layout": "allk",
+                "focusable": false,
+                "tname": "SimpleDataBindingExample",
+                "paddingBottom": "0dp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data_source": {
+    "source1": {
+      "Empty_View": {
+        "type": "include",
+        "layout": "empt",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      "Layout_manager": {
+        "Layout_Type": "LinearLayoutManager",
+        "Orientation": "vertical",
+        "Reverse": false,
+        "Layout_Space": 0,
+        "Layout_Row": 1,
+        "use_online_search": true
+      },
+      "Column_Header": [
+        {
+          "Header_Title": "idyyy"
+        }
+      ],
+      "Column_Data": [],
+      "Data_From": {
+        "Event_Type": "CheckNull",
+        "Emptyy_View": {
+          "type": "include",
+          "layout": "emptyview",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "view_continer": {
+          "view_continer": {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "paddingTop": "0dp",
+            "orientation": "horizontal",
+            "id": "hdjjjggjhhyucg",
+            "gravity": "right"
+          },
+          "event_scrollf": {
+            "delay": 1000,
+            "use_delay": true
+          }
+        },
+        "Loader_View": {
+          "type": "include",
+          "layout": "cardloader",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "headerf_items": {
+          "type": "include",
+          "layout": "errorview",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "footerf_items": {
+          "type": "include",
+          "layout": "errorview",
+          "focusable": true,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "Errorf_View": {
+          "type": "include",
+          "layout": "errorview",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "animation": {
+          "a_enter": false,
+          "a_enter_step": false,
+          "a_expand": false,
+          "a_expand_out": false,
+          "a_delay_a": 0,
+          "a_delay_b": 0,
+          "a_anim_rev": false,
+          "a_anim_for": false,
+          "a_load_start": true,
+          "a_drage": false,
+          "auto_hidg": -1,
+          "auto_restart": true,
+          "CountItem": 1,
+          "show_prog": true,
+          "remove_endless": false,
+          "use_online_search": true,
+          "a_wait": 50,
+          "Loadter_View": {
+            "type": "include",
+            "layout": "b",
+            "focusable": true,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          "a_endless_count": 0,
+          "a_endless_page": 10,
+          "a_use_endless": true,
+          "a_use_offline": true,
+          "a_use_top": false
+        },
+        "Set_Data": [
+          {
+            "View_Id": "myoutosub",
+            "Type_Process": "5",
+            "Key_Process": "5uurrrthello_hello_hello",
+            "Value_Key": "Unit_Name"
+          }
+        ],
+        "Name": "pic",
+        "Custome_Datga": [
+          {
+            "idyyy": 1,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول 120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 2,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول hello شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 3,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 4,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          }
+        ],
+        "Multiple_Views": {
+          "Filter_Views": [
+            {
+              "Key_Name": "drugName_ar"
+            }
+          ],
+          "Def_Views": {
+            "type": "include",
+            "layout": "card_view",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "50dp",
+            "layout_marginTop": "50dp",
+            "layout_marginBottom": "5dp",
+            "tname": "SimpleDataBindingExample",
+            "KeyName": "recycleserchhm",
+            "paddingBottom": "0dp",
+            "FilterName": "Unit_Name",
+            "data": {
+              "user": "@{items}",
+              "my": "@{items[$index]}"
+            }
+          },
+          "a_enable": "1",
+          "MultipleViews": [
+            {
+              "v_Name": "card_view",
+              "v_ColumnName": "id",
+              "v_EqualValue": "20",
+              "v_id": "1"
+            }
+          ]
+        },
+        "Return_Data": [
+          {
+            "Return_Type": "55",
+            "Return_To_Message": [
+              {
+                "Response_Key_Name": "0",
+                "View_Id": "55",
+                "Message_Text": "hhhh",
+                "View_Type": "A"
+              }
+            ]
+          }
+        ],
+        "Return_To_View": [
+          {
+            "View_Id": "saveprograss",
+            "Type_Process": "1",
+            "Value_Process": "1",
+            "View_Type": "A"
+          }
+        ],
+        "Use_Volley": true,
+        "Before_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": false,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "View_Type": "10",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "After_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "0",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "mvyouto",
+                "View_Type": "9",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "View_Type": "9",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "Finsh_Process": [
+          {
+            "View_Id": "recyuuiopxxx",
+            "Type_Process": "22",
+            "Value_Process": "55",
+            "View_Type": "A"
+          }
+        ],
+        "Sender_Data": [
+          {
+            "get_set_to_view": {
+              "Data_From_View": [
+                {
+                  "View_Id": "0",
+                  "index_id": 0,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message[0]#ss#mm",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "1",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "unitData",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 3,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "0",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "Unit_NameSearch",
+                  "index_id": 4,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": "hellhhhhhhho",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "myouto",
+                  "index_id": 5,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": "totalitem",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "myouto",
+                  "index_id": 6,
+                  "View_Type": "4",
+                  "use_const": false,
+                  "const_value": "totpageSize",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "myouto",
+                  "index_id": 7,
+                  "View_Type": "3",
+                  "use_const": false,
+                  "const_value": "totcurentpageSize",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                }
+              ]
+            },
+            "API_Data_Search": [
+              {
+                "Method_Type": "get",
+                "Type_Url": "local0",
+                "Url": "http://0.0.0.0:8080/admin3/getdatasearch.php",
+                "Response_Data": [
+                  {
+                    "Key_Name": "FromMyRecycle",
+                    "Key_Value": "data#data",
+                    "Key_Type": "Select_Key",
+                    "use_format": false,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "1",
+                    "Key_Type": "Refresh_Key",
+                    "use_format": false,
+                    "index_id": 1
+                  },
+                  {
+                    "Key_Name": "unitData",
+                    "Key_Value": "1",
+                    "Key_Type": "Offline_Key",
+                    "use_format": false,
+                    "index_id": 2
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Show_As_Message",
+                    "use_format": false,
+                    "index_id": 3
+                  }
+                ],
+                "Request_Header": [
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeemmm",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeettffgggg",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "Authorization",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "search",
+                    "Key_Value": "0",
+                    "Key_Type": "search_text",
+                    "use_format": false,
+                    "index_id": 4
+                  }
+                ],
+                "Request_Body": [],
+                "Request_Query": []
+              }
+            ],
+            "API_Data": [
+              {
+                "Method_Type": "get",
+                "Type_Url": "local0",
+                "Url": "http://0.0.0.0:8080/admin3/getdata.php",
+                "Response_Data": [
+                  {
+                    "Key_Name": "FromMyRecycle",
+                    "Key_Value": "data#data",
+                    "Key_Type": "Select_Key",
+                    "use_format": false,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "1",
+                    "Key_Type": "Refresh_Key",
+                    "use_format": false,
+                    "index_id": 1
+                  },
+                  {
+                    "Key_Name": "unitData",
+                    "Key_Value": "1",
+                    "Key_Type": "Offline_Key",
+                    "use_format": false,
+                    "index_id": 2
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Show_As_Message",
+                    "use_format": false,
+                    "index_id": 3
+                  }
+                ],
+                "Request_Header": [
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeemmm",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeettff",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "Authorization",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "totalcount",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "use_format": false,
+                    "index_id": 5
+                  },
+                  {
+                    "Key_Name": "totapagesize",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "use_format": false,
+                    "index_id": 6
+                  },
+                  {
+                    "Key_Name": "currentpage",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "use_format": false,
+                    "index_id": 7
+                  }
+                ],
+                "Request_Body": [],
+                "Request_Query": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Data_Layout": {
+    "0": {
+      "name": "John Doe",
+      "location": {
+        "country": "India",
+        "city": "Bengaluru",
+        "pincode": "560103"
+      },
+      "w": "source1",
+      "credits": 39550.00,
+      "level": 4,
+      "achievements": {
+        "current": 16,
+        "max": 48
+      },
+      "experience": {
+        "current": 4561,
+        "max": 9999
+      },
+      "tags": [
+        "alpha",
+        "beta",
+        "gamma",
+        "delta",
+        "niner"
+      ],
+      "type": null
+    },
+    "theme": {
+      "color": "#88ee99"
+    },
+    "sec": {
+      "ll": "2017-01-01 12:01:37",
+      "loc": "BLR, IND"
+    },
+    "data": {
+      "achievements": [
+        "Malcontent",
+        "Trusty Hardware",
+        "Anchor's Aweigh!",
+        "Heavy Weapons",
+        "Revenge!",
+        "Submissive",
+        "Zero-Point Energy",
+        "Hallowed Ground",
+        "Where Cubbage Fears to Tread",
+        "Barnacle Bowling",
+        "Bug Hunt",
+        "Defiant",
+        "Warden Freeman",
+        "Follow Freeman",
+        "Radiation Levels Detected",
+        "Plaza Defender",
+        "Blast from the Past",
+        "One Man Army",
+        "Fight the Power",
+        "Giant Killer",
+        "Singularity Collapse",
+        "OSHA Violation",
+        "Targetted Advertising",
+        "Atomizer",
+        "What cat?",
+        "Counter-Sniper",
+        "Two Points",
+        "Vorticough",
+        "Flushed",
+        "Hack Attack!",
+        "Zombie Chopper",
+        "Keep Off the Sand!",
+        "Lambda Locator"
+      ]
+    }
+  },
+  "broadcasth_receiver": {
+    "broadcasts": [
+      {
+        "broadcast_name": "android.net.wifi.WIFI_STATE_CHANGED",
+        "broadcast_event": {
+          "Event_Type": "Close_Activity",
+          "back_type": "1",
+          "Show_Confirm": {
+            "type": "include",
+            "layout": "Confirm_Message",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          "Value_Activity": "0",
+          "Show_Toolbar": true,
+          "Show_Drawer": false,
+          "Use_Volley": false,
+          "Name": "@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.SegmentTabActivity",
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Before_Process": {
+            "get_set_to_view": {
+              "Data_From_View": [
+                {
+                  "View_Id": "Unit_NameSearcih",
+                  "index_id": 0,
+                  "View_Type": "A",
+                  "use_const": false,
+                  "const_value": true,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "Unit_NameSearcihi",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "hhhhhhh",
+                  "use_data_from_source": true,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                }
+              ],
+              "Data_To_View": [
+                {
+                  "View_Id": "Unit_NameSearch",
+                  "View_Type": "0",
+                  "index_id": 0
+                },
+                {
+                  "View_Id": "myouto",
+                  "View_Type": "0",
+                  "index_id": 0
+                },
+                {
+                  "View_Id": "idid",
+                  "View_Type": "0",
+                  "index_id": 1
+                }
+              ]
+            }
+          },
+          "After_Process": {
+            "get_set_to_view": {
+              "Data_From_View": [
+                {
+                  "View_Id": "Unit_NameSearcih",
+                  "index_id": 0,
+                  "View_Type": "A",
+                  "use_const": false,
+                  "const_value": true,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "Unit_NameSearcihi",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "hhhhhhh",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                }
+              ],
+              "Data_To_View": [
+                {
+                  "View_Id": "Unit_NameSearcih",
+                  "index_id": 0,
+                  "View_Type": "A",
+                  "use_const": false,
+                  "const_value": true,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "Unit_NameSearcihi",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "hhhhhhh",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                }
+              ]
+            }
+          },
+          "Finsh_Process": [
+            {
+              "View_Id": "55",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "name",
+                  "View_Type": "5",
+                  "index_id": 0,
+                  "use_const": true,
+                  "const_value": "data#message"
+                },
+                {
+                  "View_Id": "email",
+                  "View_Type": "6",
+                  "index_id": 1,
+                  "use_const": true,
+                  "const_value": "data#message"
+                },
+                {
+                  "View_Id": "email",
+                  "View_Type": "6",
+                  "index_id": 4,
+                  "use_const": true,
+                  "const_value": "mypagesave"
+                },
+                {
+                  "View_Id": "pic",
+                  "View_Type": "6",
+                  "index_id": 2,
+                  "use_const": true,
+                  "const_value": "data#message"
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "index_id": 3,
+                  "use_const": true,
+                  "const_value": "data#message"
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "A",
+                  "index_id": 5,
+                  "use_const": true,
+                  "const_value": "1"
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                  "Url": "url",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "#{datxa}",
+                      "Key_Value": "data#message",
+                      "Key_Type": "Select_Key",
+                      "index_id": 1,
+                      "use_format": false
+                    },
+                    {
+                      "Key_Name": "heeerefresh",
+                      "Key_Value": "1",
+                      "Key_Type": "Refresh_Key",
+                      "index_id": 5,
+                      "use_format": false
+                    },
+                    {
+                      "Key_Name": "heeerefresh",
+                      "Key_Value": "1",
+                      "Key_Type": "Offline_Key",
+                      "index_id": 5,
+                      "use_format": false
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message",
+                      "index_id": 1,
+                      "use_format": false
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "5555",
+                      "index_id": 1,
+                      "use_format": false
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "0",
+                      "Key_Type": "5555",
+                      "index_id": 1,
+                      "use_format": false
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "0",
+                      "Key_Type": "5555",
+                      "index_id": 1,
+                      "use_format": false
+                    },
+                    {
+                      "Key_Name": "vvvvvvv",
+                      "Key_Value": "0",
+                      "Key_Type": "5555",
+                      "index_id": 1,
+                      "use_format": false
+                    }
+                  ],
+                  "Request_Body": [],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "card_view":{
+  "type": "LinearLayout",
+  "layout_width": "match_parent",
+  "layout_height": "wrap_content",
+  "orientation": "vertical",
+  "focusable": false,
+  "padding": "10dp",
+  "animationn": {
+    "interpolator": {
+      "type": "anticipateOvershootInterpolator"
+    },
+    "type": "rotate",
+    "fromDegrees": -720,
+    "toDegrees": 0,
+    "pivotX": "50%",
+    "pivotY": "50%",
+    "duration": 1500
+  },
+  "children": [
+    {
+      "type": "CardView",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "elevation": "20dp",
+      "background": "@drawable/blue_btn_bkg",
+      "cardCornerRadius": "8dp",
+      "focusable": false,
+      "Evenvt": {
+        "Event_Type": "Set_Data_From_View_To_View",
+        "Name": "form",
+        "get_set_to_view": {
+          "Data_From_View": [
+            {
+              "View_Id": "myouto",
+              "index_id": 0,
+              "View_Type": "0",
+              "use_const": false,
+              "const_value": "1",
+              "use_data_from_source": true,
+              "source_key": "drugName_en",
+              "from_select_item": {
+                "key_value": "drugName_en"
+              }
+            }
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "myouto",
+              "index_id": 0,
+              "View_Type": "0",
+              "use_const": false,
+              "from_select_item": {
+                "key_value": "drugName_en"
+              },
+              "const_value": "0",
+              "use_data_from_source": true,
+              "source_key": "id",
+              "use_format": false
+            }
+          ]
+        }
+      },
+      "children": [
+        {
+          "type": "LinearLayout",
+          "layout_width": "match_parent",
+          "layout_height": "wrap_content",
+          "orientation": "horizontal",
+          "padding": "16dp",
+          "children": [
+            {
+              "type": "CircleImageView",
+              "layout_width": "40dp",
+              "layout_height": "40dp",
+              "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+              "scaleType": "centerCrop",
+              "circleCrop": true
+            },
+            {
+              "type": "LinearLayout",
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "orientation": "vertical",
+              "padding_start": "16dp",
+              "children": [
+                {
+                  "type": "HorizontalProgressBar",
+                  "layout_width": "match_parent",
+                  "layout_height": "wrap_content",
+                  "layout_marginTop": "8dp",
+                  "max": "@{user.experience.max}",
+                  "progress": "@{user.experience.current}"
+                },
+                {
+                  "type": "TextView",
+                  "layout_width": "wrap_content",
+                  "layout_height": "wrap_content",
+                  "text": "@{user.experience.max}",
+                  "textSize": "16sp",
+                  "textStyle": "bold",
+                  "font_name": "Cairo-Regular",
+                  "textColor": "@color/white"
+                },
+                {
+                  "type": "TextView",
+                  "layout_width": "wrap_content",
+                  "layout_height": "wrap_content",
+                  "text": "@{drugName_ar}",
+                  "textSize": "12sp",
+                  "textColor": "@color/white"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  "on_back_press": {
+    "Event_Type": "Close_Activity",
+    "back_type": "1",
+    "Show_Confirm": {
+      "type": "include",
+      "layout": "Confirm_Message",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "tname": "SimpleDataBindingExample"
+    },
+    "Value_Activity": "0",
+    "Show_Toolbar": true,
+    "Show_Drawer": false,
+    "Use_Volley": false,
+    "Name": "@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.SegmentTabActivity",
+    "Return_Data": [
+      {
+        "Return_Type": "55",
+        "Return_To_Message": [
+          {
+            "Response_Key_Name": "0",
+            "View_Id": "55",
+            "Message_Text": "hhhh",
+            "View_Type": "A"
+          }
+        ]
+      }
+    ],
+    "Return_To_View": [
+      {
+        "View_Id": "saveprograss",
+        "Type_Process": "1",
+        "Value_Process": "1",
+        "View_Type": "A"
+      }
+    ],
+    "Before_Process": {
+      "get_set_to_view": {
+        "Data_From_View": [
+          {
+            "View_Id": "Unit_NameSearcih",
+            "index_id": 0,
+            "View_Type": "A",
+            "use_const": false,
+            "const_value": true,
+            "use_data_from_source": false,
+            "source_key": "drugName_en"
+          },
+          {
+            "View_Id": "Unit_NameSearcihi",
+            "index_id": 1,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "hhhhhhh",
+            "use_data_from_source": true,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          }
+        ],
+        "Data_To_View": [
+          {
+            "View_Id": "Unit_NameSearch",
+            "View_Type": "0",
+            "index_id": 0
+          },
+          {
+            "View_Id": "myouto",
+            "View_Type": "0",
+            "index_id": 0
+          },
+          {
+            "View_Id": "idid",
+            "View_Type": "0",
+            "index_id": 1
+          }
+        ]
+      }
+    },
+    "After_Process": {
+      "get_set_to_view": {
+        "Data_From_View": [
+          {
+            "View_Id": "Unit_NameSearcih",
+            "index_id": 0,
+            "View_Type": "A",
+            "use_const": false,
+            "const_value": true,
+            "use_data_from_source": false,
+            "source_key": "drugName_en"
+          },
+          {
+            "View_Id": "Unit_NameSearcihi",
+            "index_id": 1,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "hhhhhhh",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          },
+          {
+            "View_Id": "0",
+            "index_id": 2,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "data#message",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          }
+        ],
+        "Data_To_View": [
+          {
+            "View_Id": "Unit_NameSearcih",
+            "index_id": 0,
+            "View_Type": "A",
+            "use_const": false,
+            "const_value": true,
+            "use_data_from_source": false,
+            "source_key": "drugName_en"
+          },
+          {
+            "View_Id": "Unit_NameSearcihi",
+            "index_id": 1,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "hhhhhhh",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          },
+          {
+            "View_Id": "0",
+            "index_id": 2,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "data#message",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          }
+        ]
+      }
+    },
+    "Finsh_Process": [
+      {
+        "View_Id": "55",
+        "Type_Process": "22",
+        "Value_Process": "55",
+        "View_Type": "A"
+      }
+    ],
+    "Sender_Data": [
+      {
+        "Data_From_View": [
+          {
+            "View_Id": "name",
+            "View_Type": "5",
+            "index_id": 0,
+            "use_const": true,
+            "const_value": "data#message"
+          },
+          {
+            "View_Id": "email",
+            "View_Type": "6",
+            "index_id": 1,
+            "use_const": true,
+            "const_value": "data#message"
+          },
+          {
+            "View_Id": "email",
+            "View_Type": "6",
+            "index_id": 4,
+            "use_const": true,
+            "const_value": "mypagesave"
+          },
+          {
+            "View_Id": "pic",
+            "View_Type": "6",
+            "index_id": 2,
+            "use_const": true,
+            "const_value": "data#message"
+          },
+          {
+            "View_Id": "0",
+            "View_Type": "API_Acess",
+            "index_id": 3,
+            "use_const": true,
+            "const_value": "data#message"
+          },
+          {
+            "View_Id": "0",
+            "View_Type": "A",
+            "index_id": 5,
+            "use_const": true,
+            "const_value": "1"
+          }
+        ],
+        "API_Data": [
+          {
+            "Method_Type": "POST",
+            "Type_Url": "local0",
+            "Url": "url",
+            "Response_Data": [
+              {
+                "Key_Name": "#{datxa}",
+                "Key_Value": "data#message",
+                "Key_Type": "Select_Key",
+                "index_id": 1,
+                "use_format": false
+              },
+              {
+                "Key_Name": "heeerefresh",
+                "Key_Value": "1",
+                "Key_Type": "Refresh_Key",
+                "index_id": 5,
+                "use_format": false
+              },
+              {
+                "Key_Name": "heeerefresh",
+                "Key_Value": "1",
+                "Key_Type": "Offline_Key",
+                "index_id": 5,
+                "use_format": false
+              },
+              {
+                "Key_Name": "heee",
+                "Key_Value": "0",
+                "Key_Type": "Show_As_Message",
+                "index_id": 1,
+                "use_format": false
+              }
+            ],
+            "Request_Header": [
+              {
+                "Key_Name": "heee",
+                "Key_Value": "0",
+                "Key_Type": "5555",
+                "index_id": 1,
+                "use_format": false
+              },
+              {
+                "Key_Name": "heeemmm",
+                "Key_Value": "0",
+                "Key_Type": "5555",
+                "index_id": 1,
+                "use_format": false
+              },
+              {
+                "Key_Name": "heeettff",
+                "Key_Value": "0",
+                "Key_Type": "5555",
+                "index_id": 1,
+                "use_format": false
+              },
+              {
+                "Key_Name": "vvvvvvv",
+                "Key_Value": "0",
+                "Key_Type": "5555",
+                "index_id": 1,
+                "use_format": false
+              }
+            ],
+            "Request_Body": [],
+            "Request_Query": []
+          }
+        ]
+      }
+    ]
+  },
+  "Style_Layout": {
+    "money": {
+      "textColor": "#56a411",
+      "textSize": "28sp"
+    },
+    "center": {
+      "layout_gravity": "center"
+    },
+    "mini": {
+      "textSize": "8sp",
+      "background": "@color/red_A200",
+      "layout_width": "wrap_content",
+      "layout_height": "1500dp",
+      "layout_margin": "4dp"
+    },
+    "blue": {
+      "textColor": "#027cd5"
+    },
+    "default": {
+      "textColor": "#323232",
+      "textSize": "14sp"
+    }
+  },
+  "apptest": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "id": "hhhhjjjj",
+    "orientation": "vertical",
+
+    "children": [
+     
+{"type": "NavigationView",
+        "layout_width": "match_parent",
+        "gravity": "right",
+        "Video_url":"http://0.0.0.0:8080/admin3/vid.mp4",
+        "layout_height": "150dp",
+        "background":",#ffcc33",
+            "mask":"@drawableFont/fa_edit/2/40/#E52B50",
+        "Video_sound":true,
+   "children":[
+
+{
+              "type": "Button",
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+              "textSize": "16sp",
+              "textStyle": "bold",
+              "font_name": "Cairo-Regular",
+              "textColor": "@color/green"
+            }
+],
+        "proper":{
+        
+             "colora":"#ffcc33",
+             "colorb":"#ffe135",
+"icona": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#E52B50"
+        },
+        "ImageUnSelect": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#ffffff"
+        }}
+        },
+
+ {
+        "type": "ComplexLayout",
+        "layout_width": "match_parent",
+        "gravity": "right",
+        "layout_height": "150dp",
+        "child": {
+          "Duration": 450,
+          "Interval": 1800,
+          "dir": 0,
+          "child": [
+            {
+              "type": "TextView",
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text": "gggggggggg",
+              "textSize": "16sp",
+              "textStyle": "bold",
+              "font_name": "Cairo-Regular",
+              "textColor": "@color/green"
+            },
+            {
+              "type": "Button",
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text": "gggggghhvcfjjhchhcnvkvgggg",
+              "textSize": "16sp",
+              "textStyle": "bold",
+              "font_name": "Cairo-Regular",
+              "textColor": "@color/green"
+            }
+          ]
+        }
+      },
+      {
+        "type": "ImageButton",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "style": "mini",
+        "layout_marginTop": "10dp",
+        "text": "ADD TO CART",
+        "textColor": "?Theme_AppCompat:actionMenuTextColor",
+        "src": "@drawableFont/fa_edit/2/40/#438afe",
+        "background": {
+          "@": {
+            "type": "ripple",
+            "mask": "#aaaa99",
+            "defaultBackground": "@color/red_A200",
+            "content": {
+              "type": "oval",
+              "shape": "rectangle",
+              "children": [
+                {
+                  "type": "solid",
+                  "color": "color/red_A200"
+                }
+              ]
+            },
+            "color": "#ff0000"
+          }
+        }
+      },
+      {
+        "type": "CircleView",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "layout_marginTop": "16dp",
+        "layout_marginBottom": "16dp",
+        "layout_gravity": "center",
+        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+        "color": "#aaef99"
+      },
+      {
+        "type": "Button",
+        "layout_width": "match_parent",
+        "layout_height": "350dp",
+        "text":"@{fn:format('@{fn:add(22,22)}  {#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{fn:add(22,22)},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "textv":"@{fn:add(22,22)}",
+"textSize": "16sp",
+        "textStyle": "bold",
+        "font_name": "Cairo-Regular",
+        "textColor": "@color/red_A200"
+      },
+      {
+        "type": "HorizontalScrollView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "scrollbars": "none",
+        "visibilityc": "gone",
+        "id": "hjjjj",
+        "orientation": "vertical",
+        "view_from_sources": {
+          "delay": 1000,
+          "source_name": "source1"
+        }
+      },
+      {
+        "type": "ScrollView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "id": "hdjjjggjyucg",
+        "scrollbars": "none",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "id": "hjjjj",
+            "orientation": "vertical",
+            "view_from_sources": {
+              "delay": 1000,
+              "source_name": "source1"
+            },
+            "children": [
+              {
+                "type": "include",
+                "layout": "myinclu",
+                "focusable": false,
+                "tname": "SimpleDataBindingExample",
+                "paddingBottom": "0dp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

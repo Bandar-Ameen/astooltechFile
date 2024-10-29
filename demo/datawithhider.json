@@ -1,0 +1,119 @@
+"ContentViewB":{
+"row_data":{
+"Filter_Views":[
+{"Key_Name":"drugName_ar"
+}
+],
+"Def_Views":{
+"type": "include",
+ "layout": "DataDrivenExamplevmy",
+  "tname":"SimpleDataBindingExample",
+        "KeyName":"recycleserchhml",
+          "paddingBottom": "0dp",
+          "FilterName":"drugName_ar",
+          "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          }
+          },
+
+"a_enable":"1",
+
+"Data_Value":[
+
+
+
+
+
+
+{"drugName_ar":"headerA",
+"b":"1",
+"Body_Value":{
+"Filter_Views":[
+{"Key_Name":"drugName_ar"
+}
+],
+"Def_Views":{
+"type": "include",
+ "layout": "DataDrivenExamplevmy",
+  "tname":"SimpleDataBindingExample",
+        "KeyName":"recycleserchhmi",
+          "paddingBottom": "0dp",
+          "FilterName":"drugName_ar",
+          "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          }
+          },
+
+"a_enable":"1",
+
+"Data_Value":[
+{
+"drugName_ar":"hellllllllllo",
+"id":"55"
+},
+{
+"drugName_ar":"hellllllllllbdvdvvdvdho",
+"id":"66"
+},
+
+{
+"drugName_ar":"helyfhfhfbdbxvdbvdbflllllllllo",
+"id":"77"
+},
+
+{
+"drugName_ar":"helllllljfjfhhdhdbbdbfbbdbdvllllo",
+"id":"88"
+}
+
+],
+"MultipleViews":[
+{
+"v_Name":"SimpleDataBindingExample",
+"v_ColumnName":"id",
+"v_EqualValue":"20",
+"v_id":"1"
+
+
+}
+
+]
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+],
+"MultipleViews":[
+{
+"v_Name":"SimpleDataBindingExample",
+"v_ColumnName":"b",
+"v_EqualValue":"20",
+"v_id":"1"
+
+
+}
+
+]
+
+
+},"Rowc":2
+
+}

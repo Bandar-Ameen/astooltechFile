@@ -1,0 +1,494 @@
+{
+  
+
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "orientation":"vertical",
+    
+      "data": {
+            "user": "@{0}",
+            "sec": "@{sec}"
+          },
+  
+    "children": [
+      {"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "50dp",
+      "gravity": "right",
+      "orientation": "horizontal",
+          "children": [
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "50dp",
+                  "gravity": "center",
+                  "ScriptViewv":"call OpenActivityb #Rgg# ",
+
+                  "layout_marginTop": "0dp",
+                  "text": "جديد",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"0",
+                  "enabled":true,
+                  "Save_before_refresh":"0",
+                  "DisableWehen":"vvbbihi",
+                  "Key_from_response":"data",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#mideltyp#,#data_set#:#mideltyp#,#data_get#:#mideltyp#},
+
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},
+{#data_id#:#midel#,#data_set#:#midel#,#data_get#:#midel#}
+
+]",
+
+"api_body":"
+          [{#head#:[{#typ1#:#1#,#userID#:#0#,#alfraID#:#0#,#stockID#:#0#,#username#:#0#,#enab#:#0#,#typ2#:#0#,#IDforupdate#:#0#,#allwith#:#0#,#sandookID#:#0#,#parcount#:#0#,#parmnam#:#24#}],#pramname#:[{#paramvalue#:[#%3$s#,#%1$s#,#%1$s#, #%5$s#,#%1$s#,#%1$s#,#%1$s#,#%1$s#, #%5$s#]}]}]",            
+        "Api_Header":"call Refresh  #h#
+
+",
+  "api_method":"post",
+          "api_url":"http://0.168.1.101:80/api/desin/uidesin"
+          ,
+
+
+          "typeAction" :"LoadJava",
+          
+"FragmentID":"myweb",
+          "typeActionName" :"ddk('from bandar Ameen');",
+               "data_primary":"vvbbuuii", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}
+
+]
+      },
+   
+ {    "type": "WebView",
+    "orientation": "vertical",
+    "data_primary":"myweb", 
+
+    "layout_height": "match_parent",
+    "layout_width": "match_parent",
+    "click_from_data":"@{user.name}",
+    "web_get_data":"@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+  "turl":"file:///android_asset/themes/bootstrap.min.css",  
+    "DataUrl":{
+    "m_urls":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+        
+        
+        
+        
+        
+        
+  
+        
+        
+        "Use_KeyBoard":true,
+
+"Use_KeyBoardB":50,
+"Use_KeyBoardT":0,
+
+"use_get_data":true,
+    "update":false,
+    "enab_port":true,
+        "enab_back":false,
+   "enab_long_click":false, 
+    "scroll_V":false,
+        "Use_Service":false,
+        "scroll_H":false,
+        "scroll_On_touch":false,
+    "enab_desktop":false,
+    "enab_cookies":false,
+    "enab_multiplwindow":true,
+    "enab_OverViewMode":false,
+     "enab_Open_window_Auto":true,
+     
+     "Error_View":{
+
+        "type": "RelativeLayout",
+        "layout_width": "match_parent",
+        "layout_height": "300dp",
+        "background": "@color/green"
+
+},
+    "use_error":true,
+    "m_error":"
+<!DOCTYPE html>
+<html lang=%1$sen%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+%4$s
+
+</style>
+<style>
+%6$s
+
+</style>
+
+<style>
+%9$s
+
+</style>
+
+  <script>
+%3$s
+</script>
+<script>
+%5$s
+</script>
+
+<script>
+%7$s
+</script>
+<script>
+%8$s
+</script>
+
+
+</head>
+<body>
+<div class=%1$sjumbotron text-center%1$s>
+  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>
+  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> 
+</div>
+</body>
+</html>
+",
+
+
+"m_html":"
+<!DOCTYPE html dir=%1$srtl%1$s>
+<html lang=%1$sar%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+@font-face{
+    font-family:%1$smmy%1$s;
+    src:url(themes/fonts/Cairo-Bold.ttf)format(%1$struetype%1$s);
+    font-style: normal;
+    }
+    
+    
+    
+    *{
+     font-family: 'mmy';
+     -webkit-user-select: none;
+     direction:rtl;
+    }
+
+.k-grid .k-toolbar .k-button {
+        background-color: red;
+      color: white;       
+    }
+</style>
+ 
+<style>%3$s</style>
+    <script>%4$s</script>
+       <script>%5$s</script>
+
+
+</head>
+<body>
+    <div id=\"example\">
+    <div id=\"qr-wrap\"  style=\"text-align: center;\">
+        <p>To test the Adaptive Rendering, scan the QR code or open this demo on a mobile device.</p>
+        <div id=\"qr\" style=\"display: inline-block;\"></div>
+    </div>
+    <div id=\"grid-wrap\" class=\"k-rtl\" style=\"display: none;\">
+        <div id=\"grid\"></div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            
+            
+            function savedat(key,vaa){
+Android.AndroidFunctionSaveData(key,vaa);
+}
+function savedatt(key,vaa){
+var ii=Android.AndroidFunctionGetData(key,vaa);
+return ii;
+}
+function showcook(mes){
+var da=\"ShowCookie\";
+var colorg=\"3b7A57\";
+var colorgg=\"d3212d\";
+var mnv=JSON.stringify(
+{
+\"Event_Type\":\"ShowCookie\",
+\"Name\":\"kMM\",
+\"M\":\"1\",
+\"T\":\"1\",
+\"Title\":\"رسالة تنبية \",
+\"Message\":mes,
+\"ColorA\":\"ffffff\",
+\"ColorB\":\"ffffff\",
+\"ColorC\":colorgg,
+\"Locations\":\"b\",
+\"Duration\":5000,
+\"Anim_Type\":0,
+\"AutoDismiss\":true,
+\"SweepDismiss\":true,
+\"Custome_View\":{
+    \"type\": \"CardView\",
+    \"orientation\": \"vertical\",
+    \"layout_width\": \"match_parent\",
+    \"layout_height\": \"wrap_content\",
+  \"background\":\"@drawable/blue_btn_bkg\",
+  \"layout_margin\":\"5dp\",
+    \"children\": [{
+
+    \"type\": \"LinearLayout\",
+      \"layout_width\": \"match_parent\",
+      \"layout_height\": \"wrap_content\",
+      \"gravity\": \"right\",
+      \"focusable\":false,
+      \"background\":\"@color/red\",
+      \"orientation\": \"vertical\",
+      \"children\":[
+      
+      
+      
+      
+      
+{
+        \"type\": \"TextView\",
+        \"layout_width\": \"match_parent\",
+        \"layout_height\": \"wrap_content\",
+        \"layout_marginTop\": \"10dp\",
+        \"gravity\": \"center\",
+        \"textColor\": \"@color/white\",
+        \"textSize\": \"18sp\",
+        \"text\": mes
+}
+]
+}]
+},
+\"Icon\":{
+             \"type\": \"ImageView\",
+                  \"layout_width\": \"50dp\",
+                  \"layout_height\": \"50dp\",
+                  \"background\":\"@drawableFont/fa_edit/2/40/#ffffff\"
+}
+,
+\"Set_Data\":[
+{
+\"View_Id\":\"myweb\",
+
+\"Type_Process\":\"5\",
+\"Value_Process\":\"ggg\",
+\"View_Type\":\"55\"
+
+
+
+}
+]
+}
+
+
+);
+//alert(mnv);
+Android.AndroidFunctionLoadFunction(da,mnv);
+//return mnv;
+}
+function jsFunctionnff(sampleData)
+{ 
+
+//alert('^ffff');
+	var dataSource1 = new kendo.data.DataSource({
+                transport: {
+                    read: function (e) {
+	
+	$.ajax({
+        url: sampleData, // <-- point to server-side PHP script 
+        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
+        cache: false,
+        processData: false,                               
+        type: 'get',
+        contentType:false,
+        
+        
+        beforeSend: function (xhr) {
+    	
+
+   // xhr.setRequestHeader (\"Authorization\", \"Bearer \" + rrr);
+    //xhr.setRequestHeader(\"typgetdata\",btoa(unescape(encodeURIComponent(4))));
+},
+        success: function(php_script_response){
+     
+savedat(php_script_response,sampleData);
+ //alert(php_script_response);
+ //  if(isJson(php_script_response)){
+ var getdat=savedatt(sampleData,sampleData);
+   //alert(getdat);
+
+var obj = JSON.parse(getdat);
+//var ffdd=JSON.parse(php_script_response);
+e.success(obj);
+
+//}
+        },
+        error: function( jqXhr, textStatus, errorThrownm){
+      var getdat=savedatt(sampleData,sampleData);
+   //alert(getdat);
+
+var obj = JSON.parse(getdat);
+//var ffdd=JSON.parse(php_script_response);
+e.success(obj);
+  showcook(JSON.stringify(jqXhr));
+        }
+     });
+   }
+},batch: true, pageSize: 50,cache: false,
+
+
+schema: {
+                        model: {
+                            id: \"id\",
+                            fields: {
+                                id: { editable: false, nullable: true },
+                                drugName_ar: { editable: false, nullable: true },
+                                drugName_en: { editable: false, nullable: true },
+                                unit: { editable: false, nullable: true }
+                               
+                               
+
+                               }
+                               }
+                               }
+
+            });
+return  dataSource1;
+}
+
+var isMobile = Boolean(kendo.support.mobileOS);
+            var crudServiceBaseUrl = \"https://demos.telerik.com/kendo-ui/service\",
+                dataSource = new kendo.data.DataSource({
+                    transport: {
+                        read: {
+                            url: crudServiceBaseUrl + \"/Products\",
+                            dataType: \"jsonp\"
+                        },
+                        update: {
+                            url: crudServiceBaseUrl + \"/Products/Update\",
+                            dataType: \"jsonp\"
+                        },
+                        destroy: {
+                            url: crudServiceBaseUrl + \"/Products/Destroy\",
+                            dataType: \"jsonp\"
+                        },
+                        create: {
+                            url: crudServiceBaseUrl + \"/Products/Create\",
+                            dataType: \"jsonp\"
+                        },
+                        parameterMap: function (options, operation) {
+                            if (operation !== \"read\" && options.models) {
+                                return { models: kendo.stringify(options.models) };
+                            }
+                        }
+                    },
+                    batch: true,
+                    pageSize: 50,
+                    schema: {
+                        model: {
+                            id: \"ProductID\",
+                            fields: {
+                                ProductID: { editable: false, nullable: true },
+                                ProductName: { validation: { required: true } },
+                                UnitPrice: { type: \"number\", validation: { required: true, min: 1 } },
+                                Discontinued: { type: \"boolean\" },
+                                UnitsInStock: { type: \"number\", validation: { min: 0, required: true } }
+                            }
+                        }
+                    }
+                });
+
+            $(\"#grid\").kendoGrid({
+                dataSource: jsFunctionnff('http://0.0.0.0:8080/admin3/test2.json'),
+                
+                toolbar: [\"search\",\"create\",\"excel\", \"pdf\"],
+                search: {
+                    fields: [
+                        { name: \"id\", operator: \"eq\" },
+                        { name: \"drugName_ar\", operator: \"contains\" },
+                        { name: \"drugName_en\", operator: \"contains\" },
+                        { name: \"unit\", operator: \"contains\" },
+                    ]
+                },
+                height: 750,
+                mobile: true,
+                sortable: true,
+                pageable: true,
+                resizable: true,
+                filterable: true,
+                columnMenu: true,
+                columns: [
+                    { field: \"id\", title: \"رقم الصنف\", filterable: { multi: true, search: true }, width: \"120px\" },
+                    { field: \"drugName_ar\", title: \"الاسم عربي\", format: \"{0:c}\", width: \"120px\" },
+                    { field: \"drugName_en\", title: \"الاسم اجنبي\", width: \"120px\" },
+                    { field: \"unit\", title: \"الوحدة\", width: \"120px\" },
+                    { command: [\"edit\", \"destroy\"], title: \"&nbsp;\", width: \"250px\" }],
+                editable: \"popup\"
+            });
+
+            $(\"#qr\").kendoQRCode({
+                value: window.location.href,
+                size: 170,
+                border: {
+                    color: \"#000000\",
+                    width: 5
+                }
+            });
+
+            if (isMobile) {
+                $(\"#qr-wrap\").hide();
+                $(\"#grid-wrap\").show();
+                $(\"#grid\").data(\"kendoGrid\").resize();
+            }
+            
+            var grid = $(\"#grid\").data(\"kendoGrid\");
+  var altRows = grid.table;//.find(\"tr.k-alt\");
+  altRows.css(\"background\", \"#afeeee\");
+        });
+    </script>
+</div>
+
+    
+    
+</body>
+</html>
+
+",
+"html_value":[
+
+{"key_Name":"name","Key_Value":"name","Key_Type":"QMark", "View_Name":"name"},
+{"key_Name":"name","Key_Value":"name","Key_Type":"apikey", "View_Name":"nameu"},
+{"key_Name":"name","Key_Value":"https://kendo.cdn.telerik.com/themes/6.7.0/default/default-ocean-blue.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"name","Key_Value":"https://kendo.cdn.telerik.com/2023.2.829/js/jquery.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"name","Key_Value":"https://kendo.cdn.telerik.com/2023.2.829/js/kendo.all.min.js","Key_Type":"htmltag", "View_Name":"nameu"}
+
+
+],
+
+"m_url":"https://github.com/flipkart-incubator/proteus",
+"Use_Url":false,
+"image_auto":true,
+"enab_java":true
+
+}
+    }]}}
