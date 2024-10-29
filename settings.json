@@ -1,0 +1,479 @@
+{
+  "BaseUrl": {
+    "SettingUrl": [
+      {
+        "Url": "http:\/\/0.0.0.0:8080\/admin3\/layout.json",
+        "UrlType": "Layout",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "http:\/\/0.0.0.0:8080\/admin3\/layouts.json",
+        "UrlType": "Layouts",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "http:\/\/0.0.0.0:8080\/admin3\/styles.json",
+        "UrlType": "styles",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "http:\/\/0.0.0.0:8080\/admin3\/loginsyss.json",
+        "UrlType": "Login",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/all.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/icheck-bootstrap.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/all.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/adminlte.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/jquery.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/bootstrap.bundle.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/btnspiner.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/toastr.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/sweetalert2.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/toastr.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/sweetalert2.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/kendo.all.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/bootstrap-4.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/bootstrap.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/jquery.noty.packaged.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/lodash.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/everlive.all.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/kendo.mobile.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/jquery.min.js",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/main.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/kendo.mobile.all.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      },
+      {
+        "Url": "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/tailwindcss\/2.0.1\/tailwind.min.css",
+        "UrlType": "0",
+        "Version": "1",
+        "bodyy": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "headery": [
+          {
+            "header_key": "ley1",
+            "header_value": "val1"
+          }
+        ],
+        "method _type": "get"
+      }
+    ],
+    "Url": "http:\/\/0.0.0.0:8080"
+  },
+  "CompanyName": "bandarAmeen",
+  "Version": "474",
+  "login_typ": "0",
+  "setting": 1
+}
