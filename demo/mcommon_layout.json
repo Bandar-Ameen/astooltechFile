@@ -1,0 +1,2277 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjcgbcf",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "id": "hdjjjggjyucg",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "allk",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "itemacrol": {
+    "type": "HorizontalScrollView",
+    "orientation": "horizontal",
+    "scrollbars": "none",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "children": [
+          {
+            "type": "include",
+            "layout": "card1",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card2",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card1",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card2",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          {
+            "type": "include",
+            "layout": "card1",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          }
+        ]
+      }
+    ]
+  },
+  "card1": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#ff0000",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "id": "midelk",
+                    "text": "الاسم الاول",
+                    "textColor": "@color/white",
+                    "textSize": "14sp"
+                  }
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "#ffffff",
+                "children": []
+              },
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "#000000",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "card2": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#eff4ff",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "id": "midelk",
+                    "text": "@{k[1]}",
+                    "textColor": "@color/blue_A200",
+                    "textSize": "20sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "btn1": {
+    "type": "Button",
+    "layout_height": "50dp",
+    "layout_width": "50dp",
+    "Event": {
+      "Event_Type": "Set_Data_From_View_To_View",
+      "Name_Activity": "0",
+      "Value_Activity": "0",
+      "Show_Toolbar": true,
+      "Show_Drawer": false,
+      "Use_Volley": true,
+      "Name": "@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.SegmentTabActivity",
+      "get_set_to_view": {
+        "Data_From_View": [
+          {
+            "View_Id": "0",
+            "index_id": 0,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": 1,
+            "use_data_from_source": false,
+            "source_key": "drugName_en",
+            "LeftPadding": 5,
+            "BottomPadding": 5,
+            "Size_Msg": 10,
+            "Index_Msg": 1
+          },
+          {
+            "View_Id": "Unit_NameSearcihi",
+            "index_id": 1,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "hhhhhhh",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          },
+          {
+            "View_Id": "0",
+            "index_id": 2,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "data#message",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          }
+        ],
+        "Data_To_View": [
+          {
+            "View_Id": "bandbandf",
+            "index_id": 0,
+            "View_Type": "0",
+            "use_const": false,
+            "const_value": true,
+            "use_data_from_source": false,
+            "source_key": "drugName_en",
+            "LeftPadding": 5,
+            "BottomPadding": 5,
+            "Size_Msg": 10,
+            "Index_Msg": 1
+          },
+          {
+            "View_Id": "Unit_NameSearcihi",
+            "index_id": 1,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "hhhhhhh",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          },
+          {
+            "View_Id": "0",
+            "index_id": 2,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "data#message",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          }
+        ]
+      },
+      "Return_Data": [
+        {
+          "Return_Type": "55",
+          "Return_To_Message": [
+            {
+              "Response_Key_Name": "0",
+              "View_Id": "55",
+              "Message_Text": "hhhh",
+              "View_Type": "A"
+            }
+          ]
+        }
+      ],
+      "Return_To_View": [
+        {
+          "View_Id": "saveprograss",
+          "Type_Process": "1",
+          "Value_Process": "1",
+          "View_Type": "A"
+        }
+      ],
+      "Before_Process": {
+        "get_set_to_view": {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": true,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "Unit_NameSearch",
+              "View_Type": "0",
+              "index_id": 0
+            },
+            {
+              "View_Id": "myouto",
+              "View_Type": "0",
+              "index_id": 0
+            },
+            {
+              "View_Id": "idid",
+              "View_Type": "0",
+              "index_id": 1
+            }
+          ]
+        }
+      },
+      "Show_Confirm": {
+        "type": "include",
+        "layout": "tt",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "tname": "SimpleDataBindingExample"
+      },
+      "After_Process": {
+        "get_set_to_view": {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            },
+            {
+              "View_Id": "0",
+              "index_id": 2,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "data#message",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            },
+            {
+              "View_Id": "0",
+              "index_id": 2,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "data#message",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ]
+        }
+      },
+      "Finsh_Process": [
+        {
+          "View_Id": "55",
+          "Type_Process": "22",
+          "Value_Process": "55",
+          "View_Type": "A"
+        }
+      ],
+      "Sender_Data": [
+        {
+          "Data_From_View": [
+            {
+              "View_Id": "name",
+              "View_Type": "5",
+              "index_id": 0,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "email",
+              "View_Type": "6",
+              "index_id": 1,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "email",
+              "View_Type": "6",
+              "index_id": 4,
+              "use_const": true,
+              "const_value": "mypagesave"
+            },
+            {
+              "View_Id": "pic",
+              "View_Type": "6",
+              "index_id": 2,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "API_Acess",
+              "index_id": 3,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "A",
+              "index_id": 5,
+              "use_const": true,
+              "const_value": "1"
+            }
+          ],
+          "API_Data": [
+            {
+              "Method_Type": "POST",
+              "Type_Url": "local0",
+              "Url": "url",
+              "Response_Data": [
+                {
+                  "Key_Name": "#{datxa}",
+                  "Key_Value": "data#message",
+                  "Key_Type": "Select_Key",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeerefresh",
+                  "Key_Value": "1",
+                  "Key_Type": "Refresh_Key",
+                  "index_id": 5,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeerefresh",
+                  "Key_Value": "1",
+                  "Key_Type": "Offline_Key",
+                  "index_id": 5,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Show_As_Message",
+                  "index_id": 1,
+                  "use_format": false
+                }
+              ],
+              "Request_Header": [
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeemmm",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeettff",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "vvvvvvv",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                }
+              ],
+              "Request_Body": [],
+              "Request_Query": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "btn1_b": {
+    "type": "Button",
+    "layout_height": "50dp",
+    "layout_width": "50dp",
+    "Event": {
+      "Event_Type": "Set_Data_From_View_To_View",
+      "Name_Activity": "0",
+      "Value_Activity": "0",
+      "Show_Toolbar": true,
+      "Show_Drawer": false,
+      "Use_Volley": true,
+      "Name": "@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.SegmentTabActivity",
+      "get_set_to_view": {
+        "Data_From_View": [
+          {
+            "View_Id": "0",
+            "index_id": 0,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": 1,
+            "use_data_from_source": false,
+            "source_key": "drugName_en",
+            "LeftPadding": 5,
+            "BottomPadding": 5,
+            "Size_Msg": 10,
+            "Index_Msg": 1
+          },
+          {
+            "View_Id": "Unit_NameSearcihi",
+            "index_id": 1,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "hhhhhhh",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          },
+          {
+            "View_Id": "0",
+            "index_id": 2,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "data#message",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          }
+        ],
+        "Data_To_View": [
+          {
+            "View_Id": "bandbandf",
+            "index_id": 0,
+            "View_Type": "0",
+            "use_const": false,
+            "const_value": true,
+            "use_data_from_source": false,
+            "source_key": "drugName_en",
+            "LeftPadding": 5,
+            "BottomPadding": 5,
+            "Size_Msg": 10,
+            "Index_Msg": 1
+          },
+          {
+            "View_Id": "Unit_NameSearcihi",
+            "index_id": 1,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "hhhhhhh",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          },
+          {
+            "View_Id": "0",
+            "index_id": 2,
+            "View_Type": "A",
+            "use_const": true,
+            "const_value": "data#message",
+            "use_data_from_source": false,
+            "source_key": "drugName_ar",
+            "hellohello": "hhhkkkkkkkkkkki"
+          }
+        ]
+      },
+      "Return_Data": [
+        {
+          "Return_Type": "55",
+          "Return_To_Message": [
+            {
+              "Response_Key_Name": "0",
+              "View_Id": "55",
+              "Message_Text": "hhhh",
+              "View_Type": "A"
+            }
+          ]
+        }
+      ],
+      "Return_To_View": [
+        {
+          "View_Id": "saveprograss",
+          "Type_Process": "1",
+          "Value_Process": "1",
+          "View_Type": "A"
+        }
+      ],
+      "Before_Process": {
+        "get_set_to_view": {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": true,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "Unit_NameSearch",
+              "View_Type": "0",
+              "index_id": 0
+            },
+            {
+              "View_Id": "myouto",
+              "View_Type": "0",
+              "index_id": 0
+            },
+            {
+              "View_Id": "idid",
+              "View_Type": "0",
+              "index_id": 1
+            }
+          ]
+        }
+      },
+      "Show_Confirm": {
+        "type": "include",
+        "layout": "tt",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "tname": "SimpleDataBindingExample"
+      },
+      "After_Process": {
+        "get_set_to_view": {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            },
+            {
+              "View_Id": "0",
+              "index_id": 2,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "data#message",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "Unit_NameSearcih",
+              "index_id": 0,
+              "View_Type": "A",
+              "use_const": false,
+              "const_value": true,
+              "use_data_from_source": false,
+              "source_key": "drugName_en"
+            },
+            {
+              "View_Id": "Unit_NameSearcihi",
+              "index_id": 1,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "hhhhhhh",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            },
+            {
+              "View_Id": "0",
+              "index_id": 2,
+              "View_Type": "A",
+              "use_const": true,
+              "const_value": "data#message",
+              "use_data_from_source": false,
+              "source_key": "drugName_ar",
+              "hellohello": "hhhkkkkkkkkkkki"
+            }
+          ]
+        }
+      },
+      "Finsh_Process": [
+        {
+          "View_Id": "55",
+          "Type_Process": "22",
+          "Value_Process": "55",
+          "View_Type": "A"
+        }
+      ],
+      "Sender_Data": [
+        {
+          "Data_From_View": [
+            {
+              "View_Id": "name",
+              "View_Type": "5",
+              "index_id": 0,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "email",
+              "View_Type": "6",
+              "index_id": 1,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "email",
+              "View_Type": "6",
+              "index_id": 4,
+              "use_const": true,
+              "const_value": "mypagesave"
+            },
+            {
+              "View_Id": "pic",
+              "View_Type": "6",
+              "index_id": 2,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "API_Acess",
+              "index_id": 3,
+              "use_const": true,
+              "const_value": "data#message"
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "A",
+              "index_id": 5,
+              "use_const": true,
+              "const_value": "1"
+            }
+          ],
+          "API_Data": [
+            {
+              "Method_Type": "POST",
+              "Type_Url": "local0",
+              "Url": "url",
+              "Response_Data": [
+                {
+                  "Key_Name": "#{datxa}",
+                  "Key_Value": "data#message",
+                  "Key_Type": "Select_Key",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeerefresh",
+                  "Key_Value": "1",
+                  "Key_Type": "Refresh_Key",
+                  "index_id": 5,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeerefresh",
+                  "Key_Value": "1",
+                  "Key_Type": "Offline_Key",
+                  "index_id": 5,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Show_As_Message",
+                  "index_id": 1,
+                  "use_format": false
+                }
+              ],
+              "Request_Header": [
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeemmm",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "heeettff",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                },
+                {
+                  "Key_Name": "vvvvvvv",
+                  "Key_Value": "0",
+                  "Key_Type": "5555",
+                  "index_id": 1,
+                  "use_format": false
+                }
+              ],
+              "Request_Body": [],
+              "Request_Query": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pag1": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyucg",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "allk_b",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "pag1_b": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyucgb",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "btn1_b",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "pag3": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "700dp",
+    "background": "@color/green",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvgggucg",
+    "gravity": "right",
+    "children": [],
+    "view_from_source": {
+      "delay": 1000,
+      "source_name": "source5"
+    }
+  },
+  "pag3_b": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "700dp",
+    "background": "@color/green",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvgggucgb",
+    "gravity": "right",
+    "children": [],
+    "view_from_source": {
+      "delay": 1000,
+      "source_name": "source5"
+    }
+  },
+  "pag22": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvxvuhhhhcg",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "itemacrol",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "pag22_b": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvxvuhhhhcgb",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "itemacrol",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "allk": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvxvucvvgg",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "250dp",
+        "background": "@color/green",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "id": "chdjjjjyvgggucg",
+        "gravity": "right",
+        "children": [],
+        "view_from_source": {
+          "delay": 1000,
+          "source_name": "source4"
+          
+        }
+      },
+      {
+        "type": "include",
+        "layout": "xx",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "background": "@drawable/blue_btn_bkg",
+        "id": "mpag",
+        "gravity": "right"
+      }
+    ]
+  },
+  "allk_b": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "id": "hdjjjjyvxvucvvgg",
+    "gravity": "right",
+    "children": [
+      {
+        "type": "include",
+        "layout": "xx_b",
+        "focusable": false,
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "background": "@drawable/blue_btn_bkg",
+        "id": "mpag_b",
+        "gravity": "right"
+      }
+    ]
+  },
+  "xx": {
+    "type": "CommonLayout",
+    "id": "bandbandf",
+    "layout_width": "match_parent",
+    "kmm": "55",
+    "layout_marginBottom": "20dp",
+    "layout_marginTop": "20dp",
+    "layout_marginLeft": "10dp",
+    "layout_marginRight": "10dp",
+    "background": "@drawable/blue_btn_bkg",
+    "layout_height": "85dp",
+    "Common_data": {
+      "fragments": [
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag1",
+          "type_fragment": "0"
+        },
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag22",
+          "type_fragment": "0"
+        },
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag3",
+          "type_fragment": "0"
+        }
+      ],
+      "Tabs": [
+        {
+          "ContentTitle": "page1",
+          "ContentColog": "#ffcc33",
+          "Content_Select_Start": true,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag1",
+          "ContentViewB": "pag1",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "page2",
+          "ContentColor": "#ffcc33",
+          "Content_Select_Start": false,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag22",
+          "ContentViewB": "pag22",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "page3",
+          "ContentColor": "#ffcc33",
+          "Content_Select_Start": false,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag3",
+          "ContentViewB": "pag3",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        }
+      ],
+      "pager_id": "mpag",
+      "Common_UnderLine": 1,
+      "Common_UnderLineGravity": 0,
+      "Common_UnderLineH": 0,
+      "Common_UnderLineIconMargin": 0,
+      "Common_UnderLineColor": "#ffcc44",
+      "Common_UnderLineTextColor": "#ffffff",
+      "Common_UnderLineSelectTextColor": "#ffffff",
+      "Common_ShowIcon": true,
+      "use_delay": true,
+      "use_delay_value": 1000
+    }
+  },
+  "xx_b": {
+    "type": "CommonLayout",
+    "id": "bandbandfb",
+    "layout_width": "match_parent",
+    "kmm": "55",
+    "layout_marginBottom": "20dp",
+    "layout_marginTop": "20dp",
+    "layout_marginLeft": "10dp",
+    "layout_marginRight": "10dp",
+    "background": "@drawable/blue_btn_bkg",
+    "layout_height": "85dp",
+    "Common_data": {
+      "fragments": [
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag1_b",
+          "type_fragment": "0"
+        },
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag22_b",
+          "type_fragment": "0"
+        },
+        {
+          "page_title": "hellllllo",
+          "content_fragment": "pag3_b",
+          "type_fragment": "0"
+        }
+      ],
+      "Tabs": [
+        {
+          "ContentTitle": "page1",
+          "ContentColog": "#ffcc33",
+          "Content_Select_Start": true,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag1_b",
+          "ContentViewB": "pag1_b",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "page2",
+          "ContentColor": "#ffcc33",
+          "Content_Select_Start": false,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag22",
+          "ContentViewB": "pag22",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "page3",
+          "ContentColor": "#ffcc33",
+          "Content_Select_Start": false,
+          "ContentMainCount": 3,
+          "ContentType": "1",
+          "ContentView": "pag3_b",
+          "ContentViewB": "pag3_b",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        }
+      ],
+      "pager_id": "mpag_b",
+      "Common_UnderLine": 1,
+      "Common_UnderLineGravity": 0,
+      "Common_UnderLineH": 0,
+      "Common_UnderLineIconMargin": 0,
+      "Common_UnderLineColor": "#ffcc44",
+      "Common_UnderLineTextColor": "#ffffff",
+      "Common_UnderLineSelectTextColor": "#ffffff",
+      "Common_ShowIcon": true,
+      "use_delay": true,
+      "use_delay_value": 50
+    }
+  },
+  "col": {
+    "type": "CoordinatorLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "backgrounfd": "#ffaa77",
+    "id": "hdjjjjuucg",
+    "fitSystemWindowgs": true,
+    "children": [
+      {
+        "type": "AppBarLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "expanded": true,
+        "orientation": "vertical",
+        "id": "juggguvi",
+        "children": [
+          {
+            "type": "CollapsingToolbarLayout",
+            "layout_width": "match_parent",
+            "collapsedTitleGravityf": "center",
+            "layout_height": "200dp",
+            "contentScrim": "#3F51B5",
+            "title": "Collapsing Toolbar",
+            "id": "hivvvviii",
+            "titleEnabled": true,
+            "layout_scrollFlagss": {
+              "na": 0
+            },
+            "expandedTitleMargin": "10dp",
+            "scrimAnimationDuration": 0,
+            "childrecn": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "id": "hjjjj",
+                "orientation": "vertical",
+                "view_from_sourcce": {
+                  "delay": 1000,
+                  "source_name": "source2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "NestedScrollView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "id": "hdjjjjyvfgggucg",
+        "layout_alignParentBottom": true,
+        "layout_alignParentTop": true,
+        "layout_behavior": "@string/appbar_scrolling_view_behavior",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingTop": "0dp",
+            "orientation": "vertical",
+            "layout_alignParentBottom": true,
+            "layout_alignParentTop": true,
+            "id": "hdjjjhhhjygucg",
+            "gravity": "right",
+            "children": [
+              {
+                "type": "include",
+                "layout": "allk",
+                "focusable": false,
+                "tname": "SimpleDataBindingExample",
+                "paddingBottom": "0dp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data_source": {
+    "source5": {
+      "Empty_View": {
+        "type": "include",
+        "layout": "empt",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      "Empty_View_Filter": {
+        "type": "include",
+        "layout": "empt",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      "Layout_manager": {
+        "Layout_Type": "LinearLayoutManager",
+        "Orientation": "vertical",
+        "Reverse": false,
+        "Layout_Space": 0,
+        "Layout_Row": 1,
+        "use_online_search": true
+      },
+      "Column_Header": [
+        {
+          "Header_Title": "idyyy"
+        }
+      ],
+      "Column_Data": [],
+      "Data_From": {
+        "Event_Type": "CheckNull",
+        "animation": {
+          "a_enter": false,
+          "a_enter_step": false,
+          "a_expand": false,
+          "a_expand_out": false,
+          "a_delay_a": 0,
+          "a_delay_b": 0,
+          "a_anim_rev": false,
+          "a_anim_for": false,
+          "a_load_start": true,
+          "a_drage": false,
+          "CountItem": 1,
+          "show_prog": true,
+          "a_wait": 0,
+          "prog_vieww": {
+            "type": "include",
+            "layout": "b",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          "a_endless_count": 0,
+          "a_endless_page": 5,
+          "a_use_endless": true,
+          "a_use_offline": true,
+          "a_use_top": false
+        },
+        "Set_Data": [
+          {
+            "View_Id": "myouto",
+            "Type_Process": "5",
+            "Key_Process": "5uurrrthello_hello_hello",
+            "Value_Key": "Unit_Name"
+          }
+        ],
+        "Name": "pic",
+        "Custome_Dataa": [
+          {
+            "idyyy": 1,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول 120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 2,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 3,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 4,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          }
+        ],
+        "Multiple_Views": {
+          "Filter_Views": [
+            {
+              "Key_Name": "drugName_ar"
+            }
+          ],
+          "Def_Views": {
+            "type": "include",
+            "layout": "Item_B",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "50dp",
+            "layout_marginTop": "50dp",
+            "layout_marginBottom": "5dp",
+            "tname": "SimpleDataBindingExample",
+            "KeyName": "recycleserchhm",
+            "paddingBottom": "0dp",
+            "FilterName": "Unit_Name",
+            "data": {
+              "user": "@{items}",
+              "my": "@{items[$index]}"
+            }
+          },
+          "a_enable": "1",
+          "MultipleViews": [
+            {
+              "v_Name": "Item_B",
+              "v_ColumnName": "id",
+              "v_EqualValue": "20",
+              "v_id": "1"
+            }
+          ]
+        },
+        "Return_Data": [
+          {
+            "Return_Type": "55",
+            "Return_To_Message": [
+              {
+                "Response_Key_Name": "0",
+                "View_Id": "55",
+                "Message_Text": "hhhh",
+                "View_Type": "A"
+              }
+            ]
+          }
+        ],
+        "Return_To_View": [
+          {
+            "View_Id": "saveprograss",
+            "Type_Process": "1",
+            "Value_Process": "1",
+            "View_Type": "A"
+          }
+        ],
+        "Use_Volley": true,
+        "Before_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": false,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "View_Type": "10",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "wwba",
+                "View_Type": "8",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "After_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "0",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 3,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "View_Type": "10",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "wwbab",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "Finsh_Process": [
+          {
+            "View_Id": "recyuuiopxxx",
+            "Type_Process": "22",
+            "Value_Process": "55",
+            "View_Type": "A"
+          }
+        ],
+        "Sender_Data": [
+          {
+            "Data_From_View": [
+              {
+                "View_Id": "name",
+                "View_Type": "5",
+                "index_id": 0,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "email",
+                "View_Type": "6",
+                "index_id": 1,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "pic",
+                "View_Type": "6",
+                "index_id": 2,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "API_Acess",
+                "index_id": 3,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "index_id": 4,
+                "use_const": true,
+                "const_value": "autotext"
+              }
+            ],
+            "API_Data": [
+              {
+                "Method_Type": "POST",
+                "Type_Url": "local0",
+                "Url": "http://0.0.0.0:8080/admin3/froms.php",
+                "Response_Data": [
+                  {
+                    "Key_Name": "#{datxa}",
+                    "Key_Value": "data#message",
+                    "Key_Type": "Select_Key",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Refresh_Key",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Offline_Key",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Show_As_Message",
+                    "index_id": 1,
+                    "use_format": false
+                  }
+                ],
+                "Request_Header": [
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heeemmm",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "name_view",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 4,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heeettff",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "vvvvvvv",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  }
+                ],
+                "Request_Body": [],
+                "Request_Query": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "source4": {
+      "Empty_View": {
+        "type": "include",
+        "layout": "empt",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      "Empty_View_Filter": {
+        "type": "include",
+        "layout": "empt",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      "Layout_manager": {
+        "Layout_Type": "LinearLayoutManager",
+        "Orientation": "vertical",
+        "Reverse": false,
+        "Layout_Space": 0,
+        "Layout_Row": 1,
+        "use_online_search": true
+      },
+      "Column_Header": [
+        {
+          "Header_Title": "idyyy"
+        }
+      ],
+      "Column_Data": [],
+      "Data_From": {
+        "Event_Type": "CheckNull",
+        "animation": {
+          "a_enter": false,
+          "a_enter_step": false,
+          "a_expand": false,
+          "a_expand_out": false,
+          "a_delay_a": 0,
+          "a_delay_b": 0,
+          "a_anim_rev": false,
+          "a_anim_for": false,
+          "a_load_start": true,
+          "a_drage": false,
+          "CountItem": 1,
+          "show_prog": true,
+          "a_wait": 0,
+          "prog_vieww": {
+            "type": "include",
+            "layout": "b",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          "a_endless_count": 0,
+          "a_endless_page": 5,
+          "a_use_endless": true,
+          "a_use_offline": true,
+          "a_use_top": false
+        },
+        "Set_Data": [
+          {
+            "View_Id": "myouto",
+            "Type_Process": "5",
+            "Key_Process": "5uurrrthello_hello_hello",
+            "Value_Key": "Unit_Name"
+          }
+        ],
+        "Name": "pic",
+        "Custome_Dataa": [
+          {
+            "idyyy": 1,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول 120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 2,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 3,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          },
+          {
+            "idyyy": 4,
+            "drugName_en": "hellRfamol 120ml Syrup",
+            "drugName_ar": "رفامول yc120 مجم شرابh",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020/8/14",
+            "spare2": "5",
+            "spare3": ""
+          }
+        ],
+        "Multiple_Views": {
+          "Filter_Views": [
+            {
+              "Key_Name": "drugName_ar"
+            }
+          ],
+          "Def_Views": {
+            "type": "include",
+            "layout": "Item_B",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "50dp",
+            "layout_marginTop": "50dp",
+            "layout_marginBottom": "5dp",
+            "tname": "SimpleDataBindingExample",
+            "KeyName": "recycleserchhm",
+            "paddingBottom": "0dp",
+            "FilterName": "Unit_Name",
+            "data": {
+              "user": "@{items}",
+              "my": "@{items[$index]}"
+            }
+          },
+          "a_enable": "1",
+          "MultipleViews": [
+            {
+              "v_Name": "Item_B",
+              "v_ColumnName": "id",
+              "v_EqualValue": "20",
+              "v_id": "1"
+            }
+          ]
+        },
+        "Return_Data": [
+          {
+            "Return_Type": "55",
+            "Return_To_Message": [
+              {
+                "Response_Key_Name": "0",
+                "View_Id": "55",
+                "Message_Text": "hhhh",
+                "View_Type": "A"
+              }
+            ]
+          }
+        ],
+        "Return_To_View": [
+          {
+            "View_Id": "saveprograss",
+            "Type_Process": "1",
+            "Value_Process": "1",
+            "View_Type": "A"
+          }
+        ],
+        "Use_Volley": true,
+        "Before_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": false,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "View_Type": "10",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "wwba",
+                "View_Type": "8",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "After_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "0",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 3,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "View_Type": "10",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "wwbab",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "Finsh_Process": [
+          {
+            "View_Id": "recyuuiopxxx",
+            "Type_Process": "22",
+            "Value_Process": "55",
+            "View_Type": "A"
+          }
+        ],
+        "Sender_Data": [
+          {
+            "Data_From_View": [
+              {
+                "View_Id": "name",
+                "View_Type": "5",
+                "index_id": 0,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "email",
+                "View_Type": "6",
+                "index_id": 1,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "pic",
+                "View_Type": "6",
+                "index_id": 2,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "API_Acess",
+                "index_id": 3,
+                "use_const": true,
+                "const_value": "data#message"
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "index_id": 4,
+                "use_const": true,
+                "const_value": "slider"
+              }
+            ],
+            "API_Data": [
+              {
+                "Method_Type": "POST",
+                "Type_Url": "local0",
+                "Url": "http://0.0.0.0:8080/admin3/froms.php",
+                "Response_Data": [
+                  {
+                    "Key_Name": "#{datxa}",
+                    "Key_Value": "data#message",
+                    "Key_Type": "Select_Key",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Refresh_Key",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Offline_Key",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Show_As_Message",
+                    "index_id": 1,
+                    "use_format": false
+                  }
+                ],
+                "Request_Header": [
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heeemmm",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "name_view",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 4,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "heeettff",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  },
+                  {
+                    "Key_Name": "vvvvvvv",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "index_id": 1,
+                    "use_format": false
+                  }
+                ],
+                "Request_Body": [],
+                "Request_Query": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Style_Layout": {
+    "money": {
+      "textColor": "#56a411",
+      "textSize": "28sp"
+    },
+    "center": {
+      "layout_gravity": "center"
+    },
+    "mini": {
+      "textSize": "8sp",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "layout_margin": "4dp"
+    },
+    "blue": {
+      "textColor": "#027cd5"
+    },
+    "default": {
+      "textColor": "#323232",
+      "textSize": "14sp"
+    }
+  }
+}

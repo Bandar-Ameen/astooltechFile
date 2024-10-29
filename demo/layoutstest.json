@@ -1,0 +1,4348 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_marginTop": "0dp",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "list_show",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "Unit_Name": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "10dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "10dp",
+    "starticon": "@drawable/addbtn",
+    "lboxcolor": "@color/green",
+    "lhint": "اسم الوحدة",
+    "id": "Unit_Name",
+    "data_primary": "Unit_Name",
+    "d_NullValue": true,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawable/addbtn",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "tooltipText": "اسم الوحدة",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": true
+  },
+  "UnitID": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "10dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "10dp",
+    "starticon": "@drawable/addbtn",
+    "lboxcolor": "@color/green",
+    "lhint": "رقم الوحدة",
+    "data_primary": "UnitID",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawable/addbtn",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "tooltipText": "اسم الوحدة",
+        "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,@{ID_unit},4, fromfour,7,0)}",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": false
+  },
+  "RelativeLttayoutExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RelativeLayout",
+        "layout_width": "match_parent",
+        "layout_height": "100dp",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "id": "center",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "text": "Center",
+            "textColor": "#323232",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginBottom": "4dp",
+            "layout_above": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginTop": "4dp",
+            "layout_below": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginLeft": "4dp",
+            "layout_toRightOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginRight": "4dp",
+            "layout_toLeftOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "layout_height": "70dp",
+            "layout_width": "120dp",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitCenter",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+          }
+        ]
+      }
+    ]
+  },
+  "Data_Layout": {
+    "tags": [
+      "alpha",
+      "beta",
+      "gamma",
+      "delta",
+      "niner"
+    ]
+  },
+  "card1": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#eff4ff",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "data_primary": "midelk",
+                    "text": "@{k[1]}",
+                    "textColor": "@color/blue_A200",
+                    "textSize": "20sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "expandmy": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginTop": "10dp",
+    "gravity": "right",
+    "orientation": "vertical",
+    "ViewEx": {
+      "Expand": {
+        "type": "ExpandLayoutView",
+        "layout_width": "30dp",
+        "layout_height": "30dp",
+        "ViewEx": {
+          "ViewEx_View": {
+            "type": "HorizontalScrollView",
+            "orientation": "horizontal",
+            "scrollbars": "none",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "children": [
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  }
+                ]
+              }
+            ]
+          },
+          "ViewEx_Color": "@color/green",
+          "ViewEx_down": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "30dp",
+            "background": "@drawableFont/fa_arrow_up_solid/3/40/#ffffff"
+          },
+          "ViewEx_up": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "30dp",
+            "background": "@drawableFont/fa_arrow_down_solid/3/40/#ffffff"
+          }
+        },
+        "orientation": "vertical"
+      },
+      "index_icon": 1,
+      "ExpandIconLayout": {
+        "type": "LinearLayout",
+        "layout_width": "wrap_content",
+        "layout_marginRight": "5dp",
+        "layout_height": "wrap_content",
+        "background": "@color/blue_A200",
+        "elevation": "10dp",
+        "gravity": "center",
+        "orientation": "horizontal",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_weight": 2,
+            "gravity": "center",
+            "data_primary": "midelkui",
+            "text": "       ",
+            "textColor": "@color/white",
+            "textSize": "15sp"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_weight": 2,
+            "gravity": "center",
+            "data_primary": "midelkui",
+            "text": "باقات يمن موبايل",
+            "textColor": "@color/white",
+            "textSize": "15sp"
+          }
+        ]
+      }
+    }
+  },
+  "mainmnue": {
+    "type": "TabLayoutView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+    "orientation": "vertical",
+    "Tab_Content1": {
+      "Content_Type": "2",
+      "Header_ID": "hello125",
+      "Body_ID": "hello127",
+      "mchild": {
+        "type": "LinearLayout",
+        "id": "hellgo126",
+        "data_primary": "hellog126",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "tname": "SimpleDataBindingExample",
+        "children": [
+          {
+            "type": "ScrollView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "Setting": {
+              "ScrollModes": 2
+            },
+            "children": [
+              {
+                "type": "RelativeLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "paddingTop": "0dp",
+                "orientation": "vertical",
+                "gravity": "right",
+                "children": [
+                  {
+                    "type": "CardView",
+                    "click_from": "5",
+                    "typeAction": "View_Edit",
+                    "click_from_datak": "{#my#:[{medata:#name#}]}",
+                    "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+                    "orientation": "vertical",
+                    "layout_gravity": "center",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "id": "k",
+                    "layout_alignParentBottom": false,
+                    "layout_alignParentRight": true,
+                    "layout_marginBottom": "-50dp",
+                    "elevation": "20dp",
+                    "background": "@drawable/blue_btn_bkg",
+                    "layout_marginLeft": "20dp",
+                    "layout_marginRight": "20dp",
+                    "gravity": "right",
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "gravity": "center",
+                        "direction": "right",
+                        "paddingTop": "0dp",
+                        "orientation": "vertical",
+                        "data_primary": "hello125"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "CardView",
+                    "text": "fabsggggffff",
+                    "layout_alignParentBottom": false,
+                    "layout_alignParentRight": true,
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "gravity": "center",
+                        "direction": "right",
+                        "paddingTop": "50dp",
+                        "layout_marginLeft": "10dp",
+                        "layout_marginRight": "10dp",
+                        "paddingBottom": "10dp",
+                        "orientation": "vertical",
+                        "children": [
+                          {
+                            "type": "ScrollView",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "Setting": {
+                              "ScrollModes": 2
+                            },
+                            "children": [
+                              {
+                                "type": "LinearLayout",
+                                "layout_width": "match_parent",
+                                "layout_height": "wrap_content",
+                                "gravity": "center",
+                                "direction": "right",
+                                "paddingTop": "10dp",
+                                "layout_marginLeft": "0dp",
+                                "layout_marginRight": "0dp",
+                                "paddingBottom": "10dp",
+                                "orientation": "vertical",
+                                "data_primary": "hello127"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "backgroundx": {
+                      "@": {
+                        "type": "shape",
+                        "content": {
+                          "type": "shape",
+                          "shape": "rectangle",
+                          "children": [
+                            {
+                              "type": "solid",
+                              "color": "#ffcc33"
+                            },
+                            {
+                              "type": "corners",
+                              "color": "#ffcc33",
+                              "angle": 20,
+                              "radius": 30,
+                              "topLeftRadius": 10,
+                              "topRightRadius": 10,
+                              "bottomLeftRadius": 10,
+                              "bottomRightRadius": 50
+                            }
+                          ]
+                        },
+                        "color": "#ffcc33"
+                      }
+                    },
+                    "layout_below": "k",
+                    "layout_centerHorizontal": true,
+                    "id": "m",
+                    "layout_marginBottom": "0dp",
+                    "layout_marginLeft": "5dp",
+                    "layout_marginRight": "5dp",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample",
+                    "background": {
+                      "type": "shape",
+                      "shape": "rectangle",
+                      "Shape_Path": {
+                        "Path_Width": 14,
+                        "Path_Height": 14,
+                        "Path_WidthA": 24,
+                        "Path_HeightA": 164,
+                        "Path_Object": [
+                          {
+                            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                            "Path_color": "7cb342"
+                          }
+                        ]
+                      },
+                      "children": [
+                        {
+                          "type": "corners",
+                          "color": "#ffcc33",
+                          "angle": 20,
+                          "radius": "10dp",
+                          "topLeftRadius": "10dp",
+                          "topRightRadius": "10dp",
+                          "bottomLeftRadius": "10dp",
+                          "bottomRightRadius": "10dp"
+                        },
+                        {
+                          "type": "solid",
+                          "color": "#ffcc33",
+                          "angle": 20,
+                          "radius": 10,
+                          "topLeftRadius": 50,
+                          "topRightRadius": 50,
+                          "bottomLeftRadius": 50,
+                          "bottomRightRadius": 50
+                        },
+                        {
+                          "type": "stroke",
+                          "color": "#E52B50",
+                          "width": "0dp",
+                          "dashWidth": "0dp",
+                          "radius": 10,
+                          "topLeftRadius": 50,
+                          "topRightRadius": 50,
+                          "bottomLeftRadius": 50,
+                          "bottomRightRadius": 50
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Content_Fragment": {
+        "type": "CommonLayout",
+        "data_primary": "bandband",
+        "layout_width": "match_parent",
+        "kmm": "55",
+        "layout_height": "wrap_content",
+        "layout_margin": "10dp",
+        "Common_data": {
+          "Common_UnderLine": 80,
+          "Common_UnderLineGravity": 0,
+          "Common_UnderLineH": 0,
+          "Common_UnderLineIconMargin": 0,
+          "Common_UnderLineColor": "#ffcc44",
+          "Common_UnderLineTextColor": "#ffffff",
+          "Common_UnderLineSelectTextColor": "#ffffff"
+        },
+        "table_show_view": "kk#child#parent",
+        "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+      },
+      "Content_Pager": {
+        "type": "FrameLayout",
+        "layout_width": "match_parent",
+        "layout_height": "500dp",
+        "id": "hhhhhhhhhh",
+        "table_show_view": "kk#child#parent",
+        "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+      },
+      "Content_Radius": "5",
+      "Content_Style": "0",
+      "Content_margin": "0",
+      "Content_Color": "ffffff#ffffff#ffffff#438afe#438afe#ffffff",
+      "Content_Data": [
+        {
+          "ContentTitle": "الرئيسية",
+          "ContentColor": "#438afe",
+          "ContentMain": "2",
+          "ContentMainCount": 3,
+          "Content_Select_Start": false,
+          "ContentType": "card1",
+          "ContentView": "card1",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "الرئيسية",
+          "ContentColor": "#438afe",
+          "ContentMain": "2",
+          "ContentMainCount": 3,
+          "Content_Select_Start": false,
+          "ContentType": "card1",
+          "ContentView": "card1",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "الرصيد",
+          "ContentColor": "#438afe",
+          "ContentMain": "card1#card2#card1#card2#card1#card2#card1#card2#card1",
+          "ContentMainCount": 3,
+          "Content_Select_Start": true,
+          "ContentType": "form",
+          "ContentView": "form",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        }
+      ]
+    },
+    "data_primary": "mfragmenttk8kkk"
+  },
+  "form": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "data_primary": "tt",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "10dp",
+          "topRightRadius": "10dp",
+          "bottomLeftRadius": "10dp",
+          "bottomRightRadius": "10dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    },
+    "layout_height": "700dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "0dp",
+              "dashWidth": "0dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,تعديل الوحدة,4, fromfour,7,اضافة وحدة)}"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "include",
+        "layout": "UnitID",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "Unit_Name",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_marginTop": "0dp",
+        "layout_height": "match_parent",
+        "children": [
+          {
+            "type": "Button",
+            "layout_height": "wrap_content",
+            "layout_width": "150dp",
+            "layout_gravity": "center",
+            "layout_marginTop": "0dp",
+            "text": "رجوع",
+            "Event": {
+              "Event_Type": "CloseDialog",
+              "Name": "form"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#438afe",
+                  "angle": 20,
+                  "radius": "5dp",
+                  "topLeftRadius": "5dp",
+                  "topRightRadius": "5dp",
+                  "bottomLeftRadius": "5dp",
+                  "bottomRightRadius": "5dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#438afe",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#ffcc33",
+                  "width": "3dp",
+                  "dashWidth": "5dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            },
+            "textColor": "#ffffff"
+          },
+          {
+            "type": "include",
+            "layout": "data_from",
+            "tname": "SimpleDataBindingExample"
+          }
+        ]
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "textColor": "#ffaa77",
+        "textSize": "32sp",
+        "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,@{ID_unit},4, fromfour,7,0)}",
+        "data_primary": "mtextkk",
+        "visibility": "gone"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,14,4, fromfour,7,13)}",
+        "data_primary": "mtextk",
+        "visibility": "gone"
+      },
+      {
+        "type": "ProgressBar",
+        "layout_height": "50dp",
+        "layout_width": "90dp",
+        "gravity": "center",
+        "mm": 1,
+        "data_primary": "saveprograssk",
+        "visibility": "gone",
+        "style_bar": {
+          "color_bar": "#2cdb81",
+          "typ_bar": "1"
+        },
+        "text": "ADD gh CART"
+      }
+    ]
+  },
+  "Item_A": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation": "@anim/fade_in",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "focusable": false,
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "focusable": false,
+           "Event": {
+  "Event_Type": "Set_Data_From_View_To_View",
+  "Name": "form",
+  "get_set_to_view": {
+    "Data_From_View": [
+      {
+        "View_Id": "Unit_NameSearcih",
+        "index_id": 0,
+        "View_Type": "A",
+        "use_const": false,
+        "const_value": false,
+        "use_data_from_source": true,
+        "source_key": "drugName_en"
+      },
+      {
+        "View_Id": "Unit_NameSearcihi",
+        "index_id": 1,
+        "View_Type": "A",
+        "use_const": false,
+        "const_value": "hhhhhhh",
+        "use_data_from_source": true,
+        "source_key": "drugName_ar",
+        "hellohello":"hhhkkkkkkkkkkki"
+      }
+    ],
+    "Data_To_View": [
+      {
+        "View_Id": "Unit_NameSearch",
+        "View_Type": "0",
+        "index_id": 0
+      },
+      {
+        "View_Id": "myouto",
+        "View_Type": "0",
+        "index_id": 0
+      },
+      {
+        "View_Id": "idid",
+        "View_Type": "0",
+        "index_id": 1
+      }
+      
+    ]
+  }
+},
+            
+            
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "focusable": false,
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "focusable": false,
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kk",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "focusable": false,
+                        "table_filedname": "name",
+                        "layout_marginRight": "0dp",
+                        "text": "@{drugName_en}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "focusable": false,
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تعععععديل",
+                            "layout_marginRight": "0dp",
+                            "focusable": false,
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "SelectItem",
+                                "focusable": false,
+                                "on_select_item":"null",
+                                "typeActionName": "myautoprimary",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+                                "onClickk": "m@{tag}",
+                                "background": "@drawableFont/fa_edit/2/40/#438afe",
+                                "Event": {
+                                  "Event_Type": "Set_Data_From_View_To_View",
+                                  "Name": "form",
+                                  
+
+"get_set_to_view":{
+"Data_From_View": [
+                                    
+                                    
+                                    {
+                                      "View_Id": "Unit_NameSearcih",
+                                      "index_id": 0,
+                                      "View_Type": "A",
+                                      "use_const":false,
+                                      "const_value":false,
+                                      "use_data_from_source":true,
+                                      "source_key":"drugName_en"
+                                    },
+                                    {
+                                      "View_Id": "Unit_NameSearcih",
+                                      "index_id": 1,
+                                      "View_Type": "A",
+                                      "use_const":false,
+                                      "const_value":false,
+                                      "use_data_from_source":true,
+                                      "source_key":"drugName_ar"
+                                    }
+                                    
+                                  ],
+                                  
+                                  "Data_To_View": [
+            {
+              "View_Id": "Unit_NameSearch",
+              "View_Type": "0",
+              "Index_ID": 0
+            },
+            {
+              "View_Id": "idid",
+              "View_Type": "0",
+              "Index_ID": 1
+            }
+            
+            
+            
+          ]
+             }                   }
+             
+             
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "focusable": false,
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "focusable": false,
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_trash_alt/2/60/#438afe"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Item_B": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation": "@anim/fade_in",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "focusable": false,
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "focusable": false,
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "focusable": false,
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "focusable": false,
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kk",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "focusable": false,
+                        "table_filedname": "name",
+                        "layout_marginRight": "0dp",
+                        "text": "@{unit_name}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "focusable": false,
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تععععkعديل",
+                            "layout_marginRight": "0dp",
+                            "focusable": false,
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "SelectItem",
+                                "focusable": false,
+                                "typeActionName": "myautoprimary",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+                                "onClickk": "m@{tag}",
+                                "background": "@drawableFont/fa_edit/2/40/#438afe",
+                                "Event": {
+                                  "Event_Type": "Show_Dialog_With_Set_Data",
+                                  "Name": "AlertDialogLayout",
+                                  "Set_Data": [
+                                    {
+                                      "View_Id": "name",
+                                      "Type_Process": "5",
+                                      "Value_Process": "drugName_ar",
+                                      "View_Type": "A"
+                                    },
+                                    {
+                                      "View_Id": "email",
+                                      "Type_Process": "5",
+                                      "Value_Process": "id",
+                                      "View_Type": "A"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "focusable": false,
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "focusable": false,
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_trash_alt/2/60/#438afe"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data_from": {
+    "type": "Button",
+    "layout_height": "wrap_content",
+    "layout_width": "150dp",
+    "layout_gravity": "center",
+    "layout_marginTop": "0dp",
+    "text": "ظظحفظ",
+    "font_name":"Cairo-Regular",
+    "data_primary": "Save_button",
+    "Error_Message": {
+      "Event_Type": "ShowCookie",
+      "Name": "kMM",
+      "M": "1",
+      "T": "1",
+      "Title": "رسالة تنبية ",
+      "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+      "ColorA": "ffffff",
+      "ColorB": "ffffff",
+      "ColorC": "d3212d",
+      "Locations": "b",
+      "Duration": 5000,
+      "Anim_Type": 0,
+      "AutoDismiss": true,
+      "SweepDismiss": true,
+      "Custome_View": {
+        "type": "CardView",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "right",
+            "focusable": false,
+            "background": "@color/red_A200",
+            "orientation": "vertical",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "50dp",
+                "layout_height": "50dp",
+                "layout_gravity": "center",
+                "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "10dp",
+                "gravity": "center",
+                "textColor": "@color/white",
+                "textSize": "18sp",
+                "text": "@{Result}"
+              }
+            ]
+          }
+        ]
+      },
+      "Icon": {
+        "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "background": "@drawableFont/fa_edit/2/40/#ffffff"
+      },
+      "Set_Data": [
+        {
+          "View_Id": "mywebr",
+          "Type_Process": "5",
+          "Value_Process": "kkm(\"#@\")",
+          "View_Type": "55"
+        }
+      ],
+      "data": {
+        "me": "@{Result}"
+      }
+    },
+    "Success_Message": {
+      "Event_Type": "ShowCookie",
+      "Name": "kMM",
+      "M": "1",
+      "T": "1",
+      "Title": "رسالة تنبية ",
+      "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+      "ColorA": "ffffff",
+      "ColorB": "ffffff",
+      "ColorC": "d3212d",
+      "Locations": "b",
+      "Duration": 5000,
+      "Anim_Type": 0,
+      "AutoDismiss": true,
+      "SweepDismiss": true,
+      "Custome_View": {
+        "type": "CardView",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "right",
+            "focusable": false,
+            "background": "@color/green",
+            "orientation": "vertical",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "50dp",
+                "layout_height": "50dp",
+                "layout_gravity": "center",
+                "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "10dp",
+                "gravity": "center",
+                "textColor": "@color/white",
+                "textSize": "18sp",
+                "text": "@{Result.data[0].col2}"
+              }
+            ]
+          }
+        ]
+      },
+      "Icon": {
+        "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "background": "@drawableFont/fa_edit/2/40/#ffffff"
+      },
+      "Set_Data": [
+        {
+          "View_Id": "mywebr",
+          "Type_Process": "5",
+          "Value_Process": "kkm(\"#@\")",
+          "View_Type": "55"
+        }
+      ]
+    },
+    "Event": {
+      "Event_Type": "CheckNullb",
+      "Name": "form",
+      "Set_Datav":[{
+"View_Id": "Unit_Name",
+          "Type_Process": "5",
+          "Value_Process": "nnnnnjjuuyfh",
+          "View_Type": "55"
+}],
+      "Data_From_View": [
+            {
+              "View_Id": "Unit_Name",
+              "View_Type": "0",
+              "Index_ID": 0
+              
+            }
+            
+          ],
+          "Data_To_View": [
+            {
+              "View_Id": "UnitID",
+              "View_Type": "0",
+              "Index_ID": 0
+            }
+            
+          ],
+          
+          
+          
+      
+      "Return_Data": [
+        {
+          "Return_Type": "55",
+          "Return_To_Message": [
+            {
+              "Response_Key_Name": "0",
+              "View_Id": "55",
+              "Message_Text": "hhhh",
+              "View_Type": "A"
+            }
+          ]
+        }
+      ],
+      "Return_To_View": [
+        {
+          "View_Id": "saveprograss",
+          "Type_Process": "1",
+          "Value_Process": "1",
+          "View_Type": "A"
+        }
+      ],
+      "Use_Volley": true,
+      "Show_Confirm": {
+        "type": "include",
+        "layout": "Confirm_Message",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "tname": "SimpleDataBindingExample"
+      },
+      "Before_Process": [
+        {
+          "View_Id": "saveprograssk",
+          "Type_Process": "1",
+          "Value_Process": "1",
+          "View_Type": "A"
+        },
+        {
+          "View_Id": "Save_button",
+          "Type_Process": "3",
+          "Value_Process": "3",
+          "View_Type": "A"
+        }
+      ],
+      "After_Process": [
+        {
+          "View_Id": "saveprograssk",
+          "Type_Process": "2",
+          "Value_Process": "2",
+          "View_Type": "A"
+        },
+        {
+          "View_Id": "Save_button",
+          "Type_Process": "4",
+          "Value_Process": "4",
+          "View_Type": "A"
+        }
+      ],
+      "Finsh_Process": [
+        {
+          "View_Id": "55",
+          "Type_Process": "22",
+          "Value_Process": "55",
+          "View_Type": "A"
+        }
+      ],
+      "Sender_Datao": [
+        {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_Name",
+              "View_Type": "0",
+              "Index_ID": 0
+            },
+            {
+              "View_Id": "mtextkk",
+              "View_Type": "0",
+              "Index_ID": 1
+            },
+            {
+              "View_Id": "pic",
+              "View_Type": "6",
+              "Index_ID": 2
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "API_Acess",
+              "Index_ID": 3
+            },
+            {
+              "View_Id": "mtextk",
+              "View_Type": "A",
+              "Index_ID": 4
+            }
+          ],
+          "API_Dataa": [
+            {
+              "Method_Type": "POST",
+              "Type_Url": "local0",
+              "Url": "http://192.168.1.103:80/api/desin/uidesin",
+              "Response_Data": [
+                {
+                  "Key_Name": "#{datxa}",
+                  "Key_Value": "data",
+                  "Key_Type": "Select_Key"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Refresh_Key"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Offline_Key"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Show_As_Message"
+                }
+              ],
+              "Request_Header": [
+                {
+                  "Key_Name": "Content-Type",
+                  "Key_Value": "application/json; charset=UTF-8",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "Accept-Charset",
+                  "Key_Value": "utf-8",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "curdtype",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "curdtypek",
+                  "Key_Value": "2",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "admin",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "id",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "namee",
+                  "Key_Value": "gggggggg1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "parentid",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "%2$s",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "heeemmm",
+                  "Key_Value": "%2$s",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "heeettff",
+                  "Key_Value": "%3$s",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "Authorization",
+                  "Key_Value": "%4$s",
+                  "Key_Type": "5555"
+                }
+              ],
+              "Request_Body": [
+                {
+                  "Key_Name": "bbbb",
+                  "Key_Value": "[{\"head\":[{\"typ1\":\"1\",\"userID\":\"0\",\"alfraID\":\"0\",\"stockID\":\"0\",\"username\":\"0\",\"enab\":\"0\",\"typ2\":\"1\",\"IDforupdate\":\"0\",\"allwith\":\"0\",\"sandookID\":\"0\",\"parcount\":\"0\",\"parmnam\":\"24\"}],\"pramname\":[{\"paramvalue\":[\"%5$s\",\"%1$s\",\"A2\", \"0\",\"A3\",\"A4\",\"A5\",\"A6\", \"%2$s\"]}]}]",
+                  "Key_Type": "5555"
+                }
+              ],
+              "Request_Query": []
+            }
+          ]
+        }
+      ]
+    },
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": "5dp",
+          "topLeftRadius": "5dp",
+          "topRightRadius": "5dp",
+          "bottomLeftRadius": "5dp",
+          "bottomRightRadius": "5dp"
+        },
+        {
+          "type": "solid",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#ffcc33",
+          "width": "3dp",
+          "dashWidth": "5dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    },
+    "textColor": "#ffffff"
+  },
+  "Confirm_Message": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "data_primary": "tt",
+    "layout_height": "wrap_content",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#438afe",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "هل تريد الإستمرار!"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "children": [
+          {
+            "type": "Button",
+            "layout_height": "?Theme_AppCompat:actionBarSize",
+            "layout_width": "150dp",
+            "gravity": "center",
+            "layout_marginTop": "0dp",
+            "text": "موافق",
+            "Event": {
+              "Event_Type": "OkDialog",
+              "Name": "tt"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#ffcc33",
+                  "angle": 20,
+                  "radius": "10dp",
+                  "topLeftRadius": "10dp",
+                  "topRightRadius": "10dp",
+                  "bottomLeftRadius": "10dp",
+                  "bottomRightRadius": "10dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#ffffff",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#E52B50",
+                  "width": "0dp",
+                  "dashWidth": "0dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            }
+          },
+          {
+            "type": "Button",
+            "layout_height": "?Theme_AppCompat:actionBarSize",
+            "layout_width": "150dp",
+            "gravity": "center",
+            "layout_marginTop": "0dp",
+            "text": "إلغاء",
+            "Event": {
+              "Event_Type": "CloseDialog",
+              "Name": "tt"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#ffcc33",
+                  "angle": 20,
+                  "radius": "10dp",
+                  "topLeftRadius": "10dp",
+                  "topRightRadius": "10dp",
+                  "bottomLeftRadius": "10dp",
+                  "bottomRightRadius": "10dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#ffffff",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#E52B50",
+                  "width": "0dp",
+                  "dashWidth": "0dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            }
+          }
+        ],
+        "layout_height": "50dp"
+      }
+    ],
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "10dp",
+          "topRightRadius": "10dp",
+          "bottomLeftRadius": "10dp",
+          "bottomRightRadius": "10dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    }
+  },
+  "some": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "orientation": "horizontal",
+    "gravity": "right",
+    "focusable": false,
+    "children": [
+      {
+        "type": "include",
+        "layout": "Search",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "RippleLayout",
+        "focusable": false,
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "35dp",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "tooltipText": "إضافة",
+        "layout_marginRight": "10dp",
+        "children": [
+          {
+            "type": "Button",
+            "text": "",
+            "layout_height": "35dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "typeActionName": "delete",
+            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+            "click_from_datak": "{#my#:[{medata:#name#}]}",
+            "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+            "onClick": "m@{tag}",
+            "background": "@drawableFont/fa_plus_solid/1/60/#438afe",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Show_Dialog_With_Set_Data",
+              "Name": "form",
+              "Set_Data": [
+                {
+                  "View_Id": "mywebt",
+                  "Type_Process": "5",
+                  "Value_Process": "4",
+                  "View_Type": "55"
+                }
+              ]
+            }
+          }
+        ],
+        "layout_gravity": "center"
+      }
+    ]
+  },
+  "list_show": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "orientation": "vertical",
+    "gravity": "right",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#c48866",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "الوحدات"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+    {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/red_A200",
+              "id": "idid",
+    "data_primary": "idid",
+            
+            "textSize": "18sp",
+            "text": "0"
+          },
+
+  {
+        "type": "include",
+        "layout": "some",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "Sppiner",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "AutoTextv",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      
+      
+      
+      {
+        "type": "include",
+        "layout": "sliderv",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "uu",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "Search": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "60dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+    "lboxcolor": "@color/green",
+    "lhint": "بحث",
+    "id": "Unit_NameSearch",
+    "data_primary": "Unit_NameSearch",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "With_Search": {
+          "ViewID": "myouto"
+        },
+        "tooltipText": "اسم الوحدة",
+        "text": "@{AlertDialogLayout.my[0].email}",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": true
+  },
+  
+"uu":  {
+  "type": "SwipeRefreshLayout",
+  "layout_width": "match_parent",
+  "layout_height": "200dp",
+  "padding": "0dp",
+  "data_primary": "recyuuiop",
+  "on_sweep": "recycleserchhm",
+  "on_sweep_typ": "1",
+  "paddingBottom": "0dp",
+  "children": [
+    {
+      "type": "ARecyclerView",
+      "layout_width": "match_parent",
+      "layout_height": "200dp",
+      "background": "#ffffff",
+      "filter": "drugName_ar",
+      "data_primary": "myslidersv",
+      "Recycle": {
+        "typ": "1"
+      },
+      "mdata": {
+        "trime": "1000",
+        "Typedir": "2",
+        "run_Auto": true,
+        "Data_From": {
+          "Event_Type": "CheckNull",
+          "animation": {
+            "a_enter": false,
+            "a_enter_step": false,
+            "a_expand": false,
+            "a_expand_out": false,
+            "a_anim_rev": false,
+            "a_anim_for": false,
+            "a_load_start": true,
+            "a_drage": true,
+            "CountItem": 2,
+            "a_endless_count": 0,
+            "a_endless_page": 0,
+            "a_use_endless": true,
+            "a_use_offline": true,
+            "a_use_top": true
+          },
+          "Set_Data": [
+            {
+              "View_Id": "myspainn",
+              "Type_Process": "5",
+              "Key_Process": "5uurrrthello_hello_hello",
+              "Value_Key": "drugName_ar"
+            },
+            {
+              "View_Id": "myouto",
+              "Type_Process": "5",
+              "Key_Process": "5uurrrthello_hello_hello",
+              "Value_Key": "drugName_ar"
+            }
+          ],
+          "Name": "pic",
+          "Multiple_Views": {
+            "Filter_Views": [
+              {
+                "Key_Name": "drugName_ar"
+              }
+            ],
+            "Def_Views": {
+              "type": "include",
+              "layout": "DataDrivenExamplevmy",
+              "tname": "SimpleDataBindingExample",
+              "KeyName": "recycleserchhm",
+              "paddingBottom": "0dp",
+              "FilterName": "drugName_ar",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "a_enable": "1",
+            "MultipleViews": [
+              {
+                "v_Name": "SimpleDataBindingExample",
+                "v_ColumnName": "id",
+                "v_EqualValue": "20",
+                "v_id": "1"
+              }
+            ]
+          },
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "55",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "0",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                  "Url": "https://astooltech.com/api/v1/test2.json",
+                  "Response_Data": [
+                    {
+                        "Key_Name": "FromMyRecycle",
+                        "Key_Value": "data#data",
+                        "Key_Type": "Select_Key"
+                      },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "1",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "mmnuuuk",
+                      "Key_Value": "1",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%1$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "vvvvvvv",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+},
+
+"sliderv":{
+  "type": "SwipeRefreshLayout",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "padding": "0dp",
+  "data_primary": "recyuuiopxxxi",
+  "on_sweep": "recycleserchhmii",
+  "on_sweep_typ": "myslider",
+  "paddingBottom": "0dp",
+  "children": [
+    {
+      "type": "SliderView",
+      "layout_width": "match_parent",
+      "layout_height": "90dp",
+      "background": "#ffffff",
+      "filter": "unit_name",
+      "data_primary": "myslider",
+      "Error_Message": {
+        "Event_Type": "ShowCookie",
+        "Name": "kMM",
+        "M": "1",
+        "T": "1",
+        "Title": "رسالة تنبية ",
+        "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+        "ColorA": "ffffff",
+        "ColorB": "ffffff",
+        "ColorC": "d3212d",
+        "Locations": "b",
+        "Duration": 5000,
+        "Anim_Type": 0,
+        "AutoDismiss": true,
+        "SweepDismiss": true,
+        "Custome_View": {
+          "type": "CardView",
+          "orientation": "vertical",
+          "layout_width": "match_parent",
+          "layout_height": "wrap_content",
+          "background": "@drawable/blue_btn_bkg",
+          "layout_margin": "5dp",
+          "children": [
+            {
+              "type": "LinearLayout",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "gravity": "right",
+              "focusable": false,
+              "background": "@color/green",
+              "orientation": "vertical",
+              "children": [
+                {
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "layout_gravity": "center",
+                  "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                },
+                {
+                  "type": "TextView",
+                  "layout_width": "match_parent",
+                  "layout_height": "wrap_content",
+                  "layout_marginTop": "10dp",
+                  "gravity": "center",
+                  "textColor": "@color/white",
+                  "textSize": "18sp",
+                  "text": "@{Result.Message}"
+                }
+              ]
+            }
+          ]
+        },
+        "Icon": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#ffffff"
+        },
+        "Set_Data": [
+          {
+            "View_Id": "mywebr",
+            "Type_Process": "5",
+            "Value_Process": "kkm(\"#@\")",
+            "View_Type": "55"
+          }
+        ]
+      },
+      "Recycle": {
+        "typ": "1"
+      },
+      "mdata": {
+        "Layout_manager": {
+          "Layout_Type": "LinearLayoutManager",
+          "Orientation": "vertical",
+          "Reverse": false,
+          "Layout_Space": 10,
+          "Layout_Row": 3
+        },
+        "Data_From": {
+          "Event_Type": "CheckNull",
+          "animation": {
+            "a_enter": true,
+            "a_enter_step": true,
+            "a_expand": true,
+            "a_expand_out": true,
+            "a_anim_rev": true,
+            "a_anim_for": true,
+            "a_load_start": true,
+            "a_drage": true,
+            "CountItem": 5,
+            "a_endless_count": 20,
+            "a_endless_page": 20,
+            "a_use_endless": true,
+            "a_use_offline": false,
+            "a_use_top": false
+          },
+          "Set_Data": [
+            {
+              "View_Id": "myouto",
+              "Type_Process": "5",
+              "Key_Process": "5uurrrthello_hello_hello",
+              "Value_Key": "drugName_ar"
+            }
+          ],
+          "Name": "pic",
+          "Custome_Dataa": [
+            {
+              "Name": "helloooo"
+            }
+          ],
+          "Multiple_Views": {
+            "Filter_Views": [
+              {
+                "Key_Name": "drugName_ar"
+              }
+            ],
+            "Def_Views": {
+              "type": "include",
+              "layout": "Item_A",
+              "tname": "SimpleDataBindingExample",
+              "KeyName": "recycleserchhmii",
+              "paddingBottom": "0dp",
+              "FilterName": "Unit_Name",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "a_enable": "1",
+            "MultipleViews": [
+              {
+                "v_Name": "Item_B",
+                "v_ColumnName": "ID_unit",
+                "v_EqualValue": "20",
+                "v_id": "1"
+              }
+            ]
+          },
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Use_Volley": true,
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "bandband",
+              "Type_Process": "15",
+              "Value_Process": "0",
+              "Custome_Value": {
+                "Tab_Id": 2,
+                "Tab_count": 20
+              },
+              "View_Type": "2"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "bandband",
+              "Type_Process": "15",
+              "Value_Process": "0",
+              "Custome_Value": {
+                "Tab_Id": 2,
+                "Tab_count": 20
+              },
+              "View_Type": "2"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "recyuuiopxxx",
+              "Type_Process": "5",
+              "Value_Process": "5",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "recyuuiopxxx",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "0",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                  "Url": "http://0.0.0.0:8080/admin3/test2.json",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "FromMyRecycle",
+                      "Key_Value": "data#data",
+                      "Key_Type": "Select_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "1",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "unitData",
+                      "Key_Value": "1",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%1$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "Authorization",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [
+                    {
+                      "Key_Name": "bbbb",
+                      "Key_Value": "[{\"head\":[{\"typ1\":\"1\",\"userID\":\"0\",\"alfraID\":\"0\",\"stockID\":\"0\",\"username\":\"0\",\"enab\":\"0\",\"typ2\":\"1\",\"IDforupdate\":\"0\",\"allwith\":\"0\",\"sandookID\":\"0\",\"parcount\":\"0\",\"parmnam\":\"24\"}],\"pramname\":[{\"paramvalue\":[\"16\",\"%1$s\",\"A2\", \"0\",\"A3\",\"A4\",\"A5\",\"A6\", \"132\"]}]}]",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+  ,
+  
+  "AutoTextv":{
+  "type": "SwipeRefreshLayout",
+  "layout_width": "match_parent",
+  "layout_height": "50dp",
+  "padding": "0dp",
+  "data_primary": "recyuuiopxxx",
+  "on_sweep": "recycleserchhm",
+  "on_sweep_typ": "myouto",
+  "paddingBottom": "0dp",
+  "children": [
+    {
+      "type": "AutoText",
+      "layout_width": "match_parent",
+      "layout_height": "50dp",
+      "background": "#ffffff",
+      "filter": "unit_name",
+      "data_primary": "myoutotext",
+      "Error_Message": {
+        "Event_Type": "ShowCookie",
+        "Name": "kMM",
+        "M": "1",
+        "T": "1",
+        "Title": "رسالة تنبية ",
+        "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+        "ColorA": "ffffff",
+        "ColorB": "ffffff",
+        "ColorC": "d3212d",
+        "Locations": "b",
+        "Duration": 5000,
+        "Anim_Type": 0,
+        "AutoDismiss": true,
+        "SweepDismiss": true,
+        "Custome_View": {
+          "type": "CardView",
+          "orientation": "vertical",
+          "layout_width": "match_parent",
+          "layout_height": "wrap_content",
+          "background": "@drawable/blue_btn_bkg",
+          "layout_margin": "5dp",
+          "children": [
+            {
+              "type": "LinearLayout",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "gravity": "right",
+              "focusable": false,
+              "background": "@color/green",
+              "orientation": "vertical",
+              "children": [
+                {
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "layout_gravity": "center",
+                  "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                },
+                {
+                  "type": "TextView",
+                  "layout_width": "match_parent",
+                  "layout_height": "wrap_content",
+                  "layout_marginTop": "10dp",
+                  "gravity": "center",
+                  "textColor": "@color/white",
+                  "textSize": "18sp",
+                  "text": "@{Result.Message}"
+                }
+              ]
+            }
+          ]
+        },
+        "Icon": {
+          "type": "ImageView",
+          "layout_width": "50dp",
+          "layout_height": "50dp",
+          "background": "@drawableFont/fa_edit/2/40/#ffffff"
+        },
+        "Set_Data": [
+          {
+            "View_Id": "mywebr",
+            "Type_Process": "5",
+            "Value_Process": "kkm(\"#@\")",
+            "View_Type": "55"
+          }
+        ]
+      },
+      "Recycle": {
+        "typ": "1"
+      },
+      "mdata": {
+        "Layout_manager": {
+          "Layout_Type": "LinearLayoutManager",
+          "Orientation": "vertical",
+          "Reverse": false,
+          "Layout_Space": 10,
+          "Layout_Row": 3
+        },
+        "Data_From": {
+          "Event_Type": "CheckNull",
+          "animation": {
+            "a_enter": true,
+            "a_enter_step": true,
+            "a_expand": true,
+            "a_expand_out": true,
+            "a_anim_rev": true,
+            "a_anim_for": true,
+            "a_load_start": true,
+            "a_drage": true,
+            "CountItem": 5,
+            "a_endless_count": 20,
+            "a_endless_page": 20,
+            "a_use_endless": true,
+            "a_use_offline": false,
+            "a_use_top": false
+          },
+          "Set_Data": [
+            {
+              "View_Id": "myouto",
+              "Type_Process": "5",
+              "Key_Process": "5uurrrthello_hello_hello",
+              "Value_Key": "drugName_ar"
+            }
+          ],
+          "Name": "pic",
+          "Custome_Dataa": [
+            {
+              "Name": "helloooo"
+            }
+          ],
+          "Multiple_Views": {
+            "Filter_Views": [
+              {
+                "Key_Name": "drugName_ar"
+              }
+            ],
+            "Def_Views": {
+              "type": "include",
+              "layout": "Item_A",
+              "tname": "SimpleDataBindingExample",
+              "KeyName": "recycleserchhm",
+              "paddingBottom": "0dp",
+              "FilterName": "Unit_Name",
+              "data": {
+                "user": "@{items}",
+                "my": "@{items[$index]}"
+              }
+            },
+            "a_enable": "1",
+            "MultipleViews": [
+              {
+                "v_Name": "Item_B",
+                "v_ColumnName": "ID_unit",
+                "v_EqualValue": "20",
+                "v_id": "1"
+              }
+            ]
+          },
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Use_Volley": true,
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "bandband",
+              "Type_Process": "15",
+              "Value_Process": "0",
+              "Custome_Value": {
+                "Tab_Id": 2,
+                "Tab_count": 20
+              },
+              "View_Type": "2"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "bandband",
+              "Type_Process": "15",
+              "Value_Process": "0",
+              "Custome_Value": {
+                "Tab_Id": 2,
+                "Tab_count": 20
+              },
+              "View_Type": "2"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "recyuuiopxxx",
+              "Type_Process": "5",
+              "Value_Process": "5",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "recyuuiopxxx",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "0",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                    "Url": "http://0.0.0.0:8080/admin3/test2.json",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "FromMyRecycle",
+                      "Key_Value": "data#data",
+                      "Key_Type": "Select_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "1",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "unitData",
+                      "Key_Value": "1",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%1$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "Authorization",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [
+                    {
+                      "Key_Name": "bbbb",
+                      "Key_Value": "[{\"head\":[{\"typ1\":\"1\",\"userID\":\"0\",\"alfraID\":\"0\",\"stockID\":\"0\",\"username\":\"0\",\"enab\":\"0\",\"typ2\":\"1\",\"IDforupdate\":\"0\",\"allwith\":\"0\",\"sandookID\":\"0\",\"parcount\":\"0\",\"parmnam\":\"24\"}],\"pramname\":[{\"paramvalue\":[\"16\",\"%1$s\",\"A2\", \"0\",\"A3\",\"A4\",\"A5\",\"A6\", \"132\"]}]}]",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+},
+  
+  
+  
+  "Sppiner": {
+    "type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "50dp",
+    "padding": "0dp",
+    "data_primary": "recyuuiopxxx",
+    "on_sweep": "recycleserchhm",
+    "on_sweep_typ": "myouto",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "Sppiner",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "background": "#ffffff",
+        "filter": "unit_name",
+        "data_primary": "myouto",
+        "Error_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "@{Result.Message}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+            
+          ]
+        },
+        "Recycle": {
+          "typ": "1"
+        },
+        "mdata": {
+          "Layout_manager": {
+            "Layout_Type": "LinearLayoutManager",
+            "Orientation": "vertical",
+            "Reverse": false,
+            "Layout_Space": 10,
+            "Layout_Row": 3
+          },
+          "Data_From": {
+            "Event_Type": "CheckNull",
+            "animation": {
+              "a_enter": true,
+              "a_enter_step": true,
+              "a_expand": true,
+              "a_expand_out": true,
+              "a_anim_rev": true,
+              "a_anim_for": true,
+              "a_load_start": true,
+              "a_drage": true,
+              "CountItem": 5,
+              "a_endless_count": 20,
+              "a_endless_page": 20,
+              "a_use_endless": true,
+              "a_use_offline": false,
+              "a_use_top": false
+            },
+            "Set_Data": [
+              {
+                "View_Id": "myouto",
+                "Type_Process": "5",
+                "Key_Process": "5uurrrthello_hello_hello",
+                "Value_Key": "drugName_ar"
+              }
+            ],
+            "Name": "pic",
+            "Custome_Dataa": [
+              {
+                "Name": "helloooo"
+              }
+            ],
+            "Multiple_Views": {
+              "Filter_Views": [
+              {
+                "Key_Name": "drugName_ar"
+              }
+            ],
+              "Def_Views": {
+                "type": "include",
+                "layout": "Item_A",
+                "tname": "SimpleDataBindingExample",
+                "KeyName": "recycleserchhm",
+                "paddingBottom": "0dp",
+                "FilterName": "Unit_Name",
+                "data": {
+                  "user": "@{items}",
+                  "my": "@{items[$index]}"
+                }
+              },
+              "a_enable": "1",
+              "MultipleViews": [
+                {
+                  "v_Name": "Item_B",
+                  "v_ColumnName": "ID_unit",
+                  "v_EqualValue": "20",
+                  "v_id": "1"
+                }
+              ]
+            },
+            "Return_Data": [
+              {
+                "Return_Type": "55",
+                "Return_To_Message": [
+                  {
+                    "Response_Key_Name": "0",
+                    "View_Id": "55",
+                    "Message_Text": "hhhh",
+                    "View_Type": "A"
+                  }
+                ]
+              }
+            ],
+            "Return_To_View": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              }
+            ],
+            "Use_Volley": true,
+            "Before_Process": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "vvbbiikk",
+                "Type_Process": "3",
+                "Value_Process": "3",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "bandband",
+                "Type_Process": "15",
+                "Value_Process": "0",
+                "Custome_Value": {
+                  "Tab_Id": 2,
+                  "Tab_count": 20
+                },
+                "View_Type": "2"
+              }
+            ],
+            "After_Process": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "2",
+                "Value_Process": "2",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "bandband",
+                "Type_Process": "15",
+                "Value_Process": "0",
+                "Custome_Value": {
+                  "Tab_Id": 2,
+                  "Tab_count": 20
+                },
+                "View_Type": "2"
+              },
+              {
+                "View_Id": "vvbbiikk",
+                "Type_Process": "4",
+                "Value_Process": "4",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "recyuuiopxxx",
+                "Type_Process": "5",
+                "Value_Process": "5",
+                "View_Type": "A"
+              }
+            ],
+            "Finsh_Process": [
+              {
+                "View_Id": "recyuuiopxxx",
+                "Type_Process": "22",
+                "Value_Process": "55",
+                "View_Type": "A"
+              }
+            ],
+            "Sender_Data": [
+              {
+                "Data_From_View": [
+                  {
+                    "View_Id": "0",
+                    "View_Type": "5",
+                    "Index_ID": 0
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "6",
+                    "Index_ID": 1
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "6",
+                    "Index_ID": 2
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "API_Acess",
+                    "Index_ID": 3
+                  }
+                ],
+                "API_Data": [
+                  {
+                    "Method_Type": "POST",
+                    "Type_Url": "local0",
+                    "Url": "http://0.0.0.0:8080/admin3/test2.json",
+                    "Response_Data": [
+                      {
+                        "Key_Name": "FromMyRecycle",
+                        "Key_Value": "data#data",
+                        "Key_Type": "Select_Key"
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "1",
+                        "Key_Type": "Refresh_Key"
+                      },
+                      {
+                        "Key_Name": "unitData",
+                        "Key_Value": "1",
+                        "Key_Type": "Offline_Key"
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "0",
+                        "Key_Type": "Show_As_Message"
+                      }
+                    ],
+                    "Request_Header": [
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "%1$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "heeemmm",
+                        "Key_Value": "%2$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "heeettff",
+                        "Key_Value": "%3$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "Authorization",
+                        "Key_Value": "%4$s",
+                        "Key_Type": "5555"
+                      }
+                    ],
+                    "Request_Body": [
+                      {
+                        "Key_Name": "bbbb",
+                        "Key_Value": "[{\"head\":[{\"typ1\":\"1\",\"userID\":\"0\",\"alfraID\":\"0\",\"stockID\":\"0\",\"username\":\"0\",\"enab\":\"0\",\"typ2\":\"1\",\"IDforupdate\":\"0\",\"allwith\":\"0\",\"sandookID\":\"0\",\"parcount\":\"0\",\"parmnam\":\"24\"}],\"pramname\":[{\"paramvalue\":[\"16\",\"%1$s\",\"A2\", \"0\",\"A3\",\"A4\",\"A5\",\"A6\", \"132\"]}]}]",
+                        "Key_Type": "5555"
+                      }
+                    ],
+                    "Request_Query": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "AlertDialogLayout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "focusable": false,
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "focusable": false,
+        "background": "#80000000",
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "focusable": false,
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "id": "mykk",
+            "focusable": false,
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "الوحدات"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "focusable": false,
+        "Use_As_Search": "55",
+        "d_onErrorText": "الاسم",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "اسم الوحدة",
+        "id": "name",
+        "data_primary": "name",
+        "d_NullValue": true,
+        "d_OnErrorText": "يرجي إدخال الاسم",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "InputType": "text",
+            "tooltipText": "mmmmm",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "text": "@{AlertDialogLayout.my[0].name}",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "d_onErrorText": "يرجي ادخال البريد الالكتروني ",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "رقم الوحدة",
+        "id": "email",
+        "data_primary": "email",
+        "d_NullValue": false,
+        "d_OnErrorText": "يرجي ادخال البريد الالكتروني ",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "tooltipText": "البريد الإلكتروني ",
+            "text": "@{AlertDialogLayout.my[0].email}",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "رجوع",
+        "Event": {
+          "Event_Type": "CloseDialog",
+          "Name": "AlertDialogLayout"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "Savedataa",
+        "data_primary": "vvbbiikkmy",
+        "Error_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "t@{value}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+          ]
+        },
+        "Success_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "@{Result}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+          ]
+        },
+        "Event": {
+          "Event_Type": "SendAll",
+          "Name": "pic",
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Use_Volley": true,
+          "Show_Confirm": {
+            "type": "include",
+            "layout": "tt",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "55",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "name",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "email",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "pic",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                  "Url": "http://0.0.0.0:8080/admin3/uu.php",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "#{datxa}",
+                      "Key_Value": "data#message",
+                      "Key_Type": "Select_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "Content-Type",
+                      "Key_Value": "application/json; charset=UTF-8",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "Accept-Charset",
+                      "Key_Value": "utf-8",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "curdtype",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "curdtypek",
+                      "Key_Value": "2",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "admin",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "id",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "namee",
+                      "Key_Value": "gggggggg1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "parentid",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "vvvvvvv",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [
+                    {
+                      "Key_Name": "bbbb",
+                      "Key_Value": "{\"databody\":[{\"databodymmmmm\":[{\"databodymmmmmxxxxxxxxxxx\":\"2\",\"currID\":\"1\",\"typ\":\"2\",\"month\":\"0\",\"typsender\":\"1\",\"buyorsalse\":\"1\",                   \"groupID\":\"0\",\"prodID\":\"0\",\"barcode\":\"0\"}],\"currID\":\"1\",\"typ\":\"4\",\"month\":\"0\",\"typsender\":\"1\",\"buyorsalse\":\"1\",\"groupID\":\"0\",\"prodID\":\"0\",\"barcode\":\"0\"}]}",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "testerOk",
+        "Event": {
+          "Event_Type": "OkDialog",
+          "Name": "AlertDialogLayout"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "show",
+        "Event": {
+          "Event_Type": "ShowDialog",
+          "Name": "tt"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "حفظ",
+        "PrograssName": "saveprograss",
+        "key_value_show": "0",
+        "enabled": true,
+        "Save_before_refresh": "0",
+        "DisableWehen": "vvbbii",
+        "Key_from_response": "data",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},\n{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}\n\n]",
+        "api_body": "\n                  {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#%5$s#,#pic#:#%4$s#,#typ#:#%3$s#,#name#:#%1$s#,                   #email#:#%2$s#,#prodID#:#0#,#barcode#:#0#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeAction": "SaveData",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbii",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "cxxuuu",
+        "data_primary": "vvbbiikk",
+        "Event": {
+          "Event_Type": "CheckNull",
+          "Name": "pic",
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "55",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "name",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "email",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "pic",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                  "Url": "https://www.astooltech.com/api/v1/u",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Select_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%1$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "vvvvvvv",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "خروج",
+        "PrograssName": "saveprograss",
+        "key_value_show": "data",
+        "enabled": true,
+        "DisableWehen": "1",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}\n,\n{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}\n\n]",
+        "typeAction": "Cancel",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#@mid@#,#pic#:#@pic@#,#typ#:#@op@#,#name#:#%1$s#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",
+        "api_method": "POST",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbcancelk",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "موافق",
+        "PrograssName": "saveprograss",
+        "key_value_show": "message",
+        "enabled": true,
+        "DisableWehen": "1",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}\n\n]",
+        "typeAction": "OK",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1377#,#pic#:#@pic@#,#typ#:#1#,#name#:#@name@#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",
+        "api_method": "POST",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbcancelm",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "data_primary": "op",
+        "text": "@{fn:isNull(@{AlertDialogLayout.my[0].typ}, '1',@{AlertDialogLayout.my[0].typ})}"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "data_primary": "mid",
+        "text": "@{fn:isNull(@{AlertDialogLayout.my[0].id}, '0',@{AlertDialogLayout.my[0].id})}"
+      },
+      {
+        "type": "ProgressBar",
+        "layout_height": "50dp",
+        "layout_width": "90dp",
+        "gravity": "center",
+        "mm": 1,
+        "data_primary": "saveprograss",
+        "visibility": "gone",
+        "style_bar": {
+          "color_bar": "#2cdb81",
+          "typ_bar": "1"
+        },
+        "text": "ADD gh CART"
+      }
+    ],
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "10dp",
+          "topRightRadius": "10dp",
+          "bottomLeftRadius": "10dp",
+          "bottomRightRadius": "10dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    }
+  }
+}

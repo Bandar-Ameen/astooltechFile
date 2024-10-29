@@ -1,0 +1,753 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "shop",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "shop": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "orientation": "vertical",
+    "focusable": false,
+    "padding": "10dp",
+    "children": [
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "10dp",
+        "gravity": "center",
+        "textColor": "@color/red_A200",
+        "textSize": "18sp",
+        "id": "count",
+        "text": "0"
+      },
+      {
+        "type": "ShopView",
+        "layout_width": "match_parent",
+        "layout_height": "150dp",
+        "orientation": "vertical",
+        "focusable": false,
+        "id": "ccou",
+        "text": "ADD",
+        "pagdding": "10dp",
+        "Shop_data": {
+          "Shop_Back1": "#ffcc33",
+          "Shop_Text": "vvvvvvg",
+          "Shop_Back2": "#ffcc33",
+          "Shop_Count_Color": "#ffcc33",
+          "Shop_Min_Color": "#ffcc33",
+          "Shop_Add_Color": "#ffe135",
+          "Shop_Width": "100",
+          "Shop_R": "100",
+          "on_add_click": {
+            "Event_Type": "Set_Data_From_View_To_View",
+            "Name_Activity": "0",
+            "Value_Activity": "0",
+            "Show_Toolbar": true,
+            "Show_Drawer": false,
+            "Use_Volley": true,
+            "Name": "@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.SegmentTabActivity",
+            "get_set_to_view": {
+              "Data_From_View": [
+                {
+                  "View_Id": "ccou",
+                  "index_id": 0,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": 1,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en",
+                  "LeftPadding": 5,
+                  "BottomPadding": 5,
+                  "Size_Msg": 10,
+                  "Index_Msg": 1
+                },
+                {
+                  "View_Id": "Unit_NameSearcihi",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "hhhhhhh",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                }
+              ],
+              "Data_To_View": [
+                {
+                  "View_Id": "count",
+                  "index_id": 0,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": true,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en",
+                  "LeftPadding": 5,
+                  "BottomPadding": 5,
+                  "Size_Msg": 10,
+                  "Index_Msg": 1
+                },
+                {
+                  "View_Id": "Unit_NameSearcihi",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "hhhhhhh",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                }
+              ]
+            },
+            "Return_Data": [
+              {
+                "Return_Type": "55",
+                "Return_To_Message": [
+                  {
+                    "Response_Key_Name": "0",
+                    "View_Id": "55",
+                    "Message_Text": "hhhh",
+                    "View_Type": "A"
+                  }
+                ]
+              }
+            ],
+            "Return_To_View": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              }
+            ],
+            "Before_Process": {
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "Unit_NameSearcih",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": false,
+                    "const_value": true,
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  },
+                  {
+                    "View_Id": "Unit_NameSearcihi",
+                    "index_id": 1,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhh",
+                    "use_data_from_source": true,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "Unit_NameSearch",
+                    "View_Type": "0",
+                    "index_id": 0
+                  },
+                  {
+                    "View_Id": "myouto",
+                    "View_Type": "0",
+                    "index_id": 0
+                  },
+                  {
+                    "View_Id": "idid",
+                    "View_Type": "0",
+                    "index_id": 1
+                  }
+                ]
+              }
+            },
+            "Show_Confirm": {
+              "type": "include",
+              "layout": "tt",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "tname": "SimpleDataBindingExample"
+            },
+            "After_Process": {
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "Unit_NameSearcih",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": false,
+                    "const_value": true,
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  },
+                  {
+                    "View_Id": "Unit_NameSearcihi",
+                    "index_id": 1,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhh",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  },
+                  {
+                    "View_Id": "0",
+                    "index_id": 2,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "data#message",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "Unit_NameSearcih",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": false,
+                    "const_value": true,
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  },
+                  {
+                    "View_Id": "Unit_NameSearcihi",
+                    "index_id": 1,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhh",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  },
+                  {
+                    "View_Id": "0",
+                    "index_id": 2,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "data#message",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  }
+                ]
+              }
+            },
+            "Finsh_Process": [
+              {
+                "View_Id": "55",
+                "Type_Process": "22",
+                "Value_Process": "55",
+                "View_Type": "A"
+              }
+            ],
+            "Sender_Data": [
+              {
+                "Data_From_View": [
+                  {
+                    "View_Id": "name",
+                    "View_Type": "5",
+                    "index_id": 0,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "email",
+                    "View_Type": "6",
+                    "index_id": 1,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "email",
+                    "View_Type": "6",
+                    "index_id": 4,
+                    "use_const": true,
+                    "const_value": "mypagesave"
+                  },
+                  {
+                    "View_Id": "pic",
+                    "View_Type": "6",
+                    "index_id": 2,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "API_Acess",
+                    "index_id": 3,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "A",
+                    "index_id": 5,
+                    "use_const": true,
+                    "const_value": "1"
+                  }
+                ],
+                "API_Data": [
+                  {
+                    "Method_Type": "POST",
+                    "Type_Url": "local0",
+                    "Url": "url",
+                    "Response_Data": [
+                      {
+                        "Key_Name": "#{datxa}",
+                        "Key_Value": "data#message",
+                        "Key_Type": "Select_Key",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeerefresh",
+                        "Key_Value": "1",
+                        "Key_Type": "Refresh_Key",
+                        "index_id": 5,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeerefresh",
+                        "Key_Value": "1",
+                        "Key_Type": "Offline_Key",
+                        "index_id": 5,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "0",
+                        "Key_Type": "Show_As_Message",
+                        "index_id": 1,
+                        "use_format": false
+                      }
+                    ],
+                    "Request_Header": [
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeemmm",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeettff",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "vvvvvvv",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      }
+                    ],
+                    "Request_Body": [],
+                    "Request_Query": []
+                  }
+                ]
+              }
+            ]
+          },
+          "on_minus_click": {
+            "Event_Type": "Set_Data_From_View_To_View",
+            "Name_Activity": "0",
+            "Value_Activity": "0",
+            "Show_Toolbar": true,
+            "Show_Drawer": false,
+            "Use_Volley": true,
+            "Name": "@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.SegmentTabActivity",
+            "get_set_to_view": {
+              "Data_From_View": [
+                {
+                  "View_Id": "ccou",
+                  "index_id": 0,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": 1,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en",
+                  "LeftPadding": 5,
+                  "BottomPadding": 5,
+                  "Size_Msg": 10,
+                  "Index_Msg": 1
+                },
+                {
+                  "View_Id": "Unit_NameSearcihi",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "hhhhhhh",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                }
+              ],
+              "Data_To_View": [
+                {
+                  "View_Id": "count",
+                  "index_id": 0,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": true,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en",
+                  "LeftPadding": 5,
+                  "BottomPadding": 5,
+                  "Size_Msg": 10,
+                  "Index_Msg": 1
+                },
+                {
+                  "View_Id": "Unit_NameSearcihi",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "hhhhhhh",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_ar",
+                  "hellohello": "hhhkkkkkkkkkkki"
+                }
+              ]
+            },
+            "Return_Data": [
+              {
+                "Return_Type": "55",
+                "Return_To_Message": [
+                  {
+                    "Response_Key_Name": "0",
+                    "View_Id": "55",
+                    "Message_Text": "hhhh",
+                    "View_Type": "A"
+                  }
+                ]
+              }
+            ],
+            "Return_To_View": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              }
+            ],
+            "Before_Process": {
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "Unit_NameSearcih",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": false,
+                    "const_value": true,
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  },
+                  {
+                    "View_Id": "Unit_NameSearcihi",
+                    "index_id": 1,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhh",
+                    "use_data_from_source": true,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "Unit_NameSearch",
+                    "View_Type": "0",
+                    "index_id": 0
+                  },
+                  {
+                    "View_Id": "myouto",
+                    "View_Type": "0",
+                    "index_id": 0
+                  },
+                  {
+                    "View_Id": "idid",
+                    "View_Type": "0",
+                    "index_id": 1
+                  }
+                ]
+              }
+            },
+            "Show_Confirm": {
+              "type": "include",
+              "layout": "tt",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "tname": "SimpleDataBindingExample"
+            },
+            "After_Process": {
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "Unit_NameSearcih",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": false,
+                    "const_value": true,
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  },
+                  {
+                    "View_Id": "Unit_NameSearcihi",
+                    "index_id": 1,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhh",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  },
+                  {
+                    "View_Id": "0",
+                    "index_id": 2,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "data#message",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "Unit_NameSearcih",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": false,
+                    "const_value": true,
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  },
+                  {
+                    "View_Id": "Unit_NameSearcihi",
+                    "index_id": 1,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhh",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  },
+                  {
+                    "View_Id": "0",
+                    "index_id": 2,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "data#message",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_ar",
+                    "hellohello": "hhhkkkkkkkkkkki"
+                  }
+                ]
+              }
+            },
+            "Finsh_Process": [
+              {
+                "View_Id": "55",
+                "Type_Process": "22",
+                "Value_Process": "55",
+                "View_Type": "A"
+              }
+            ],
+            "Sender_Data": [
+              {
+                "Data_From_View": [
+                  {
+                    "View_Id": "name",
+                    "View_Type": "5",
+                    "index_id": 0,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "email",
+                    "View_Type": "6",
+                    "index_id": 1,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "email",
+                    "View_Type": "6",
+                    "index_id": 4,
+                    "use_const": true,
+                    "const_value": "mypagesave"
+                  },
+                  {
+                    "View_Id": "pic",
+                    "View_Type": "6",
+                    "index_id": 2,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "API_Acess",
+                    "index_id": 3,
+                    "use_const": true,
+                    "const_value": "data#message"
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "A",
+                    "index_id": 5,
+                    "use_const": true,
+                    "const_value": "1"
+                  }
+                ],
+                "API_Data": [
+                  {
+                    "Method_Type": "POST",
+                    "Type_Url": "local0",
+                    "Url": "url",
+                    "Response_Data": [
+                      {
+                        "Key_Name": "#{datxa}",
+                        "Key_Value": "data#message",
+                        "Key_Type": "Select_Key",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeerefresh",
+                        "Key_Value": "1",
+                        "Key_Type": "Refresh_Key",
+                        "index_id": 5,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeerefresh",
+                        "Key_Value": "1",
+                        "Key_Type": "Offline_Key",
+                        "index_id": 5,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "0",
+                        "Key_Type": "Show_As_Message",
+                        "index_id": 1,
+                        "use_format": false
+                      }
+                    ],
+                    "Request_Header": [
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeemmm",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "heeettff",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      },
+                      {
+                        "Key_Name": "vvvvvvv",
+                        "Key_Value": "0",
+                        "Key_Type": "5555",
+                        "index_id": 1,
+                        "use_format": false
+                      }
+                    ],
+                    "Request_Body": [],
+                    "Request_Query": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

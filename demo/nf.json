@@ -1,0 +1,687 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "children": [
+      {
+        "type": "ScrollView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "myinclu",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "myinclu": {
+    "type": "RelativeLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "background": "@color/red_A200",
+    "id": "hgell",
+    "src_xml": {
+      "xml_src": "<ScrollView\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:fillViewport=\"true\"\n    android:padding=\"8dp\">\n\n    <android.widget.LinearLayout\n        android:layout_width=\"match_parent\"\n        android:id=\"@+id/titleCardvgggv1\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"vertical\">\n\n        <!-- Card 1 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"1000dp\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            android:id=\"@+id/titlexxzzCardv1\"\n            app:cardBackgroundColor=\"@android:color/red\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"1000dp\"\n                android:orientation=\"vertical\"\n                android:id=\"titleCardv1\"\n                android:viewIdFrom=\"viewid1\"\n                 android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard1\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 1 Title\"\n                    android:id=\"@+id/titzdjuoleCardv1\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard1\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 1\"\n                    android:id=\"@+id/titlzzzzzeCayrdv1\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 2 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            android:id=\"@+id/titleCardvoooo1\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard2\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 2 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard2\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 2\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 3 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard3\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 3 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard3\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 3\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 4 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard4\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 4 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard4\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 4\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n        <!-- Card 5 -->\n        <androidx.cardview.widget.CardView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"8dp\"\n            app:cardCornerRadius=\"16dp\"\n            app:cardElevation=\"8dp\"\n            app:cardBackgroundColor=\"@android:color/white\">\n\n            <android.widget.LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:orientation=\"vertical\"\n                android:padding=\"16dp\">\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/titleCard5\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Card 5 Title\"\n                    android:textSize=\"18sp\"\n                    android:textColor=\"@android:color/black\"\n                    android:fontFamily=\"sans-serif-medium\" />\n\n                <androidx.appcompat.widget.AppCompatTextView\n                    android:id=\"@+id/subtitleCard5\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Subtitle for Card 5\"\n                    android:textSize=\"14sp\"\n                    android:textColor=\"@android:color/darker_gray\"\n                    android:layout_marginTop=\"4dp\" />\n            </android.widget.LinearLayout>\n        </androidx.cardview.widget.CardView>\n\n    </android.widget.LinearLayout>\n\n</ScrollView>\n",
+      "view_to_xml": [
+        {
+          "viewIdFrom": "viewid1",
+          "child_view": "card_view"
+        }
+      ]
+    },
+    "children": []
+  },
+  "bb": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "padding": "16dp",
+    "background": "#FFFFFF",
+    "children": [
+      {
+        "type": "CardView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "cornerRadius": "8dp",
+        "cardElevation": "4dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "horizontal",
+            "padding": "8dp",
+            "gravity": "center_vertical",
+            "children": [
+              {
+                "type": "ImageView",
+                "id": "@+id/close_icon",
+                "src": "@drawable/ic_close",
+                "layout_width": "24dp",
+                "layout_height": "24dp",
+                "layout_marginEnd": "8dp"
+              },
+              {
+                "type": "TextView",
+                "id": "@+id/header_name",
+                "text": "Name",
+                "textSize": "16sp",
+                "textColor": "#000000",
+                "layout_marginEnd": "8dp"
+              },
+              {
+                "type": "TextView",
+                "id": "@+id/header_use",
+                "text": "Use",
+                "textSize": "16sp",
+                "textColor": "#000000",
+                "layout_marginEnd": "8dp"
+              },
+              {
+                "type": "TextView",
+                "id": "@+id/header_follow",
+                "text": "Follow",
+                "textSize": "16sp",
+                "textColor": "#000000",
+                "layout_marginEnd": "8dp"
+              },
+              {
+                "type": "ImageView",
+                "id": "@+id/global_icon",
+                "src": "@drawable/ic_globe",
+                "layout_width": "24dp",
+                "layout_height": "24dp",
+                "layout_marginEnd": "8dp"
+              },
+              {
+                "type": "LinearLayout",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_gravity": "end",
+                "gravity": "end",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "id": "@+id/show_more_icon",
+                    "src": "@drawable/ic_more_vert",
+                    "layout_width": "24dp",
+                    "layout_height": "24dp",
+                    "layout_marginStart": "auto"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "nn": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "padding": "16dp",
+    "background": "#ffcc33",
+    "children": [
+      {
+        "type": "CardView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "cornerRadius": "8dp",
+        "cardElevation": "4dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "padding": "8dp",
+            "children": [
+              {
+                "type": "ImageView",
+                "id": "@+id/close_icon",
+                "background": "@drawableFont/fa_globe_solid/1/10/#BEBEBE",
+                "layout_width": "24dp",
+                "layout_height": "24dp",
+                "layout_alignParentStart": "true",
+                "layout_marginEnd": "8dp",
+                "layout_centerVertical": "true"
+              },
+              {
+                "type": "TextView",
+                "id": "@+id/header_name",
+                "text": "Name",
+                "textSize": "16sp",
+                "textColor": "#000000",
+                "layout_toEndOf": "@id/close_icon",
+                "layout_marginEnd": "8dp",
+                "layout_centerVertical": "true"
+              },
+              {
+                "type": "TextView",
+                "id": "@+id/header_use",
+                "text": "Use",
+                "textSize": "16sp",
+                "textColor": "#000000",
+                "layout_toEndOf": "@id/header_name",
+                "layout_marginEnd": "8dp",
+                "layout_centerVertical": "true"
+              },
+              {
+                "type": "TextView",
+                "id": "@+id/header_follow",
+                "text": "Follow",
+                "textSize": "16sp",
+                "textColor": "#000000",
+                "layout_toEndOf": "@id/header_use",
+                "layout_marginEnd": "8dp",
+                "layout_centerVertical": "true"
+              },
+              {
+                "type": "ImageView",
+                "id": "@+id/global_icon",
+                "src": "@drawable/ic_globe",
+                "layout_width": "24dp",
+                "layout_height": "24dp",
+                "layout_toEndOf": "@id/header_follow",
+                "layout_marginEnd": "8dp",
+                "layout_centerVertical": "true"
+              },
+              {
+                "type": "ImageView",
+                "id": "@+id/show_more_icon",
+                "src": "@drawable/ic_more_vert",
+                "layout_width": "24dp",
+                "layout_height": "24dp",
+                "layout_alignParentEnd": "true",
+                "layout_centerVertical": "true"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "card_view": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "orientation": "vertical",
+    "focusable": false,
+    "padding": "2dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "Orientation": "vertical",
+        "elevation": "20dp",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffcc44",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 10,
+              "topRightRadius": 10,
+              "bottomLeftRadius": 10,
+              "bottomRightRadius": 10
+            },
+            {
+              "type": "stroke",
+              "color": "#E52B50",
+              "width": "0dp",
+              "dashWidth": "0dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "cardCornerRadius": "8dp",
+        "focusable": false,
+        "Evenvt": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": false,
+                "const_value": "1",
+                "use_data_from_source": true,
+                "source_key": "drugName_en",
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": false,
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": true,
+                "source_key": "id",
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "padding": "16dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "id": "wating",
+                "visibility": "gone",
+                "padding": "16dp",
+                "children": [
+                  {
+                    "type": "ProgressBar",
+                    "layout_height": "40dp",
+                    "layout_width": "40dp",
+                    "gravity": "center",
+                    "visibility": "gone",
+                    "layout_gravity": "center",
+                    "mm": 1,
+                    "id": "savehggprograssk",
+                    "style_bar": {
+                      "color_bar": "#ffffff",
+                      "typ_bar": "1"
+                    }
+                  },
+                  {
+                    "type": "ProgressBar",
+                    "layout_height": "40dp",
+                    "layout_width": "40dp",
+                    "gravity": "center",
+                    "layout_gravity": "center",
+                    "mm": 1,
+                    "visibility": "gone",
+                    "id": "saveprogggugrassk",
+                    "style_bar": {
+                      "color_bar": "#ffffff",
+                      "typ_bar": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "CircleImageView",
+                "layout_width": "40dp",
+                "layout_height": "40dp",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "scaleType": "centerCrop",
+                "id": "ag5kn5",
+                "view_id_startg": "vvow",
+                "view_id_failedg": "vvow",
+                "backgroundv": "@drawable/shimmer",
+                "circleCrop": true,
+                "loader": {
+                  "hid_view_when_start": false,
+                  "delay": 50
+                }
+              },
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "padding_start": "16dp",
+                "id": "hellkuuvgu",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "padding_start": "16dp",
+                    "id": "hellkuuvgu",
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "padding_start": "16dp",
+                        "layout_weight": "1",
+                        "id": "hellkuuvgu",
+                        "children": [
+                          {
+                            "type": "TextView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "text": "اسم العميل",
+                            "id": "vvow",
+                            "textSize": "16sp",
+                            "textStyle": "bold",
+                            "font_name": "Cairo-Regular",
+                            "textColor": "@color/white",
+                            "paddingLeft": "5dp",
+                            "paddingRight": "5dp"
+                          },
+                          {
+                            "type": "TextView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "text": ".",
+                            "textSize": "20sp",
+                            "id": "followdot",
+                            "textColor": "@color/white",
+                            "paddingLeft": "2dp",
+                            "paddingRight": "2dp"
+                          },
+                          {
+                            "type": "TextView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "text": "Follow",
+                            "textSize": "16sp",
+                            "id": "follow",
+                            "textColor": "@color/white"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "layout_weight": "5",
+                        "id": "hellkuuvgu",
+                        "children": [
+                          {
+                            "type": "ImageView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "text": "...",
+                            "id": "vvow",
+                            "textSize": "25sp",
+                            "textStyle": "bold",
+                            "background": "@drawableFont/fa_ellipsis_h_solid/1/20/#BEBEBE",
+                            "font_name": "Cairo-Regular",
+                            "textColor": "@color/white",
+                            "layout_weight": "1"
+                          },
+                          {
+                            "type": "View",
+                            "layout_width": "10dp",
+                            "layout_height": "wrap_content",
+                            "layout_weight": "1"
+                          },
+                          {
+                            "type": "TextView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "text": "X",
+                            "id": "vvow",
+                            "textSize": "20sp",
+                            "textStyle": "bold",
+                            "backgroundd": "@drawableFont/fa_closed_captioning_solid/2/20/#BEBEBE",
+                            "font_name": "Cairo-Regular",
+                            "textColor": "@color/white",
+                            "layout_weight": "1",
+                            "paddingTop": "-10dp",
+                            "layout_paddingRight": "10dp"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "50dp",
+                    "orientation": "horizontal",
+                    "background": "@color/green",
+                    "id": "hellkuuvgu",
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "wrap_content",
+                        "layout_height": "50dp",
+                        "orientation": "horizontal",
+                        "id": "hellkuuvgu",
+                        "children": [
+                          {
+                            "type": "TextView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "text": "اسم العميل",
+                            "id": "vvow",
+                            "textSize": "16sp",
+                            "textStyle": "bold",
+                            "font_name": "Cairo-Regular",
+                            "textColor": "#BEBEBE",
+                            "paddingLeft": "5dp",
+                            "paddingRight": "5dp"
+                          },
+                          {
+                            "type": "ImageView",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "text": ".",
+                            "textSize": "20sp",
+                            "id": "followdot",
+                            "textColor": "@color/white",
+                            "paddingLeft": "2dp",
+                            "paddingRight": "2dp",
+                            "background": "@drawableFont/fa_globe_solid/1/10/#BEBEBE"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "padding_start": "16dp",
+            "id": "hellkuuvgu",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "horizontal",
+                "padding_start": "16dp",
+                "id": "hellkuuvgu",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "padding_start": "16dp",
+                    "layout_weight": "1",
+                    "id": "hellkuuvgu",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": "اسم العميل",
+                        "id": "vvow",
+                        "textSize": "16sp",
+                        "textStyle": "bold",
+                        "font_name": "Cairo-Regular",
+                        "textColor": "@color/white",
+                        "paddingLeft": "5dp",
+                        "paddingRight": "5dp"
+                      },
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": ".",
+                        "textSize": "20sp",
+                        "id": "followdot",
+                        "textColor": "@color/white",
+                        "paddingLeft": "2dp",
+                        "paddingRight": "2dp"
+                      },
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": "Follow",
+                        "textSize": "16sp",
+                        "id": "follow",
+                        "textColor": "@color/white"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "layout_weight": "5",
+                    "id": "hellkuuvgu",
+                    "children": [
+                      {
+                        "type": "ImageView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": "...",
+                        "id": "vvow",
+                        "textSize": "25sp",
+                        "textStyle": "bold",
+                        "background": "@drawableFont/fa_ellipsis_h_solid/1/20/#BEBEBE",
+                        "font_name": "Cairo-Regular",
+                        "textColor": "@color/white",
+                        "layout_weight": "1"
+                      },
+                      {
+                        "type": "View",
+                        "layout_width": "10dp",
+                        "layout_height": "wrap_content",
+                        "layout_weight": "1"
+                      },
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": "X",
+                        "id": "vvow",
+                        "textSize": "20sp",
+                        "textStyle": "bold",
+                        "backgroundd": "@drawableFont/fa_closed_captioning_solid/2/20/#BEBEBE",
+                        "font_name": "Cairo-Regular",
+                        "textColor": "@color/white",
+                        "layout_weight": "1",
+                        "paddingTop": "-10dp",
+                        "layout_paddingRight": "10dp"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "50dp",
+                "orientation": "horizontal",
+                "background": "@color/green",
+                "id": "hellkuuvgu",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "wrap_content",
+                    "layout_height": "50dp",
+                    "orientation": "horizontal",
+                    "id": "hellkuuvgu",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": "اسم العميل",
+                        "id": "vvow",
+                        "textSize": "16sp",
+                        "textStyle": "bold",
+                        "font_name": "Cairo-Regular",
+                        "textColor": "#BEBEBE",
+                        "paddingLeft": "5dp",
+                        "paddingRight": "5dp"
+                      },
+                      {
+                        "type": "ImageView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "text": ".",
+                        "textSize": "20sp",
+                        "id": "followdot",
+                        "textColor": "@color/white",
+                        "paddingLeft": "2dp",
+                        "paddingRight": "2dp",
+                        "background": "@drawableFont/fa_globe_solid/1/10/#BEBEBE"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

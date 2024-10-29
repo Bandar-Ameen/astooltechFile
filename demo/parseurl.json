@@ -1,0 +1,311 @@
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+ 
+      "children": [
+      {
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "ScriptViewv":"call setBackgroundColor R.color.green",
+
+                  "layout_marginTop": "0dp",
+                  "text": "uuuuuuuuu5558887حفظ",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"0",
+                  "enabled":true,
+                  "Save_before_refresh":"0",
+                  "DisableWehen":"vvbbihi",
+                  "Key_from_response":"data",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#mideltyp#,#data_set#:#mideltyp#,#data_get#:#mideltyp#},
+
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},
+{#data_id#:#midel#,#data_set#:#midel#,#data_get#:#midel#}
+
+]",
+
+"api_body":"
+          [{#head#:[{#typ1#:#1#,#userID#:#0#,#alfraID#:#0#,#stockID#:#0#,#username#:#0#,#enab#:#0#,#typ2#:#0#,#IDforupdate#:#0#,#allwith#:#0#,#sandookID#:#0#,#parcount#:#0#,#parmnam#:#24#}],#pramname#:[{#paramvalue#:[#%3$s#,#%1$s#,#%1$s#, #%5$s#,#%1$s#,#%1$s#,#%1$s#,#%1$s#, #%5$s#]}]}]",            
+        "Api_Header":"call alert  #AlertDialogLayout#
+
+
+",
+  "api_method":"post",
+          "api_url":"http://0.168.1.101:80/api/desin/uidesin"
+          ,
+
+
+          "typeAction" :"Script",
+          
+
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbuuii", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+      {
+      "type": "StarLayout",
+      "layout_width": "80dp",
+      "layout_height": "80dp",
+      "orientation": "vertical",
+ "Star_data":{
+"Layout_Typ":2,
+"Star_Number":5,
+"Bubble_Height":2,
+"Bubble_Width":2,
+"Bubble_border":2,
+"Bubble_Position":2
+
+},
+      "children": [
+      
+      {
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "حفظ",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"0",
+                  "enabled":true,
+                  "Save_before_refresh":"0",
+                  "DisableWehen":"vvbbii",
+                  "Key_from_response":"data",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#mideltyp#,#data_set#:#mideltyp#,#data_get#:#mideltyp#},
+
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},
+{#data_id#:#midel#,#data_set#:#midel#,#data_get#:#midel#}
+
+]",
+
+"api_body":"
+          [{#head#:[{#typ1#:#1#,#userID#:#0#,#alfraID#:#0#,#stockID#:#0#,#username#:#0#,#enab#:#0#,#typ2#:#0#,#IDforupdate#:#0#,#allwith#:#0#,#sandookID#:#0#,#parcount#:#0#,#parmnam#:#24#}],#pramname#:[{#paramvalue#:[#%3$s#,#%1$s#,#%1$s#, #%5$s#,#%1$s#,#%1$s#,#%1$s#,#%1$s#, #%5$s#]}]}]",            
+        "Api_Header":"
+{
+#my#:[
+{
+#keyname#:#testdata#,#url#:[{
+#baseurl#:#https://mobireviewz.com/mobile-phone-brands.html#,
+#from#:#8#,
+#to#:#7#,
+#selectfirst#:#li#
+}],
+#selectdata#:[{
+#dataselect#:[
+{
+#typeselect#:#1#,
+#selectname#:#li#,
+#equalto#:#5#
+},
+{
+#typeselect#:#1#,
+#selectname#:#a#,
+#equalto#:#5#
+},
+{
+#typeselect#:#2#,
+#selectname#:#eql#,
+#equalto#:#5#
+},
+
+{
+#typeselect#:#4#,
+#selectname#:#text#,
+#equalto#:#5#
+},
+{
+#typeselect#:#5#,
+#selectname#:#phonename#,
+#equalto#:#5#
+}
+
+
+]
+},
+{
+#dataselect#:[
+{
+#typeselect#:#1#,
+#selectname#:#li#,
+#equalto#:#5#
+},
+{
+#typeselect#:#1#,
+#selectname#:#a#,
+#equalto#:#5#
+},
+{
+#typeselect#:#2#,
+#selectname#:#eql#,
+#equalto#:#5#
+},
+{
+#typeselect#:#3#,
+#selectname#:#href#,
+#equalto#:#5#
+},
+{
+#typeselect#:#5#,
+#selectname#:#phoneurl#,
+#equalto#:#5#
+}
+
+
+
+]
+},
+
+{
+#dataselect#:[
+{
+#typeselect#:#1#,
+#selectname#:#li#,
+#equalto#:#5#
+},
+{
+#typeselect#:#1#,
+#selectname#:#img#,
+#equalto#:#5#
+},
+{
+#typeselect#:#2#,
+#selectname#:#eql#,
+#equalto#:#5#
+},
+{
+#typeselect#:#3#,
+#selectname#:#src#,
+#equalto#:#5#
+},
+
+{
+#typeselect#:#5#,
+#selectname#:#imageurl#,
+#equalto#:#5#
+}
+
+
+
+]
+}
+
+
+
+
+
+
+]
+
+}
+
+]
+}
+",
+        "Api_quary":"ut",
+  "api_method":"post",
+          "api_url":"http://0.168.1.101:80/api/desin/uidesin"
+          ,
+
+
+          "typeAction" :"MURL",
+          
+
+          "typeActionName" :"AlertDialogLayout",
+               "data_primary":"vvbbii", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}]},
+      
+      
+      {
+            "type": "ShopView",
+            "id": "center",
+            
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "Shop_data": {
+"Shop_Back1":"#ffcc33",
+"Shop_Back2":"#ffcc33",
+"Shop_Count_Color":"#ffcc33"
+,"Shop_Text":"hellommm",
+
+"Shop_Width":"3",
+"Shop_R":"20",
+"Shop_Min_Color":"#ffcc33",
+"Shop_Add_Color":"#438afe"
+
+},
+            
+            "textColor": "#ffcc33",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          },
+      
+      {
+"type": "TabLayoutView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+          "orientation": "vertical",
+"Tab_Content":{
+
+    "Content_Type":"1",
+    "Content_Fragment":"mtab",
+    "Content_Pager":"mcont",
+    "Content_Radius":"5",
+    "Content_Select_Start":1,
+    "Content_Color":"438afe#ffffff#438afe#438afe#438afe#438afe",
+    
+"Content_Data":"
+[
+{%1$sContentTitle%1$s:%1$sasnaf%1$s,%1$sContentColor%1$s:%1$s438afe%1$s,%1$sContentMain%1$s:%1$sno%1$s,%1$sContentMainCount%1$s:2,%1$sContentType%1$s:%1$sno%1$s,%1$sContentView%1$s:%1$sAlertDialogLayout%1$s,%1$sImageSelect%1$s:%1$sicon1%1$s,%1$sImageUnSelect%1$s:%1$sicon2%1$s },
+{%1$sContentTitle%1$s:%1$sasnafbb%1$s,%1$sContentColor%1$s:%1$s438afe%1$s,%1$sContentMain%1$s:%1$sno%1$s,%1$sContentMainCount%1$s:2,%1$sContentType%1$s:%1$sno%1$s,%1$sContentView%1$s:%1$smmn%1$s,%1$sImageSelect%1$s:%1$sicon1%1$s,%1$sImageUnSelect%1$s:%1$sicon2%1$s }
+
+]
+",
+"Content_Title":"الmمجموعات#الوحدات#الاصناق #المجعات٢",
+    "Content_View":"AlertDialogLayout#mmn#RecyclerViewExampleProdact#RecyclerViewExampleProdactk"
+    },
+
+    
+    
+    "data_primary":"mfragmenttk8kkk"
+    
+
+
+
+      
+     
+}
+
+
+
+
+
+
+
+]
+}

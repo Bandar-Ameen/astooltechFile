@@ -1,0 +1,510 @@
+
+
+
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+ 
+      "children": [
+      
+      
+      
+      
+     {
+                  "type": "AppBarLayout",
+      "layout_width": "match_parent",
+      "layout_height": "50dp",
+        
+                  "textColor": "#000000",
+                  "textSize": "12sp",
+                  "children":[
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "orientation": "horizontal",
+      
+      "children": [
+        
+{
+            "type": "EditText",
+            "layout_width": "150dp",
+            "layout_height": "50dp",
+            "hint":"بحث",
+            
+                     "data_primary":"recycleserchh",
+            "background":"@drawable/h_round",            
+            "textSize": "14sp",
+               "Serach_typ":"none",
+               "Web_Script":"none",
+               "Web_ViewName":"recycleserchhm",
+"Serach_id":"recycleserchh"
+            
+          },
+
+ {
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "background":"@drawable/addbtn",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenDrawer",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"overall2",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "background":"@drawable/addbtn",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenFragment",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"web",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+       
+                  "gravity": "center",
+                  "background":"@drawable/ic_live",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+         
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenMain",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"X",
+          "main_header":"card1",
+          "main_body":"card1#card2#card1#card1#card2#card1#card2#card1#card1#card2",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "background":"@drawable/ic_live",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+         
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenBottom",
+          "FragmentID":"mfragmenttxx",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayout",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "text":"barcodes",
+                      "id":"mykm",
+                  "background":"@drawable/ic_live",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+         
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"barcode",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"RecyclerViewExampleProdact",
+               "data_primary":"overall11", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}
+
+
+,
+
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                      "id":"myk",
+                  "background":"@drawable/ic_live",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+         
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenFragment",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"RecyclerViewExampleProdact",
+               "data_primary":"overall11", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}
+
+
+
+
+ 
+]
+      }
+
+
+]
+},
+
+
+
+
+{
+                  "type": "ExpandLinearLayout",
+                  "orientation": "vertical",
+                  "layout_height": "wrap_content",
+                  "layout_width": "match_parent",
+                  
+                  "children": [
+             {
+
+      "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "50dp",
+              "background":"#ffcc33"
+
+},
+{
+
+      "type": "include",
+          "layout": "AlertDialogLayout",
+    "tname":"SimpleDataBindingExample",
+        
+          "paddingBottom": "0dp"
+
+}
+
+]},
+        
+        {
+                  "type": "LinearLayout",
+                  "orientation": "vertical",
+                  "layout_width": "match_parent",
+                  "layout_marginTop": "8dp",
+                  "children": [
+             {
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  "text": "ييحفظ تجر7666يبي",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenAlert",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayout",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+{
+                "type": "TextView",
+                "text": "kkkkkk",
+                "textColor": "#c48866",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                
+                "data_primary":"vvbibmm"
+              },
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                             "id":"lovee",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  "text": "javascriptload",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"LoadJava",
+          "FragmentID":"myweb",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"ddk('from bandar Ameen');",
+               "data_primary":"vvbib", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "id":"bandar",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  "text": "ييحفظ تجر7666يبي",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenFragment",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"SimpleDataBindingExample",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}
+
+
+
+,
+{
+"type": "MaskLayout",
+    "layout_width": "100dp",
+    "layout_height": "100dp",
+    
+    "mask":"https://github.com/christophesmet/android_maskable_layout/blob/master/Sample/src/main/res/drawable/masking_masking_20.png",
+    "mask_type":"1",
+    "id":"mfragmenttvvuu",
+    "data_primary":"mfragmentthh",
+    "children":[
+{
+      "type": "Button",
+         
+         "text":"ggg",
+          "layout_width": "match_parent" ,
+              "layout_height": "match_parent"
+              
+
+}
+
+]
+    
+
+
+},
+
+{
+"type": "ViewPager",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+    
+    "id":"mfragmenttiiii",
+    "mg":"55",
+    "data_primary":"mfragmenttkkkk"
+    
+
+
+},
+
+{
+"type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+    
+    "id":"mfragmentt",
+    "data_primary":"mfragmentt"
+    
+
+
+},
+{
+
+      "type": "include",
+          "layout": "web",
+        
+          "paddingBottom": "0dp"
+
+}
+
+
+
+
+]
+
+}]
+}

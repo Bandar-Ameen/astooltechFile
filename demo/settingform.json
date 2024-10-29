@@ -1,0 +1,1091 @@
+
+
+
+{
+  
+  
+  "Root_Layout": {
+    "type": "ScrollView",
+    "background":"@color/black",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      
+ 
+    "children": [
+
+
+{
+
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+ 
+      "children": [
+                  {"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "55dp",
+      "orientation":"vertical",
+      "background":"@color/blue_A200",
+      "children": [
+
+ {
+ 
+     "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"الاعدادات ",
+        "textColor": "@color/white",
+        "textSize": "25sp"
+}]
+      
+      },
+
+{"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation":"horizontal",
+      "children": [
+
+ {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_weight":2,
+            "paddingLeft": "6dp",
+              
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"name",
+  "id": "helhl",
+                "data_primary":"helhgl",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "6dp",
+         
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp",
+                "Input_Type":"Url",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          
+          {
+                  "type": "ImageView",
+                  "layout_width": "70dp",
+                  "layout_height": "70dp",
+                      "paddingLeft": "16dp",
+                       "layout_weight":2,
+                  "background":"@drawableFont/fa_star/2/40/#438afe"
+      }
+          
+ 
+ 
+ 
+ 
+ 
+      ]
+ 
+      
+  },
+  {
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "tester",
+                  "clicc":{
+                  "Event_Type":"33",
+                  "Before_Event":"666",
+                  "After_Event":"66",
+                  "Finsh_Event":"33"
+
+}
+},
+  {"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation":"horizontal",
+      "children": [
+
+ {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_weight":2,
+            "paddingLeft": "6dp",
+              
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"name",
+  "id": "helhl",
+                "data_primary":"helhgl",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "6dp",
+         
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp",
+                "Input_Type":"Url",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          
+          {
+                  "type": "ImageView",
+                  "layout_width": "70dp",
+                  "layout_height": "70dp",
+                      "paddingLeft": "16dp",
+                       "layout_weight":2,
+                  "background":"@drawableFont/fa_star/2/40/#438afe"
+      }
+          
+ 
+ 
+ 
+ 
+ 
+      ]
+ 
+      
+  },
+  {"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation":"horizontal",
+           "gravity": "right",
+                "paddingLeft": "6dp",
+                     "paddingRight": "6dp",
+      "children": [
+
+ {
+          "type": "CheckBox",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        
+        "gravity": "right",
+             "data_primary":"midelk", 
+     
+           "text":"تفعيل ",
+        "textColor": "@color/blue_A200",
+        "textSize": "14sp"
+ },
+ {
+          "type": "ButtonSwitch",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "paddingLeft": "6dp",
+                     "paddingRight": "6dp",
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"حفظ",
+        "textColor": "#ff1900",
+        "textSize": "14sp"
+ }
+ ,
+ 
+ {
+ 
+          "type": "RadioButton",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        
+        "gravity": "right",
+             "data_primary":"midelk", 
+     
+           "text":"تنشيط ",
+        "textColor": "@color/blue_A200",
+        "textSize": "14sp"
+ }
+ ,
+ {"type": "TextView",
+                  "data_primary":"bbniiin"
+                  ,"text":"TextView",
+                  "layout_height": "90dp",
+                  "paddingLeft": "20dp",
+                     "paddingRight": "20dp",
+                  "layout_width": "wrap_content"
+         
+       
+                  
+ 
+                  
+                  
+                  
+}
+ 
+ 
+ 
+ 
+      ]
+ 
+      
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  {"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation":"vertical",
+           "gravity": "center",
+                "paddingLeft": "6dp",
+                     "paddingRight": "6dp",
+      "children": [
+
+ {"type": "TextViewReadMore",
+      "layout_width": "match_parent",
+      
+      "text":"hello bandar ggdgdvdvdvdvdvdvvdvdvdydydydhdvvdvdvdvdvdvdvvdvdvdvdvdv
+      dhdhdhdhdhdhdhdhdydydydhdhzvzvd
+      dhdhdhdhdhdvvvvvvbbbbbbvvvv
+      ",
+      "layout_height": "wrap_content",
+"proper":{
+"TrimLength":100,
+"TrimLines":2,
+"Textcolor":"#ff1900"
+
+}
+},
+
+{"type": "EditText",
+                  "data_primary":"bbnn"
+                  ,"hint":"EditText",
+                  "layout_height": "90dp",
+                  "layout_width": "match_parent",
+                  "padding":"0dp",
+                  "margin":"50dp",
+                  "gravity": "center",
+      "mm": "0"
+ 
+                  
+                  
+                  
+}
+ 
+ 
+ 
+ 
+ 
+ 
+      ]
+ 
+      
+  }
+  ,
+  
+  {"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation":"vertical",
+           "gravity": "right",
+                "paddingLeft": "6dp",
+                     "paddingRight": "6dp",
+      "children": [
+
+{"type": "include",
+          "layout": "menuux",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+]
+  
+  }
+  ,
+  {"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation":"vertical",
+           "gravity": "right",
+                "paddingLeft": "6dp",
+                     "paddingRight": "6dp",
+      "children": [
+
+ 
+ {"type": "RadioGroup",
+      "layout_width": "wrap_content",
+      "layout_height": "match_parent",
+      "orientation":"vertical",
+           "gravity": "right",
+                "paddingLeft": "6dp",
+                     "paddingRight": "6dp",
+      "children": [
+
+ {
+ 
+          "type": "RadioButton",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        
+        "gravity": "right",
+             "data_primary":"midelk", 
+     
+           "text":"رقم 1 ",
+        "textColor": "@color/blue_A200",
+        "textSize": "14sp"
+ }
+ ,
+ 
+ {
+ 
+          "type": "RadioButton",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        
+        "gravity": "right",
+             "data_primary":"midelk", 
+     
+           "text":"رقم 2 ",
+        "textColor": "@color/blue_A200",
+        "textSize": "14sp"
+ }
+ 
+ 
+ 
+      ]
+ 
+      
+  }
+  ,
+  
+ {
+            "type": "ShopView",
+            "id": "center",
+            
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "Shop_data": {
+"Shop_Back1":"#438afe",
+"Shop_Back2":"#438afe",
+"Shop_Count_Color":"#438afe"
+,"Shop_Text":"Add+",
+
+"Shop_Width":"3",
+"Shop_R":"20",
+"Shop_Min_Color":"#438afe",
+"Shop_Add_Color":"#438afe"
+
+},
+            
+            "textColor": "#438afe",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          }
+ 
+      ]
+ 
+      
+  }
+  
+  ,
+  {
+"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "orientation": "vertical",
+      "children":[
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "layout_marginTop":"10dp",
+      "orientation": "vertical",
+"ViewEx":{
+"Expand":{"type": "ExpandLayoutView",
+      "layout_width": "30dp",
+      "layout_height": "30dp",
+      "ViewEx":{
+      
+"ViewEx_View":{
+    
+"type": "HorizontalScrollView",
+    "orientation": "horizontal",
+      "scrollbars": "none",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+  "children":[
+
+
+{"type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+  "children":[
+
+    
+    
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        
+        {
+"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "orientation": "vertical",
+      "children":[
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "layout_marginTop":"10dp",
+      "orientation": "vertical",
+"ViewEx":{
+"Expand":{"type": "ExpandLayoutView",
+      "layout_width": "30dp",
+      "layout_height": "30dp",
+      "ViewEx":{
+      
+"ViewEx_View":{
+    
+"type": "HorizontalScrollView",
+    "orientation": "horizontal",
+      "scrollbars": "none",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+  "children":[
+
+
+{"type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+  "children":[
+
+    
+    
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        ,
+        {"type": "include",
+          "layout": "card100",
+             
+                     "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+]
+
+  }]},
+  
+
+
+
+"ViewEx_Color":"@color/blue_A200",
+"ViewEx_down":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "30dp",
+                  "background":"@drawableFont/fa_arrow_up_solid/3/40/#ffffff"
+      },
+"ViewEx_up":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "30dp",
+                  "background":"@drawableFont/fa_arrow_down_solid/3/40/#ffffff"
+      }
+
+
+},
+      "orientation": "vertical"
+},
+"ExpandIconLayout":{"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "background":"@color/blue_A200",
+      "elevation":"10dp",
+      "gravity":"right",
+      "orientation": "horizontal",
+      
+      "children":[{
+       "type": "TextView",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "layout_weight":2,
+        "gravity": "center",
+             "data_primary":"midelkui", 
+     
+           "text":"يمن موبايل",
+        "textColor": "@color/white",
+        "textSize": "15sp"
+   
+}]
+
+
+}}
+     
+      }
+        ]}
+        
+        
+        
+        
+        
+        
+        
+]
+
+  }]},
+  
+
+
+
+"ViewEx_Color":"@color/blue_A200",
+"ViewEx_down":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "30dp",
+                  "background":"@drawableFont/fa_arrow_up_solid/3/40/#ffffff"
+      },
+"ViewEx_up":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "30dp",
+                  "background":"@drawableFont/fa_arrow_down_solid/3/40/#ffffff"
+      }
+
+
+},
+      "orientation": "vertical"
+},
+"ExpandIconLayout":{"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "background":"@color/blue_A200",
+      "elevation":"10dp",
+      "gravity":"right",
+      "orientation": "horizontal",
+      
+      "children":[{
+       "type": "TextView",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "layout_weight":2,
+        "gravity": "center",
+             "data_primary":"midelkui", 
+     
+           "text":"يمن موبايل",
+        "textColor": "@color/white",
+        "textSize": "15sp"
+   
+}]
+
+
+}
+
+
+
+}
+     
+      }
+        ]}
+  
+  
+]
+
+}]
+
+}
+
+,
+  "card12": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"العنوان",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    },
+    
+  "menuux":{
+"type": "TabLayoutView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+          "orientation": "vertical",
+"Tab_Content":{
+
+    "Content_Type":"3",
+    "Content_Fragment":{
+"type": "SlidderLayout",
+    "layout_width": "match_parent",
+    "kmm":"55",   
+    "layout_height": "50dp",
+"layout_margin":"10dp",   
+"Common_data":{
+"Common_UnderLine":80,
+"Common_UnderLineGravity":0,
+"Common_UnderLineH":0,
+"Common_UnderLineIconMargin":5,
+"Common_UnderLineColor":"#ffcc44",
+"Common_UnderLineTextColor":"#ffcc33",
+"Common_UnderLineSelectTextColor":"#FF2E0"
+
+},
+"table_show_view":"kk#child#parent",
+        "main_body":"card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+},
+    "Content_Pager":{
+    "type": "ViewPager",
+    
+    "layout_width": "match_parent",
+    "layout_height": "50dp",
+    "id":"hhhhhhhhhh",
+"table_show_view":"kk#child#parent",
+        "main_body":"card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+},
+    "Content_Radius":"5",
+    
+    "Content_Style":"0",
+    "Content_margin":"4",
+    "Content_Color":"438afe#438afe#438afe#438afe#438afe#438afe",
+    
+"Content_Data":
+[{"ContentTitle":"aالرئيسية"
+,"ContentColor":"#438afe",
+"ContentMain":"2",
+"ContentMainCount":3,
+"Content_Select_Start":false,
+"ContentType":"ll",
+"ContentView":"card100",
+"ImageSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+      },
+      "ImageUnSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#c48866"
+      }
+
+
+
+},
+
+{"ContentTitle":"a77الرئيسية"
+,"ContentColor":"#438afe",
+"ContentMain":"card1#card2#card1#card2#card1#card2#card1#card2#card1",
+"ContentMainCount":3,
+"Content_Select_Start":false,
+"ContentType":"main16",
+"ContentView":"card100",
+"ImageSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+      },
+      "ImageUnSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#c48866"
+      }
+
+
+
+},
+
+{"ContentTitle":"a77الرئيسية"
+,"ContentColor":"#438afe",
+"ContentMain":"card1#card2#card1#card2#card1#card2#card1#card2#card1",
+"ContentMainCount":3,
+"Content_Select_Start":true,
+"ContentType":"main16",
+"ContentView":"card100",
+"ImageSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+      },
+      "ImageUnSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#c48866"
+      }
+
+
+
+},
+{"ContentTitle":"a77الرئيسية"
+,"ContentColor":"#438afe",
+"ContentMain":"card1#card2#card1#card2#card1#card2#card1#card2#card1",
+"ContentMainCount":3,
+"Content_Select_Start":false,
+"ContentType":"main16",
+"ContentView":"card100",
+"ImageSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+      },
+      "ImageUnSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#c48866"
+      }
+
+
+
+},
+{"ContentTitle":"a77الرئيسية"
+,"ContentColor":"#438afe",
+"ContentMain":"card1#card2#card1#card2#card1#card2#card1#card2#card1",
+"ContentMainCount":3,
+"Content_Select_Start":false,
+"ContentType":"main16",
+"ContentView":"card100",
+"ImageSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+      },
+      "ImageUnSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#c48866"
+      }
+
+
+
+},
+{"ContentTitle":"a77الرئيسية"
+,"ContentColor":"#438afe",
+"ContentMain":"card1#card2#card1#card2#card1#card2#card1#card2#card1",
+"ContentMainCount":3,
+"Content_Select_Start":false,
+"ContentType":"AlertDialogLayout",
+"ContentView":"card100",
+"ImageSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+      },
+      "ImageUnSelect":{
+                  "type": "ImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  "background":"@drawableFont/fa_edit/2/40/#c48866"
+      }
+
+
+
+}
+
+
+
+
+]
+
+    },
+
+    
+    
+    "data_primary":"mfragmenttk8kk7k"
+    
+
+
+
+      
+     
+}
+
+,
+
+
+
+  "card100": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"العنوان",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    }  
+    
+
+
+
+      
+
+      
+      
+
+
+}
+
+

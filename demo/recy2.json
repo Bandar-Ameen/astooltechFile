@@ -1,0 +1,1833 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingTop": "0dp",
+    "orientation": "vertical",
+    "children": [
+      {
+        "type": "ScrollView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+      
+
+  {
+            "type": "include",
+            "layout": "RecycleUnit",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+          
+          
+          
+          
+        ]
+      }
+    ]
+  },
+  "sou":{
+
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "id": "hjjjj",
+                "orientation": "vertical",
+                "view_from_sources": {
+                  "delay": 1000,
+                  "source_name": "source1"                 
+                }
+
+},
+  "cor":{
+  "type": "CoordinatorLayout",
+  "width": "match_parent",
+  "height": "match_parent",
+  "background": "#FFFFFF",
+  "children": [
+    {
+      "type": "AppBarLayout",
+      "width": "match_parent",
+      "height": "wrap_content",
+      "children": [
+        {
+          "type": "CollapsingToolbarLayout",
+          "width": "match_parent",
+          "height": "200dp",
+          "layout_scrollFlags": "scroll|exitUntilCollapsed",
+          "children": [
+            {
+              "type": "ImageView",
+              "src": "@drawable/header_image",
+              "width": "match_parent",
+              "height": "match_parent",
+              "scaleType": "centerCrop",
+              "layout_collapseMode": "parallax"
+            },
+            {
+              "type": "Toolbar",
+              "width": "match_parent",
+              "height": "56dp",
+              "layout_collapseMode": "pin",
+              "background": "#3F51B5",
+              "elevation": "4dp",
+              "children": [
+                {
+                  "type": "TextView",
+                  "text": "Collapsing Toolbar",
+                  "width": "wrap_content",
+                  "height": "wrap_content",
+                  "textColor": "#FFFFFF",
+                  "textSize": "20sp",
+                  "layout_gravity": "center"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "NestedScrollView",
+      "width": "match_parent",
+      "height": "match_parent",
+      "layout_behavior": "@string/appbar_scrolling_view_behavior",
+      "padding": "16dp",
+      "children": [
+        {
+          "type": "LinearLayout",
+          "width": "match_parent",
+          "height": "wrap_content",
+          "orientation": "vertical",
+          "children": [
+            {
+              "type": "TextView",
+              "text": "Section 1",
+              "width": "match_parent",
+              "height": "wrap_content",
+              "textColor": "#000000",
+              "textSize": "22sp",
+              "padding": "16dp"
+            },
+            {
+              "type": "TextView",
+              "text": "This is a detailed description for section 1. Here you can add more content to demonstrate scrolling behavior.",
+              "width": "match_parent",
+              "height": "wrap_content",
+              "textColor": "#757575",
+              "textSize": "16sp",
+              "padding": "16dp"
+            },
+            {
+              "type": "TextView",
+              "text": "Section 2",
+              "width": "match_parent",
+              "height": "wrap_content",
+              "textColor": "#000000",
+              "textSize": "22sp",
+              "padding": "16dp"
+            },
+            {
+              "type": "TextView",
+              "text": "More content for section 2 to showcase how nested scrolling works with a CollapsingToolbarLayout.",
+              "width": "match_parent",
+              "height": "wrap_content",
+              "textColor": "#757575",
+              "textSize": "16sp",
+              "padding": "16dp"
+            },
+            {
+              "type": "Button",
+              "text": "Button 1",
+              "width": "wrap_content",
+              "height": "wrap_content",
+              "textColor": "#FFFFFF",
+              "background": "#FF5722",
+              "margin": "16dp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FloatingActionButton",
+      "src": "@drawable/ic_add",
+      "width": "wrap_content",
+      "height": "wrap_content",
+      "layout_gravity": "bottom|end",
+      "margin": "16dp",
+      "backgroundTint": "#FF4081"
+    }
+  ]
+}
+
+,
+  "refes":{
+              "type": "Button",
+              "text": "remove",
+              "width": "wrap_content",
+              "height": "wrap_content",
+              "textColor": "#FFFFFF",
+              "background": "#FF5722",
+              "margin": "16dp",
+              "Event": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": true,
+                "const_value": "bv",
+                "use_data_from_source": true,
+                "source_key": "drugName_en",
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "8",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": true,
+                "source_key": "id",
+                "use_format": false
+              },
+              
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "24",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              }
+              
+            ]
+          }
+        }
+            },
+            "refess":{
+              "type": "Button",
+              "text": "rest",
+              "width": "wrap_content",
+              "height": "wrap_content",
+              "textColor": "#FFFFFF",
+              "background": "#FF5722",
+              "margin": "16dp",
+              "Event": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": true,
+                "const_value": "j",
+                "use_data_from_source": false,
+                "source_key": "drugName_en",
+                "from_selectv_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "26",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              }
+            ]
+          }
+        }
+            },
+            
+            "refessv":{
+              "type": "Button",
+              "text": "resume",
+              "width": "wrap_content",
+              "height": "wrap_content",
+              "textColor": "#FFFFFF",
+              "background": "#FF5722",
+              "margin": "16dp",
+              "Event": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en",
+                "from_selectv_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "24",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "18",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              }
+              
+            ]
+          }
+        }
+            },
+            "refessvv":{
+              "type": "Button",
+              "text": "showerror",
+              "width": "wrap_content",
+              "height": "wrap_content",
+              "textColor": "#FFFFFF",
+              "background": "#FF5722",
+              "margin": "16dp",
+              "Event": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en",
+                "from_selectv_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "25",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "18",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              }
+              
+            ]
+          }
+        }
+            },
+            
+            
+  "list_show": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "orientation": "vertical",
+    "gravity": "right",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#c48866",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "الوحدات"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+            "type": "include",
+            "layout": "refes",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },  
+          
+          {
+            "type": "include",
+            "layout": "refess",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },  
+          {
+            "type": "include",
+            "layout": "refessv",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },  
+          
+          {
+            "type": "include",
+            "layout": "refessvv",
+            "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },  
+          
+          
+      {
+        "type": "include",
+        "layout": "RecycleUnit",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "card_view": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "orientation": "vertical",
+    "focusable": false,
+    "padding": "10dp",
+    "children": [
+      {
+        "type": "CardView",
+        "layout_width": "match_parent",
+        "layout_height": "190dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "cardCornerRadius": "8dp",
+        "focusable": false,
+        "Evenvt": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": false,
+                "const_value": "1",
+                "use_data_from_source": true,
+                "source_key": "drugName_en",
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": false,
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": true,
+                "source_key": "id",
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "horizontal",
+            "padding": "16dp",
+            "children": [
+            
+{
+            "type": "LinearLayout",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "id":"wating",
+            "visibility":"gone",
+            "padding": "16dp",
+            "children": [
+            {
+            "type": "ProgressBar",
+            "layout_height": "40dp",
+            "layout_width": "40dp",
+            "gravity": "center",
+            "visibility":"gone",
+            "layout_gravity": "center",
+            "mm": 1,
+            "id": "savehggprograssk",
+            "style_bar": {
+              "color_bar": "#ffffff",
+              "typ_bar": "1"
+            }},
+            
+            {
+            "type": "ProgressBar",
+            "layout_height": "40dp",
+            "layout_width": "40dp",
+            "gravity": "center",
+            "layout_gravity": "center",
+            "mm": 1,
+            "visibility":"gone",
+            "id": "saveprogggugrassk",
+            "style_bar": {
+              "color_bar": "#ffffff",
+              "typ_bar": "1"
+            }
+            }
+
+
+  
+                
+
+
+]
+                },
+
+
+  {
+                "type": "CircleImageView",
+                "layout_width": "40dp",
+                "layout_height": "40dp",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "scaleType": "centerCrop",
+                "id":"ag5kn5",
+                "view_id_startg":"vvow",
+                "view_id_failedg":"vvow",
+                "backgroundv":"@drawable/shimmer",
+                "circleCrop": true,
+                     "loader":{
+"hid_view_when_start": false,
+"delay":50
+}
+
+              },
+              {
+                "type": "LinearLayout",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "padding_start": "16dp",
+                "id":"hellkuuu",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "text": "اسم الصنف تجريلي",
+                    "id":"vvow",
+                    "textSize": "16sp",
+                    "textStyle": "bold",
+                    "font_name": "Cairo-Regular",
+                    "textColor": "@color/white"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "text": "@{drugName_ar}",
+                    "textSize": "12sp",
+                    "id":"aassddd",
+                    "textColor": "@color/white"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "searchg": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "60dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+    "lboxcolor": "@color/green",
+    "lhint": "بحث",
+    "idyyy": "Unit_NameSearch",
+    "id": "Unit_NameSearch",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "Withg_Search": {
+          "ViewID": "myouto"
+        },
+        "on_text_change": {
+          "onTextChanged": {
+            "delay": 10000,
+            "get_set_to_view": {
+              "Data_From_View": [
+                {
+                  "View_Id": "Unit_NameSearch",
+                  "index_id": 0,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": true,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": true,
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "myouto",
+                  "index_id": 2,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": "120",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en",
+                  "fromv_select_item": {
+                    "key_value": "drugName_en"
+                  }
+                }
+              ],
+              "Data_To_View": [
+                {
+                  "View_Id": "myouto",
+                  "View_Type": "6",
+                  "Index_ID": 0,
+                  "use_format": false
+                },
+                {
+                  "View_Id": "myouto",
+                  "View_Type": "20",
+                  "Index_ID": 1,
+                  "use_format": false
+                },
+                {
+                  "View_Id": "Unitgh_NameSearch",
+                  "View_Type": "0",
+                  "Index_ID": 2,
+                  "use_format": false
+                }
+              ]
+            }
+          }
+        },
+        "tooltipText": "اسم الوحدة",
+        "text": "@{AlertDialogLayout.my[0].email}",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "Input_Type": "Text",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": true
+  },
+  "RecycleUnit": {
+    "type": "CardView",
+    "scrollbars": "none",
+    "fillViewPgort": true,
+    "layout_width": "match_parent",
+    "id": "helllvc",
+    "layout_height": "match_parent",
+    "Setting": {
+      "ScrollModes": 1
+    },
+    "children": [
+      {
+        "type": "ARecyclerView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "filter": "unit_name",
+        "id": "myouto",
+        "Error_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "focusable": false,
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "focusable": false,
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "@{Result.body}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "focusable": false,
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+          ]
+        },
+        "Recycle": {
+          "typ": "v"
+        },
+        "source": {
+          "source_name": "source1",
+          "viewf_data":{
+"wait":5000,
+"name":"sayyyyyed"
+
+},
+          "on_select_item": {
+            "get_set_to_vhiew": true
+          }
+        }
+      }
+    ]
+  },
+  "cardloader": {
+    "type": "LinearLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "orientation": "vertical",
+    "layout_width": "150dp",
+    "layout_height": "190dp",
+        "padding": "10dp",
+    "rhover": "true",
+    "background": "@color/whit",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+     "layout_gravity": "center",
+        "layout_height": "190dp",
+        "tooltipText": "@{drugName_ar}",
+        "elevation": "20dp",
+        "background": "@drawable/shimmer",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "ProgressBar",
+            "layout_height": "50dp",
+            "layout_width": "90dp",
+            "gravity": "center",
+            "layout_gravity": "center",
+            "mm": 1,
+            "id": "saveprograssk",
+            "style_bar": {
+              "color_bar": "#1a8cce",
+              "typ_bar": "1"
+            },
+            "text": "ADD gh CART"
+          },
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "visibility": "gone",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#ff0000",
+                "direction": "left",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "gravity": "right",
+                    "right": "20dp",
+                    "id": "midelk",
+                    "layout_gravity": "right",
+                    "layout_weight": "1",
+                    "textSize": "10sp"
+                  },
+                  {
+                    "type": "ImageView",
+                    "layout_width": "20dp",
+                    "layout_height": "20dp",
+                    "gravity": "center",
+                    "right": "20dp",
+                    "id": "midelik",
+                    "idyyy": "mi",
+                    "layout_marginTop": "10dp",
+                    "background": "@drawableFont/fa_ellipsis_v_solid/1/15/#ffffff",
+                    "textSize": "10sp"
+                  }
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "@color/white",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "right": "20dp",
+                    "id": "midelik",
+                    "idyyy": "mii",
+                    "scaleType": "fitCenter",
+                    "layout_alignParentTop": true,
+                    "layout_alignParentRight": true,
+                    "background": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "textSize": "10sp"
+                  }
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "#000000",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "gravity": "right",
+                    "right": "20dp",
+                    "id": "midelk",
+                    "text": "@{drugName_ar}",
+                    "layout_gravity": "right",
+                    "layout_weight": "1",
+                    "textSize": "10sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  
+  "fullview":{
+"type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "#ffcc33",
+                "Event": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en",
+                "from_selectv_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "24",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "18",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              }
+              
+            ]
+          }
+        },
+                
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "right": "20dp",
+                    "id": "midelk",
+                    "text": "emty data",
+                    "layout_gravity": "right",
+                    "layout_weight": "1",
+                    "textSize": "10sp"
+                  }
+                ]
+
+},
+
+"err":{
+"type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "paddingTop": "10dp",
+                "layout_width": "match_parent",
+                "background": "@color/green",
+                "Event": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en",
+                "from_selectv_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "24",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "18",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": false,
+                "source_key": "id",
+                "use_format": false
+              }
+              
+            ]
+          }
+        },
+                
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "right": "20dp",
+                    "id": "midelk",
+                    "text": "error accouired",
+                    "layout_gravity": "right",
+                    "layout_weight": "1",
+                    "textSize": "10sp"
+                  }
+                ]
+
+},
+  
+  "data_source": {
+    "source1": {
+      "Empty_View": {
+        "type": "include",
+        "layout": "fullview",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      
+      
+      
+      "Layout_manager": {
+        "Layout_Type": "LinearLayoutManager",
+        "Orientation": "horizontal",
+        "Reverse": false,
+        "Layout_Space": 0,
+        "Layout_Row": 1,
+        "use_online_search": false,
+        "use_offline_fetch":false
+        
+      },
+      "Column_Header": [
+        {
+          "Header_Title": "idyyy"
+        }
+      ],
+      "Column_Data": [],
+      "Data_From": {
+        "Event_Type": "CheckNull",
+        "Emptyy_View": {
+          "type": "include",
+          "layout": "emptyview",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "Empty_View": {
+        "type": "include",
+        "layout": "fullview",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      
+      "Error_View": {
+        "type": "include",
+        "layout": "err",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+        
+        "header_items": {
+        "type": "include",
+        "layout": "fullview",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      "onnomore_View": {
+        "type": "include",
+        "layout": "fullview",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+        "Loader_View": {
+          "type": "include",
+          "layout": "cardloader",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "headerf_items": {
+          "type": "include",
+          "layout": "fullview",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "footer_items": {
+          "type": "include",
+          "layout": "fullview",
+          "focusable": true,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "Errorf_View": {
+          "type": "include",
+          "layout": "errorview",
+          "focusable": false,
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        },
+        "endless_eventg": {
+          "Event_Type": "Set_Data_From_View_To_View",
+          "Name": "form",
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "0",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": true,
+                "source_key": "drugName_en",
+                "from_select_item": {
+                  "key_value": "drugName_en"
+                }
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "myouto",
+                "index_id": 0,
+                "View_Type": "14",
+                "use_const": false,
+                "from_selectt_item": {
+                  "key_value": "drugName_en"
+                },
+                "const_value": "0",
+                "use_data_from_source": true,
+                "source_key": "id",
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "animation": {
+          "a_enter": false,
+          "a_enter_step": false,
+          "a_expand": false,
+          "a_expand_out": false,
+          "a_delay_a": 0,
+          "a_delay_b": 0,
+          "a_anim_rev": false,
+          "a_anim_for": false,
+          "a_load_start": true,
+          "a_drage": false,
+          "auto_hidc": 0,
+          "auto_restart": true,
+          "CountItem": 1,
+          "show_prog": true,
+          "remove_endless": true,
+          "use_online_search": false,
+          "EndlessScrollThresholdd":1,
+          "without_filter_on_loadmore":false,
+          "use_endless_event":false,
+          "run_on_ui":false,
+          "a_wait": 500,
+          "Loadter_View": {
+            "type": "include",
+            "layout": "b",
+            "focusable": true,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+          "a_endless_count": 1,
+          "a_endless_page": 3,
+          "a_use_endless": true,
+          "a_use_offline": false,
+          "a_use_top": false
+        },
+        "Set_Data": [
+          {
+            "View_Id": "myoutosub",
+            "Type_Process": "5",
+            "Key_Process": "5uurrrthello_hello_hello",
+            "Value_Key": "Unit_Name"
+          }
+        ],
+        "Name": "pic",
+        "Custome_Datxa":[{ "id": 2, "drugName_en": "Rfamol 250mg Syrup", "drugName_ar": "رفامول 250مvvvvvvvccجم شراب", "scientificDrugId": "292", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "550", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/6\/30", "spare2": "", "spare3": "" }],
+        "Custome_Datah": [{ "id": 1, "drugName_en": "hellRfamol 120ml Syrup", "drugName_ar": "رفامول 120 مجم شرابh", "scientificDrugId": "292", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "620", "cashBonus": "30", "yupBonus": "10", "spare1": "2020\/8\/14", "spare2": "5", "spare3": "" }, 
+{ "id": 2, "drugName_en": "Rfamol 250mg Syrup", "drugName_ar": "رفامول 250مvvvvvvvccجم شراب", "scientificDrugId": "292", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "550", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/6\/30", "spare2": "", "spare3": "" }, 
+{ "id": 3, "drugName_en": "Rfamol SF 160ml Syrup", "drugName_ar": "رفامول اس اف 160مل شراب", "scientificDrugId": "292", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 4, "drugName_en": "Rfamol SF 60ml Syrup", "drugName_ar": "رفامول اس اف 60مل شراب", "scientificDrugId": "292", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 5, "drugName_en": "Rfamol SD 60ml Syrup", "drugName_ar": "رفامول اس دي 60مل شراب", "scientificDrugId": "292", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "580", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/5\/15", "spare2": "", "spare3": "" }, 
+{ "id": 6, "drugName_en": "Rfamox 125mg Syrup", "drugName_ar": "رفاموكس 125مجم شراب", "scientificDrugId": "932", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 80ml", "unit": "باكت", "price": "850", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/5\/15", "spare2": "", "spare3": "" }, 
+{ "id": 7, "drugName_en": "Rfamox 250mg Syrup", "drugName_ar": "رفاموكس 250مجم شراب", "scientificDrugId": "932", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 80ml", "unit": "باكت", "price": "950", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/5\/15", "spare2": "", "spare3": "" }, 
+{ "id": 8, "drugName_en": "Ampy 250mg Syrup", "drugName_ar": "امبي 250مجم شراب", "scientificDrugId": "959", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 80ml", "unit": "باكت", "price": "850", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/6\/30", "spare2": "", "spare3": "" }, 
+{ "id": 9, "drugName_en": "Ampy C Syrup", "drugName_ar": "امبي سي شراب", "scientificDrugId": "36", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 80ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 10, "drugName_en": "Rfasan 100ml Syrup", "drugName_ar": "رفاسان 100مل شراب", "scientificDrugId": "347", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "755", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 11, "drugName_en": "Rfasan 60ml Syrup", "drugName_ar": "رفاسان 60مل شراب", "scientificDrugId": "347", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "500", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 12, "drugName_en": "Ibubid 60ml Syrup", "drugName_ar": "ايبوبد 60مل شراب", "scientificDrugId": "391", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "600", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/5\/15", "spare2": "", "spare3": "" }, 
+{ "id": 13, "drugName_en": "Ibubid puls 60ml Syrup", "drugName_ar": "ايبوبد بلس 6 🌷0 مل شراب", "scientificDrugId": "271", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "660", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/5\/15", "spare2": "", "spare3": "" }, 
+{ "id": 14, "drugName_en": "Zadro 60ml Syrup", "drugName_ar": "زادرو 60مل شراب", "scientificDrugId": "948", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "930", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 15, "drugName_en": "Elkof 100ml Syrup", "drugName_ar": "الكوف 100مل شراب", "scientificDrugId": "366", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "890", "cashBonus": "50", "yupBonus": "40", "spare1": "2020\/7\/9", "spare2": "", "spare3": "" }, 
+{ "id": 16, "drugName_en": "Elkof T 100ml Syrup", "drugName_ar": "الكوف تي 100 مل شراب", "scientificDrugId": "298", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "900", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 17, "drugName_en": "Elkof D 100ml Syrup", "drugName_ar": "الكوف دي 100مل شراب", "scientificDrugId": "546", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "850", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 18, "drugName_en": "Tussi Flu 120ml Syrup", "drugName_ar": "توسي فلو 120مل شراب", "scientificDrugId": "360", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 120ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 19, "drugName_en": "Domi 60ml Syrup", "drugName_ar": "دومي 60 مل شراب", "scientificDrugId": "126", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "600", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 20, "drugName_en": "Cortina 60ml Syrup", "drugName_ar": "كورتينا 60 مل شراب", "scientificDrugId": "787", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "600", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 21, "drugName_en": "Aldezol 100ml Syrup", "drugName_ar": "الديزول 100مل شراب", "scientificDrugId": "136", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "777", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 22, "drugName_en": "Aldezol plus 100ml Syrup", "drugName_ar": "الديزول بلس 100مل شراب", "scientificDrugId": "700", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "825", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 23, "drugName_en": "Rofix 30ml Syrup", "drugName_ar": "روفكس 30 مل شراب", "scientificDrugId": "248", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 30ml", "unit": "باكت", "price": "1050", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 24, "drugName_en": "Rofix 60ml Syrup", "drugName_ar": "روفكس 60مل شراب", "scientificDrugId": "248", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "1320", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 25, "drugName_en": "Alezet 60ml Syrup", "drugName_ar": "اليزيت 60 مل شراب", "scientificDrugId": "254", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "470", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 26, "drugName_en": "CPM 60ml Syrup", "drugName_ar": "سي بي ام 60 مل شراب", "scientificDrugId": "309", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "450", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 27, "drugName_en": "Rfamol Cold 60ml Syrup", "drugName_ar": "رفامول كولد 60 مل شراب", "scientificDrugId": "116", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "670", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 28, "drugName_en": "Rfafer Syrup", "drugName_ar": "رفافير 100 مل شراب", "scientificDrugId": "581", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "863", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 29, "drugName_en": "Rfafer Plus Syrup", "drugName_ar": "رفافير بلس 100 مل شراب", "scientificDrugId": "586", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "920", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 30, "drugName_en": "Blox L ", "drugName_ar": "بلكس - ال 100 مل شراب", "scientificDrugId": "89", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 31, "drugName_en": "Blox ", "drugName_ar": "بلكس 100 مل شراب", "scientificDrugId": "246", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 32, "drugName_en": "Pednisol 50ml Syrup", "drugName_ar": "بدنيزول 5 مجم 50 مل شراب", "scientificDrugId": "224", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 33, "drugName_en": "Elkophed 120ml Syrup", "drugName_ar": "الكوفيد 120 مل شراب", "scientificDrugId": "415", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 120ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 34, "drugName_en": "Rfasool 100ml Syrup", "drugName_ar": "رفاسول 100 مل شراب", "scientificDrugId": "529", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 35, "drugName_en": "Colical B12 Syrup", "drugName_ar": "كوليكال ب 12 100 مل شراب", "scientificDrugId": "501", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 36, "drugName_en": "E mycin 100ml Syrup", "drugName_ar": "ا مايسين 100 مل شراب", "scientificDrugId": "364", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 100ml", "unit": "باكت", "price": "1235", "cashBonus": "30", "yupBonus": "20", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 37, "drugName_en": "Podoxim 50mg Syrup", "drugName_ar": "بودوكسيم 50 مجم شراب", "scientificDrugId": "384", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "1970", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 38, "drugName_en": "Cerax 125mg Syrup", "drugName_ar": "سيراكس 125 مجم شراب", "scientificDrugId": "90", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "Syrup 60ml", "unit": "باكت", "price": "2203", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 39, "drugName_en": "Rfamol Cold Tablets", "drugName_ar": "رفامول كولد اقراص", "scientificDrugId": "116", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x4Tablets", "unit": "باكت", "price": "185", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 40, "drugName_en": "Rfasan 50mg Tablets", "drugName_ar": "رفسان 50 مجم اقراص", "scientificDrugId": "347", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 41, "drugName_en": "Ibubid 200mg Tablets", "drugName_ar": "ايبوبد 200 مجم اقراص", "scientificDrugId": "391", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "10x10Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 42, "drugName_en": "Ibubid 400mg Tablets", "drugName_ar": "ايبوبد 400 مجم اقراص", "scientificDrugId": "391", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "10x10Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 43, "drugName_en": "Ibubid 600mg Tablets", "drugName_ar": "ايبوبد 600 مجم اقراص", "scientificDrugId": "391", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 44, "drugName_en": "Ibubid plus Tablets", "drugName_ar": "ايبوبد بلس اقراص", "scientificDrugId": "271", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "1320", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 45, "drugName_en": "Rfagra 25mg Tablets", "drugName_ar": "رفاقرا 25 مجم اقراص", "scientificDrugId": "160", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x10Tablets", "unit": "باكت", "price": "460", "cashBonus": "", "yupBonus": "", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 46, "drugName_en": "Rfagra 50mg Tablets", "drugName_ar": "رفاقرا 50 مجم اقراص", "scientificDrugId": "160", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x4Tablets", "unit": "باكت", "price": "430", "cashBonus": "", "yupBonus": "", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 47, "drugName_en": "Ciafil 20mg Tablets", "drugName_ar": "سيفافيل 20 مجم اقراص", "scientificDrugId": "621", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x4Tablets", "unit": "باكت", "price": "860", "cashBonus": "", "yupBonus": "", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 48, "drugName_en": "Domi 5mg Tablets", "drugName_ar": "دومي 10 مجم اقراص", "scientificDrugId": "126", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "3x10Tablets", "unit": "باكت", "price": "530", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 49, "drugName_en": "Cortina Tablets", "drugName_ar": "كورتينا اقراص", "scientificDrugId": "787", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "10x10Tablets", "unit": "باكت", "price": "2507", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 50, "drugName_en": "Cortina Fort Tablets", "drugName_ar": "كورتينا فورت اقراص", "scientificDrugId": "787", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x10Tablets", "unit": "باكت", "price": "552", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 51, "drugName_en": "Cini 25mg Tablets", "drugName_ar": "سيني 25 مجم اقراص", "scientificDrugId": "933", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "560", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 52, "drugName_en": "Comether Tablets", "drugName_ar": "كوميثر اقراص", "scientificDrugId": "428", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x24Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 53, "drugName_en": "Malicur Tablets", "drugName_ar": "مالكيور اقراص", "scientificDrugId": "67", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x3Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 54, "drugName_en": "Malicur Forte Tablets", "drugName_ar": "مالكيور فورت اقراص", "scientificDrugId": "67", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x2Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 55, "drugName_en": "Artefan KIT Tablets", "drugName_ar": "ارتيفان كت اقراص", "scientificDrugId": "8", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "1x9Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 56, "drugName_en": "Glipryl 1mg Tablets", "drugName_ar": "جلبريل 1 مجم اقراص", "scientificDrugId": "198", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "435", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 57, "drugName_en": "Glipryl 2mg Tablets", "drugName_ar": "جلبريل 2 مجم اقراص", "scientificDrugId": "198", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "900", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 58, "drugName_en": "Glipryl 3mg Tablets", "drugName_ar": "جلبريل 3 مجم اقراص", "scientificDrugId": "198", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "", "cashBonus": "", "yupBonus": "", "spare1": "", "spare2": "", "spare3": "" }, 
+{ "id": 59, "drugName_en": "Glipryl 4mg Tablets", "drugName_ar": "جلبريل 4 مجم اقراص", "scientificDrugId": "198", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "2x10Tablets", "unit": "باكت", "price": "1797", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }, 
+{ "id": 60, "drugName_en": "Glrmin M 5\/500mg Tablets", "drugName_ar": "جلرمين ام 5 \/ 500 مجم اقراص", "scientificDrugId": "832", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "3x10Tablets", "unit": "باكت", "price": "835", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/11\/27", "spare2": "", "spare3": "" }, 
+{ "id": 61, "drugName_en": "Glipryl M Tablets", "drugName_ar": "جلبريل ام اقراص", "scientificDrugId": "674", "proxyDrugId": "1", "prodCompDrugId": "6", "pack": "3x10Tablets", "unit": "باكت", "price": "1325", "cashBonus": "50", "yupBonus": "40", "spare1": "2019\/4\/10", "spare2": "", "spare3": "" }
+
+        ],
+        "Multiple_Views": {
+          "Filter_Views": [
+            {
+              "Key_Name": "drugName_ar"
+            }
+          ],
+          "Def_Views": {
+            "type": "include",
+            "layout": "card_view",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "50dp",
+            "layout_marginTop": "50dp",
+            "layout_marginBottom": "5dp",
+            "tname": "SimpleDataBindingExample",
+            "KeyName": "recycleserchhm",
+            "paddingBottom": "0dp",
+            "FilterName": "Unit_Name",
+            "data": {
+              "user": "@{items}",
+              "my": "@{items[$index]}"
+            }
+          },
+          "a_enable": "1",
+          "MultipleViews": [
+            {
+              "v_Name": "card_view",
+              "v_ColumnName": "id",
+              "v_EqualValue": "20",
+              "v_id": "1"
+            }
+          ]
+        },
+        "Return_Data": [
+          {
+            "Return_Type": "55",
+            "Return_To_Message": [
+              {
+                "Response_Key_Name": "0",
+                "View_Id": "55",
+                "Message_Text": "hhhh",
+                "View_Type": "A"
+              }
+            ]
+          }
+        ],
+        "Return_To_View": [
+          {
+            "View_Id": "saveprograss",
+            "Type_Process": "1",
+            "Value_Process": "1",
+            "View_Type": "A"
+          }
+        ],
+        "Use_Volley": true,
+        "Before_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": false,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": true,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto0",
+                "View_Type": "10",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "After_Process": {
+          "get_set_to_view": {
+            "Data_From_View": [
+              {
+                "View_Id": "0",
+                "index_id": 0,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "Unit_NameSearcih",
+                "index_id": 1,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              },
+              {
+                "View_Id": "mvyouto",
+                "View_Type": "9",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "index_id": 2,
+                "View_Type": "A",
+                "use_const": true,
+                "const_value": false,
+                "use_data_from_source": false,
+                "source_key": "drugName_en"
+              }
+            ],
+            "Data_To_View": [
+              {
+                "View_Id": "recyuuiopxxx",
+                "View_Type": "5",
+                "Index_ID": 0,
+                "use_format": false
+              },
+              {
+                "View_Id": "myouto0",
+                "View_Type": "9",
+                "Index_ID": 2,
+                "use_format": false
+              },
+              {
+                "View_Id": "0",
+                "View_Type": "0",
+                "Index_ID": 0,
+                "use_format": false
+              }
+            ]
+          }
+        },
+        "Finsh_Process": [
+          {
+            "View_Id": "recyuuiopxxx",
+            "Type_Process": "22",
+            "Value_Process": "55",
+            "View_Type": "A"
+          }
+        ],
+        "Sender_Data": [
+          {
+            "get_set_to_view": {
+              "Data_From_View": [
+                {
+                  "View_Id": "0",
+                  "index_id": 0,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "data#message[0]#ss#mm",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 1,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "1",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 2,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "unitData",
+                  "use_data_from_source": false,
+                  "source_key": "drugName_en"
+                },
+                {
+                  "View_Id": "0",
+                  "index_id": 3,
+                  "View_Type": "A",
+                  "use_const": true,
+                  "const_value": "0",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "Unit_NameSearch",
+                  "index_id": 4,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": "hellhhhhhhho",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "myouto",
+                  "index_id": 5,
+                  "View_Type": "0",
+                  "use_const": false,
+                  "const_value": "totalitem",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "myouto",
+                  "index_id": 6,
+                  "View_Type": "4",
+                  "use_const": false,
+                  "const_value": "totpageSize",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                },
+                {
+                  "View_Id": "myouto",
+                  "index_id": 7,
+                  "View_Type": "3",
+                  "use_const": false,
+                  "const_value": "totcurentpageSize",
+                  "use_data_from_source": false,
+                  "source_key": "noo"
+                }
+              ]
+            },
+            "API_Data_Search": [
+              {
+                "Method_Type": "get",
+                "Type_Url": "local0",
+                "Url": "http://0.0.0.0:8080/admin3/getdatasearch.php",
+                "Response_Data": [
+                  {
+                    "Key_Name": "FromMyRecycle",
+                    "Key_Value": "data#data",
+                    "Key_Type": "Select_Key",
+                    "use_format": false,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "1",
+                    "Key_Type": "Refresh_Key",
+                    "use_format": false,
+                    "index_id": 1
+                  },
+                  {
+                    "Key_Name": "unitData",
+                    "Key_Value": "1",
+                    "Key_Type": "Offline_Key",
+                    "use_format": false,
+                    "index_id": 2
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Show_As_Message",
+                    "use_format": false,
+                    "index_id": 3
+                  }
+                ],
+                "Request_Header": [
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeemmm",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeettffgggg",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "Authorization",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "search",
+                    "Key_Value": "0",
+                    "Key_Type": "search_text",
+                    "use_format": false,
+                    "index_id": 4
+                  }
+                ],
+                "Request_Body": [],
+                "Request_Query": []
+              }
+            ],
+            "API_Data": [
+              {
+                "Method_Type": "get",
+                "Type_Url": "local0",
+                "Url": "http://0.0.0.0:8080/admin3/getdata.php",
+                "Response_Data": [
+                  {
+                    "Key_Name": "FromMyRecycle",
+                    "Key_Value": "data#data",
+                    "Key_Type": "Select_Key",
+                    "use_format": false,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "1",
+                    "Key_Type": "Refresh_Key",
+                    "use_format": false,
+                    "index_id": 1
+                  },
+                  {
+                    "Key_Name": "unitData",
+                    "Key_Value": "1",
+                    "Key_Type": "Offline_Key",
+                    "use_format": false,
+                    "index_id": 2
+                  },
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "0",
+                    "Key_Type": "Show_As_Message",
+                    "use_format": false,
+                    "index_id": 3
+                  }
+                ],
+                "Request_Header": [
+                  {
+                    "Key_Name": "heee",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeemmm",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "heeettff",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "Authorization",
+                    "Key_Value": "%0$s",
+                    "Key_Type": "5555",
+                    "use_format": true,
+                    "index_id": 0
+                  },
+                  {
+                    "Key_Name": "totalcount",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "use_format": false,
+                    "index_id": 5
+                  },
+                  {
+                    "Key_Name": "totapagesize",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "use_format": false,
+                    "index_id": 6
+                  },
+                  {
+                    "Key_Name": "currentpage",
+                    "Key_Value": "0",
+                    "Key_Type": "5555",
+                    "use_format": false,
+                    "index_id": 7
+                  }
+                ],
+                "Request_Body": [],
+                "Request_Query": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Style_Layout": {
+    "money": {
+      "textColor": "#56a411",
+      "textSize": "28sp"
+    },
+    "center": {
+      "layout_gravity": "center"
+    },
+    "mini": {
+      "textSize": "8sp",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "layout_margin": "4dp"
+    },
+    "blue": {
+      "textColor": "#027cd5"
+    },
+    "default": {
+      "textColor": "#323232",
+      "textSize": "14sp"
+    }
+  }
+}
