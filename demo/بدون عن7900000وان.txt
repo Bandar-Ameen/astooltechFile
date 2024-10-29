@@ -1,0 +1,21 @@
+Map<Integer, String> idMap = new HashMap<Integer, String>();
+        Class<?> r;
+        String rClass = activity.getBaseContext().getApplicationContext().getPackageName()
+                + ".R$id";
+        try {
+            r = Class.forName(rClass);
+        } catch (ClassNotFoundException e1) {
+            Log.log("Unable to load " + rClass + ": " + e1.getMessage());
+            return idMap;
+        }
+        for (Field f : r.getFields()) {
+            int val;
+            try {
+                val = f.getInt(null);
+            } catch (Exception e) {
+                throw new IllegalStateException("Unable to get value for " + f.getName() + ": "
+                        + e.getMessage());
+            }
+            idMap.put(val, f.getName());
+
+        }

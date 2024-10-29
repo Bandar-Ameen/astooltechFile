@@ -1,0 +1,56 @@
+
+
+bearer f4mz5dDftXzXzVo4njoZn_M6oiI4316-W_TdSzG0LnvmEI5J5FdbqWSJYFAiBzN5LNFhzdRxHecw_vsasx2UZ2TZn8KJKBA_9TUBew5UV4628hUVSC-HAyqFP88Wy9vu0dB-JVAP0XPs1Cd5WC3Hxvr6A5Cjmjt8U35n59bQ4veJk0rFLboFk5_eJk4lr1guSqlGfkUp6-VTGi9FfnJmWeeGIH7nncgKAIK3rjqNyOiXLXk8Zfd3xddjyMRTzX54kpKvMZCDU0ua1mdA-wUWl_wzMzc8YY2cigy0QxB269boqBIs9o2oToGoY0gBybykM9rFoXr11OSbTEcOBRciog
+Web Socket are not available on signalr core?
+Asked 4 years, 7 months ago
+Modified 4 years, 7 months ago
+Viewed 989 times
+0
+
+I am working on signalr core under asp.net core 2.2.I have mobile as well as web signalr core clients,I have maintained cross domain connection.My web client successgully connnected to signalr core, but my android client gives exception below, "Web sockets are not available on your server", hence , web client is also using web sockets transport layer, and it is in conencting state.
+
+my server side code is in start up class
+
+// This method gets called by the runtime. Use this method to add services to the container.
+public void ConfigureServices(IServiceCollection services)
+{
+    services.Configure<CookiePolicyOptions>(options =>
+    {
+        // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+        options.CheckConsentNeeded = context => true;
+        options.MinimumSameSitePolicy = SameSiteMode.None;
+    });
+    services.AddCors(options =>
+    {
+        options.AddPolicy("CorsPolicy",
+            builder => builder.SetIsOriginAllowed((host) => true)/*WithOrigins("https://localhost:44381")*/
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
+    });
+    services.AddSignalR();
+    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+}
+
+// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Error");
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseCors("CorsPolicy");
+    app.UseSignalR(routes =>
+    {
+        routes.MapHub<ChatHub>("/chatHub");
+    });
+    app.UseMvc();
+}

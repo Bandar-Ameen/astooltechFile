@@ -1,0 +1,63 @@
+string adress = "hello www.google.ca";
+// Size the control to fill the form with a margin
+MatchCollection ms = Regex.Matches(adress, @"(www.+|http.+)([\s]|$)");
+string testMatch = ms[0].Value.ToString();
+
+
+public class MyLightVisualElement : RadElement
+{
+    private DockLayoutPanel mainPanel;
+    private LightVisualElement leftButtonElement;
+    private LightVisualElement rightButtonElement;
+    private LightVisualElement currentImageElement;
+    private Image[] images;
+    protected override void CreateChildElements()
+    {
+        this.mainPanel = new DockLayoutPanel();
+        this.mainPanel.LastChildFill = true;
+        this.Children.Add(this.mainPanel);
+        this.leftButtonElement = new LightVisualElement();
+        this.leftButtonElement.Text = "<--";
+        this.leftButtonElement.DrawBorder = true;
+        this.mainPanel.Children.Add(this.leftButtonElement);
+        DockLayoutPanel.SetDock(this.leftButtonElement, Telerik.WinControls.Layouts.Dock.Left);
+        this.leftButtonElement.Click += leftButtonElement_Click;
+        this.rightButtonElement = new LightVisualElement();
+        this.rightButtonElement.Text = "-->";
+        this.rightButtonElement.DrawFill = true;
+        this.rightButtonElement.BackColor = Color.Green;
+        this.mainPanel.Children.Add(this.rightButtonElement);
+        DockLayoutPanel.SetDock(this.rightButtonElement, Telerik.WinControls.Layouts.Dock.Right);
+        this.rightButtonElement.Click += rightButtonElement_Click;
+        this.currentImageElement = new LightVisualElement();
+        this.mainPanel.Children.Add(this.currentImageElement);
+        string imageFilesDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+        string[] imageFiles = Directory.GetFiles(imageFilesDirectory, "*.jpg");
+        this.images = new Image[imageFiles.Length];
+        for (int i = 0; i < imageFiles.Length; i++)
+        {
+            this.images[i] = new Bitmap(Image.FromFile(imageFiles[i]), new Size(300, 100));
+        }
+        if (this.images.Length >= 0)
+        {
+            this.currentImageElement.Image = this.images[0];
+        }
+        base.CreateChildElements();
+    }
+    private void rightButtonElement_Click(object sender, EventArgs e)
+    {
+        int currentImageIndex = Array.IndexOf(this.images, this.currentImageElement.Image);
+        if (++currentImageIndex <= this.images.Length - 1)
+        {
+            this.currentImageElement.Image = this.images[currentImageIndex];
+        }
+    }
+    private void leftButtonElement_Click(object sender, EventArgs e)
+    {
+        int currentImageIndex = Array.IndexOf(this.images, this.currentImageElement.Image);
+        if (--currentImageIndex >= 0)
+        {
+            this.currentImageElement.Image = this.images[currentImageIndex];
+        }
+    }
+}

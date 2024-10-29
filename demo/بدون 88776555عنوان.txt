@@ -1,0 +1,23 @@
+protocol = url.getProtocol();  
+    System.out.println("Path of url is : "+path);     
+    }  
+   
+public static void main(String args[]) throws Exception  
+ {  
+ hello ga=new hello ();  
+    URL url=new URL("https://www.astooltech.com:8080/notic/note.jsp");  
+    
+String protocol = url.getProtocol();
+String host = url.getHost();
+int port = url.getPort();
+    String hostt = url.getHost();
+    String full=";";
+    if (port == -1) {
+    full =String.format("%s://%s", protocol, host);
+} else {
+    full=String.format("%s://%s:%d", protocol, host, port);
+}
+   System.out.println("Given URL is : "+full);  
+   //ga.HttpCallerInfo(full);  
+ }  
+}  

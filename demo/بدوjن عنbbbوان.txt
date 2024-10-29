@@ -1,0 +1,28 @@
+private OnResult onResultActivity() {
+            return new OnResult() {
+                @Override
+                public void response(final int resultCode, final Intent data) {
+                    Observable.interval(0, 100, TimeUnit.MILLISECONDS)
+                            .filter(new Func1<Long, Boolean>() {
+                                @Override
+                                public Boolean call(Long aLong) {
+                                    if (activitiesLifecycle.getLiveActivity() == null) return false;
+                                    if (activitiesLifecycle.getLiveActivity().getClass() != clazz) {
+                                        return false;
+                                    }
+                                    return true;
+                                }
+                            })
+                            .observeOn(AndroidSchedulers.mainThread())
+                            .take(1)
+                            .subscribe(new Action1<Long>() {
+                                @Override
+                                public void call(Long aLong) {
+                                    T activity = (T) activitiesLifecycle.getLiveActivity();
+                                    subject.onNext(new Result<T>((T) activity, resultCode, data));
+                                    subject.onCompleted();
+                                }
+                            });
+                }
+            };
+        }

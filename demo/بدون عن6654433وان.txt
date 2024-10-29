@@ -1,0 +1,57 @@
+"{
+"\"Event_Type"\":"\"ShowCookie"\",
+"\"Name"\":"\"MM"\",
+"\"M"\":"\"1"\",
+"\"T"\":"\"1"\",
+"\"Title"\":"\"ggggg "\",
+"\"Message"\":"\"  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh"\",
+"\"ColorA"\":"\"ffffff"\",
+"\"ColorB"\":"\"ffffff"\",
+"\"ColorC"\":"\"d3212d"\",
+"\"Locations"\":"\"b"\",
+"\"Duration"\":5000,
+"\"Anim_Type"\":0,
+"\"AutoDismiss"\":true,
+"\"SweepDismiss"\":true,
+"\"Custome_View"\":{
+    "\"type"\": "\"CardView"\",
+    "\"orientation"\": "\"vertical"\",
+    "\"layout_width"\": "\"match_parent"\",
+    "\"layout_height"\": "\"wrap_content"\",
+  "\"background"\":"\"@drawable/blue_btn_bkg"\",
+  "\"layout_margin"\":"\"5dp"\",
+    "\"children"\": [{
+
+    "\"type"\": "\"LinearLayout"\",
+      "\"layout_width"\": "\"match_parent"\",
+      "\"layout_height"\": "\"wrap_content"\",
+      "\"gravity"\": "\"right"\",
+      "\"focusable"\":false,
+      "\"background"\":"\"@color/green"\",
+      "\"orientation"\": "\"vertical"\",
+      "\"children"\":[
+      
+      
+      
+      
+      {
+                  "\"type"\": "\"ImageView"\",
+                  "\"layout_width"\": "\"50dp"\",
+                  "\"layout_height"\": "\"50dp"\",
+                  "\"layout_gravity"\": "\"center"\",
+                  "\"background"\":"\"@drawableFont/fa_wrench_solid/1/40/#ffffff"\"
+},
+{
+        "\"type"\": "\"TextView"\",
+        "\"layout_width"\": "\"match_parent"\",
+        "\"layout_height"\": "\"wrap_content"\",
+        "\"layout_marginTop"\": "\"10dp"\",
+        "\"gravity"\": "\"center"\",
+        "\"textColor"\": "\"@color/white"\",
+        "\"textSize"\": "\"18sp"\",
+        "\"text"\": "\"@{Me[0].Message}"\"
+}
+]
+}]
+}
+}"

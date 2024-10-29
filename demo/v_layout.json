@@ -1,0 +1,1706 @@
+{
+
+"Root_Layout": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "Mainsetings",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  }
+,
+
+  "Mainsetings": {
+  
+  "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+       "paddingTop":"50dp",
+        "orientation": "vertical",
+        "children":[
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "ScriptViewv":"call OpenActivityb #Rgg# ",
+
+                  "layout_marginTop": "0dp",
+                  "text": "TreeView",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"0",
+                  "enabled":true,
+                  "Save_before_refresh":"0",
+                  "DisableWehen":"vvbbihi",
+                  "Key_from_response":"data",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#mideltyp#,#data_set#:#mideltyp#,#data_get#:#mideltyp#},
+
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},
+{#data_id#:#midel#,#data_set#:#midel#,#data_get#:#midel#}
+
+]",
+
+"api_body":"
+          [{#head#:[{#typ1#:#1#,#userID#:#0#,#alfraID#:#0#,#stockID#:#0#,#username#:#0#,#enab#:#0#,#typ2#:#0#,#IDforupdate#:#0#,#allwith#:#0#,#sandookID#:#0#,#parcount#:#0#,#parmnam#:#24#}],#pramname#:[{#paramvalue#:[#%3$s#,#%1$s#,#%1$s#, #%5$s#,#%1$s#,#%1$s#,#%1$s#,#%1$s#, #%5$s#]}]}]",            
+        "Api_Header":"call OpenAct @{[
+{%1$skeyresponse%1$s:%1$s0%1$s,
+%1$sapibody%1$s:%1$s[]%1$s,
+%1$sapiquery%1$s:%1$s[]%1$s,
+%1$smethod%1$s:%1$sget%1$s,
+%1$surl%1$s:%1$shttp://0.0.0.0:8080/admin3/A_SpinnerView.json%1$s,
+%1$sapiheader%1$s:%1$snooone%1$s,
+%1$stype%1$s:%1$s0%1$s
+}]
+",
+  "api_method":"Get",
+          "api_url":"http://0.168.1.101:80/api/desin/uidesin"
+          ,
+
+
+          "typeAction" :"Script",
+          
+
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbu6t6uii", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+{"type": "include",
+          "layout": "Search",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        
+
+},
+{"type": "include",
+          "layout": "layre",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        
+
+}
+]
+  
+  
+  }
+  ,
+        "mymycard":  {
+                  "type": "LinearLayout",
+                  "layout_width": "70dp",
+                  "layout_height": "70dp",
+                  "background":"#c48866",
+                  "layout_margin":"5dp",
+                  "padding":"5dp"
+      },
+  "layre":{
+      
+          
+          
+        "type": "RecyclerViewLayout",
+        "layout_width": "match_parent",
+        "layout_height": "500dp",
+        "VVlayout":{
+"LayoutType":[
+{
+
+"Types":"GRAD_LAYOUT",
+"Bground":"#ffcc33",
+"cell_margin_left":0,
+"cell_margin_right":0,
+"cell_margin_top":0,
+"cell_margin_buttom":0,
+
+"cell_padding_left":20,
+"cell_padding_right":20,
+"cell_padding_top":0,
+"cell_padding_buttom":10,
+
+"Weights_A":30,
+"Weights_B":20,
+"Weights_C":50,
+"Weights_D":40,
+"Weights_E":30,
+"cell_hight":300,
+
+"AspectRatio":4,
+"Span_column":2,
+"Hgap":3,
+
+"X":20,
+"Y":20,
+"mdata":[
+{
+
+
+
+
+"layoutsInflater":{"type": "include",
+          "layout": "mymycard",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        },
+        "Weights":30,
+"layoutsInflater_type":0,
+"data_obj":{
+"names":"hello1"
+}
+}
+,
+{
+"layoutsInflater":"card1",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+}
+]}
+,
+{
+
+"Types":"ONE_LAYOUTA",
+"Bground":"#ffcc33",
+"cell_margin_left":0,
+"cell_margin_right":10,
+"cell_margin_top":0,
+"cell_margin_buttom":0,
+
+"cell_padding_left":0,
+"cell_padding_right":0,
+"cell_padding_top":0,
+"cell_padding_buttom":0,
+
+"Weights_A":30,
+"Weights_B":20,
+"Weights_C":50,
+"Weights_D":40,
+"Weights_E":30,
+"cell_hight":300,
+
+"AspectRatio":1,
+"Span_column":2,
+"Hgap":13,
+
+"X":20,
+"Y":20,
+"mdata":[
+{
+
+
+
+
+"layoutsInflater":{"type": "include",
+          "layout": "card1",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        },
+        "Weights":10,
+"layoutsInflater_type":0,
+"data_obj":{
+"names":"hello1"
+}
+}
+,
+{
+"layoutsInflater":"card1",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+}
+]}
+
+
+
+,
+{
+
+"Types":"ONE_LAYOUTB",
+"Bground":"#ffcc33",
+"cell_margin_left":0,
+"cell_margin_right":10,
+"cell_margin_top":0,
+"cell_margin_buttom":0,
+
+"cell_padding_left":0,
+"cell_padding_right":0,
+"cell_padding_top":0,
+"cell_padding_buttom":0,
+
+"Weights_A":30,
+"Weights_B":20,
+"Weights_C":50,
+"Weights_D":40,
+"Weights_E":30,
+"cell_hight":10,
+
+"AspectRatio":1,
+"Span_column":2,
+"Hgap":3,
+
+"X":20,
+"Y":20,
+"mdata":[
+{
+
+
+
+
+"layoutsInflater":{"type": "include",
+          "layout": "mymycard",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        },
+        "Weights":10,
+"layoutsInflater_type":0,
+"data_obj":{
+"names":"hello1"
+}
+}
+,
+{
+"layoutsInflater":"card1",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+}
+]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+}
+       
+
+ }
+ 
+ ,
+"card1": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    
+    "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+
+              "onClick": "m@{tag}",
+    
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+
+
+
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"العنوان",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    }
+    
+    ,
+"card2": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    
+    "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+
+              "onClick": "m@{tag}",
+    
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+
+
+
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"العنوان",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    },
+
+   
+          "Search":{
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "6dp",
+                     "paddingLeft": "6dp",
+                    "d_onErrorText":"البحث", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"بحث",
+  "id": "email",
+                "data_primary":"emailmy",
+                
+                "d_NullValue":false,
+                "d_OnErrorText":"البحث",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "6dp",
+            "paddingTop": "0dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                "With_Search":{
+                "ViewID":"myouto"
+},
+                       "tooltipText":"البجث",   
+                         "text":"@{AlertDialogLayout.my[0].email}",
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "14dp"
+                ,
+                "gravity":"right"
+              }
+              
+            ]
+          },
+  
+  "SimpleDataBindingExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "orientation": "vertical",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginBottom": "0dp",
+            "text": "Profile",
+            "style": "mini.blue"
+          },
+          {
+            "type": "RelativeLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextView",
+                "id": "k",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{name}"
+              },
+              {
+                "type": "TextView",
+                "id": "location",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_below": "name",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{fn:format('%s, %s', @{user.location.city}, @{user.location.country})}"
+              },
+              {
+                "type": "TextView",
+                "text": "@{fn:format('(%s)',@{user.level})}",
+                "textColor": "#c48866",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_toRightOf": "name"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "children": [
+              {
+                "type": "HorizontalProgressBar",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "max": "@{user.experience.max}",
+                "progress": "@{user.experience.current}"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "layout_marginBottom": "32dp",
+                "padding": "8dp",
+                "paddingTop": "16dp",
+                "paddingBottom": "16dp",
+                "text": "@{fn:number(@{user.credits})}",
+                "style": "money.center",
+                "background": {
+                  "type": "shape",
+                  "shape": "oval",
+                  "children": [
+                    {
+                      "type": "gradient",
+                      "startColor": "#44e73827",
+                      "endColor": "@color/green",
+                      "angle": 270
+                    }
+                  ]
+                },
+                "animation": {
+                  "interpolator": {
+                    "type": "anticipateOvershootInterpolator"
+                  },
+                  "type": "rotate",
+                  "fromDegrees": -720,
+                  "toDegrees": 0,
+                  "pivotX": "50%",
+                  "pivotY": "50%",
+                  "duration": 1500
+                }
+              }
+            ]
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "data": {
+              "date": "@{fn:date(@{sec.ll},'E, d MMM')}",
+              "loc": "@{sec.loc}"
+            },
+            "text": "@{fn:format('last login: %s from %s',@{date},@{loc})}",
+            "style": "blue"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "text": "@{user.type}",
+            "visibility": "@{fn:ternary(@{user.type}, 'visible', 'gone')}"
+          }
+        ]
+      }
+    ]
+  },
+  "myTree":{
+"type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "200dp",
+    "padding": "0dp",
+    
+   "data_primary":"recyuuioggp",
+      "on_sweep":"recycleserchhm",
+    "on_sweep_typ":"1",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+"type": "ATreeView",
+        "layout_width": "match_parent",
+        "layout_height": "200dp",
+         "filter":"drugName_ar",
+            "data_primary":"myslidersee",
+         "Recycle":{
+"typ":"1"
+},
+"mdata":{
+"trime":"1000",
+"Typedir":"2",
+"Tree_Data":{
+"Child_Key":"child",
+"Parent_Key":"parent",
+"Value_Key":"name"
+},
+"run_Auto":true
+,"Data_From":{
+"Event_Type":"CheckNull",
+"animation":{
+"a_enter":false,
+"a_enter_step":false,
+"a_expand":false,
+"a_expand_out":false,
+"a_anim_rev":false,
+"a_anim_for":false,
+"a_load_start":true,
+"a_drage":true,
+"CountItem":2,
+"a_endless_count":0,
+"a_endless_page":0,
+"a_use_endless":true,
+"a_use_offline":true,
+"a_use_top":true
+
+},
+"Set_Data":[
+{
+
+"View_Id":"myspainn",
+"Type_Process":"5",
+
+"Key_Process":"5uurrrthello_hello_hello",
+"Value_Key":"drugName_ar"
+
+},
+{
+"View_Id":"myouto",
+"Type_Process":"5",
+
+"Key_Process":"5uurrrthello_hello_hello",
+"Value_Key":"drugName_ar"
+
+}
+
+
+
+],
+
+
+"Name":"pic",
+"Multiple_Views":{
+"Filter_Views":[
+{"Key_Name":"name"
+}
+],
+"Def_Views":{
+"type": "include",
+ "layout": "DataDrivenExamplevmytree",
+  "tname":"SimpleDataBindingExample",
+        "KeyName":"recycleserchhm",
+          "paddingBottom": "0dp",
+          "FilterName":"name",
+          "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          }
+          },
+
+"a_enable":"1",
+"MultipleViews":[]
+
+
+},
+
+
+
+"Return_Data":[
+{
+"Return_Type":"55",
+
+
+"Return_To_Message":[
+{
+"Response_Key_Name":"0",
+"View_Id":"55",
+"Message_Text":"hhhh",
+"View_Type":"A"
+
+}
+
+]
+
+
+}
+
+],
+
+"Return_To_View":[
+{
+"View_Id":"saveprograss",
+"Type_Process":"1",
+"Value_Process":"1",
+"View_Type":"A"
+
+}
+
+],
+
+"Before_Process":[
+{
+"View_Id":"saveprograss",
+"Type_Process":"1",
+"Value_Process":"1",
+"View_Type":"A"
+
+},
+{
+"View_Id":"vvbbiikk",
+"Type_Process":"3",
+"Value_Process":"3",
+"View_Type":"A"
+
+}
+
+
+],
+
+"After_Process":[
+{
+"View_Id":"saveprograss",
+"Type_Process":"2",
+"Value_Process":"2",
+"View_Type":"A"
+
+},
+{
+"View_Id":"vvbbiikk",
+"Type_Process":"4",
+"Value_Process":"4",
+"View_Type":"A"
+
+}
+
+],
+"Finsh_Process":[
+{
+"View_Id":"55",
+"Type_Process":"22",
+"Value_Process":"55",
+"View_Type":"A"
+
+}
+
+],
+"Sender_Data":[
+{
+"Data_From_View":[
+{"View_Id":"0",
+"View_Type":"5",
+"Index_ID":0
+},
+{"View_Id":"0",
+"View_Type":"6",
+"Index_ID":1
+},
+{"View_Id":"0",
+"View_Type":"6",
+"Index_ID":2
+},
+{"View_Id":"0",
+"View_Type":"API_Acess",
+"Index_ID":3
+}
+
+
+]
+,"API_Data":[
+{
+"Method_Type":"POST",
+"Type_Url":"local0",
+"Url":"http://0.0.0.0:8080/admin3/u.php",
+"Response_Data":[
+{
+"Key_Name":"heee",
+"Key_Value":"0",
+"Key_Type":"Select_Key"
+},
+
+{
+"Key_Name":"heee",
+"Key_Value":"1",
+"Key_Type":"Refresh_Key"
+},
+{
+"Key_Name":"mmnuuuknnm",
+"Key_Value":"1",
+"Key_Type":"Offline_Key"
+}
+,
+{
+"Key_Name":"heee",
+"Key_Value":"0",
+"Key_Type":"Show_As_Message"
+}
+
+
+
+]
+,
+
+
+"Request_Header":[
+{
+"Key_Name":"heee",
+"Key_Value":"%1$s",
+"Key_Type":"5555"
+},
+{
+"Key_Name":"heeemmm",
+"Key_Value":"%2$s",
+"Key_Type":"5555"
+},
+{
+"Key_Name":"heeettff",
+"Key_Value":"%3$s",
+"Key_Type":"5555"
+},
+{
+"Key_Name":"vvvvvvv",
+"Key_Value":"%4$s",
+"Key_Type":"5555"
+}
+
+
+
+
+]
+,
+"Request_Body":[],
+
+"Request_Query":[]
+
+
+
+}
+
+
+]
+}
+
+]
+
+}
+
+}
+         
+}]}
+  ,
+  "DataDrivenExamplevmytree": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+"table_show_view":"kk#child#parent",
+    "paddingBottom": "0dp",
+    "focusable":false,
+    "children": [
+   {
+        "type":"LinearLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+                   "focusable":false,
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+                  "focusable":false,
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+                  "focusable":false,
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+                 "focusable":false, 
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "id":"kk",
+              "background":"@color/green",
+              "table_column":"0",
+                  "focusable":false,
+              "table_filedname":"name",
+              "layout_marginRight":"0dp",
+              "text":"@{name}"
+              }
+              ,
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "gravity":"right",
+                  "focusable":false
+              
+              
+       
+,"children":[
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعععععديل",
+               "layout_marginRight":"0dp",
+                 "focusable":false,
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"SelectItem",
+    "focusable":false,
+          "typeActionName" :"myautoprimary",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+
+              "onClick": "m@{tag}",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+ }
+]
+},
+{
+          "type":"RippleLayout",
+                  
+        
+          "focusable":false,       
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+    "focusable":false,
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"@drawableFont/fa_trash_alt/2/60/#438afe"
+ }
+]
+}
+
+
+
+
+
+
+              
+
+]
+}
+
+
+
+
+
+
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+
+       
+
+   
+ 
+
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  },
+
+
+  "DataDrivenExamplevmy": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+"table_show_view":"kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation":"@anim/fade_in",
+    "focusable":false,
+    "children": [
+   {
+        "type":"LinearLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+                   "focusable":false,
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+                  "focusable":false,
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+                  "focusable":false,
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+                 "focusable":false, 
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "id":"kk",
+              "background":"@color/green",
+              "table_column":"0",
+                  "focusable":false,
+              "table_filedname":"name",
+              "layout_marginRight":"0dp",
+              "text":"@{drugName_ar}"
+              }
+              ,
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "gravity":"right",
+                  "focusable":false
+              
+              
+       
+,"children":[
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعععععديل",
+               "layout_marginRight":"0dp",
+                 "focusable":false,
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"SelectItem",
+    "focusable":false,
+          "typeActionName" :"myautoprimary",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+
+              "onClickk": "m@{tag}",
+
+                  "background":"@drawableFont/fa_edit/2/40/#438afe",
+                  "Event":{
+"Event_Type":"Show_Dialog_With_Set_Data",
+"Name":"AlertDialogLayout",
+"Set_Data":[
+{
+"View_Id":"name",
+"Type_Process":"5",
+"Value_Process":"drugName_ar",
+"View_Type":"A"
+
+},
+{
+"View_Id":"email",
+"Type_Process":"5",
+"Value_Process":"id",
+"View_Type":"A"
+
+}
+
+
+]
+
+}
+ }
+]
+},
+{
+          "type":"RippleLayout",
+                  
+        
+          "focusable":false,       
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+    "focusable":false,
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"@drawableFont/fa_trash_alt/2/60/#438afe"
+ }
+]
+}
+
+
+
+
+
+
+              
+
+]
+}
+
+
+
+
+
+
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+
+       
+
+   
+ 
+
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  }
+  
+  }

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <meta content='' name='description'/>
+    <meta content='mobile, phones, brands, samsung, apple, nokia،,جميع,ماركات,الهواتف, سامسونج, ابل, أبل, سامسونغ, نوكيا, هواوي, هونر, اونر, شاومي, شياومي, تشاومي, ريدمي, بوكوفون, اوبو, ريلمي, انفينيكس, انفينكس, لينوفو, ال جي, جوجل, اسوس, مايكروسوفت, سوني, HTC, موتورولا, بلاكبيري, ايسر, ون بلس, ون بلص, الكاتيل, ZTE, ميزو, مايزو, xiaomi, huawei, honor, redmi, realme, pocophone, motorola, asus, acer, lenovo, infinix, تكنو, tecno, sico, سيكو, فودافون, vodafone, blackberry, sony, microsoft, oppo, oneplus, google, mi 9t, redmi note 8, redmi note, lg, meizu, alcatel, zte' name='keywords'/>
+    <title>ماركات الهواتف</title>
+
+    <meta content='' name='author'/>
+    <link rel="shortcut icon" href="https://mobireviewz.com/content/media/img/favicon.gif"></link>
+	<!-- core CSS -->
+    <link href="https://mobireviewz.com/content/templates/Arena/assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="https://mobireviewz.com/content/templates/Arena/assets/css/animate.min.css" rel="stylesheet"></link>
+    <link href="https://mobireviewz.com/content/templates/Arena/assets/css/main.css" rel="stylesheet"></link>
+    <link href="https://mobireviewz.com/content/templates/Arena/assets/css/social.css" rel="stylesheet"></link>
+    <link href="https://mobireviewz.com/content/templates/Arena/assets/css/search.css" rel="stylesheet"></link>      
+    <link href="https://mobireviewz.com/content/templates/Arena/assets/css/responsive.css" rel="stylesheet"></link>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet"></link>	
+    <link href="https://mobireviewz.com/core/assets/lightbox/lightbox.css" rel="stylesheet"></link>
+    <link href="https://mobireviewz.com/core/assets/css/star-rating.css" rel="stylesheet"></link>    
+    <style>
+html,body,a,p,span,ul,li,div,h1,h2,h3,h4,h5,h6{    font-family: 'sky';
+   font-weight: normal;
+   font-style: normal; }
+   .navbar-inverse .navbar-nav > li > a,.table_brands h3,.device_header h1,.device_summary{    font-family: 'sky';
+   font-weight: bold;
+   font-style: normal; }
+    </style>
+     
+<style>
+.brands_list .two_cols > li {
+
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+ @media only screen and (max-width: 600px) {
+.brands_list a {
+    font-size: 15px;
+    text-align: center;
+    direction: rtl;
+}
+.brands_list .two_cols > li {
+
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+}
+
+</style>
+</head>
+
+<body>
+	
+    <header id="header" class="header1">
+        <nav class="navbar navbar-inverse yamm header1" role="banner">
+
+            <div class="container">
+
+        		<div class="navbar-header">
+				<a class="navbar-brand home" href="https://mobireviewz.com" title="موبي ريفيوز - عالم المحمول"><img src="https://mobireviewz.com/content/media/img/2de523c9-nvnvvn.png" alt="موبي ريفيوز - عالم المحمول" class="hidden-xs hidden-sm hidden-md"></img></a>
+                </div><!--/.navbar-header -->
+                
+						<a class="navbar-brand home" href="https://mobireviewz.com" title="موبي ريفيوز - عالم المحمول"><img src="https://mobireviewz.com/content/media/img/2de523c9-nvnvvn.png" alt="موبي ريفيوز - عالم المحمول" class="hidden-sm hidden-md hidden-lg"></img></a>
+
+                <div class="navbar-header">
+                	
+                    <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>-->
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+               			 <span class="icon-bar"></span>
+               			 <span class="icon-bar"></span>
+			             <span class="icon-bar"></span>
+                     </button>                                                    
+                </div>
+				 
+
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                
+                    <form class="navbar-form" role="search" id="searchform" action="https://mobireviewz.com/search.php" method="get">
+                        <div class="input-group">
+                            <input type="text" class="form-control-header" placeholder="بحث" name="search" id="inputString" onkeyup="lookup(this.value);" autocomplete="off">
+                            <div class="input-group-btn">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+
+                            </div>
+
+							</input>
+
+                        </div>
+
+                        <div id="suggestions"></div>
+                    </form>
+                    	  <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+    <span aria-hidden="true" class="dark-toggle">
+        <span class="DTspan"></span>
+    </span>
+</button>
+    <!-- ADD CSS FILE -->
+    <link rel="stylesheet" href="/content/templates/Arena/assets/css/darkmode.css">
+    <!-- ADD JS FILE -->
+    <script src="/content/templates/Arena/assets/js/darkmode.js"></script>
+                </div>     
+
+               
+                <div class="menu1 collapse navbar-collapse navbar-lift">
+
+                        
+                    <ul class="nav navbar-nav" style="float:left">
+        
+                        <div class="social-network social-circle">
+                                <a href="https://www.facebook.com/mobireviewzcom" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/Mobireviewz1" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+
+                                <a href="https://www.youtube.com/channel/UCGobO8jfb2_s1X6dtKMfUgA" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a>
+                                
+                                                               
+                        </div>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->		
+</header><!--/header-->
+
+
+<!-- *** SECOND LINE NAVBAR *** -->
+<div class="navbar-affixed-top" data-spy="affix" data-offset-top="100">
+
+	<div class="navbar navbar-inverse yamm" role="navigation" id="navbar">
+
+    	<div class="container">
+                        
+                <div class="navbar-collapse collapse" id="navigation">
+
+                        <ul class="nav navbar-nav">                                            
+
+                        <li class="hidden-sm"><a href="https://mobireviewz.com" title="موبي ريفيوز - عالم المحمول">الرئيسية</a></li>
+                                                                        
+                                                <li><a title="الأخبار" href="https://mobireviewz.com/news/">الأخبار</a></li>
+                                                <li><a title="مقالات" href="https://mobireviewz.com/articles/">مقالات</a></li>
+                                                <li><a title="أحدث الأجهزة المحمولة" href="https://mobireviewz.com/mobiles/">أحدث الأجهزة المحمولة</a></li>
+                                                		   	           
+                        <li><a title="العلامات التجارية" href="https://mobireviewz.com/mobile-phone-brands.html">العلامات التجارية</a></li>
+                        		   	           
+                        <li><a title="مقارنة" href="https://mobireviewz.com/compare.html">مقارنة</a></li>
+                        		   	           
+                        <li><a title="الأسعار" href="https://mobireviewz.com/mobile-phones-prices.html">الأسعار</a></li>
+                                            	
+                        </ul>
+                        
+                        <ul class="nav navbar-nav pull-right">
+                                                <li><a href="https://mobireviewz.com/contact.html">اتصل بنا</a></li>
+                                                                        
+                        </ul>
+
+
+				</div><!--/.nav-collapse -->
+
+		</div><!-- /#container -->
+
+	</div><!-- /#navbar -->
+
+</div><!-- *** NAVBAR END *** -->
+
+
+</head>
+<body>
+
+
+<div class="container">
+	<div class="col-lg-12" align="center" style="margin-top:20px; margin-bottom:20px;">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5578773083814296"
+     crossorigin="anonymous"></script>
+<!-- إعلان صوريّ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5578773083814296"
+     data-ad-slot="4755380269"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	</div>
+</div>    
+
+     
+
+    <section>
+        <div class="container">
+			<div class="center wow fadeInDown">
+				<h2>العلامات التجارية</h2>
+			</div>
+
+			<div class="wow fadeInDown">
+				<p><br></p>
+                
+                <div class="brands_list">
+                <ul class="list-unstyled two_cols">
+                			    <li><img src="https://mobireviewz.com/content/media/img/cd85159e-22124.jpg" /><br> <a title="Acer الأجهزة المحمولة" href="https://mobireviewz.com/acer/">Acer   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/06a0c6d9-22124.jpg" /><br> <a title="Alcatel الأجهزة المحمولة" href="https://mobireviewz.com/alcatel/">Alcatel   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/07daef98-22124.jpg" /><br> <a title="Allview الأجهزة المحمولة" href="https://mobireviewz.com/allview/">Allview   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/d3a17875-22124.jpg" /><br> <a title="Amazon الأجهزة المحمولة" href="https://mobireviewz.com/amazon/">Amazon   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/76d30c0e-22124.jpg" /><br> <a title="Amoi الأجهزة المحمولة" href="https://mobireviewz.com/amoi/">Amoi   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/a0b6c3f3-22124.jpg" /><br> <a title="Apple الأجهزة المحمولة" href="https://mobireviewz.com/apple/">Apple   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/900ef270-22124.jpg" /><br> <a title="Archos الأجهزة المحمولة" href="https://mobireviewz.com/archos/">Archos   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/2ce54b77-22124.jpg" /><br> <a title="Asus الأجهزة المحمولة" href="https://mobireviewz.com/asus/">Asus   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/d635cd9b-22124.jpg" /><br> <a title="AT&amp;T الأجهزة المحمولة" href="https://mobireviewz.com/att/">AT&amp;T   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/109199c7-22124.jpg" /><br> <a title="Benefon الأجهزة المحمولة" href="https://mobireviewz.com/benefon/">Benefon   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/7f48f5c4-22124.jpg" /><br> <a title="BenQ الأجهزة المحمولة" href="https://mobireviewz.com/benq/">BenQ   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/a280fc3d-22124.jpg" /><br> <a title="BenQ-Siemens الأجهزة المحمولة" href="https://mobireviewz.com/benq-siemens/">BenQ-Siemens   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/7880eba8-22124.jpg" /><br> <a title="Bird الأجهزة المحمولة" href="https://mobireviewz.com/bird/">Bird   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/ec51123e-111.jpg" /><br> <a title="Black Shark الأجهزة المحمولة" href="https://mobireviewz.com/black-shark/">Black Shark   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/ea4b8ae5-22124.jpg" /><br> <a title="Blackberry الأجهزة المحمولة" href="https://mobireviewz.com/blackberry/">Blackberry   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/056569df-22124.jpg" /><br> <a title="BLU الأجهزة المحمولة" href="https://mobireviewz.com/blu/">BLU   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/8c88e546-22124.jpg" /><br> <a title="Bosch الأجهزة المحمولة" href="https://mobireviewz.com/bosch/">Bosch   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/48e8f54c-.jpg" /><br> <a title="Carbon الأجهزة المحمولة" href="https://mobireviewz.com/carbon/">Carbon   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/cfb0e4dd-222.jpg" /><br> <a title="Celkon الأجهزة المحمولة" href="https://mobireviewz.com/celkon/">Celkon   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/d12c33c6-0-9.jpeg" /><br> <a title="Coolpad الأجهزة المحمولة" href="https://mobireviewz.com/coolpad/">Coolpad   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/d5863cd6-22124.jpg" /><br> <a title="Dell الأجهزة المحمولة" href="https://mobireviewz.com/dell/">Dell   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/f8a9020c-22124.jpg" /><br> <a title="Doogee الأجهزة المحمولة" href="https://mobireviewz.com/doogee/">Doogee   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/7e5ab9a7-22124.jpg" /><br> <a title="Emporia الأجهزة المحمولة" href="https://mobireviewz.com/emporia/">Emporia   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/75733ec2-0012.4.jpg" /><br> <a title="Energizer الأجهزة المحمولة" href="https://mobireviewz.com/energizer/">Energizer   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/8ef78eeb-22124.jpg" /><br> <a title="Ericsson الأجهزة المحمولة" href="https://mobireviewz.com/ericsson/">Ericsson   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/aad787f8-3333.jpg" /><br> <a title="Fairphone الأجهزة المحمولة" href="https://mobireviewz.com/fairphone/">Fairphone   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/921e7042-22124.jpg" /><br> <a title="Gigabyte الأجهزة المحمولة" href="https://mobireviewz.com/gigabyte/">Gigabyte   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/0b6a7601-22124.jpg" /><br> <a title="Gionee الأجهزة المحمولة" href="https://mobireviewz.com/gionee/">Gionee   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/756ffdfc-22124.jpg" /><br> <a title="Google الأجهزة المحمولة" href="https://mobireviewz.com/google/">Google   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/26f2a4a6-22124.jpg" /><br> <a title="Haier الأجهزة المحمولة" href="https://mobireviewz.com/haier/">Haier   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/49550ebc-22124.jpg" /><br> <a title="Honor الأجهزة المحمولة" href="https://mobireviewz.com/honor/">Honor   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/12ded300-22124.jpg" /><br> <a title="HP الأجهزة المحمولة" href="https://mobireviewz.com/hp/">HP   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/bfc67e05-22124.jpg" /><br> <a title="HTC الأجهزة المحمولة" href="https://mobireviewz.com/htc/">HTC   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/13cec6c2-22124.jpg" /><br> <a title="Huawei الأجهزة المحمولة" href="https://mobireviewz.com/huawei/">Huawei   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/35cc8164-22124.jpg" /><br> <a title="i-mate الأجهزة المحمولة" href="https://mobireviewz.com/i-mate/">i-mate   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/b72bea6d-22124.jpg" /><br> <a title="Icemobile الأجهزة المحمولة" href="https://mobireviewz.com/icemobile/">Icemobile   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/3a059db6-22124.jpg" /><br> <a title="Infinix الأجهزة المحمولة" href="https://mobireviewz.com/infinix/">Infinix   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/ddac6311-22124.jpg" /><br> <a title="Intex الأجهزة المحمولة" href="https://mobireviewz.com/intex/">Intex   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/0fa97d78-22124.jpg" /><br> <a title="iQOO الأجهزة المحمولة" href="https://mobireviewz.com/iqoo/">iQOO   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/56dc6447-25432743.jpg" /><br> <a title="itel الأجهزة المحمولة" href="https://mobireviewz.com/itel/">itel   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/d1163eac-22124.jpg" /><br> <a title="Karbonn الأجهزة المحمولة" href="https://mobireviewz.com/karbonn/">Karbonn   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/429cbb9f-22124.jpg" /><br> <a title="Kyocera الأجهزة المحمولة" href="https://mobireviewz.com/kyocera/">Kyocera   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/3a53698a-22124.jpg" /><br> <a title="Lava الأجهزة المحمولة" href="https://mobireviewz.com/lava/">Lava   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/01a5c8c4-22124.jpg" /><br> <a title="Lenovo الأجهزة المحمولة" href="https://mobireviewz.com/lenovo/">Lenovo   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/50a9383c-22124.jpg" /><br> <a title="LG الأجهزة المحمولة" href="https://mobireviewz.com/lg/">LG   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/ea69cd4d-22124.jpg" /><br> <a title="Maxwest الأجهزة المحمولة" href="https://mobireviewz.com/maxwest/">Maxwest   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/3767be97-22124.jpg" /><br> <a title="Meizu الأجهزة المحمولة" href="https://mobireviewz.com/meizu/">Meizu   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/db140202-22124.jpg" /><br> <a title="Micromax الأجهزة المحمولة" href="https://mobireviewz.com/micromax/">Micromax   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/f1fcad09-22124.jpg" /><br> <a title="Microsoft الأجهزة المحمولة" href="https://mobireviewz.com/microsoft/">Microsoft   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/474a97d0-22124.jpg" /><br> <a title="Motorola الأجهزة المحمولة" href="https://mobireviewz.com/motorola/">Motorola   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/66077e59-22124.jpg" /><br> <a title="NIU الأجهزة المحمولة" href="https://mobireviewz.com/niu/">NIU   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/aea60bd6-22124.jpg" /><br> <a title="Nokia الأجهزة المحمولة" href="https://mobireviewz.com/nokia/">Nokia   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/6645558d-500551e8-22124.jpg" /><br> <a title="Nothing الأجهزة المحمولة" href="https://mobireviewz.com/nothing/">Nothing   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/0ef629ef-.jpg" /><br> <a title="nubia الأجهزة المحمولة" href="https://mobireviewz.com/nubia/">nubia   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/edef73b4-22124.jpg" /><br> <a title="O2 الأجهزة المحمولة" href="https://mobireviewz.com/o2/">O2   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/981e5c86-22124.jpg" /><br> <a title="OnePlus الأجهزة المحمولة" href="https://mobireviewz.com/oneplus/">OnePlus   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/57778ebe-22124.jpg" /><br> <a title="Oppo الأجهزة المحمولة" href="https://mobireviewz.com/oppo/">Oppo   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/b539095c-22124.jpg" /><br> <a title="Orange الأجهزة المحمولة" href="https://mobireviewz.com/orange/">Orange   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/5a057e58-22124.jpg" /><br> <a title="Panasonic الأجهزة المحمولة" href="https://mobireviewz.com/panasonic/">Panasonic   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/f3d4edca-22124.jpg" /><br> <a title="Pantech الأجهزة المحمولة" href="https://mobireviewz.com/pantech/">Pantech   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/43eda56f-22124.jpg" /><br> <a title="Philips الأجهزة المحمولة" href="https://mobireviewz.com/philips/">Philips   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/8a426800-22124.jpg" /><br> <a title="Plum الأجهزة المحمولة" href="https://mobireviewz.com/plum/">Plum   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/500551e8-22124.jpg" /><br> <a title="POCO الأجهزة المحمولة" href="https://mobireviewz.com/poco/">POCO   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/13c19ea5-22124.jpg" /><br> <a title="Posh الأجهزة المحمولة" href="https://mobireviewz.com/posh/">Posh   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/9321d28c-22124.jpg" /><br> <a title="Prestigio الأجهزة المحمولة" href="https://mobireviewz.com/prestigio/">Prestigio   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/f08b040e-22124.jpg" /><br> <a title="QMobile الأجهزة المحمولة" href="https://mobireviewz.com/qmobile/">QMobile   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/7dc0ea5a-22124.jpg" /><br> <a title="Realme الأجهزة المحمولة" href="https://mobireviewz.com/realme/">Realme   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/b7d5dddf-22124.jpg" /><br> <a title="Redmi الأجهزة المحمولة" href="https://mobireviewz.com/redmi/">Redmi   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/a6a87c2e-22124.jpg" /><br> <a title="Samsung الأجهزة المحمولة" href="https://mobireviewz.com/samsung/">Samsung   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/286f99dc-22124.jpg" /><br> <a title="Sharp الأجهزة المحمولة" href="https://mobireviewz.com/sharp/">Sharp   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/6e6c10cf-22124.jpg" /><br> <a title="Sony الأجهزة المحمولة" href="https://mobireviewz.com/sony/">Sony   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/c5f689d9-22124.jpg" /><br> <a title="Spice الأجهزة المحمولة" href="https://mobireviewz.com/spice/">Spice   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/9b887f58-22124.jpg" /><br> <a title="T-Mobile الأجهزة المحمولة" href="https://mobireviewz.com/t-mobile/">T-Mobile   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/8cd2c211-22124.jpg" /><br> <a title="TCL الأجهزة المحمولة" href="https://mobireviewz.com/tcl/">TCL   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/db9c36ef-22124.jpg" /><br> <a title="TECNO الأجهزة المحمولة" href="https://mobireviewz.com/tecno/">TECNO   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/892950af-22124.jpg" /><br> <a title="Toshiba الأجهزة المحمولة" href="https://mobireviewz.com/toshiba/">Toshiba   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/d01870eb-25432743.jpg" /><br> <a title="Ulefone الأجهزة المحمولة" href="https://mobireviewz.com/ulefone/">Ulefone   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/a20cc197-22124.jpg" /><br> <a title="Unnecto الأجهزة المحمولة" href="https://mobireviewz.com/unnecto/">Unnecto   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/bdb8c425-22124.jpg" /><br> <a title="Vertu الأجهزة المحمولة" href="https://mobireviewz.com/vertu/">Vertu   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/42a26b43-22124.jpg" /><br> <a title="verykool الأجهزة المحمولة" href="https://mobireviewz.com/verykool/">verykool   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/fdfdc420-22124.jpg" /><br> <a title="vivo الأجهزة المحمولة" href="https://mobireviewz.com/vivo/">vivo   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/94f8d7a9-22124.jpg" /><br> <a title="Vodafone الأجهزة المحمولة" href="https://mobireviewz.com/vodafone/">Vodafone   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/f8feb419-22124.jpg" /><br> <a title="Wiko الأجهزة المحمولة" href="https://mobireviewz.com/wiko/">Wiko   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/4bc23637-22124.jpg" /><br> <a title="Xiaomi الأجهزة المحمولة" href="https://mobireviewz.com/xiaomi/">Xiaomi   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/f13312f8-22124.jpg" /><br> <a title="XOLO الأجهزة المحمولة" href="https://mobireviewz.com/xolo/">XOLO   </a></li>
+							    <li><img src="https://mobireviewz.com/content/media/img/133890d9-22124.jpg" /><br> <a title="ZTE الأجهزة المحمولة" href="https://mobireviewz.com/zte/">ZTE   </a></li>
+								</ul>
+                </div>
+                
+			</div>  
+		</div><!--/.container-->
+    </section><!--/about-us-->
+	
+    <footer id="footer_top">
+        <div class="container">
+            <div class="row">                
+                <div class="col-sm-12">
+                	<ul class="pull-lift" style="float:left;">
+                    <a href="https://mobireviewz.com" title="موبي ريفيوز - عالم المحمول"><img src="https://mobireviewz.com/content/media/img/f600b9e7-xiaomi-mi-mix-2s-android-10-miui-11.jpg00.png" alt="موبي ريفيوز - عالم المحمول" class="hidden-xs hidden-sm hidden-md"></img></a>
+                    </ul>
+                    
+                    <ul style="float:right;">
+                        <li><a href="https://mobireviewz.com" title="موبي ريفيوز - عالم المحمول">الرئيسية</a></li>
+                        	                        
+                        <li><a title="الأخبار" href="https://mobireviewz.com/news/">الأخبار</a></li>
+                        	                        
+                        <li><a title="مقالات" href="https://mobireviewz.com/articles/">مقالات</a></li>
+                        	                        
+                        <li><a title="أحدث الأجهزة المحمولة" href="https://mobireviewz.com/mobiles/">أحدث الأجهزة المحمولة</a></li>
+                                                		   	           
+                        <li><a title="العلامات التجارية" href="https://mobireviewz.com/mobile-phone-brands.html">العلامات التجارية</a></li>
+                        		   	           
+                        <li><a title="مقارنة" href="https://mobireviewz.com/compare.html">مقارنة</a></li>
+                                            	
+                                                <li><a href="https://mobireviewz.com/contact.html">اتصل بنا</a></li>                        
+                        
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+            
+
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="col-sm-12 clear">
+                                        
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+
+
+
+
+
+    <footer id="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    جميع الحقوق محفوظة <a href="http://mobireviewz.com">موبي ريفيوز</a>  | <a href="http://mobireviewz.com/privacy.html">سياسة الخصوصية</a> | <a href="http://mobireviewz.com/terms-of-use.html">اتفاقية الإستخدام</a>
+                    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KBHW81VLNQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KBHW81VLNQ');
+</script>
+                    <ul class="pull-right">	
+                    
+                    
+                    <a href="https://www.facebook.com/mobireviewzcom" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i>
+                    فيسبوك
+                    </a>
+                    <a href="https://twitter.com/Mobireviewz1" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i> تويتر</a>
+                    
+                    <a href="https://www.youtube.com/channel/UCGobO8jfb2_s1X6dtKMfUgA" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i> يوتيوب</a>
+                    
+					</ul>
+                </div>
+            
+            </div>
+        </div>  
+        
+    </footer><!--/#footer-->
+    
+    
+
+
+ 
+    <script src="https://mobireviewz.com/content/templates/Arena/assets/js/jquery.js"></script>
+    <script src="https://mobireviewz.com/content/templates/Arena/assets/js/bootstrap.min.js"></script>
+    <script src="https://mobireviewz.com/content/templates/Arena/assets/js/jquery.isotope.min.js"></script>
+    <script src="https://mobireviewz.com/content/templates/Arena/assets/js/main.js"></script>
+    <script src="https://mobireviewz.com/content/templates/Arena/assets/js/wow.min.js"></script>
+    <script src="https://mobireviewz.com/core/assets/lightbox/lightbox.min.js"></script>
+    <script src="https://mobireviewz.com/core/assets/js/star-rating.min.js"></script>
+
+	
+	<script type="text/javascript">
+	$("#star-rating").rating({
+			size: 'xs',
+			step: 1,
+			starCaptions: {1: 'Very Poor', 2: 'Poor', 3: 'Ok', 4: 'Good', 5: 'Very Good'},
+			filledStar: '<i class="fa fa-star"></i>',
+	        emptyStar: '<i class="fa fa-star-o"></i>',
+			starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'},			
+		}).on("rating.change", function(event, value, caption) {
+			
+				$.ajax({
+					type: 'POST',
+					data: {content_id: '', rating: + value},
+					url: 'https://mobireviewz.com/core/StarRating.php',
+					success: function(data) {
+						//alert(data);
+						$(".rating_click_result").text(data);
+	
+					}
+			
+		})		
+        //alert("You rated: " + value + " (" + $(caption).text() + ")");
+    });	
+
+	</script>
+    
+	<script type="text/javascript">
+			$(document).ready(function ($) {
+				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+					event.preventDefault();
+					return $(this).ekkoLightbox({
+						always_show_close: true
+					});
+				});
+
+			});
+	</script>
+    
+    <script type="text/javascript">
+
+
+		$('body').click(function(e) {
+			if (!$(e.target).closest('#suggestions').length){
+				$("#suggestions").fadeOut();
+			}
+		});
+
+		google.load("jquery", "1.3.1");
+		google.setOnLoadCallback(function()
+		{
+			// Safely inject CSS3 and give the search results a shadow
+			var cssObj = { 'box-shadow' : '#888 5px 10px 10px', // Added when CSS3 is standard
+				'-webkit-box-shadow' : '#888 5px 10px 10px', // Safari
+				'-moz-box-shadow' : '#888 5px 10px 10px'}; // Firefox 3.5+
+			$("#suggestions").css(cssObj);
+			
+			// Fade out the suggestions box when not active
+			 $("input").blur(function(){
+				$('#suggestions').fadeOut();
+			 });
+			 
+		});
+		
+		function lookup(inputString) {
+			if(inputString.length == 0) {
+				$('#suggestions').fadeOut(); // Hide the suggestions box
+			} else {
+				$.post("https://mobireviewz.com/search_autocomplete.php", {queryString: ""+inputString+""}, function(data) { // Do an AJAX call
+					$('#suggestions').fadeIn(); // Show the suggestions box
+					$('#suggestions').html(data); // Fill the suggestions box
+				});
+			}
+		}   
+
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	 
+
+</body>
+</html>

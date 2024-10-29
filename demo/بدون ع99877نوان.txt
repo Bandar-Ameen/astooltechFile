@@ -1,0 +1,99 @@
+public static class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.RecycleViewHolder>
+            implements ListAdapter {
+
+
+        private Context mContext;
+        private List<String> data;
+
+        public CommonAdapter(Context context, List<String> data) {
+            mContext = context;
+            this.data = data;
+        }
+
+        // Start of recycleview adapter
+        @Override
+        public RecycleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            return new RecycleViewHolder(new TextView(mContext));
+        }
+
+        @Override
+        public void onBindViewHolder(RecycleViewHolder holder, int position) {
+            holder.textView.setText(data.get(position));
+        }
+
+        @Override
+        public int getItemCount() {
+            return getCount();
+        }
+
+        public static class RecycleViewHolder extends RecyclerView.ViewHolder {
+
+            public TextView textView;
+
+            public RecycleViewHolder(View itemView) {
+                super(itemView);
+                textView = (TextView) itemView;
+            }
+        }
+
+        // Implementation of list adapter(Spinner/ListView)
+        @Override
+        public boolean areAllItemsEnabled() {
+            return true;
+        }
+
+        @Override
+        public boolean isEnabled(int position) {
+            return true;
+        }
+
+        @Override
+        public void registerDataSetObserver(DataSetObserver observer) {
+
+        }
+
+        @Override
+        public void unregisterDataSetObserver(DataSetObserver observer) {
+
+        }
+
+        @Override
+        public int getCount() {
+            return data.size();
+        }
+
+        @Override
+        public String getItem(int position) {
+            return data.get(position);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            SpinnerViewHolder holder;
+            if (convertView == null) {
+                convertView = new TextView(mContext);
+                holder = new SpinnerViewHolder();
+                holder.textView = (TextView) convertView;
+                convertView.setTag(holder);
+            } else {
+                holder = (SpinnerViewHolder) convertView.getTag();
+            }
+            holder.textView.setText(getItem(position));
+            return convertView;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 0;
+        }
+
+        @Override
+        public boolean isEmpty() {
+            return false;
+        }
+
+        public static class SpinnerViewHolder {
+            public TextView textView;
+        }
+
+    }

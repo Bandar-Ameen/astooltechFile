@@ -1,0 +1,139 @@
+{
+  "type": "ScrollView",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "scrollbars": "none",
+  "orientation":"horizontal",
+  "children": [
+    
+  {    "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "orientation": "vertical",
+"layoutDirection":"rtl",
+        
+        "children": [
+    
+{
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+            "hint":"hello",
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "gravity": "center",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                "id": "namvve",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                                "background":"@drawable/border",
+                "textSize": "18dp",
+                "text": "@{user.name}"
+              }
+              
+            ]
+          },
+          
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"اسم الصنف",
+  "id": "hell",
+                "data_primary":"hell",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,"text":"gggggg",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          
+
+    
+
+{"type": "EditText",
+                  "data_primary":"bb"
+                  ,
+                  "layout_height": "55dp",
+                  "layout_width": "90dp",
+                  "padding":"0dp",
+                  "margin":"50dp",
+                  "gravity": "center",
+      "mm": "0",
+      "background":"@color/green"
+                  
+                  
+                  
+},
+
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "@{item}",
+                  "data_id":"[
+{#data_id#:#hell#,#data_set#:#hell#}
+,{#data_id#:#bb#,#data_set#:#bb#},
+{#data_id#:#vvbk#,#data_set#:#vvb#}
+,
+{#data_id#:#grou#,#data_set#:#grou#}
+
+]",
+          "typeAction" :"GetData",
+          
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}"
+          ,
+          "api_method":"post",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }},
+        
+        {
+          "type": "include",
+          "layout": "myrecycleview2",
+          "padding": "16dp",
+          "paddingBottom": "0dp"
+        }
+     
+        ]
+        }
+        ]}

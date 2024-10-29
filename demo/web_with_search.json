@@ -1,0 +1,3040 @@
+{
+"Root_Layout": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "Mainsetings",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  }
+,
+
+
+  "Mainsetings": {
+  
+  "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+       "paddingTop":"50dp",
+        "orientation": "vertical",
+        "children":[
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "ScriptViewv":"call OpenActivityb #Rgg# ",
+
+                  "layout_marginTop": "0dp",
+                  "text": "TreeView",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"0",
+                  "enabled":true,
+                  "Save_before_refresh":"0",
+                  "DisableWehen":"vvbbihi",
+                  "Key_from_response":"data",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#mideltyp#,#data_set#:#mideltyp#,#data_get#:#mideltyp#},
+
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},
+{#data_id#:#midel#,#data_set#:#midel#,#data_get#:#midel#}
+
+]",
+
+"api_body":"
+          [{#head#:[{#typ1#:#1#,#userID#:#0#,#alfraID#:#0#,#stockID#:#0#,#username#:#0#,#enab#:#0#,#typ2#:#0#,#IDforupdate#:#0#,#allwith#:#0#,#sandookID#:#0#,#parcount#:#0#,#parmnam#:#24#}],#pramname#:[{#paramvalue#:[#%3$s#,#%1$s#,#%1$s#, #%5$s#,#%1$s#,#%1$s#,#%1$s#,#%1$s#, #%5$s#]}]}]",            
+        "Api_Header":"call OpenAct @{[
+{%1$skeyresponse%1$s:%1$s0%1$s,
+%1$sapibody%1$s:%1$s[]%1$s,
+%1$sapiquery%1$s:%1$s[]%1$s,
+%1$smethod%1$s:%1$sget%1$s,
+%1$surl%1$s:%1$shttp://0.0.0.0:8080/admin3/A_SpinnerView.json%1$s,
+%1$sapiheader%1$s:%1$snooone%1$s,
+%1$stype%1$s:%1$s0%1$s
+}]
+",
+  "api_method":"Get",
+          "api_url":"http://0.168.1.101:80/api/desin/uidesin"
+          ,
+
+
+          "typeAction" :"Script",
+          
+
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbu6t6uii", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+{"type": "include",
+          "layout": "Search",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        
+
+},
+{"type": "include",
+          "layout": "web",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        
+
+}
+]
+  
+  
+  }
+  ,
+        "mymycard":  {
+                  "type": "LinearLayout",
+                  "layout_width": "70dp",
+                  "layout_height": "70dp",
+                  "background":"#c48866",
+                  "layout_margin":"5dp",
+                  "padding":"5dp"
+      },
+  "layre":{
+      
+          
+          
+        "type": "RecyclerViewLayout",
+        "layout_width": "match_parent",
+        "layout_height": "500dp",
+        "VVlayout":{
+"LayoutType":[
+{
+
+"Types":"GRAD_LAYOUT",
+"Bground":"#ffcc33",
+"cell_margin_left":0,
+"cell_margin_right":0,
+"cell_margin_top":0,
+"cell_margin_buttom":0,
+
+"cell_padding_left":20,
+"cell_padding_right":20,
+"cell_padding_top":0,
+"cell_padding_buttom":10,
+
+"Weights_A":30,
+"Weights_B":20,
+"Weights_C":50,
+"Weights_D":40,
+"Weights_E":30,
+"cell_hight":300,
+
+"AspectRatio":4,
+"Span_column":2,
+"Hgap":3,
+
+"X":20,
+"Y":20,
+"mdata":[
+{
+
+
+
+
+"layoutsInflater":{"type": "include",
+          "layout": "mymycard",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        },
+        "Weights":30,
+"layoutsInflater_type":0,
+"data_obj":{
+"names":"hello1"
+}
+}
+,
+{
+"layoutsInflater":"card1",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights_A":30,
+"data_obj":{
+"names":"helloyy15"
+}
+}
+]}
+,
+{
+
+"Types":"ONE_LAYOUTA",
+"Bground":"#ffcc33",
+"cell_margin_left":0,
+"cell_margin_right":10,
+"cell_margin_top":0,
+"cell_margin_buttom":0,
+
+"cell_padding_left":0,
+"cell_padding_right":0,
+"cell_padding_top":0,
+"cell_padding_buttom":0,
+
+"Weights_A":30,
+"Weights_B":20,
+"Weights_C":50,
+"Weights_D":40,
+"Weights_E":30,
+"cell_hight":300,
+
+"AspectRatio":1,
+"Span_column":2,
+"Hgap":13,
+
+"X":20,
+"Y":20,
+"mdata":[
+{
+
+
+
+
+"layoutsInflater":{"type": "include",
+          "layout": "card1",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        },
+        "Weights":10,
+"layoutsInflater_type":0,
+"data_obj":{
+"names":"hello1"
+}
+}
+,
+{
+"layoutsInflater":"card1",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+}
+]}
+
+
+
+,
+{
+
+"Types":"ONE_LAYOUTB",
+"Bground":"#ffcc33",
+"cell_margin_left":0,
+"cell_margin_right":10,
+"cell_margin_top":0,
+"cell_margin_buttom":0,
+
+"cell_padding_left":0,
+"cell_padding_right":0,
+"cell_padding_top":0,
+"cell_padding_buttom":0,
+
+"Weights_A":30,
+"Weights_B":20,
+"Weights_C":50,
+"Weights_D":40,
+"Weights_E":30,
+"cell_hight":10,
+
+"AspectRatio":1,
+"Span_column":2,
+"Hgap":3,
+
+"X":20,
+"Y":20,
+"mdata":[
+{
+
+
+
+
+"layoutsInflater":{"type": "include",
+          "layout": "mymycard",
+                     "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+    "tname":"SimpleDataBindingExample"
+        },
+        "Weights":10,
+"layoutsInflater_type":0,
+"data_obj":{
+"names":"hello1"
+}
+}
+,
+{
+"layoutsInflater":"card1",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+},
+{
+"layoutsInflater":"card2",
+"layoutsInflater_type":1,
+"Weights":30,
+"data_obj":{
+"names":"helloyy15"
+}
+}
+]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+}
+       
+
+ }
+ 
+ ,
+"card1": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    
+    "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+
+              "onClick": "m@{tag}",
+    
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+
+
+
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"العنوان",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    }
+    
+    ,
+"card2": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    
+    "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+
+              "onClick": "m@{tag}",
+    
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+
+
+
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"العنوان",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    },
+
+   
+          "Search":{
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "6dp",
+                     "paddingLeft": "6dp",
+                    "d_onErrorText":"البحث", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"بحث",
+  "id": "email",
+                "data_primary":"emailmy",
+                
+                "d_NullValue":false,
+                "d_OnErrorText":"البحث",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "6dp",
+            "paddingTop": "0dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                "With_Search_Web":{
+                "ViewID":"myweb",
+                "Script":"search(\"%1$s\")"
+},
+                       "tooltipText":"البجث",   
+                
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "14dp"
+                ,
+                "gravity":"right"
+              }
+              
+            ]
+          },
+  
+  
+  
+  
+"web": {
+    "type": "FrameLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+      "data": {
+            "user": "@{0}",
+            "sec": "@{sec}"
+          },
+  
+    "children": [{    
+   "type": "WebView",
+    "orientation": "vertical",
+    "data_primary":"myweb", 
+"visibility":"visible",
+    "layout_height": "match_parent",
+    "layout_width": "match_parent",
+    "click_from_data":"@{user.name}",
+    "web_get_data":"@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+  "turl":"file:///android_asset/themes/bootstrap.min.css",  
+    "DataUrl":{
+    "m_urls":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+        
+        
+        
+        
+        
+        
+  
+        
+        
+        
+
+"use_get_data":true,
+    "update":false,
+    "enab_port":false,
+    "Use_Service":true,
+        "Use_Service_Filter":true,
+        "Use_Service_Filter_Name":"android.net.conn.CONNECTIVITY_CHANGE",
+              "Use_Service_Function":"showcokk",
+              
+        "enab_back":true,
+   "enab_long_click":false, 
+    "scroll_V":false,
+        "scroll_H":false,
+        "scroll_On_touch":false,
+    "enab_desktop":false,
+    "enab_cookies":false,
+    "enab_multiplwindow":true,
+    "enab_OverViewMode":true,
+     "enab_Open_window_Auto":true,
+    "use_error":true,
+    "m_error":"
+<!DOCTYPE html>
+<html lang=%1$sen%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+%4$s
+
+</style>
+<style>
+%6$s
+
+</style>
+
+<style>
+%9$s
+
+</style>
+
+  <script>
+%3$s
+</script>
+<script>
+%5$s
+</script>
+
+<script>
+%7$s
+</script>
+<script>
+%8$s
+</script>
+
+
+</head>
+<body>
+<div class=%1$sjumbotron text-center%1$s>
+  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>
+  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> 
+</div>
+</body>
+</html>
+",
+
+
+"m_html":"
+<!DOCTYPE html>
+<html lang=%1$sen%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+@font-face{
+    font-family:%1$smmy%1$s;
+    src:url(themes/fonts/Cairo-Bold.ttf)format(%1$struetype%1$s);
+    font-style: normal;
+    }
+    
+    
+    
+    *{
+     font-family: 'mmy';
+     -webkit-user-select: none;
+    }
+
+
+</style>
+
+
+
+<style>
+%4$s
+
+</style>
+<style>
+%6$s
+
+</style>
+
+<style>
+%9$s
+
+</style>
+<style>
+%11$s
+
+
+
+
+
+</style>
+<style>
+%15$s
+
+
+
+
+
+</style>
+
+
+<style>
+
+.table th:first-child,
+.table td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #ad6c80;
+  color: #373737;
+}
+.table td {
+  white-space: nowrap;
+}
+</style>
+
+  <script>
+%3$s
+</script>
+<script>
+%5$s
+</script>
+<script>
+%12$s
+</script>
+<script>
+%13$s
+</script>
+
+<script>
+%14$s
+</script>
+<script>
+%16$s
+</script>
+<script>
+$(function () {
+    $('#dataTable').DataTable({
+      %1$spageLength%1$s: 3,
+      %1$spaging%1$s: true,
+      %1$slengthChange%1$s: false,
+      %1$ssearching%1$s: false,
+      %1$sordering%1$s: true,
+      %1$sinfo%1$s: true,
+      %1$sautoWidth%1$s: false
+      });
+  });
+</script>
+
+<script>
+    $(document).ready(function() {
+          $('#dataTable').DataTable();
+    });
+</script>
+
+<script>
+        $(document).ready(function(){
+         
+var touching = null;
+$('selector').each(function() {
+    this.addEventListener(%1$stouchstart%1$s, function(e) {
+        e.preventDefault();
+        touching = window.setTimeout(longTouch, 500, true);
+    }, false);
+    this.addEventListener(%1$stouchend%1$s, function(e) {
+        e.preventDefault();
+        window.clearTimeout(touching);
+    }, false);
+});
+
+function longTouch(e) {
+    // do something!
+}
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+
+function  MessBoxB(messagg){
+
+
+
+
+dd(messagg);
+
+
+}
+
+        });
+        
+        
+        function msgg(typp,messagg){
+
+Swal.fire({
+    toast: false,	
+  
+  icon: typp,
+  title: messagg,
+  showConfirmButton: false,
+  timer: 1500
+});
+}
+
+function api(name,email,password){
+					
+try{
+
+
+
+//msgg('info',email);
+
+				
+				//var dt=JSON.stringify( { %1$spname%1$sp:  name, %1$spemail%1$sp: email,%1$sppassword%1$sp:password} );
+
+				var uuu='mmmm';
+				$.ajax({
+    url: 'https://www.astooltech.com/api/v1/u',
+    dataType: 'text',
+
+    type: 'get',
+
+      // contentType: 'application/json; charset=utf-8',
+    success: function( data, textStatus, jQxhr ){
+    	//setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+      
+msgg('info', data);
+ if(isJson(data)){
+var ffdd=JSON.parse(data); 
+if(ffdd.success=='1'){
+msgg('info', ffdd.message);
+}else{
+msgg('error', ffdd.message);
+}
+}else{
+msgg('error', data);
+}
+    },
+    error: function( jqXhr, textStatus, errorThrown ){
+    //setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+ msgg('error',textStatus+'hhhhhh' );
+    }
+});
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+						}catch(ddd){
+							
+alert(ddd);
+
+}
+	}
+
+        function ddk(vvc){
+        
+Swal.fire({
+  title: '<strong>%1$s+vvc+%1$s HTML <u>example</u></strong>',
+  icon: 'info',
+  html:
+    'سع ي د <b>bold text</b>, ' +
+    '<a href=%1$s//sweetalert2.github.io%1$s>links</a> ' +
+    'and other HTML tags',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class=%1$sfa fa-thumbs-up%1$s></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class=%1$sfa fa-thumbs-down%1$s></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
+}
+        ddk();
+        //('mmm');
+</script>
+   
+    
+    <script type=%1$stext/javascript%1$s>
+    function vb(toast) {
+        Android.AndroidFunction(toast,1);
+    }
+    
+    function showcokk(){
+var x = document.getElementById(\"myText\").value;
+var da=\"ShowCookie\";
+
+var colorg=\"3b7A57\";
+if(x=='1'){
+colorg=\"d3212d\";
+}
+var mnv=JSON.stringify(
+{
+
+\"Event_Type\":\"ShowCookie\",
+\"Name\":\"vlayout.example.RootActivity\",
+\"Title\":\"ggggg \",
+\"Message\":x,
+\"ColorA\":\"ffffff\",
+\"ColorB\":\"ffffff\",
+\"ColorC\":colorg,
+\"Locations\":\"b\",
+\"Duration\":5000,
+\"Anim_Type\":0,
+\"AutoDismiss\":true,
+\"SweepDismiss\":true,
+\"Custome_Vieww\":{
+\"type\": \"LinearLayout\",
+      \"layout_width\": \"match_parent\",
+      \"layout_height\": \"200dp\",
+      \"background\":\"@color/green\",
+      \"orientation\": \"vertical\"
+},
+\"Icon\":{
+             \"type\": \"ImageView\",
+                  \"layout_width\": \"50dp\",
+                  \"layout_height\": \"50dp\",
+                  \"background\":\"@drawableFont/fa_edit/2/40/#ffffff\"
+}
+}
+);
+Android.AndroidFunctionLoadFunction(da,mnv);
+}
+    
+    
+    
+    function noti(toast) {
+        Android.AndroidFunctionNoti(toast,1);
+    }
+    function returnda(){
+
+}
+    
+    function search(input){
+//alert(input);
+  var  filter, table, tr, td, i, txtValue;
+ // input = document.getElementById(\"myInput\");
+  filter = input.toUpperCase();
+  table = document.getElementById(\"chart-example\");
+  tr = table.getElementsByTagName(\"tr\");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName(\"td\")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = \"\";
+      } else {
+        tr[i].style.display = \"none\";
+      }
+    }       
+  }
+
+
+}
+    function showcook(){
+var da=\"ShowCookie\";
+var mnv=JSON.stringify(
+{\"Event_Type\":\"ShowCookie\",
+\"Name\":\"vlayout.example.RootActivity\",
+\"Title\":\"رسالة تنبية \",
+\"Message\":\"  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh\",
+\"ColorA\":\"ffffff\",
+\"ColorB\":\"ffffff\",
+\"ColorC\":\"d3212d\",
+\"Locations\":\"b\",
+\"Duration\":5000,
+\"Anim_Type\":0,
+\"AutoDismiss\":true,
+\"SweepDismiss\":true,
+\"Custome_View\":{
+\"type\": \"LinearLayout\",
+      \"layout_width\": \"match_parent\",
+      \"layout_height\": \"wrap_content\",
+      \"focusable\":false,
+      \"background\":\"@color/green\",
+      \"orientation\": \"vertical\",
+      \"children\":[
+{
+      \"type\": \"include\",
+      
+          \"layout\": \"AlertDialogLayout\",
+    \"tname\":\"SimpleDataBindingExample\",
+        
+          \"paddingBottom\": \"0dp\"
+}
+]
+},
+\"Icon\":{
+             \"type\": \"ImageView\",
+                  \"layout_width\": \"50dp\",
+                  \"layout_height\": \"50dp\",
+                  \"background\":\"@drawableFont/fa_edit/2/40/#ffffff\"
+}
+,
+\"Set_Data\":[
+{
+\"View_Id\":\"myweb\",
+
+\"Type_Process\":\"5\",
+\"Value_Process\":\"kkm\",
+\"View_Type\":\"55\"
+
+
+
+}
+]
+}
+
+);
+//alert(mnv);
+Android.AndroidFunctionLoadFunction(da,mnv);
+//return mnv;
+}
+    function loadFunction(toast) {
+   
+var x = document.getElementById(\"myText\").value;
+var dff=\" ggggggggg   \"; 
+var da=\"Open_Activity\";
+var mn=\"Show_Dialog_With_Set_Data\";
+    var mnv=JSON.stringify({
+\"Event_Type\":\"Show_Dialog_With_Set_Data\",
+\"Name\":\"AlertDialogLayout\",
+\"Set_Data\":[
+{
+\"View_Id\":\"name\",
+\"Type_Process\":\"5\",
+\"Value_Process\":x,
+\"View_Type\":\"A\"
+
+},
+{
+\"View_Id\":\"email\",
+\"Type_Process\":\"5\",
+\"Value_Process\":\"5uurrrthello_hello_hello\",
+\"View_Type\":\"A\"
+
+}
+
+
+]
+
+});
+
+var ddr=JSON.stringify({\"Name\":\"vlayout.example.RootActivity\"});
+//alert(mnv);
+var mm=2;
+var ww=6;
+if(mm>1){
+//alert(mnv);
+}else{
+alert(mn);
+}
+      //  Android.AndroidFunctionLoadFunction(da,ddr);
+    //  Android.AndroidFunctionLoadFunction(mn,mnv);
+    }
+    
+    function loadFunctionn(toast) {
+   
+var x = document.getElementById(\"myText\").value;
+var dff=\" ggggggggg   \"; 
+var da=\"Open_Activity\";
+var mn=\"Open_Drawer\";
+    var mnv=JSON.stringify({
+\"Event_Type\":\"Open_Drawer\",
+\"Name\":\"AlertDialogLayout\",
+\"Set_Data\":[
+{
+\"View_Id\":\"name\",
+\"Type_Process\":\"5\",
+\"Value_Process\":x,
+\"View_Type\":\"A\"
+
+},
+{
+\"View_Id\":\"email\",
+\"Type_Process\":\"5\",
+\"Value_Process\":\"5uurrrthello_hello_hello\",
+\"View_Type\":\"A\"
+
+}
+
+
+]
+
+});
+
+var ddr=JSON.stringify({\"Name\":\"vlayout.example.RootActivity\"});
+//alert(mnv);
+var mm=2;
+var ww=6;
+if(mm>1){
+//alert(mnv);
+}else{
+//alert(mn);
+}
+      //  Android.AndroidFunctionLoadFunction(da,ddr);
+     Android.AndroidFunctionLoadFunction(mn,mnv);
+    }
+    function sel(toast) {
+        Android.AndroidFunctionSelectFile(toast);
+    }
+    function kk(gv) {
+   var resu=Android.AndroidFunctionSelectFileResults();
+  const obj = JSON.parse(resu);
+var uu=obj.base64Data;
+var uuu=obj.fileType;
+var img = document.getElementById(%1$spreview%1$s);
+img.src = %1$sdata:image/png;base64,%1$s +uu;
+var paragraph = document.getElementById(%1$sp%1$s);
+var text = document.createTextNode(uuu);
+
+paragraph.appendChild(text);
+
+
+    }
+    function kkm(gv) {
+   var img = document.getElementById(%1$spreview%1$s);
+img.src = %1$sdata:image/png;base64,%1$s +gv;
+/*var text = document.createTextNode(\"ddddddddddd\");
+
+paragraph.appendChild(text);*/
+
+
+    }
+    
+    
+    function  getdata(url){
+var t=  JSON.stringify( {
+\"Event_Type\":\"CheckNull\",
+\"Name\":\"pic\",
+\"Return_Data\":[
+{
+\"Return_Type\":\"55\",
+
+
+\"Return_To_Message\":[
+{
+\"Response_Key_Name\":\"0\",
+\"View_Id\":\"55\",
+\"Message_Text\":\"hhhh\",
+\"View_Type\":\"A\"
+
+}
+
+]
+
+
+}
+
+],
+
+\"Return_To_View\":[
+{
+\"View_Id\":\"saveprograss\",
+\"Type_Process\":\"1\",
+\"Value_Process\":\"1\",
+\"View_Type\":\"A\"
+
+}
+
+],
+
+\"Before_Process\":[
+{
+\"View_Id\":\"saveprograss\",
+\"Type_Process\":\"1\",
+\"Value_Process\":\"1\",
+\"View_Type\":\"A\"
+
+},
+{
+\"View_Id\":\"vvbbiikk\",
+\"Type_Process\":\"3\",
+\"Value_Process\":\"3\",
+\"View_Type\":\"A\"
+
+}
+
+
+],
+
+\"After_Process\":[
+{
+\"View_Id\":\"saveprograss\",
+\"Type_Process\":\"2\",
+\"Value_Process\":\"2\",
+\"View_Type\":\"A\"
+
+},
+{
+\"View_Id\":\"vvbbiikk\",
+\"Type_Process\":\"4\",
+\"Value_Process\":\"4\",
+\"View_Type\":\"A\"
+
+}
+
+],
+\"Finsh_Process\":[
+{
+\"View_Id\":\"55\",
+\"Type_Process\":\"22\",
+\"Value_Process\":\"55\",
+\"View_Type\":\"A\"
+
+}
+
+],
+\"Sender_Data\":[
+{
+\"Data_From_View\":[
+{\"View_Id\":\"name\",
+\"View_Type\":\"5\",
+\"Index_ID\":0
+},
+{\"View_Id\":\"email\",
+\"View_Type\":\"6\",
+\"Index_ID\":1
+},
+{\"View_Id\":\"pic\",
+\"View_Type\":\"6\",
+\"Index_ID\":2
+},
+{\"View_Id\":\"0\",
+\"View_Type\":\"API_Acess\",
+\"Index_ID\":3
+}
+
+
+]
+,\"API_Data\":[
+{
+\"Method_Type\":\"POST\",
+\"Type_Url\":\"local0\",
+\"Url\":url,
+\"Response_Data\":[
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"Select_Key\"
+},
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"Refresh_Key\"
+},
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"Offline_Key\"
+}
+,
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"Show_As_Message\"
+}
+
+
+
+]
+,
+
+
+\"Request_Header\":[
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"1$s\",
+\"Key_Type\":\"5555\"
+},
+{
+\"Key_Name\":\"heeemmm\",
+\"Key_Value\":\"2$s\",
+\"Key_Type\":\"5555\"
+},
+{
+\"Key_Name\":\"heeettff\",
+\"Key_Value\":\"3$s\",
+\"Key_Type\":\"5555\"
+},
+{
+\"Key_Name\":\"vvvvvvv\",
+\"Key_Value\":\"4$s\",
+\"Key_Type\":\"5555\"
+}
+
+
+
+
+]
+,
+\"Request_Body\":[],
+
+\"Request_Query\":[]
+
+
+
+}
+
+
+]
+}
+
+]
+});
+
+return t;
+
+}
+  function servi(gv) {
+   msgg('info', gv);
+var paragraph = document.getElementById(%1$sp%1$s);
+var text = document.createTextNode(gv);
+
+paragraph.appendChild(text);
+
+
+    }  
+    
+    function api(name,email,password){
+					
+try{
+
+
+
+//msgg('info',email);
+
+				//name='https://www.astooltech.com/api/v1/b';
+				//var dt=JSON.stringify( { %1$spname%1$sp:  name, %1$spemail%1$sp: email,%1$sppassword%1$sp:password} );
+
+				var uuu='mmmm';
+				$.ajax({
+    url: name,
+    dataType: 'text',
+
+    type: 'get',
+
+      // contentType: 'application/json; charset=utf-8',
+    success: function( data, textStatus, jQxhr ){
+    	//setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+      var paragraph = document.getElementById(%1$sp%1$s);
+
+var x = document.getElementById(\"myText\").value;
+var mnn='Open_Activity_From_Url';
+var mn='Open_Activity_From_String';
+var mnkk='ShowShitDialogSetData';
+var mnkky='love';
+var ddrl=JSON.stringify({\"Name\":mnkky,
+\"Set_Data\":[
+{
+\"View_Id\":\"name\",
+\"Type_Process\":\"5\",
+\"Value_Process\":x,
+\"View_Type\":\"A\"
+
+},
+{
+\"View_Id\":\"emailggx\",
+\"Type_Process\":\"5\",
+\"Value_Process\":\"5uurrrthello_hello_hello\",
+\"View_Type\":\"A\"
+
+}
+
+
+]
+});
+//var ddr=JSON.stringify({\"Activity_Data\":data});
+//var text = document.createTextNode(ddr);
+//paragraph.appendChild(text);
+var ty=getdata(name);
+//alert(ty);
+//Android.AndroidFunctionLoadFunction(mnkk,ddrl);
+Android.AndroidFunctionLoadFunction(mnn,ty);
+//Android.AndroidFunctionOpenActivity(data);
+//msgg('info', data);
+ if(isJson(data)){
+//var ffdd=JSON.parse(data); 
+if(ffdd.success=='1'){
+//msgg('info', ffdd.message);
+}else{
+//msgg('error', ffdd.message);
+}
+}else{
+//msgg('error', data);
+}
+    },
+    error: function( jqXhr, textStatus, errorThrown ){
+    //setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+ msgg('error',textStatus+'hhhhhh' );
+    }
+});
+				
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+						}catch(ddd){
+							
+alert(ddd);
+
+}
+	}
+    
+    function openactt(vv){
+					
+try{
+
+
+				$.ajax({
+    url: 'https://www.astooltech.com/api/v1/test.json',
+    dataType: 'json',
+    type: 'get',
+    contentType:%1$sapplication/x-www-form-urlencoded%1$s,
+//    data: dt,
+       beforeSend: function (xhr) {
+xhr.setRequestHeader(%1$sContent-Type%1$s,%1$sapplication/x-www-form-urlencoded; charset=UTF-8%1$s);
+   // xhr.setRequestHeader (%1$sAuthorization%1$s, resul);
+xhr.setRequestHeader(%1$sdevicenames%1$s,%1$sweb site%1$s);
+//xhr.setRequestHeader(%1$sUser-Agent%1$s,%1$swebhhhh site%1$s);
+xhr.setRequestHeader(%1$sHost%1$s,%1$swebhhhh 192.168site%1$s);
+xhr.setRequestHeader(%1$susername%1$s,%1$swebhhhh92.168site%1$s);
+//xhr.setRequestHeader(%1$susertyp%1$s,usertyp);
+xhr.setRequestHeader(%1$semail%1$s,%1$sno@email.com%1$s);
+ 
+},
+    success: function(data, textStatus, jQxhr ){
+    	alert('nnnnn');
+        if(isJson(data)){
+        	var uuu=data.toString();
+var ffdd=JSON.parse(data);
+alert(uuu);
+}
+
+    },
+    error: function( jqXhr, textStatus, errorThrown ){
+        alert( jqXhr.responseText+textStatus+'hhhhhhh' );
+    }
+});
+				
+						}catch(ddd){alert(ddd);
+
+}
+	} 
+	function mreg(vv){
+alert(%1$sffff%1$s);
+
+}
+</script>    
+<script>
+%7$s
+</script>
+<script>
+%8$s
+</script>
+<script>
+%10$s
+</script>
+
+</head>
+<body>
+<div id=%1$schart-example-chart%1$s></div>
+<a class=%1$sbtn primary%1$s id=%1$stoggle-chart-table%1$s>Show Table to Sort the Chart Series</a>
+<table id=%1$schart-example%1$s class=%1$stable table-bordered%1$s>
+  <thead><tr><th>City</th><th>Population</th></tr></thead>
+  <tbody>
+    <tr><td>Tokyo</td><td>34.4</td></tr>
+    <tr><td>Jakarta</td><td>21.8</td></tr>
+    <tr><td>New York</td><td>20.1</td></tr>
+    <tr><td>Seoul</td><td>20</td></tr>
+    <tr><td>Manila</td><td>19.6</td></tr>
+    <tr><td>Mumbai</td><td>19.5</td></tr>
+    <tr><td>Sao Paulo</td><td>19.1</td></tr>
+    <tr><td>Mexico City</td><td>18.4</td></tr>
+    <tr><td>Dehli</td><td>18</td></tr>
+    <tr><td>Osaka</td><td>17.3</td></tr>
+    <tr><td>Cairo</td><td>16.8</td></tr>
+    <tr><td>Kolkata</td><td>15</td></tr>
+    <tr><td>Los Angeles</td><td>14.7</td></tr>
+    <tr><td>Shanghai</td><td>14.5</td></tr>
+    <tr><td>Moscow</td><td>13.3</td></tr>
+    <tr><td>Beijing</td><td>12.8</td></tr>
+    <tr><td>Buenos Aires</td><td>12.4</td></tr>
+    <tr><td>Guangzhou</td><td>11.8</td></tr>
+    <tr><td>Shenzhen</td><td>11.7</td></tr>
+    <tr><td>Istanbul</td><td>11.2</td></tr>
+  </tbody>
+</table>
+
+<table class=%1$stable table-dark table-hover%1$s>
+  <thead>
+    <tr>
+      <th scope=%1$scol%1$s>#</th>
+      <th scope=%1$scol%1$s>Name</th>
+      <th scope=%1$scol%1$s>Surname</th>
+      <th scope=%1$scol%1$s>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope=%1$srow%1$s>1</th>
+      <td>Eugene</td>
+      <td>Stepnov</td>
+      <td>@e93</td>
+    </tr>
+    <tr>
+      <th scope=%1$srow%1$s>2</th>
+      <td>Mark</td>
+      <td>Dever</td>
+      <td>@md111</td>
+    </tr>
+    <tr>
+      <th scope=%1$srow%1$s>3</th>
+      <td>John</td>
+      <td>Piper</td>
+      <td>@piper</td>
+    </tr>
+  </tbody>
+</table>
+<table data-toggle=%1$stable%1$s>
+      <thead>
+        <tr>
+          <th>Item ID</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Item 1</td>
+          <td>$1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Item 2</td>
+          <td>$2</td>
+        </tr>
+      </tbody>
+    </table>
+
+<div class=%1$sjumbotron text-center%1$s>
+  <h1>@{drugName_ar}    My First Bootstrap Page</h1>
+  <p>     سعيدResize this responsive page to see the effect!</p> 
+</div>
+  
+<div class=%1$scontainer%1$s>
+  <div class=%1$srow%1$s>
+    <div class=%1$scol-sm-4%1$s>
+      <h3>Column 1</h3>
+      <p  id=%1$sp%1$s>Lorem kkkkkkipsum dolor sit amet, consectetur adipisicing elit...</p>
+      
+<img id=%1$spreview%1$s src=%1$s./id.png%1$s style=%1$sdisplay: block;margin: 0 auto;max-width: 80px;margin-top: 20px;%1$s>
+                    </img>
+
+<p> %17$s    hhhhhh%17$s fff %17$s  fff  %17$s   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class=%1$scol-sm-4%1$s>
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class=%1$scol-sm-4%1$s>
+      <h3>Column 3</h3>        
+      
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+  <input type=\"text\" id=\"myText\" value=\"Mick6667788888777e66666666y\">
+<input type=\"text\" id=\"myInput\" onkeyup=\"search(1)\" placeholder=\"Search for names..\" title=\"Type in a name\">
+
+  <button onClick=%1$s api('info','mmmm','55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Default</button>
+
+<button onClick=%1$s kk('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Default</button>
+<button onClick=%1$s ddk('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Defaultyyy</button>
+<button onClick=%1$s noti('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>notifi</button>
+<button onClick=%1$ssel('kk(1)')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>selectfilebb</button>
+<button onClick=%1$sapi('http://0.0.0.0:8080/admin3/b.php','55','66')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>openActivity</button>
+<button onClick=%1$sloadFunction('loadFunction(1)')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>LoadFunction</button>
+<button onClick=%1$sloadFunctionn('loadFunction(1)')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>opendrawer</button>
+
+<button onClick=%1$sshowcook()%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>cooookies2</button>
+<button onClick=%1$sshowcokk()%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>openCooke</button>
+
+
+
+
+
+
+
+<div class=%1$scontainer%1$s>
+  <div class=%1$srow mt-3%1$s>
+    <div class=%1$scol-3%1$s></div>
+    <div class=%1$scol-6%1$s>
+      <div class=%1$stable-responsive%1$s>
+        <table id=%1$sdataTable%1$s class=%1$stable table-hover%1$s>
+          <thead>
+            <tr>
+              <th scope=%1$scol%1$s>GUID</th>
+              <th scope=%1$scol%1$s>Username</th>
+              <th scope=%1$scol%1$s>Score</th>
+              <th scope=%1$scol%1$s>Rating</th>
+              <th scope=%1$scol%1$s>Attempts</th>
+              <th scope=%1$scol%1$s>Last login</th>
+              <th scope=%1$scol%1$s>Joined</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1012</th>
+              <td>hamsterclover</td>
+              <td>4,230</td>
+              <td>9</td>
+              <td>3</td>
+              <td>2020-01-24 19:52:28</td>
+              <td>2018-05-21 22:10:21</td>
+            </tr>
+            <tr>
+              <th>1013</th>
+              <td>cellofruit</td>
+              <td>4,126</td>
+              <td>7</td>
+              <td>3</td>
+              <td>2020-01-21 11:05:16</td>
+              <td>2019-02-05 17:41:19</td>
+            </tr>
+            <tr>
+              <th>1014</th>
+              <td>enchantingsun</td>
+              <td>4,085</td>
+              <td>5</td>
+              <td>4</td>
+              <td>2020-01-22 18:44:33</td>
+              <td>2019-03-28 12:16:02</td>
+            </tr>
+            <tr>
+              <th>1015</th>
+              <td>antdory</td>
+              <td>4,139</td>
+              <td>7</td>
+              <td>5</td>
+              <td>2020-01-25 18:12:58</td>
+              <td>2019-06-07 11:44:37</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class=%1$scol-3%1$s></div>
+  </div>
+</div>
+
+<div class=%1$scontainer%1$s>
+    <table class=%1$stable table-bordered%1$s id=%1$sdataTable%1$s width=%1$s100%%1$s cellspacing=%1$s0%1$s>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>86,000</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>433,060</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>162,700</td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>372,000</td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>137,500</td>
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>327,900</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class=%1$scontainer%1$s style=%1$smargin-top:150px%1$s>
+    <h1>Folium Data Table Example</h1>
+    <input type=%1$stext%1$s id=%1$ssearchBox%1$s placeholder=%1$ssearch here%1$s />
+    <table id=%1$sfoliumTableId%1$s class=%1$stable%1$s></table>
+    <p class=%1$smt-2%1$s><button id=%1$sadd%1$s class=%1$sbtn btn-danger%1$s>Add</button>
+    <button id=%1$sdelete%1$s class=%1$sbtn btn-danger%1$s>Delete</button>
+    <button id=%1$supdate%1$s class=%1$sbtn btn-danger%1$s>Update</button>
+    <button id=%1$sclear%1$s class=%1$sbtn btn-danger%1$s>Clear</button></p>
+  </div>
+</div>
+
+  
+  
+     <script>
+  const tableSettings = {
+  //Required
+        columns : [
+                    {columnId : %1$susername%1$s, displayText  : %1$sUsername%1$s},
+                    {columnId : %1$sname%1$s, displayText  : %1$sName%1$s},
+                    {columnId : %1$ssurname%1$s, displayText  : %1$sSurname%1$s},
+                    {columnId : %1$semailAddress%1$s, displayText  : %1$sE-mail Address%1$s},
+                    {columnId : %1$sage%1$s, displayText  : %1$sAge%1$s, dataType : 'integer'},
+                    {columnId : %1$sphoneNumber%1$s, displayText  : %1$sPhone Number%1$s},
+                    {columnId : %1$snationality%1$s, displayText  : %1$sNationality%1$s},
+                    {columnId : %1$slocation%1$s, displayText  : %1$sLocation%1$s}
+                  ],
+  //Required
+        rows: [
+                {username: 'jsmith', name : %1$sJohn%1$s, surname : %1$sSmith%1$s, emailAddress : 'foo@bar.com', age : 30, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'},
+                {username: 'jasmith', name : %1$sJane%1$s, surname : %1$sSmith%1$s, emailAddress : '', age : 29, phoneNumber : '', nationality : '', location : ''},
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+              ],
+              sortable : true,
+              searching:true,
+              editable : true,
+              pagination : {active : true, size : 5},
+    };
+
+// Inject Folium functionality to the HTML table by providing its id.
+const foliumTable = $('#foliumTableId').FoliumTable(tableSettings);
+$('#searchBox').on('keyup',function(){
+    const searchBoxText = $('#searchBox').val();
+
+    foliumTable.search(searchBoxText);
+
+    // Optional search searchBoxText in zeroth column (first column)
+    foliumTable.search(searchBoxText, 0);
+});
+$('#add').on('click', function(){
+  foliumTable.addRow({username: 'asatou', name : %1$sAlan%1$s, surname : %1$sWatts%1$s, emailAddress : 'awatts@foobar.com', age : 58, phoneNumber : '+1 111 111 111', nationality : 'British', location : 'California/USA'});
+});
+$('#delete').on('click', function(){
+  foliumTable.deleteRows([0, 1]);
+});
+$('#update').on('click', function(){
+  foliumTable.updateRow(0, {username: 'newUsername'});
+});
+$('#clear').on('click', function(){
+  foliumTable.clear();
+});
+</script>
+    
+  
+</body>
+</html>
+
+",
+"html_value":[
+{"key_Name":"name","Key_Value":"name","Key_Type":"QMark", "View_Name":"name"},
+{"key_Name":"Authorization","Key_Value":"nameu","Key_Type":"apikey", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"http://192.168.1.100:8080/admin3/dist/js/toastr.min.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"http://192.168.1.100:8080/admin3/dist/js/toastr.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"http://192.168.1.100:8080/admin3/dist/folium.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+
+{"key_Name":"Authorization","Key_Value":"http://192.168.1.100:8080/admin3/dist/folium.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js","Key_Type":"percent", "View_Name":"nameu"}
+
+
+],
+
+"m_url":"http://0.0.0.0:8080/admin3/up/uploadfilee.html",
+"Use_Url":false,
+"image_auto":true,
+"enab_java":true
+
+}}]},
+  
+  
+  "SimpleDataBindingExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "orientation": "vertical",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginBottom": "0dp",
+            "text": "Profile",
+            "style": "mini.blue"
+          },
+          {
+            "type": "RelativeLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextView",
+                "id": "k",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{name}"
+              },
+              {
+                "type": "TextView",
+                "id": "location",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_below": "name",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{fn:format('%s, %s', @{user.location.city}, @{user.location.country})}"
+              },
+              {
+                "type": "TextView",
+                "text": "@{fn:format('(%s)',@{user.level})}",
+                "textColor": "#c48866",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_toRightOf": "name"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "children": [
+              {
+                "type": "HorizontalProgressBar",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "max": "@{user.experience.max}",
+                "progress": "@{user.experience.current}"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "layout_marginBottom": "32dp",
+                "padding": "8dp",
+                "paddingTop": "16dp",
+                "paddingBottom": "16dp",
+                "text": "@{fn:number(@{user.credits})}",
+                "style": "money.center",
+                "background": {
+                  "type": "shape",
+                  "shape": "oval",
+                  "children": [
+                    {
+                      "type": "gradient",
+                      "startColor": "#44e73827",
+                      "endColor": "@color/green",
+                      "angle": 270
+                    }
+                  ]
+                },
+                "animation": {
+                  "interpolator": {
+                    "type": "anticipateOvershootInterpolator"
+                  },
+                  "type": "rotate",
+                  "fromDegrees": -720,
+                  "toDegrees": 0,
+                  "pivotX": "50%",
+                  "pivotY": "50%",
+                  "duration": 1500
+                }
+              }
+            ]
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "data": {
+              "date": "@{fn:date(@{sec.ll},'E, d MMM')}",
+              "loc": "@{sec.loc}"
+            },
+            "text": "@{fn:format('last login: %s from %s',@{date},@{loc})}",
+            "style": "blue"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "text": "@{user.type}",
+            "visibility": "@{fn:ternary(@{user.type}, 'visible', 'gone')}"
+          }
+        ]
+      }
+    ]
+  },
+  "myTree":{
+"type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "200dp",
+    "padding": "0dp",
+    
+   "data_primary":"recyuuioggp",
+      "on_sweep":"recycleserchhm",
+    "on_sweep_typ":"1",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+"type": "ATreeView",
+        "layout_width": "match_parent",
+        "layout_height": "200dp",
+         "filter":"drugName_ar",
+            "data_primary":"myslidersee",
+         "Recycle":{
+"typ":"1"
+},
+"mdata":{
+"trime":"1000",
+"Typedir":"2",
+"Tree_Data":{
+"Child_Key":"child",
+"Parent_Key":"parent",
+"Value_Key":"name"
+},
+"run_Auto":true
+,"Data_From":{
+"Event_Type":"CheckNull",
+"animation":{
+"a_enter":false,
+"a_enter_step":false,
+"a_expand":false,
+"a_expand_out":false,
+"a_anim_rev":false,
+"a_anim_for":false,
+"a_load_start":true,
+"a_drage":true,
+"CountItem":2,
+"a_endless_count":0,
+"a_endless_page":0,
+"a_use_endless":true,
+"a_use_offline":true,
+"a_use_top":true
+
+},
+"Set_Data":[
+{
+
+"View_Id":"myspainn",
+"Type_Process":"5",
+
+"Key_Process":"5uurrrthello_hello_hello",
+"Value_Key":"drugName_ar"
+
+},
+{
+"View_Id":"myouto",
+"Type_Process":"5",
+
+"Key_Process":"5uurrrthello_hello_hello",
+"Value_Key":"drugName_ar"
+
+}
+
+
+
+],
+
+
+"Name":"pic",
+"Multiple_Views":{
+"Filter_Views":[
+{"Key_Name":"name"
+}
+],
+"Def_Views":{
+"type": "include",
+ "layout": "DataDrivenExamplevmytree",
+  "tname":"SimpleDataBindingExample",
+        "KeyName":"recycleserchhm",
+          "paddingBottom": "0dp",
+          "FilterName":"name",
+          "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          }
+          },
+
+"a_enable":"1",
+"MultipleViews":[]
+
+
+},
+
+
+
+"Return_Data":[
+{
+"Return_Type":"55",
+
+
+"Return_To_Message":[
+{
+"Response_Key_Name":"0",
+"View_Id":"55",
+"Message_Text":"hhhh",
+"View_Type":"A"
+
+}
+
+]
+
+
+}
+
+],
+
+"Return_To_View":[
+{
+"View_Id":"saveprograss",
+"Type_Process":"1",
+"Value_Process":"1",
+"View_Type":"A"
+
+}
+
+],
+
+"Before_Process":[
+{
+"View_Id":"saveprograss",
+"Type_Process":"1",
+"Value_Process":"1",
+"View_Type":"A"
+
+},
+{
+"View_Id":"vvbbiikk",
+"Type_Process":"3",
+"Value_Process":"3",
+"View_Type":"A"
+
+}
+
+
+],
+
+"After_Process":[
+{
+"View_Id":"saveprograss",
+"Type_Process":"2",
+"Value_Process":"2",
+"View_Type":"A"
+
+},
+{
+"View_Id":"vvbbiikk",
+"Type_Process":"4",
+"Value_Process":"4",
+"View_Type":"A"
+
+}
+
+],
+"Finsh_Process":[
+{
+"View_Id":"55",
+"Type_Process":"22",
+"Value_Process":"55",
+"View_Type":"A"
+
+}
+
+],
+"Sender_Data":[
+{
+"Data_From_View":[
+{"View_Id":"0",
+"View_Type":"5",
+"Index_ID":0
+},
+{"View_Id":"0",
+"View_Type":"6",
+"Index_ID":1
+},
+{"View_Id":"0",
+"View_Type":"6",
+"Index_ID":2
+},
+{"View_Id":"0",
+"View_Type":"API_Acess",
+"Index_ID":3
+}
+
+
+]
+,"API_Data":[
+{
+"Method_Type":"POST",
+"Type_Url":"local0",
+"Url":"http://0.0.0.0:8080/admin3/u.php",
+"Response_Data":[
+{
+"Key_Name":"heee",
+"Key_Value":"0",
+"Key_Type":"Select_Key"
+},
+
+{
+"Key_Name":"heee",
+"Key_Value":"1",
+"Key_Type":"Refresh_Key"
+},
+{
+"Key_Name":"mmnuuuknnm",
+"Key_Value":"1",
+"Key_Type":"Offline_Key"
+}
+,
+{
+"Key_Name":"heee",
+"Key_Value":"0",
+"Key_Type":"Show_As_Message"
+}
+
+
+
+]
+,
+
+
+"Request_Header":[
+{
+"Key_Name":"heee",
+"Key_Value":"%1$s",
+"Key_Type":"5555"
+},
+{
+"Key_Name":"heeemmm",
+"Key_Value":"%2$s",
+"Key_Type":"5555"
+},
+{
+"Key_Name":"heeettff",
+"Key_Value":"%3$s",
+"Key_Type":"5555"
+},
+{
+"Key_Name":"vvvvvvv",
+"Key_Value":"%4$s",
+"Key_Type":"5555"
+}
+
+
+
+
+]
+,
+"Request_Body":[],
+
+"Request_Query":[]
+
+
+
+}
+
+
+]
+}
+
+]
+
+}
+
+}
+         
+}]}
+  ,
+  "DataDrivenExamplevmytree": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+"table_show_view":"kk#child#parent",
+    "paddingBottom": "0dp",
+    "focusable":false,
+    "children": [
+   {
+        "type":"LinearLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+                   "focusable":false,
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+                  "focusable":false,
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+                  "focusable":false,
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+                 "focusable":false, 
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "id":"kk",
+              "background":"@color/green",
+              "table_column":"0",
+                  "focusable":false,
+              "table_filedname":"name",
+              "layout_marginRight":"0dp",
+              "text":"@{name}"
+              }
+              ,
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "gravity":"right",
+                  "focusable":false
+              
+              
+       
+,"children":[
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعععععديل",
+               "layout_marginRight":"0dp",
+                 "focusable":false,
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"SelectItem",
+    "focusable":false,
+          "typeActionName" :"myautoprimary",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+
+              "onClick": "m@{tag}",
+                  "background":"@drawableFont/fa_edit/2/40/#438afe"
+ }
+]
+},
+{
+          "type":"RippleLayout",
+                  
+        
+          "focusable":false,       
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+    "focusable":false,
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"@drawableFont/fa_trash_alt/2/60/#438afe"
+ }
+]
+}
+
+
+
+
+
+
+              
+
+]
+}
+
+
+
+
+
+
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+
+       
+
+   
+ 
+
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  },
+
+
+  "DataDrivenExamplevmy": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+"table_show_view":"kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation":"@anim/fade_in",
+    "focusable":false,
+    "children": [
+   {
+        "type":"LinearLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+                   "focusable":false,
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+                  "focusable":false,
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+                  "focusable":false,
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+                 "focusable":false, 
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "id":"kk",
+              "background":"@color/green",
+              "table_column":"0",
+                  "focusable":false,
+              "table_filedname":"name",
+              "layout_marginRight":"0dp",
+              "text":"@{drugName_ar}"
+              }
+              ,
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "gravity":"right",
+                  "focusable":false
+              
+              
+       
+,"children":[
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعععععديل",
+               "layout_marginRight":"0dp",
+                 "focusable":false,
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"SelectItem",
+    "focusable":false,
+          "typeActionName" :"myautoprimary",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+
+              "onClickk": "m@{tag}",
+
+                  "background":"@drawableFont/fa_edit/2/40/#438afe",
+                  "Event":{
+"Event_Type":"Show_Dialog_With_Set_Data",
+"Name":"AlertDialogLayout",
+"Set_Data":[
+{
+"View_Id":"name",
+"Type_Process":"5",
+"Value_Process":"drugName_ar",
+"View_Type":"A"
+
+},
+{
+"View_Id":"email",
+"Type_Process":"5",
+"Value_Process":"id",
+"View_Type":"A"
+
+}
+
+
+]
+
+}
+ }
+]
+},
+{
+          "type":"RippleLayout",
+                  
+        
+          "focusable":false,       
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+    "focusable":false,
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"@drawableFont/fa_trash_alt/2/60/#438afe"
+ }
+]
+}
+
+
+
+
+
+
+              
+
+]
+}
+
+
+
+
+
+
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+
+       
+
+   
+ 
+
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  }
+  
+  }

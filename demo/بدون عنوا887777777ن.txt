@@ -1,0 +1,60 @@
+ou need to implement Filterable interface in your UpdatesAdapterList class.
+
+For detailed explanation visit How to implement getfilter() with custom adapter that extends baseadapter?.
+
+public class UpdatesAdapterList extends BaseAdapter implements Filterable {
+ ...
+
+ @Override
+ public Filter getFilter(){
+      // Your Search logic goes here..
+     Filter filter = new Filter() {
+           FilterResults results;
+           ArrayList<HashMap<String, String>> filteredList;
+
+           @Override
+           protected void publishResults(CharSequence constraint,
+                FilterResults results) {
+               // Has the filtered values
+               data = (ArrayList<HashMap<String, String>>) results.values;  
+               notifyDataSetChanged();          
+           }
+
+           @Override
+           protected FilterResults performFiltering(CharSequence constraint) {
+               // Holds the results of a filtering operation in values
+               results = new FilterResults();
+               filteredList= new ArrayList<HashMap<String, String>>();
+
+               //This is the search string user typed in EditText. 
+               String searchString = constraint.toString();
+
+               /*
+                * Code to update the filteredList based on Search String.
+                * 
+                * I'm just writing pseudo code for search, based on
+                * Cardiology_updates.UpdateTitle
+                */ 
+                int mCount=data.size();
+                for (int i = 0; i < mCount; i++) {
+                    HashMap<String, String> obj= data.get(i);
+                    String updateTitle=obj.get(Cardiology_updates.UpdateTitle);
+                    if(updateTitle.contains(searchString)){
+                         filteredList.add(obj);
+                    }
+                } 
+
+               synchronized (this) {
+                    // set the Filtered result to return
+                    results.count = filteredList.size();
+                    results.values = filteredList;
+                }
+            }
+            return results;
+        }
+
+     };
+   return filter;
+ }
+
+}

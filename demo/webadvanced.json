@@ -1,0 +1,4369 @@
+{
+  "RelativeLayoutExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RelativeLayout",
+        "layout_width": "match_parent",
+        "layout_height": "100dp",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "id": "center",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "text": "Center",
+            "textColor": "#323232",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginBottom": "4dp",
+            "layout_above": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginTop": "4dp",
+            "layout_below": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginLeft": "4dp",
+            "layout_toRightOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginRight": "4dp",
+            "layout_toLeftOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "layout_height": "70dp",
+            "layout_width": "120dp",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitCenter",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+          }
+        ]
+      }
+    ]
+  },
+  "SimpleDataBindingExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "orientation": "vertical",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginBottom": "0dp",
+            "text": "Profile",
+            "style": "mini.blue"
+          },
+          {
+            "type": "RelativeLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextView",
+                "id": "k",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{name}"
+              },
+              {
+                "type": "TextView",
+                "id": "location",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_below": "name",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{fn:format('%s, %s', @{user.location.city}, @{user.location.country})}"
+              },
+              {
+                "type": "TextView",
+                "text": "@{fn:format('(%s)',@{user.level})}",
+                "textColor": "#c48866",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_toRightOf": "name"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "children": [
+              {
+                "type": "HorizontalProgressBar",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "max": "@{user.experience.max}",
+                "progress": "@{user.experience.current}"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "layout_marginBottom": "32dp",
+                "padding": "8dp",
+                "paddingTop": "16dp",
+                "paddingBottom": "16dp",
+                "text": "@{fn:number(@{user.credits})}",
+                "style": "money.center",
+                "background": {
+                  "type": "shape",
+                  "shape": "oval",
+                  "children": [
+                    {
+                      "type": "gradient",
+                      "startColor": "#44e73827",
+                      "endColor": "@color/green",
+                      "angle": 270
+                    }
+                  ]
+                },
+                "animation": {
+                  "interpolator": {
+                    "type": "anticipateOvershootInterpolator"
+                  },
+                  "type": "rotate",
+                  "fromDegrees": -720,
+                  "toDegrees": 0,
+                  "pivotX": "50%",
+                  "pivotY": "50%",
+                  "duration": 1500
+                }
+              }
+            ]
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "data": {
+              "date": "@{fn:date(@{sec.ll},'E, d MMM')}",
+              "loc": "@{sec.loc}"
+            },
+            "text": "@{fn:format('last login: %s from %s',@{date},@{loc})}",
+            "style": "blue"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "text": "@{user.type}",
+            "visibility": "@{fn:ternary(@{user.type}, 'visible', 'gone')}"
+          }
+        ]
+      }
+    ]
+  },
+  "DataDrivenExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#ffffff",
+        "padding": "16dp",
+        "children": {
+          "@": {
+            "collection": "@{fn:slice(@{user.tags},0,4)}",
+            "layout": {
+              "type": "LinearLayout",
+              "data": {
+                "tag": "@{user.tags[$index]}"
+              },
+              "layout_marginRight": "8dp",
+              "layout_height": "32dp",
+              "textSize": "12sp",
+              "textColor": "@color/colorAccent",
+             "children":[{
+                       "type": "TextView",
+              "text": "@{tag}",
+              "padding": "8dp",
+              "gravity": "center",
+              "onClick": "@{tag}"
+}]
+
+
+            }
+          }
+        }
+      }
+    ]
+  },
+  
+  
+  "Tableviews": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    
+  "table_show_view":"kk#child",  
+
+    "paddingBottom": "0dp",
+    "children": [
+      {
+      
+      "type": "TableViews",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+        "table_show_view":"kk#child",
+
+    "paddingBottom": "0dp",
+
+   "Table_data":{
+    "table_ClickCell":true,
+    "table_ClickHead":true,
+    "table_ClickInCell":false,
+    "table_LayoutCell":"1",
+    "table_show_view":"kk#child",
+    "table_Layout":"vv",
+    "table_Name_data":"datamm",
+    "table_row":"vv",
+    
+    "table_corner":"corner",
+    "table_column_typ":"DataDrivenExamplevmykk#DataDrivenExamplevmy#DataDrivenExamplevmymm",
+
+    "data": {
+          "items": "@{datamm.achievementsmm}"
+        }
+    
+    
+    }
+    
+
+      
+}]
+},
+  
+  
+  
+  
+  
+  "DataDrivenExampleoo": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#ffffff",
+        "padding": "16dp",
+        "children": {
+          
+              "layout_marginRight": "8dp",
+              "layout_height": "32dp",
+              "textSize": "12sp",
+              "textColor": "@color/colorAccent",
+             "children":[{
+                       "type": "TextView",
+              "text": "@{my.name}",
+              "padding": "8dp",
+              "gravity": "center",
+              "onClick": "@{tag}"
+}]
+
+
+            }
+          
+        
+      }
+    ]
+  },
+  
+  "DataDrivenExampleook": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "padding": "16dp",
+        "children": {
+          
+           
+           
+           
+                  "type": "ProgressBar",
+                  "layout_height": "50dp",
+                  "layout_width": "90dp",
+                  "gravity": "center",
+                  "mm":2,
+                  
+                   "data_primary":"myprogvv",
+                      "paddingBottom": "0dp",
+                  "style_bar":{
+                  "color_bar":"#2cdb81",
+                  "typ_bar":"2"
+},
+                                  "typ_bar":"2",
+           
+                  "text": "ADD gh CART"
+
+                  
+           
+           
+           
+
+            }
+          
+        
+      }
+    ]
+  },
+  
+  "DataDrivenExamplev": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+
+    "paddingBottom": "0dp",
+    "children": [
+   {
+        "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+
+
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              
+              "layout_marginRight":"10dp",
+              "text":"@{my.a_email}"
+              },
+              
+              {
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "50dp",
+              
+              "layout_marginRight":"10dp",
+              "text":"@{my.a_resttime}"
+              }
+
+]
+}
+
+
+
+
+,
+
+{
+                  "type": "CircleImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  
+                  "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                  "onClick": {
+                    "someKey": "someValue"
+                  }
+                  }
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+{
+        "type": "WebView",
+            
+       "url":"@{my.a_picuser}",
+           "layout_height": "300dp",
+            "layout_width": "match_parent",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitXY",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+            
+          },
+       
+
+   {
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "match_parent",
+              "orientation":"horizontal",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+
+            
+           
+
+
+
+
+
+ 
+            {
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعديل",
+               "layout_marginRight":"50dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/aniket-suvarna/box/32/bxs-edit-alt-icon.png"
+ }
+]
+}
+
+,
+
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"50dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#3#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/128/delete-icon.png"
+ }
+]
+}
+
+
+
+
+
+
+
+
+
+
+ ]
+
+}
+ 
+
+,
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  },
+  
+  
+  
+  
+  
+  "DataDrivenExamplevmy": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+"table_show_view":"kk#child#parent",
+    "paddingBottom": "0dp",
+    "children": [
+   {
+        "type":"LinearLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "id":"kk",
+              "background":"@color/green",
+              "table_column":"0",
+              
+              "table_filedname":"name",
+              "layout_marginRight":"0dp",
+              "text":"@{drugName_ar}"
+              }
+              ,
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعديل",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/aniket-suvarna/box/32/bxs-edit-alt-icon.png"
+ }
+]
+},
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/128/delete-icon.png"
+ }
+]
+}
+
+
+
+
+
+
+              
+
+]
+}
+
+
+
+
+
+
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+
+       
+
+   
+ 
+
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  },
+  
+  
+    "DataDrivenExamplevmymm": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+"table_show_view":"kkv#child#parent",
+    "paddingBottom": "0dp",
+    "children": [
+   {
+        "type":"LinearLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+              "table_show_view":"kkv#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+              "table_show_view":"kkv#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "id":"kkv",
+              "background":"@color/green",
+              "table_column":"0",
+              
+              "table_filedname":"child",
+              "layout_marginRight":"0dp",
+              "text":"@{name}"
+              }
+              ,
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعديل",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#14#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/aniket-suvarna/box/32/bxs-edit-alt-icon.png"
+ }
+]
+},
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/128/delete-icon.png"
+ }
+]
+}
+
+
+
+
+
+
+              
+
+]
+}
+
+
+
+
+
+
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+
+       
+
+   
+ 
+
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  },
+  
+  
+  
+  
+  
+  
+  "DataDrivenExamplevmykk": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "120dp",
+"table_show_view":"kkm#childm#parentt",
+    "paddingBottom": "0dp",
+    "children": [
+   {
+        "type":"LinearLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+              "table_show_view":"kk#child#parent",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "id":"kkm",
+              "background":"@color/green",
+              "table_column":"0",
+              
+              "table_filedname":"parent",
+              "layout_marginRight":"0dp",
+              "text":"@{name}"
+              }
+              
+              
+              ,
+              
+
+              
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"تعديل",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#14#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/aniket-suvarna/box/32/bxs-edit-alt-icon.png"
+ }
+]
+},
+{
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"حذف",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"delete",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#name#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/128/delete-icon.png"
+ }
+]
+}
+
+
+
+
+
+
+              
+
+]
+}
+
+
+
+
+
+
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+
+
+
+
+
+
+       
+
+   
+ 
+
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  },
+  
+  
+  
+  
+  
+  "mfragment": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingBottom": "0dp"
+  }
+  
+  ,
+  "RecyclerViewExampleAuto": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "AutoText",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "background":"@drawable/h_round",            
+                "lhint": "hh50djhhhhp",
+        "data_primary":"myautoprimary",
+        "Set_data_when_click_item":"[
+{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#name#},
+{#data_id#:#myautoprimary#,#data_set#:#myautoprimary#,#data_get#:#name#},
+{#data_id#:#myautoprimaryv#,#data_set#:#myautoprimaryv#,#data_get#:#name#}
+]",
+        "filter":"name#age",
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager"
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "item-layout": {
+              "type": "TextView",
+            "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          },  
+          
+          "d_UseClickItem":"0",
+                "typeAction" :"Set_Data",
+                                  
+        
+        
+        
+              "layout_width": "match_parent",
+              "padding": "12dp",
+              "layout_marginBottom": "4dp",
+              "gravity": "center",
+              "text": "@{my}",
+              "textSize": "14sp",
+              "textColor": "#323232"
+            }
+          }
+        }
+      }
+    ]
+  },
+  
+    "RecyclerViewExampleSpinner": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "Sppiner",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "background":"@drawable/h_round",            
+                "lhint": "hh50djhhhhp",
+        "data_primary":"myautoprimaryv",
+"ID_Select":"name",
+        
+        "Set_data_when_click_item":"[
+
+{#data_id#:#selectspinner#,#data_set#:#selectspinner#,#data_get#:#name#}
+
+]",
+        "filter":"name#age",
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager"
+            
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "item-layout": {
+              "type": "TextView",
+            "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          },  
+          
+          "d_UseClickItem":"0",
+                "typeAction" :"Set_Data",
+                                  
+        
+        
+        
+              "layout_width": "match_parent",
+              "padding": "12dp",
+              "layout_marginBottom": "4dp",
+              "gravity": "center",
+              "text": "@{my}",
+              "textSize": "14sp",
+              "textColor": "#323232"
+            }
+          }
+        }
+      }
+    ]
+  },
+  
+  
+  
+  
+  "RecyclerViewExampleProdact": {
+    "type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+   "data_primary":"recyuuiop",
+      "on_sweep":"recycleserchhm",
+    "on_sweep_typ":"1",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+      
+          
+        "type": "RecyclerView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+         "data_primary":"recycleserchhm",
+         "filter":"drugName_ar",
+         
+         
+         "enble_cach":"1",
+               "TreeViews":"0",
+         "Key_from_response":"data",
+         "d_key":"loveem",
+         "tname":"tt",
+         "data_id":"[
+{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}
+
+,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#},
+{#data_id#:#Count_Element#,#data_set#:#Count_Element#,#data_get#:#Count_Element#},
+{#data_id#:#Total_Element#,#data_set#:#Total_Element#,#data_get#:#Total_Element#}
+
+]",
+         "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}"
+          ,
+          "Api_Header":"[
+{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}
+ ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}
+
+]",
+  "api_method":"post",
+"api_url":"http://astooltech.com/api/v1/test2.json"
+          ,
+         
+        "data": {
+          "items": "@{loveem}"
+        },
+        "layout_manager": {
+   "type": "LinearLayoutManager",
+            "orientation":"vertical",
+            "reverse":false,
+            "space":"0",
+             "use_realod":"1",
+            "prograss":"myprog",
+            "show_prograss":"1",
+            "tname":"SimpleDataBindingExample",
+            "Key_from_response":"data",
+  "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#count_item#:#%5$s#,#total_item#:#%6$s#}]}"
+          ,
+          "Api_Header":"[
+{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}
+ ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}
+
+]",
+          "api_method":"post",
+ "api_url":"http://astooltech.com/api/v1/test2.json"
+          
+
+            
+        },
+        "adapter": {
+         
+ "@": {
+            "type": "Adapter2",
+          
+            "item-count": "@{items.$length}",
+                 "tname":"DataDrivenExamplevmy",
+                 "animation":{
+"a_enter":false,
+"a_enter_step":false,
+"a_expand":false,
+"a_expand_out":false,
+"a_anim_rev":false,
+"a_anim_for":false,
+"a_load_start":false,
+"a_drage":true,
+"CountItem":2,
+"a_endless_count":0,
+"a_endless_page":0,
+"a_use_endless":true
+
+
+
+},
+     "UseMultiple":{
+"a_enable":true,
+"a_View":"[{#v_Name#:#tt#, #v_ColumnName#:#id#,#v_EqualValue#:#20#,#v_id#:#1#},
+{#v_Name#:#SimpleDataBindingExample#,#v_ColumnName#:#id#, #v_EqualValue#:#50#,#v_id#:#2#},
+{#v_Name#:#card2#,#v_ColumnName#:#id#, #v_EqualValue#:#100#,#v_id#:#3#},
+{#v_Name#:#web#,#v_ColumnName#:#id#, #v_EqualValue#:#150#,#v_id#:#4#}
+
+
+]"
+},
+         "tlayout":"0",
+                "tlayoutcount":"2",
+
+   "item-layout": {
+            
+            
+          "type": "include",
+          "layout": "DataDrivenExamplevmy",
+    "tname":"SimpleDataBindingExample",
+        
+          "paddingBottom": "0dp",
+          "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          }
+          },
+          "Prograss-layout": {
+            
+            
+   "type": "ProgressBar",
+                  "layout_height": "50dp",
+                  "layout_width": "90dp",
+            "layout_weight":10,
+                  "mm":2,
+                  
+                   "data_primary":"myprogvv",
+            
+                  "style_bar":{
+                  "color_bar":"#2cdb81",
+                  "typ_bar":"2"
+},
+                                  "typ_bar":"2",
+           
+                  "text": "ADD gh CART"
+
+                  
+            
+              
+
+
+
+                      
+              
+              
+              
+      
+            }
+          }
+        }
+      }
+    ]
+    
+  },
+  
+  
+  
+  
+  "RecyclerViewExampleslider": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+      
+          
+        "type": "SliderView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+         "data_primary":"recycleserchhk",
+         "filter":"a_email",
+         "d_key":"loveem",
+         "data_id":"[
+{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}
+
+,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#},
+{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}
+
+]",
+         "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}"
+          ,
+          "Api_Header":"[
+{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}
+ ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}
+
+]",
+          "api_method":"post",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool"
+          ,
+         
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+   "type": "LinearLayoutManager",
+            "orientation":"vertical",
+            "reverse":false,
+           "time":2,
+           "anmationType":"FILL",
+           "Typedir":2,
+           "runAuto":true,
+ "space":"50",
+             "use_realod":"1",
+            "prograss":"myprog",
+            "show_prograss":"1",
+            "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}"
+          ,
+          "api_method":"post",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool"
+          
+
+            
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            
+            "item-layout": {
+            
+            
+          "type": "include",
+          "layout": "DataDrivenExamplev",
+    
+          "paddingBottom": "0dp",
+          "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          }
+          },
+          "Prograss-layout": {
+            
+            
+   "type": "ProgressBar",
+                  "layout_height": "50dp",
+                  "layout_width": "90dp",
+            "layout_weight":10,
+                  "mm":2,
+                  
+                   "data_primary":"myprogvv",
+            
+                  "style_bar":{
+                  "color_bar":"#2cdb81",
+                  "typ_bar":"2"
+},
+                                  "typ_bar":"2",
+           
+                  "text": "ADD gh CART"
+
+                  
+            
+              
+
+
+
+                      
+              
+              
+              
+      
+            }
+          }
+        }
+      }
+    ]
+    
+  },
+  
+  
+  "AlertDialogLayout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "background":"#80000000",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "background":"#80000000",
+    "children":[
+    
+    {
+       "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_marginTop": "0dp",
+        "gravity": "center",
+        "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+        "textSize": "18sp",
+        "text": "@{AlertDialogLayout.my[0].data}"
+},
+{
+       "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "10dp",
+        "gravity": "center",
+        "id":"mykk",
+        "textColor": "@color/white",
+        "textSize": "18sp",
+        "text": "@{AlertDialogLayout.my[0].name}"
+}
+
+],
+    "layout_height": "50dp"},
+
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"الاسم", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"الاسم",
+  "id": "name",
+                "data_primary":"name",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي إدخال الاسم",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                "InputType":"text",
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,"text":"@{AlertDialogLayout.my[0].name}",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال البريد الالكتروني ", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"البريد الالكتروني ",
+  "id": "email",
+                "data_primary":"email",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال البريد الالكتروني ",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"البريد الإلكتروني ",   
+                         "text":"@{AlertDialogLayout.my[0].email}",
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"عنوان الصورة", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"عنوان الصورة",
+  "id": "pic",
+                "data_primary":"pic",
+                "d_NullValue":true,
+                "d_OnErrorText":" عنوان الصورة",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"عنوان الصورة"
+                         ,"text":"@{AlertDialogLayout.my[0].pic}",
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          
+
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "حفظ",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"0",
+                  "enabled":true,
+                  "Save_before_refresh":"0",
+                  "DisableWehen":"vvbbii",
+                  "Key_from_response":"data",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},
+
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},
+{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}
+
+]",
+
+"api_body":"
+                  {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#%5$s#,#pic#:#%4$s#,#typ#:#%3$s#,#name#:#%1$s#,                   #email#:#%2$s#,#prodID#:#0#,#barcode#:#0#}]}",  
+          
+          "Api_Header":"[
+{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}
+ ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}
+
+]",
+          "api_method":"post",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool"
+,
+
+          "typeAction" :"SaveData",
+          
+
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbii", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "خروج",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"data",
+                  "enabled":true,
+                  "DisableWehen":"1",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}
+,
+{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}
+
+]",
+          "typeAction" :"Cancel",
+          
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#@mid@#,#pic#:#@pic@#,#typ#:#@op@#,#name#:#%1$s#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbcancelk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "موافق",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"message",
+                  "enabled":true,
+                  "DisableWehen":"1",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}
+
+]",
+          "typeAction" :"OK",
+          
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1377#,#pic#:#@pic@#,#typ#:#1#,#name#:#@name@#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbcancelm", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+ 
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "data_primary":"op", 
+
+     "text":"@{fn:isNull(@{AlertDialogLayout.my[0].typ}, '1',@{AlertDialogLayout.my[0].typ})}"
+
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        
+        "data_primary":"mid", 
+     "text":"@{fn:isNull(@{AlertDialogLayout.my[0].id}, '0',@{AlertDialogLayout.my[0].id})}"
+
+      },
+      
+     {
+                  "type": "ProgressBar",
+                  "layout_height": "50dp",
+                  "layout_width": "90dp",
+                  "gravity": "center",
+                  "mm":1,
+                  
+                   "data_primary":"saveprograss",
+                  "visibility":"gone",
+                  "style_bar":{
+                  "color_bar":"#2cdb81",
+                  "typ_bar":"1"
+},
+                       
+           
+                  "text": "ADD gh CART"
+
+                  } 
+      
+    ]
+  }
+  ,
+            
+            
+            
+          "childd": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "table_show_view":"mchild",  
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+        "table_show_view":"mchild",  
+    "children":[
+  
+  {
+  
+  
+       "type": "TextView",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+"id":"mchild",
+        "gravity": "center",
+        "table_filedname":"child",
+        "textSize": "18sp",
+        "text": ""
+
+
+  
+}
+  ]
+  }]
+  },  
+            
+            
+            
+            
+            
+            
+            
+          "DrawerHeader": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+   "background":"@drawable/blue_btn_bkg",
+    "layout_height": "match_parent",
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "background":"#ffffff",
+    "layout_margin":"10dp",
+    "gravity":"center",
+        "bringToFront":"1",
+    "children":[
+    
+    
+    
+    { "type":"FrameLayout",
+        "layout_width": "match_parent",
+    "layout_height": "90dp",
+    "bringToFront":"1"
+}
+
+
+]
+},
+
+
+{
+"type": "CircleImageView",
+                  
+                  
+                  "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                     "layout_marginBottom":"-50dp",
+        "layout_width": "120dp",
+        "layout_marginTop":"-70dp",
+        "marginBottom":"20dp",
+        "layout_height": "120dp",
+        "layout_gravity":"center"
+        
+        
+        
+ 
+},
+  {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+        "layout_marginTop":"50dp",
+"layout_gravity":"center",
+
+        
+    "children":[
+      
+{
+        "type": "TextView",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        
+        "layout_marginRight":"10dp",
+        "layout_marginLeft":"10dp",
+        "textSize": "15sp",
+    
+        "data_primary":"op", 
+        "textColor":"#ffffff",
+
+     "text":"محمد علي سعيد",
+"layout_gravity":"center"
+
+      }
+
+
+]},
+
+{    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+   
+
+        
+    "children":[
+      {
+        "type": "TextView",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+"layout_marginRight":"10dp",
+        "layout_marginLeft":"10dp",
+        "textSize": "15sp",
+                
+        "data_primary":"op", 
+        "textColor":"#ffffff",
+
+     "text":"الفرع"
+
+      },
+{
+        "type": "TextView",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        
+        "layout_marginRight":"10dp",
+        "layout_marginLeft":"10dp",
+        "textSize": "15sp",
+    
+        "data_primary":"op", 
+        "textColor":"#ffffff",
+
+     "text":"الفرع الرئيسي"
+
+      }
+
+
+]},
+
+      
+      
+     {
+                  "type": "ProgressBar",
+                  "layout_height": "50dp",
+                  "layout_width": "90dp",
+                  "gravity": "center",
+                  "mm":1,
+                  
+                   "data_primary":"saveprograss",
+                  "visibility":"gone",
+                  "style_bar":{
+                  "color_bar":"#2cdb81",
+                  "typ_bar":"1"
+},
+                       
+           
+                  "text": "ADD gh CART"
+
+                  } 
+      
+    ]
+  }
+  ,
+            
+            
+            
+          "childd": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "table_show_view":"mchild",  
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+        "table_show_view":"mchild",  
+    "children":[
+  
+  {
+  
+  
+       "type": "TextView",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+"id":"mchild",
+        "gravity": "center",
+        "table_filedname":"child",
+        "textSize": "18sp",
+        "text": ""
+
+
+  
+}
+  ]
+  }]
+  },    
+            
+            
+  "vv": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+"layout_height": "44dp",
+    "table_show_view":"ll",  
+
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "layout_height": "44dp",
+
+        "table_show_view":"ll",  
+    "children":[
+  
+  {
+  
+  
+       "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+"id":"ll",
+        "gravity": "center",
+        
+        "textSize": "12sp",
+        "text": ""
+
+
+  
+}
+  ]
+  }]
+  }
+  ,
+  
+ "corner": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "wrap_content",
+    "layout_height": "40dp",
+    
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+          "layout_height": "40dp",
+    "background":"#c48866",
+        
+    "children":[
+  
+  {
+  
+  
+       "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "40dp",
+"id":"llk",
+        "gravity": "center",
+        
+        "textSize": "18sp",
+        "text": "Row"
+
+
+  
+}
+  ]
+  }]
+  }
+  , 
+  
+  "tt": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "background":"#c48866",
+    "children":[
+    
+    {
+       "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_marginTop": "0dp",
+        "gravity": "center",
+        "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+        "textSize": "18sp",
+        "text": "@{AlertDialogLayout.my[0].data}"
+},
+{
+       "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "10dp",
+        "gravity": "center",
+        "textColor": "@color/white",
+        "textSize": "18sp",
+        "text": "@{AlertDialogLayout.my[0].data}"
+}
+
+],
+    "layout_height": "50dp"},
+
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"اسم الصنف",
+  "id": "hellv",
+                "data_primary":"hellv",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,"text":"@{AlertDialogLayout.my[0].data}",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"اسم الصنف",
+  "id": "hell",
+                "data_primary":"hell",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp",
+                "Input_Type":"Url",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          
+
+    
+
+{"type": "EditText",
+                  "data_primary":"bbkk"
+                  ,
+                  "layout_height": "55dp",
+                  "layout_width": "90dp",
+                  "padding":"0dp",
+                  "margin":"50dp",
+                  "gravity": "center",
+      "mm": "0",
+      "background":"@color/green"
+                  
+                  
+                  
+},
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "إلغاء",
+  
+          "typeAction" :"Ok3",
+          
+          
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbii869", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "yyموافق",
+  
+          "typeAction" :"Ok2",
+          
+          
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbii89", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+ 
+ {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "textColor": "#ffaa77",
+        "textSize": "32sp",
+        "text": "g"
+      },
+      
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "text": "press ok to continue."
+      }
+    ]
+  }
+  
+  ,
+  "web": {
+    "type": "FrameLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+      "data": {
+            "user": "@{0}",
+            "sec": "@{sec}"
+          },
+  
+    "children": [
+     
+ {    "type": "WebView",
+    "orientation": "vertical",
+    "data_primary":"myweb", 
+
+    "layout_height": "match_parent",
+    "layout_width": "match_parent",
+    "click_from_data":"@{user.name}",
+    "web_get_data":"@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+  "turl":"file:///android_asset/themes/bootstrap.min.css",  
+    "DataUrl":{
+    "m_urls":"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+        
+        
+        
+        
+        
+        
+  
+        
+        
+        
+
+"use_get_data":true,
+    "update":false,
+    "enab_port":false,
+        "enab_back":true,
+   "enab_long_click":false, 
+    "scroll_V":false,
+        "scroll_H":false,
+        "scroll_On_touch":false,
+    "enab_desktop":false,
+    "enab_cookies":false,
+    "enab_multiplwindow":true,
+    "enab_OverViewMode":true,
+     "enab_Open_window_Auto":true,
+    "use_error":true,
+    "m_error":"
+<!DOCTYPE html>
+<html lang=%1$sen%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+%4$s
+
+</style>
+<style>
+%6$s
+
+</style>
+
+<style>
+%9$s
+
+</style>
+
+  <script>
+%3$s
+</script>
+<script>
+%5$s
+</script>
+
+<script>
+%7$s
+</script>
+<script>
+%8$s
+</script>
+
+
+</head>
+<body>
+<div class=%1$sjumbotron text-center%1$s>
+  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>
+  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> 
+</div>
+</body>
+</html>
+",
+
+
+"m_html":"
+<!DOCTYPE html>
+<html lang=%1$sen%1$s>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=%1$sutf-8%1$s>
+  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>
+  <style>
+@font-face{
+    font-family:%1$smmy%1$s;
+    src:url(themes/fonts/Cairo-Bold.ttf)format(%1$struetype%1$s);
+    font-style: normal;
+    }
+    
+    
+    
+    *{
+     font-family: 'mmy';
+     -webkit-user-select: none;
+    }
+
+
+</style>
+
+
+
+<style>
+%4$s
+
+</style>
+<style>
+%6$s
+
+</style>
+
+<style>
+%9$s
+
+</style>
+<style>
+%11$s
+
+
+
+
+
+</style>
+<style>
+%15$s
+
+
+
+
+
+</style>
+
+
+<style>
+
+.table th:first-child,
+.table td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #ad6c80;
+  color: #373737;
+}
+.table td {
+  white-space: nowrap;
+}
+</style>
+
+  <script>
+%3$s
+</script>
+<script>
+%5$s
+</script>
+<script>
+%12$s
+</script>
+<script>
+%13$s
+</script>
+
+<script>
+%14$s
+</script>
+<script>
+%16$s
+</script>
+<script>
+$(function () {
+    $('#dataTable').DataTable({
+      %1$spageLength%1$s: 3,
+      %1$spaging%1$s: true,
+      %1$slengthChange%1$s: false,
+      %1$ssearching%1$s: false,
+      %1$sordering%1$s: true,
+      %1$sinfo%1$s: true,
+      %1$sautoWidth%1$s: false
+      });
+  });
+</script>
+
+<script>
+    $(document).ready(function() {
+          $('#dataTable').DataTable();
+    });
+</script>
+
+<script>
+        $(document).ready(function(){
+         
+var touching = null;
+$('selector').each(function() {
+    this.addEventListener(%1$stouchstart%1$s, function(e) {
+        e.preventDefault();
+        touching = window.setTimeout(longTouch, 500, true);
+    }, false);
+    this.addEventListener(%1$stouchend%1$s, function(e) {
+        e.preventDefault();
+        window.clearTimeout(touching);
+    }, false);
+});
+
+function longTouch(e) {
+    // do something!
+}
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+
+function  MessBoxB(messagg){
+
+
+
+
+dd(messagg);
+
+
+}
+
+        });
+        
+        
+        function msgg(typp,messagg){
+
+Swal.fire({
+    toast: false,	
+  
+  icon: typp,
+  title: messagg,
+  showConfirmButton: false,
+  timer: 1500
+});
+}
+
+function api(name,email,password){
+					
+try{
+
+
+
+//msgg('info',email);
+
+				
+				//var dt=JSON.stringify( { %1$spname%1$sp:  name, %1$spemail%1$sp: email,%1$sppassword%1$sp:password} );
+
+				var uuu='mmmm';
+				$.ajax({
+    url: 'https://www.astooltech.com/api/v1/u',
+    dataType: 'text',
+
+    type: 'get',
+
+      // contentType: 'application/json; charset=utf-8',
+    success: function( data, textStatus, jQxhr ){
+    	//setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+      
+msgg('info', data);
+ if(isJson(data)){
+var ffdd=JSON.parse(data); 
+if(ffdd.success=='1'){
+msgg('info', ffdd.message);
+}else{
+msgg('error', ffdd.message);
+}
+}else{
+msgg('error', data);
+}
+    },
+    error: function( jqXhr, textStatus, errorThrown ){
+    //setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+ msgg('error',textStatus+'hhhhhh' );
+    }
+});
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+						}catch(ddd){
+							
+alert(ddd);
+
+}
+	}
+
+        function ddk(vvc){
+        
+Swal.fire({
+  title: '<strong>%1$s+vvc+%1$s HTML <u>example</u></strong>',
+  icon: 'info',
+  html:
+    'سع ي د <b>bold text</b>, ' +
+    '<a href=%1$s//sweetalert2.github.io%1$s>links</a> ' +
+    'and other HTML tags',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class=%1$sfa fa-thumbs-up%1$s></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class=%1$sfa fa-thumbs-down%1$s></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
+}
+        ddk();
+        //('mmm');
+</script>
+   
+    
+    <script type=%1$stext/javascript%1$s>
+    function vb(toast) {
+        Android.AndroidFunction(toast,1);
+    }
+    function noti(toast) {
+        Android.AndroidFunctionNoti(toast,3);
+    }
+    
+</script>    
+<script>
+%7$s
+</script>
+<script>
+%8$s
+</script>
+<script>
+%10$s
+</script>
+
+</head>
+<body>
+
+<div class=%1$sjumbotron text-center%1$s>
+  <h1>@{drugName_ar}    My First Bootstrap Page</h1>
+  <p>     سعيدResize this responsive page to see the effect!</p> 
+</div>
+  
+<div class=%1$scontainer%1$s>
+  <div class=%1$srow%1$s>
+    <div class=%1$scol-sm-4%1$s>
+      <h3>Column 1</h3>
+      <p> %1$s Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p> %17$s    hhhhhh Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class=%1$scol-sm-4%1$s>
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class=%1$scol-sm-4%1$s>
+      <h3>Column 3</h3>        
+      
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+  
+  <button onClick=%1$s api('info','mmmm','55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Default</button>
+
+<button onClick=%1$s vb('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Default</button>
+<button onClick=%1$s ddk('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Defaultyyy</button>
+<button onClick=%1$s noti('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>notifi</button>
+
+<div id=%1$schart-example-chart%1$s></div>
+<a class=%1$sbtn primary%1$s id=%1$stoggle-chart-table%1$s>Show Table to Sort the Chart Series</a>
+<table id=%1$schart-example%1$s class=%1$stable table-bordered%1$s>
+  <thead><tr><th>City</th><th>Population</th></tr></thead>
+  <tbody>
+    <tr><td>Tokyo</td><td>34.4</td></tr>
+    <tr><td>Jakarta</td><td>21.8</td></tr>
+    <tr><td>New York</td><td>20.1</td></tr>
+    <tr><td>Seoul</td><td>20</td></tr>
+    <tr><td>Manila</td><td>19.6</td></tr>
+    <tr><td>Mumbai</td><td>19.5</td></tr>
+    <tr><td>Sao Paulo</td><td>19.1</td></tr>
+    <tr><td>Mexico City</td><td>18.4</td></tr>
+    <tr><td>Dehli</td><td>18</td></tr>
+    <tr><td>Osaka</td><td>17.3</td></tr>
+    <tr><td>Cairo</td><td>16.8</td></tr>
+    <tr><td>Kolkata</td><td>15</td></tr>
+    <tr><td>Los Angeles</td><td>14.7</td></tr>
+    <tr><td>Shanghai</td><td>14.5</td></tr>
+    <tr><td>Moscow</td><td>13.3</td></tr>
+    <tr><td>Beijing</td><td>12.8</td></tr>
+    <tr><td>Buenos Aires</td><td>12.4</td></tr>
+    <tr><td>Guangzhou</td><td>11.8</td></tr>
+    <tr><td>Shenzhen</td><td>11.7</td></tr>
+    <tr><td>Istanbul</td><td>11.2</td></tr>
+  </tbody>
+</table>
+
+<table class=%1$stable table-dark table-hover%1$s>
+  <thead>
+    <tr>
+      <th scope=%1$scol%1$s>#</th>
+      <th scope=%1$scol%1$s>Name</th>
+      <th scope=%1$scol%1$s>Surname</th>
+      <th scope=%1$scol%1$s>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope=%1$srow%1$s>1</th>
+      <td>Eugene</td>
+      <td>Stepnov</td>
+      <td>@e93</td>
+    </tr>
+    <tr>
+      <th scope=%1$srow%1$s>2</th>
+      <td>Mark</td>
+      <td>Dever</td>
+      <td>@md111</td>
+    </tr>
+    <tr>
+      <th scope=%1$srow%1$s>3</th>
+      <td>John</td>
+      <td>Piper</td>
+      <td>@piper</td>
+    </tr>
+  </tbody>
+</table>
+<table data-toggle=%1$stable%1$s>
+      <thead>
+        <tr>
+          <th>Item ID</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Item 1</td>
+          <td>$1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Item 2</td>
+          <td>$2</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+<div class=%1$scontainer%1$s>
+  <div class=%1$srow mt-3%1$s>
+    <div class=%1$scol-3%1$s></div>
+    <div class=%1$scol-6%1$s>
+      <div class=%1$stable-responsive%1$s>
+        <table id=%1$sdataTable%1$s class=%1$stable table-hover%1$s>
+          <thead>
+            <tr>
+              <th scope=%1$scol%1$s>GUID</th>
+              <th scope=%1$scol%1$s>Username</th>
+              <th scope=%1$scol%1$s>Score</th>
+              <th scope=%1$scol%1$s>Rating</th>
+              <th scope=%1$scol%1$s>Attempts</th>
+              <th scope=%1$scol%1$s>Last login</th>
+              <th scope=%1$scol%1$s>Joined</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1012</th>
+              <td>hamsterclover</td>
+              <td>4,230</td>
+              <td>9</td>
+              <td>3</td>
+              <td>2020-01-24 19:52:28</td>
+              <td>2018-05-21 22:10:21</td>
+            </tr>
+            <tr>
+              <th>1013</th>
+              <td>cellofruit</td>
+              <td>4,126</td>
+              <td>7</td>
+              <td>3</td>
+              <td>2020-01-21 11:05:16</td>
+              <td>2019-02-05 17:41:19</td>
+            </tr>
+            <tr>
+              <th>1014</th>
+              <td>enchantingsun</td>
+              <td>4,085</td>
+              <td>5</td>
+              <td>4</td>
+              <td>2020-01-22 18:44:33</td>
+              <td>2019-03-28 12:16:02</td>
+            </tr>
+            <tr>
+              <th>1015</th>
+              <td>antdory</td>
+              <td>4,139</td>
+              <td>7</td>
+              <td>5</td>
+              <td>2020-01-25 18:12:58</td>
+              <td>2019-06-07 11:44:37</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class=%1$scol-3%1$s></div>
+  </div>
+</div>
+
+<div class=%1$scontainer%1$s>
+    <table class=%1$stable table-bordered%1$s id=%1$sdataTable%1$s width=%1$s100%%1$s cellspacing=%1$s0%1$s>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>86,000</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>433,060</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>162,700</td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>372,000</td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>137,500</td>
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>327,900</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class=%1$scontainer%1$s style=%1$smargin-top:150px%1$s>
+    <h1>Folium Data Table Example</h1>
+    <input type=%1$stext%1$s id=%1$ssearchBox%1$s placeholder=%1$ssearch here%1$s />
+    <table id=%1$sfoliumTableId%1$s class=%1$stable%1$s></table>
+    <p class=%1$smt-2%1$s><button id=%1$sadd%1$s class=%1$sbtn btn-danger%1$s>Add</button>
+    <button id=%1$sdelete%1$s class=%1$sbtn btn-danger%1$s>Delete</button>
+    <button id=%1$supdate%1$s class=%1$sbtn btn-danger%1$s>Update</button>
+    <button id=%1$sclear%1$s class=%1$sbtn btn-danger%1$s>Clear</button></p>
+  </div>
+</div>
+
+  
+  
+     <script>
+  const tableSettings = {
+  //Required
+        columns : [
+                    {columnId : %1$susername%1$s, displayText  : %1$sUsername%1$s},
+                    {columnId : %1$sname%1$s, displayText  : %1$sName%1$s},
+                    {columnId : %1$ssurname%1$s, displayText  : %1$sSurname%1$s},
+                    {columnId : %1$semailAddress%1$s, displayText  : %1$sE-mail Address%1$s},
+                    {columnId : %1$sage%1$s, displayText  : %1$sAge%1$s, dataType : 'integer'},
+                    {columnId : %1$sphoneNumber%1$s, displayText  : %1$sPhone Number%1$s},
+                    {columnId : %1$snationality%1$s, displayText  : %1$sNationality%1$s},
+                    {columnId : %1$slocation%1$s, displayText  : %1$sLocation%1$s}
+                  ],
+  //Required
+        rows: [
+                {username: 'jsmith', name : %1$sJohn%1$s, surname : %1$sSmith%1$s, emailAddress : 'foo@bar.com', age : 30, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'},
+                {username: 'jasmith', name : %1$sJane%1$s, surname : %1$sSmith%1$s, emailAddress : '', age : 29, phoneNumber : '', nationality : '', location : ''},
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+                ,
+                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}
+              ],
+              sortable : true,
+              searching:true,
+              editable : true,
+              pagination : {active : true, size : 5},
+    };
+
+// Inject Folium functionality to the HTML table by providing its id.
+const foliumTable = $('#foliumTableId').FoliumTable(tableSettings);
+$('#searchBox').on('keyup',function(){
+    const searchBoxText = $('#searchBox').val();
+
+    foliumTable.search(searchBoxText);
+
+    // Optional search searchBoxText in zeroth column (first column)
+    foliumTable.search(searchBoxText, 0);
+});
+$('#add').on('click', function(){
+  foliumTable.addRow({username: 'asatou', name : %1$sAlan%1$s, surname : %1$sWatts%1$s, emailAddress : 'awatts@foobar.com', age : 58, phoneNumber : '+1 111 111 111', nationality : 'British', location : 'California/USA'});
+});
+$('#delete').on('click', function(){
+  foliumTable.deleteRows([0, 1]);
+});
+$('#update').on('click', function(){
+  foliumTable.updateRow(0, {username: 'newUsername'});
+});
+$('#clear').on('click', function(){
+  foliumTable.clear();
+});
+</script>
+    
+  
+</body>
+</html>
+
+",
+"html_value":"[
+{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#QMark#, #ViewName#:#name#},
+{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#http://192.168.1.100:8080/admin3/dist/folium.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+
+{#keyName#:#Authorization#,#KeyValue#:#http://192.168.1.100:8080/admin3/dist/folium.css#,#KeyType#:#htmltag#, #ViewName#:#nameu#},
+{#keyName#:#Authorization#,#KeyValue#:#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js#,#KeyType#:#htmltag#, #ViewName#:#nameu#}
+
+
+
+]",
+
+"m_url":"file:///android_asset6/themes/bootstrap.min.css",
+"Use_Url":false,
+"image_auto":true,
+"enab_java":true
+
+}
+    }]},
+    
+    
+  "delete": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "80dp",
+    "layout_height": "wrap_content",
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "background":"#c48866",
+    "children":[
+    
+    {
+       "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_marginTop": "0dp",
+        "gravity": "center",
+        "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+        "textSize": "18sp",
+        "text": "@{delete.my[0].data}"
+},
+{
+       "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "10dp",
+        "gravity": "center",
+        "textColor": "@color/white",
+        "textSize": "18sp",
+        "text": "@{delete.my[0].data}"
+}
+
+],
+    "layout_height": "50dp"},
+
+          
+
+{"type": "TextView",
+                  "data_primary":"bbkkuuip"
+                  ,
+                  "layout_height": "55dp",
+                  "layout_width": "match_parent",
+                  "padding":"0dp",
+                  "margin":"50dp",
+                  "gravity": "center",
+                  "text":"هل تريد الحذف",
+      "mm": "0"
+      
+                  
+                  
+                  
+},
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "خروج",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"message",
+                  "enabled":true,
+                  "DisableWehen":"1",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             
+          "typeAction" :"Cancel",
+          
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#@mid@#,#pic#:#@pic@#,#typ#:#@op@#,#name#:#@name@#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbcancelk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "حفظ",
+                  "PrograssName":"saveprograss",
+                  "key_value_show":"0",
+                  "enabled":true,
+                  "Save_before_refresh":"0",
+                  "DisableWehen":"vvbbii",
+                  "Key_from_response":"data",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}
+,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}
+,{#data_id#:#mideltyp#,#data_set#:#mideltyp#,#data_get#:#mideltyp#},
+
+{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},
+{#data_id#:#midel#,#data_set#:#midel#,#data_get#:#midel#}
+
+]",
+
+"api_body":"
+          [{#head#:[{#typ1#:#1#,#userID#:#0#,#alfraID#:#0#,#stockID#:#0#,#username#:#0#,#enab#:#0#,#typ2#:#0#,#IDforupdate#:#0#,#allwith#:#0#,#sandookID#:#0#,#parcount#:#0#,#parmnam#:#24#}],#pramname#:[{#paramvalue#:[#%3$s#,#%1$s#,#%1$s#, #%5$s#,#%1$s#,#%1$s#,#%1$s#,#%1$s#, #%5$s#]}]}]",            
+        "Api_Header":"[
+{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}
+ ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}
+
+]",
+  "api_method":"post",
+          "api_url":"http://0.168.1.101:80/api/desin/uidesin"
+          ,
+
+
+          "typeAction" :"SaveData",
+          
+
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbbii", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+ {
+                  "type": "ProgressBar",
+                  "layout_height": "50dp",
+                  "layout_width": "90dp",
+                  "gravity": "center",
+                  "mm":2,
+                  
+                   "data_primary":"delprograss",
+                  "visibility":"gone",
+                  "style_bar":{
+                  "color_bar":"#2cdb99",
+                  "typ_bar":"3"
+},
+                                  "typ_bar":"3",
+           
+                  "text": "ADD gh CART"
+
+                  } ,
+ {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+             "data_primary":"midel", 
+             "visibility":"gone",
+           "text":"@{fn:isNull(@{delete.my[0].id}, '0',@{delete.my[0].id})}",
+        "textColor": "#ffaa77",
+        "textSize": "32sp"
+   
+      },
+      
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "visibility":"gone",
+        "textSize": "22sp",
+        "data_primary":"mideltyp", 
+        "text":"@{fn:isNull(@{delete.my[0].typ}, '0',@{delete.my[0].typ})}"
+      }
+    ]
+  }
+  ,
+  "card1": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"العنوان",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    },
+    
+      
+  "card2": {
+  
+  
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               
+               "layout_marginRight":"0dp",
+             
+               "children":[{
+    "type": "CardView",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "150dp",
+  "background":"@drawable/blue_btn_bkg",
+  "layout_margin":"5dp",
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "vertical",
+        "layout_height": "match_parent",
+    "layout_width": "match_parent",
+  "background":"@drawable/blue_btn_bkg",
+  "children": [
+{
+ "type": "LinearLayout",
+    "orientation": "horizontal",
+        "layout_height": "50dp",
+    "layout_width": "match_parent",
+  "background":"#eff4ff",
+  "children": [{
+  
+  
+  
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        
+        "gravity": "center",
+             "data_primary":"midelk", 
+     
+           "text":"المجموعة",
+        "textColor": "@color/blue_A200",
+        "textSize": "25sp"
+   
+      
+  
+
+}]
+
+
+}
+
+]
+  
+    
+    }]}]
+
+    }
+    
+    
+  
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+
+
+#######
+
+
+
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+ 
+      "children": [
+      
+      
+      
+      
+     {
+                  "type": "AppBarLayout",
+      "layout_width": "match_parent",
+      "layout_height": "50dp",
+        
+                  "textColor": "#000000",
+                  "textSize": "12sp",
+                  "children":[
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "wrap_content",
+      "orientation": "horizontal",
+      
+      "children": [
+        
+{
+            "type": "EditText",
+            "layout_width": "150dp",
+            "layout_height": "50dp",
+            "hint":"بحث",
+            
+                     "data_primary":"recycleserchh",
+            "background":"@drawable/h_round",            
+            "textSize": "14sp",
+               "Serach_typ":"none",
+               "Web_Script":"none",
+               "Web_ViewName":"recycleserchhm",
+"Serach_id":"recycleserchh"
+            
+          },
+
+ {
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "background":"@drawable/addbtn",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenDrawer",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"overall2",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "background":"@drawable/addbtn",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenFragment",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"web",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "background":"@drawable/ic_live",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+         
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenMain",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"X",
+          "main_header":"card1",
+          "main_body":"card1#card2#card1#card1#card2#card1#card2#card1#card1#card2",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                  "background":"@drawable/ic_live",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+         
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenBottom",
+          "FragmentID":"mfragmenttxx",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayout",
+               "data_primary":"vvbbk", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}
+
+
+,
+
+{
+                  "type": "Button",
+                  "layout_height": "45dp",
+                  "layout_width": "45dp",
+                  "gravity": "center",
+                      "id":"myk",
+                  "background":"@drawable/ic_live",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+         
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenFragment",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"RecyclerViewExampleProdact",
+               "data_primary":"overall11", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}
+
+
+
+
+ 
+]
+      }
+
+
+]
+},
+
+
+
+{
+                  "type": "ExpandLinearLayout",
+                  "orientation": "vertical",
+                  "layout_height": "wrap_content",
+                  "layout_width": "match_parent",
+                  
+                  "children": [
+             {
+
+      "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "50dp",
+              "background":"#ffcc33"
+
+},
+{
+
+      "type": "include",
+          "layout": "AlertDialogLayout",
+    "tname":"SimpleDataBindingExample",
+        
+          "paddingBottom": "0dp"
+
+}
+
+]},
+        
+        {
+                  "type": "LinearLayout",
+                  "orientation": "vertical",
+                  "layout_width": "match_parent",
+                  "layout_marginTop": "8dp",
+                  "children": [
+             {
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  "text": "ييحفظ تجر7666يبي",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenAlert",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayout",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  "text": "javascriptload",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"LoadJava",
+          "FragmentID":"myweb",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"ddk('from bandar Ameen');",
+               "data_primary":"vvbib", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "id":"bandar",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  "text": "ييحفظ تجر7666يبي",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenFragment",
+          "FragmentID":"mfragmentt",
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1373#,#pic#:#htttttpvvvvvvvvvvvvvvvvvvv#,#typ#:#4#,#name#:#99999888888mohammmmmmmmmm8999#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"SimpleDataBindingExample",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+}
+
+
+
+
+
+,
+{
+"type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+    
+    "id":"mfragmentt",
+    "data_primary":"mfragmentt"
+    
+
+
+},
+{
+
+      "type": "include",
+          "layout": "web",
+        
+          "paddingBottom": "0dp"
+
+}
+
+
+
+
+]
+
+}]
+}

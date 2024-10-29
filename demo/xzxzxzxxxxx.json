@@ -1,0 +1,3876 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_marginTop": "0dp",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "wab",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "Unit_Name": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "10dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "10dp",
+    "starticon": "@drawable/addbtn",
+    "lboxcolor": "@color/green",
+    "lhint": "اسم الوحدة",
+    "id": "Unit_Name",
+    "data_primary": "Unit_Name",
+    "d_NullValue": true,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawable/addbtn",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "tooltipText": "اسم الوحدة",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": true
+  },
+  "UnitID": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "10dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "10dp",
+    "starticon": "@drawable/addbtn",
+    "lboxcolor": "@color/green",
+    "lhint": "رقم الوحدة",
+    "data_primary": "UnitID",
+    "d_NullValue": true,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawable/addbtn",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "tooltipText": "اسم الوحدة",
+        "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,@{ID_unit},4, fromfour,7,0)}",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": false,
+    "id": "UnitID"
+  },
+  "RelativeLttayoutExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RelativeLayout",
+        "layout_width": "match_parent",
+        "layout_height": "100dp",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "id": "center",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "text": "Center",
+            "textColor": "#323232",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginBottom": "4dp",
+            "layout_above": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginTop": "4dp",
+            "layout_below": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginLeft": "4dp",
+            "layout_toRightOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginRight": "4dp",
+            "layout_toLeftOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "layout_height": "70dp",
+            "layout_width": "120dp",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitCenter",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+          }
+        ]
+      }
+    ]
+  },
+  "Data_Layout": {
+    "tags": [
+      "alpha",
+      "beta",
+      "gamma",
+      "delta",
+      "niner"
+    ]
+  },
+  "card1": {
+    "type": "RippleLayout",
+    "ralfa": "10",
+    "rdrotion": "10",
+    "roverlay": "false",
+    "rround": "50",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "rhover": "true",
+    "rcolor": "#fada65",
+    "layout_marginRight": "0dp",
+    "children": [
+      {
+        "type": "CardView",
+        "click_from": "5",
+        "typeAction": "View_Edit",
+        "click_from_datak": "{#my#:[{medata:#name#}]}",
+        "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+        "orientation": "vertical",
+        "layout_width": "150dp",
+        "layout_height": "150dp",
+        "elevation": "20dp",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "background": "@drawable/blue_btn_bkg",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_height": "50dp",
+                "layout_width": "match_parent",
+                "background": "#eff4ff",
+                "children": [
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center",
+                    "data_primary": "midelk",
+                    "text": "@{k[1]}",
+                    "textColor": "@color/blue_A200",
+                    "textSize": "20sp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "expandmy": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "layout_marginTop": "10dp",
+    "gravity": "right",
+    "orientation": "vertical",
+    "ViewEx": {
+      "Expand": {
+        "type": "ExpandLayoutView",
+        "layout_width": "30dp",
+        "layout_height": "30dp",
+        "ViewEx": {
+          "ViewEx_View": {
+            "type": "HorizontalScrollView",
+            "orientation": "horizontal",
+            "scrollbars": "none",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "children": [
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  },
+                  {
+                    "type": "include",
+                    "layout": "card1",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample"
+                  }
+                ]
+              }
+            ]
+          },
+          "ViewEx_Color": "@color/green",
+          "ViewEx_down": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "30dp",
+            "background": "@drawableFont/fa_arrow_up_solid/3/40/#ffffff"
+          },
+          "ViewEx_up": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "30dp",
+            "background": "@drawableFont/fa_arrow_down_solid/3/40/#ffffff"
+          }
+        },
+        "orientation": "vertical"
+      },
+      "index_icon": 1,
+      "ExpandIconLayout": {
+        "type": "LinearLayout",
+        "layout_width": "wrap_content",
+        "layout_marginRight": "5dp",
+        "layout_height": "wrap_content",
+        "background": "@color/blue_A200",
+        "elevation": "10dp",
+        "gravity": "center",
+        "orientation": "horizontal",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_weight": 2,
+            "gravity": "center",
+            "data_primary": "midelkui",
+            "text": "       ",
+            "textColor": "@color/white",
+            "textSize": "15sp"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_weight": 2,
+            "gravity": "center",
+            "data_primary": "midelkui",
+            "text": "باقات يمن موبايل",
+            "textColor": "@color/white",
+            "textSize": "15sp"
+          }
+        ]
+      }
+    }
+  },
+  "mainmnue": {
+    "type": "TabLayoutView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "paddingBottom": "0dp",
+    "orientation": "vertical",
+    "Tab_Content1": {
+      "Content_Type": "2",
+      "Header_ID": "hello125",
+      "Body_ID": "hello127",
+      "mchild": {
+        "type": "LinearLayout",
+        "id": "hellgo126",
+        "data_primary": "hellog126",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "tname": "SimpleDataBindingExample",
+        "children": [
+          {
+            "type": "ScrollView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "Setting": {
+              "ScrollModes": 2
+            },
+            "children": [
+              {
+                "type": "RelativeLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "paddingTop": "0dp",
+                "orientation": "vertical",
+                "gravity": "right",
+                "children": [
+                  {
+                    "type": "CardView",
+                    "click_from": "5",
+                    "typeAction": "View_Edit",
+                    "click_from_datak": "{#my#:[{medata:#name#}]}",
+                    "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.a_name},@{my.a_email},@{my.a_picuser},@{my.a_id})}",
+                    "orientation": "vertical",
+                    "layout_gravity": "center",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "id": "k",
+                    "layout_alignParentBottom": false,
+                    "layout_alignParentRight": true,
+                    "layout_marginBottom": "-50dp",
+                    "elevation": "20dp",
+                    "background": "@drawable/blue_btn_bkg",
+                    "layout_marginLeft": "20dp",
+                    "layout_marginRight": "20dp",
+                    "gravity": "right",
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "gravity": "center",
+                        "direction": "right",
+                        "paddingTop": "0dp",
+                        "orientation": "vertical",
+                        "data_primary": "hello125"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "CardView",
+                    "text": "fabsggggffff",
+                    "layout_alignParentBottom": false,
+                    "layout_alignParentRight": true,
+                    "children": [
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "gravity": "center",
+                        "direction": "right",
+                        "paddingTop": "50dp",
+                        "layout_marginLeft": "10dp",
+                        "layout_marginRight": "10dp",
+                        "paddingBottom": "10dp",
+                        "orientation": "vertical",
+                        "children": [
+                          {
+                            "type": "ScrollView",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "Setting": {
+                              "ScrollModes": 2
+                            },
+                            "children": [
+                              {
+                                "type": "LinearLayout",
+                                "layout_width": "match_parent",
+                                "layout_height": "wrap_content",
+                                "gravity": "center",
+                                "direction": "right",
+                                "paddingTop": "10dp",
+                                "layout_marginLeft": "0dp",
+                                "layout_marginRight": "0dp",
+                                "paddingBottom": "10dp",
+                                "orientation": "vertical",
+                                "data_primary": "hello127"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "backgroundx": {
+                      "@": {
+                        "type": "shape",
+                        "content": {
+                          "type": "shape",
+                          "shape": "rectangle",
+                          "children": [
+                            {
+                              "type": "solid",
+                              "color": "#ffcc33"
+                            },
+                            {
+                              "type": "corners",
+                              "color": "#ffcc33",
+                              "angle": 20,
+                              "radius": 30,
+                              "topLeftRadius": 10,
+                              "topRightRadius": 10,
+                              "bottomLeftRadius": 10,
+                              "bottomRightRadius": 50
+                            }
+                          ]
+                        },
+                        "color": "#ffcc33"
+                      }
+                    },
+                    "layout_below": "k",
+                    "layout_centerHorizontal": true,
+                    "id": "m",
+                    "layout_marginBottom": "0dp",
+                    "layout_marginLeft": "5dp",
+                    "layout_marginRight": "5dp",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "tname": "SimpleDataBindingExample",
+                    "background": {
+                      "type": "shape",
+                      "shape": "rectangle",
+                      "Shape_Path": {
+                        "Path_Width": 14,
+                        "Path_Height": 14,
+                        "Path_WidthA": 24,
+                        "Path_HeightA": 164,
+                        "Path_Object": [
+                          {
+                            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                            "Path_color": "7cb342"
+                          }
+                        ]
+                      },
+                      "children": [
+                        {
+                          "type": "corners",
+                          "color": "#ffcc33",
+                          "angle": 20,
+                          "radius": "10dp",
+                          "topLeftRadius": "10dp",
+                          "topRightRadius": "10dp",
+                          "bottomLeftRadius": "10dp",
+                          "bottomRightRadius": "10dp"
+                        },
+                        {
+                          "type": "solid",
+                          "color": "#ffcc33",
+                          "angle": 20,
+                          "radius": 10,
+                          "topLeftRadius": 50,
+                          "topRightRadius": 50,
+                          "bottomLeftRadius": 50,
+                          "bottomRightRadius": 50
+                        },
+                        {
+                          "type": "stroke",
+                          "color": "#E52B50",
+                          "width": "0dp",
+                          "dashWidth": "0dp",
+                          "radius": 10,
+                          "topLeftRadius": 50,
+                          "topRightRadius": 50,
+                          "bottomLeftRadius": 50,
+                          "bottomRightRadius": 50
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Content_Fragment": {
+        "type": "CommonLayout",
+        "data_primary": "bandband",
+        "layout_width": "match_parent",
+        "kmm": "55",
+        "layout_height": "wrap_content",
+        "layout_margin": "10dp",
+        "Common_data": {
+          "Common_UnderLine": 80,
+          "Common_UnderLineGravity": 0,
+          "Common_UnderLineH": 0,
+          "Common_UnderLineIconMargin": 0,
+          "Common_UnderLineColor": "#ffcc44",
+          "Common_UnderLineTextColor": "#ffffff",
+          "Common_UnderLineSelectTextColor": "#ffffff"
+        },
+        "table_show_view": "kk#child#parent",
+        "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+      },
+      "Content_Pager": {
+        "type": "FrameLayout",
+        "layout_width": "match_parent",
+        "layout_height": "500dp",
+        "id": "hhhhhhhhhh",
+        "table_show_view": "kk#child#parent",
+        "main_body": "card1#card2#card1#card1#card2#card1#card2#card1#card1#card2"
+      },
+      "Content_Radius": "5",
+      "Content_Style": "0",
+      "Content_margin": "0",
+      "Content_Color": "ffffff#ffffff#ffffff#438afe#438afe#ffffff",
+      "Content_Data": [
+        {
+          "ContentTitle": "الرئيسية",
+          "ContentColor": "#438afe",
+          "ContentMain": "2",
+          "ContentMainCount": 3,
+          "Content_Select_Start": false,
+          "ContentType": "card1",
+          "ContentView": "card1",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "الرئيسية",
+          "ContentColor": "#438afe",
+          "ContentMain": "2",
+          "ContentMainCount": 3,
+          "Content_Select_Start": false,
+          "ContentType": "card1",
+          "ContentView": "card1",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        },
+        {
+          "ContentTitle": "الرصيد",
+          "ContentColor": "#438afe",
+          "ContentMain": "card1#card2#card1#card2#card1#card2#card1#card2#card1",
+          "ContentMainCount": 3,
+          "Content_Select_Start": true,
+          "ContentType": "form",
+          "ContentView": "form",
+          "ImageSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#E52B50"
+          },
+          "ImageUnSelect": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          }
+        }
+      ]
+    },
+    "data_primary": "mfragmenttk8kkk"
+  },
+  "form": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "data_primary": "tt",
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "10dp",
+          "topRightRadius": "10dp",
+          "bottomLeftRadius": "10dp",
+          "bottomRightRadius": "10dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    },
+    "layout_height": "700dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#438afe",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "0dp",
+              "dashWidth": "0dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}",
+            "BarWating": {
+              "type": "WaitingView",
+              "layout_width": "90dp",
+              "layout_height": "50dp",
+              "paddingLeft": "60dp",
+              "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+              "layout_marginEnd": "50dp",
+              "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+              "lboxcolor": "@color/green",
+              "data_primary": "waittingk",
+              "d_NullValue": false,
+              "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+              "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+              "gravity": "right",
+              "paddingRight": "5dp",
+              "paddingTop": "0dp",
+              "enabled": true,
+              "proper": {
+                "A_type_style": "WAVE",
+                "A_alpha": 50,
+                "A_color": "ffffff",
+                "A_Dalay": 100,
+                "A_start": true
+              },
+              "k": "gggffhfhfhf"
+            }
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,تعديل الوحدة,4, fromfour,7,اضافة وحدة)}"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "include",
+        "layout": "urlparser",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "UnitID",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "Unit_Name",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "Wati",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "layout_marginTop": "0dp",
+        "layout_height": "match_parent",
+        "children": [
+          {
+            "type": "Button",
+            "layout_height": "wrap_content",
+            "layout_width": "150dp",
+            "layout_gravity": "center",
+            "layout_marginTop": "0dp",
+            "text": "رجوع",
+            "Event": {
+              "Event_Type": "CloseDialog",
+              "Name": "form"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#438afe",
+                  "angle": 20,
+                  "radius": "5dp",
+                  "topLeftRadius": "5dp",
+                  "topRightRadius": "5dp",
+                  "bottomLeftRadius": "5dp",
+                  "bottomRightRadius": "5dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#438afe",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#ffcc33",
+                  "width": "3dp",
+                  "dashWidth": "5dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            },
+            "textColor": "#ffffff"
+          },
+          {
+            "type": "include",
+            "layout": "data_from",
+            "tname": "SimpleDataBindingExample"
+          }
+        ]
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "textColor": "#ffaa77",
+        "textSize": "32sp",
+        "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,@{ID_unit},4, fromfour,7,0)}",
+        "data_primary": "mtextkk",
+        "visibility": "gone"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "text": "@{fn:Change_Value(@{Set_Data[0].View_Type},0,2,3,14,4, fromfour,7,13)}",
+        "data_primary": "mtextk",
+        "visibility": "gone"
+      },
+      {
+        "type": "ProgressBar",
+        "layout_height": "50dp",
+        "layout_width": "90dp",
+        "gravity": "center",
+        "mm": 1,
+        "data_primary": "saveprograssk",
+        "visibility": "gone",
+        "style_bar": {
+          "color_bar": "#2cdb81",
+          "typ_bar": "1"
+        },
+        "text": "ADD gh CART"
+      }
+    ]
+  },
+  "Item_A": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation": "@anim/fade_in",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "focusable": false,
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "focusable": false,
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "focusable": false,
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "focusable": false,
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kk",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "focusable": false,
+                        "table_filedname": "name",
+                        "layout_marginRight": "0dp",
+                        "text": "@{unit_name}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "focusable": false,
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تعععععديل",
+                            "layout_marginRight": "0dp",
+                            "focusable": false,
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "SelectItem",
+                                "focusable": false,
+                                "typeActionName": "myautoprimary",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+                                "onClickk": "m@{tag}",
+                                "background": "@drawableFont/fa_edit/2/40/#438afe",
+                                "Event": {
+                                  "Event_Type": "Show_Dialog_With_Set_Data",
+                                  "Name": "form",
+                                  "Set_Data": [
+                                    {
+                                      "View_Id": "NoView",
+                                      "Type_Process": "5",
+                                      "Value_Process": "14",
+                                      "View_Type": "3"
+                                    },
+                                    {
+                                      "View_Id": "UnitID",
+                                      "Type_Process": "5",
+                                      "Value_Process": "ID_unit",
+                                      "View_Type": "A"
+                                    },
+                                    {
+                                      "View_Id": "Unit_Name",
+                                      "Type_Process": "5",
+                                      "Value_Process": "unit_name",
+                                      "View_Type": "A"
+                                    },
+                                    {
+                                      "View_Id": "mtext",
+                                      "Type_Process": "5",
+                                      "Value_Process": "mnbbbbbbb",
+                                      "View_Type": "Av"
+                                    },
+                                    {
+                                      "View_Id": "NoView",
+                                      "Type_Process": "5",
+                                      "Value_Process": "تعديل ",
+                                      "View_Type": "Av"
+                                    },
+                                    {
+                                      "View_Id": "waittk",
+                                      "Type_Process": "5",
+                                      "Value_Process": "تعديل gggggggggg",
+                                      "View_Type": "0"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "focusable": false,
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "focusable": false,
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_trash_alt/2/60/#438afe"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Item_B": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "table_show_view": "kk#child#parent",
+    "paddingBottom": "0dp",
+    "animation": "@anim/fade_in",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "focusable": false,
+        "rcolor": "#fada65",
+        "children": [
+          {
+            "type": "CardView",
+            "layout_marginLeft": "5dp",
+            "layout_marginRight": "5dp",
+            "layout_marginTop": "5dp",
+            "layout_marginBottom": "5dp",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "focusable": false,
+            "children": [
+              {
+                "type": "LinearLayout",
+                "text": "@{my}",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "orientation": "vertical",
+                "gravity": "right",
+                "focusable": false,
+                "table_show_view": "kk#child#parent",
+                "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                "children": [
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "horizontal",
+                    "text": "forheader",
+                    "gravity": "right",
+                    "focusable": false,
+                    "table_show_view": "kk#child#parent",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "children": [
+                      {
+                        "type": "TextView",
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "id": "kk",
+                        "background": "@color/green",
+                        "table_column": "0",
+                        "focusable": false,
+                        "table_filedname": "name",
+                        "layout_marginRight": "0dp",
+                        "text": "@{unit_name}"
+                      },
+                      {
+                        "type": "LinearLayout",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "orientation": "horizontal",
+                        "gravity": "right",
+                        "focusable": false,
+                        "children": [
+                          {
+                            "type": "RippleLayout",
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "تععععkعديل",
+                            "layout_marginRight": "0dp",
+                            "focusable": false,
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "SelectItem",
+                                "focusable": false,
+                                "typeActionName": "myautoprimary",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#2#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{a_name},@{a_email},@{a_picuser},@{a_id})}",
+                                "onClickk": "m@{tag}",
+                                "background": "@drawableFont/fa_edit/2/40/#438afe",
+                                "Event": {
+                                  "Event_Type": "Show_Dialog_With_Set_Data",
+                                  "Name": "AlertDialogLayout",
+                                  "Set_Data": [
+                                    {
+                                      "View_Id": "name",
+                                      "Type_Process": "5",
+                                      "Value_Process": "drugName_ar",
+                                      "View_Type": "A"
+                                    },
+                                    {
+                                      "View_Id": "email",
+                                      "Type_Process": "5",
+                                      "Value_Process": "id",
+                                      "View_Type": "A"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "RippleLayout",
+                            "focusable": false,
+                            "ralfa": "10",
+                            "rdrotion": "10",
+                            "roverlay": "false",
+                            "rround": "50",
+                            "layout_width": "35dp",
+                            "layout_height": "35dp",
+                            "rhover": "true",
+                            "rcolor": "#fada65",
+                            "tooltipText": "حذف",
+                            "layout_marginRight": "0dp",
+                            "children": [
+                              {
+                                "type": "Button",
+                                "text": "",
+                                "layout_height": "35dp",
+                                "layout_width": "35dp",
+                                "click_from": "5",
+                                "typeAction": "View_Edit",
+                                "focusable": false,
+                                "typeActionName": "delete",
+                                "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+                                "click_from_datak": "{#my#:[{medata:#name#}]}",
+                                "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+                                "onClick": "m@{tag}",
+                                "background": "@drawableFont/fa_trash_alt/2/60/#438afe"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "text": "forooter",
+                    "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                    "childern": [
+                      {
+                        "type": "Button",
+                        "text": "mmmmm",
+                        "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                        "layout_height": "50dp",
+                        "layout_width": "50dp"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data_from": {
+    "type": "Button",
+    "layout_height": "wrap_content",
+    "layout_width": "150dp",
+    "layout_gravity": "center",
+    "layout_marginTop": "0dp",
+    "text": "حفظ",
+    "data_primary": "Save_button",
+    "Error_Message": {
+      "Event_Type": "ShowCookie",
+      "Name": "kMM",
+      "M": "1",
+      "T": "1",
+      "Title": "رسالة تنبية ",
+      "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+      "ColorA": "ffffff",
+      "ColorB": "ffffff",
+      "ColorC": "d3212d",
+      "Locations": "b",
+      "Duration": 5000,
+      "Anim_Type": 0,
+      "AutoDismiss": true,
+      "SweepDismiss": true,
+      "Custome_View": {
+        "type": "CardView",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "right",
+            "focusable": false,
+            "background": "@color/red_A200",
+            "orientation": "vertical",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "50dp",
+                "layout_height": "50dp",
+                "layout_gravity": "center",
+                "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "10dp",
+                "gravity": "center",
+                "textColor": "@color/white",
+                "textSize": "18sp",
+                "text": "@{fn:format('%s, %s',@{fn:format('%s, %s', @{Result.nameValuePairs.data},   @{Result.message})} ,   @{Result.message})}"
+              }
+            ]
+          }
+        ]
+      },
+      "Icon": {
+        "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "background": "@drawableFont/fa_edit/2/40/#ffffff"
+      },
+      "Set_Data": [
+        {
+          "View_Id": "mywebr",
+          "Type_Process": "5",
+          "Value_Process": "kkm(\"#@\")",
+          "View_Type": "55"
+        }
+      ],
+      "data": {
+        "me": "@{Result}"
+      }
+    },
+    "Success_Message": {
+      "Event_Type": "ShowCookie",
+      "Name": "kMM",
+      "M": "1",
+      "T": "1",
+      "Title": "رسالة تنبية ",
+      "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+      "ColorA": "ffffff",
+      "ColorB": "ffffff",
+      "ColorC": "d3212d",
+      "Locations": "b",
+      "Duration": 5000,
+      "Anim_Type": 0,
+      "AutoDismiss": true,
+      "SweepDismiss": true,
+      "Custome_View": {
+        "type": "CardView",
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "background": "@drawable/blue_btn_bkg",
+        "layout_margin": "5dp",
+        "children": [
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "right",
+            "focusable": false,
+            "background": "@color/green",
+            "orientation": "vertical",
+            "children": [
+              {
+                "type": "ImageView",
+                "layout_width": "50dp",
+                "layout_height": "50dp",
+                "layout_gravity": "center",
+                "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "10dp",
+                "gravity": "center",
+                "textColor": "@color/white",
+                "textSize": "18sp",
+                "text": "@{Result.data[0].col2}"
+              }
+            ]
+          }
+        ]
+      },
+      "Icon": {
+        "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "background": "@drawableFont/fa_edit/2/40/#ffffff"
+      },
+      "Set_Data": [
+        {
+          "View_Id": "mywebr",
+          "Type_Process": "5",
+          "Value_Process": "kkm(\"#@\")",
+          "View_Type": "55"
+        }
+      ]
+    },
+    "Event": {
+      "Event_Type": "SendAll",
+      "Name": "pic",
+      "Return_Data": [
+        {
+          "Return_Type": "55",
+          "Return_To_Message": [
+            {
+              "Response_Key_Name": "0",
+              "View_Id": "55",
+              "Message_Text": "hhhh",
+              "View_Type": "A"
+            }
+          ]
+        }
+      ],
+      "Return_To_View": [
+        {
+          "View_Id": "saveprograss",
+          "Type_Process": "1",
+          "Value_Process": "1",
+          "View_Type": "A"
+        }
+      ],
+      "Use_Volley": true,
+      "Show_Confirm": {
+        "type": "include",
+        "layout": "Confirm_Message",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "tname": "SimpleDataBindingExample"
+      },
+      "Before_Process": [
+        {
+          "View_Id": "saveprograssk",
+          "Type_Process": "1",
+          "Value_Process": "1",
+          "View_Type": "A"
+        },
+        {
+          "View_Id": "Save_button",
+          "Type_Process": "3",
+          "Value_Process": "3",
+          "View_Type": "A"
+        },
+        {
+          "View_Id": "waittk",
+          "Type_Process": "0",
+          "Value_Process": "3gggggggg",
+          "View_Type": "0"
+        }
+      ],
+      "After_Process": [
+        {
+          "View_Id": "saveprograssk",
+          "Type_Process": "2",
+          "Value_Process": "2",
+          "View_Type": "A"
+        },
+        {
+          "View_Id": "Save_button",
+          "Type_Process": "4",
+          "Value_Process": "4",
+          "View_Type": "A"
+        }
+      ],
+      "Finsh_Process": [
+        {
+          "View_Id": "55",
+          "Type_Process": "22",
+          "Value_Process": "55",
+          "View_Type": "A"
+        }
+      ],
+      "Sender_Data": [
+        {
+          "Data_From_View": [
+            {
+              "View_Id": "Unit_Name",
+              "View_Type": "0",
+              "Index_ID": 0
+            },
+            {
+              "View_Id": "UnitID",
+              "View_Type": "0",
+              "Index_ID": 1
+            },
+            {
+              "View_Id": "pic",
+              "View_Type": "6",
+              "Index_ID": 2
+            },
+            {
+              "View_Id": "0",
+              "View_Type": "API_Acess",
+              "Index_ID": 3
+            },
+            {
+              "View_Id": "mtextk",
+              "View_Type": "A",
+              "Index_ID": 4
+            }
+          ],
+          "API_Data": [
+            {
+              "Method_Type": "POST",
+              "Type_Url": "local0",
+              "Url": "http://192.168.1.103:80/api/desin/uidesin",
+              "Response_Data": [
+                {
+                  "Key_Name": "#{datxa}",
+                  "Key_Value": "data",
+                  "Key_Type": "Select_Key"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Refresh_Key"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Offline_Key"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "0",
+                  "Key_Type": "Show_As_Message"
+                }
+              ],
+              "Request_Header": [
+                {
+                  "Key_Name": "Content-Type",
+                  "Key_Value": "application/json; charset=UTF-8",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "Accept-Charset",
+                  "Key_Value": "utf-8",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "curdtype",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "curdtypek",
+                  "Key_Value": "2",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "admin",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "id",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "namee",
+                  "Key_Value": "gggggggg1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "parentid",
+                  "Key_Value": "1",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "heee",
+                  "Key_Value": "%2$s",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "heeemmm",
+                  "Key_Value": "%2$s",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "heeettff",
+                  "Key_Value": "%3$s",
+                  "Key_Type": "5555"
+                },
+                {
+                  "Key_Name": "Authorization",
+                  "Key_Value": "%4$s",
+                  "Key_Type": "5555"
+                }
+              ],
+              "Request_Body": [
+                {
+                  "Key_Name": "bbbb",
+                  "Key_Value": "[{\"head\":[{\"typ1\":\"1\",\"userID\":\"0\",\"alfraID\":\"0\",\"stockID\":\"0\",\"username\":\"0\",\"enab\":\"0\",\"typ2\":\"1\",\"IDforupdate\":\"0\",\"allwith\":\"0\",\"sandookID\":\"0\",\"parcount\":\"0\",\"parmnam\":\"24\"}],\"pramname\":[{\"paramvalue\":[\"%5$s\",\"%1$s\",\"A2\", \"0\",\"A3\",\"A4\",\"A5\",\"A6\", \"%2$s\"]}]}]",
+                  "Key_Type": "5555"
+                }
+              ],
+              "Request_Query": []
+            }
+          ]
+        }
+      ]
+    },
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": "5dp",
+          "topLeftRadius": "5dp",
+          "topRightRadius": "5dp",
+          "bottomLeftRadius": "5dp",
+          "bottomRightRadius": "5dp"
+        },
+        {
+          "type": "solid",
+          "color": "#438afe",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#ffcc33",
+          "width": "3dp",
+          "dashWidth": "5dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    },
+    "textColor": "#ffffff"
+  },
+  "Confirm_Message": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "data_primary": "tt",
+    "layout_height": "wrap_content",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#438afe",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "هل تريد الإستمرار!"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "children": [
+          {
+            "type": "Button",
+            "layout_height": "?Theme_AppCompat:actionBarSize",
+            "layout_width": "150dp",
+            "gravity": "center",
+            "layout_marginTop": "0dp",
+            "text": "موافق",
+            "Event": {
+              "Event_Type": "OkDialog",
+              "Name": "tt"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#ffcc33",
+                  "angle": 20,
+                  "radius": "10dp",
+                  "topLeftRadius": "10dp",
+                  "topRightRadius": "10dp",
+                  "bottomLeftRadius": "10dp",
+                  "bottomRightRadius": "10dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#ffffff",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#E52B50",
+                  "width": "0dp",
+                  "dashWidth": "0dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            }
+          },
+          {
+            "type": "Button",
+            "layout_height": "?Theme_AppCompat:actionBarSize",
+            "layout_width": "150dp",
+            "gravity": "center",
+            "layout_marginTop": "0dp",
+            "text": "إلغاء",
+            "Event": {
+              "Event_Type": "CloseDialog",
+              "Name": "tt"
+            },
+            "background": {
+              "type": "shape",
+              "shape": "rectangle",
+              "Shape_Path": {
+                "Path_Width": 14,
+                "Path_Height": 14,
+                "Path_WidthA": 24,
+                "Path_HeightA": 164,
+                "Path_Object": [
+                  {
+                    "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                    "Path_color": "7cb342"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "type": "corners",
+                  "color": "#ffcc33",
+                  "angle": 20,
+                  "radius": "10dp",
+                  "topLeftRadius": "10dp",
+                  "topRightRadius": "10dp",
+                  "bottomLeftRadius": "10dp",
+                  "bottomRightRadius": "10dp"
+                },
+                {
+                  "type": "solid",
+                  "color": "#ffffff",
+                  "angle": 20,
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                },
+                {
+                  "type": "stroke",
+                  "color": "#E52B50",
+                  "width": "0dp",
+                  "dashWidth": "0dp",
+                  "radius": 10,
+                  "topLeftRadius": 50,
+                  "topRightRadius": 50,
+                  "bottomLeftRadius": 50,
+                  "bottomRightRadius": 50
+                }
+              ]
+            }
+          }
+        ],
+        "layout_height": "50dp"
+      }
+    ],
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "10dp",
+          "topRightRadius": "10dp",
+          "bottomLeftRadius": "10dp",
+          "bottomRightRadius": "10dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    }
+  },
+  "some": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "orientation": "horizontal",
+    "gravity": "right",
+    "focusable": false,
+    "children": [
+      {
+        "type": "include",
+        "layout": "Search",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "RippleLayout",
+        "focusable": false,
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "35dp",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "tooltipText": "إضافة",
+        "layout_marginRight": "10dp",
+        "children": [
+          {
+            "type": "Button",
+            "text": "",
+            "layout_height": "35dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "typeActionName": "delete",
+            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+            "click_from_datak": "{#my#:[{medata:#name#}]}",
+            "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+            "onClick": "m@{tag}",
+            "background": "@drawableFont/fa_plus_solid/1/60/#438afe",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Show_Dialog_With_Set_Data",
+              "Name": "form",
+              "Set_Data": [
+                {
+                  "View_Id": "mywebt",
+                  "Type_Process": "5",
+                  "Value_Process": "4",
+                  "View_Type": "55"
+                }
+              ]
+            }
+          }
+        ],
+        "layout_gravity": "center"
+      }
+    ]
+  },
+  "list_show": {
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "orientation": "vertical",
+    "gravity": "right",
+    "focusable": false,
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#c48866",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "الوحدات"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "include",
+        "layout": "some",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "Watib",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "include",
+        "layout": "RecycleUnit",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      }
+    ]
+  },
+  "Search": {
+    "type": "TextInputLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingLeft": "60dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+    "lboxcolor": "@color/green",
+    "lhint": "بحث",
+    "id": "Unit_NameSearch",
+    "data_primary": "Unit_NameSearch",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "children": [
+      {
+        "type": "TextInputEditText",
+        "With_Search": {
+          "ViewID": "myouto"
+        },
+        "tooltipText": "اسم الوحدة",
+        "text": "@{AlertDialogLayout.my[0].email}",
+        "paddingRight": "15dp",
+        "textAligment": "center",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": {
+          "type": "shape",
+          "shape": "rectangle",
+          "Shape_Path": {
+            "Path_Width": 14,
+            "Path_Height": 14,
+            "Path_WidthA": 24,
+            "Path_HeightA": 164,
+            "Path_Object": [
+              {
+                "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+                "Path_color": "7cb342"
+              }
+            ]
+          },
+          "children": [
+            {
+              "type": "corners",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": "10dp",
+              "topLeftRadius": "10dp",
+              "topRightRadius": "10dp",
+              "bottomLeftRadius": "10dp",
+              "bottomRightRadius": "10dp"
+            },
+            {
+              "type": "solid",
+              "color": "#ffffff",
+              "angle": 20,
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            },
+            {
+              "type": "stroke",
+              "color": "@color/blue_A200",
+              "width": "3dp",
+              "dashWidth": "5dp",
+              "radius": 10,
+              "topLeftRadius": 50,
+              "topRightRadius": 50,
+              "bottomLeftRadius": 50,
+              "bottomRightRadius": 50
+            }
+          ]
+        },
+        "textSize": "18dp",
+        "gravity": "right"
+      }
+    ],
+    "enabled": true
+  },
+  "Wati": {
+    "type": "WaitingView",
+    "layout_width": "90dp",
+    "layout_height": "50dp",
+    "paddingLeft": "60dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+    "lboxcolor": "@color/green",
+    "data_primary": "waitt",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+    "gravity": "right",
+    "paddingRight": "5dp",
+    "paddingTop": "0dp",
+    "enabled": true,
+    "proper": {
+      "A_type_style": "THREE_BOUNCE",
+      "A_alpha": 50,
+      "A_color": "438afe",
+      "A_Dalay": 100,
+      "A_start": true
+    },
+    "children": [
+      {
+        "type": "include",
+        "layout": "Search",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "RippleLayout",
+        "focusable": false,
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "35dp",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "tooltipText": "إضافة",
+        "layout_marginRight": "10dp",
+        "children": [
+          {
+            "type": "Button",
+            "text": "",
+            "layout_height": "35dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "typeActionName": "delete",
+            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+            "click_from_datak": "{#my#:[{medata:#name#}]}",
+            "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+            "onClick": "m@{tag}",
+            "background": "@drawableFont/fa_plus_solid/1/60/#438afe",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Show_Dialog_With_Set_Data",
+              "Name": "form",
+              "Set_Data": [
+                {
+                  "View_Id": "mywebt",
+                  "Type_Process": "5",
+                  "Value_Process": "4",
+                  "View_Type": "55"
+                }
+              ]
+            }
+          }
+        ],
+        "layout_gravity": "center"
+      }
+    ],
+    "k": "gggffhfhfhf"
+  },
+  "Watib": {
+    "type": "Layout_ChatViewxx",
+    "layout_width": "match_parent",
+    "layout_height": "200dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+    "lboxcolor": "@color/green",
+    "data_primary": "waittk",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+    "gravity": "right",
+    "paddingTop": "0dp",
+    "enabled": true,
+    "proper": {
+      "A_type_style": "THREE_BOUNCE",
+      "A_alpha": 50,
+      "A_color": "438afe",
+      "A_Dalay": 100,
+      "A_start": true,
+      "Show_head": true,
+      "User_Name": "wleeeeed wlwws",
+      "User_Status": "Is Online",
+      "Withweb": {
+        "function_send": "noti(\"%1$s\")",
+        "function_image": "uuui",
+        "LayWeb": {
+          "type": "include",
+          "layout": "webchat",
+          "tname": "SimpleDataBindingExample",
+          "paddingBottom": "0dp"
+        }
+      }
+    },
+    "children": [
+      {
+        "type": "include",
+        "layout": "Search",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "RippleLayout",
+        "focusable": false,
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "35dp",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "tooltipText": "إضافة",
+        "layout_marginRight": "10dp",
+        "children": [
+          {
+            "type": "Button",
+            "text": "",
+            "layout_height": "35dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "typeActionName": "delete",
+            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+            "click_from_datak": "{#my#:[{medata:#name#}]}",
+            "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+            "onClick": "m@{tag}",
+            "background": "@drawableFont/fa_plus_solid/1/60/#438afe",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Show_Dialog_With_Set_Data",
+              "Name": "form",
+              "Set_Data": [
+                {
+                  "View_Id": "mywebt",
+                  "Type_Process": "5",
+                  "Value_Process": "4",
+                  "View_Type": "55"
+                }
+              ]
+            }
+          }
+        ],
+        "layout_gravity": "center"
+      }
+    ],
+    "k": "gggffhfhfhf"
+  },
+  "urlparser": {
+    "type": "UrlView",
+    "layout_width": "match_parent",
+    "layout_height": "200dp",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+    "lboxcolor": "@color/green",
+    "data_primary": "waittkurl",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+    "gravity": "right",
+    "paddingTop": "0dp",
+    "enabled": true,
+    "proper": {
+      "Url_Address": "https://www.astooltech.com/",
+      "Url_BgColor": "ffcc33",
+      "Url_StrokeColor": "438afe",
+      "Url_Radius": 5,
+      "Url_ImagePosition": 0,
+      "A_start": true,
+      "Show_head": true,
+      "User_Name": "wleeeeed wlwws",
+      "User_Status": "Is Online"
+    },
+    "children": [
+      {
+        "type": "include",
+        "layout": "Search",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "RippleLayout",
+        "focusable": false,
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "35dp",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "tooltipText": "إضافة",
+        "layout_marginRight": "10dp",
+        "children": [
+          {
+            "type": "Button",
+            "text": "",
+            "layout_height": "35dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "typeActionName": "delete",
+            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+            "click_from_datak": "{#my#:[{medata:#name#}]}",
+            "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+            "onClick": "m@{tag}",
+            "background": "@drawableFont/fa_plus_solid/1/60/#438afe",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Show_Dialog_With_Set_Data",
+              "Name": "form",
+              "Set_Data": [
+                {
+                  "View_Id": "mywebt",
+                  "Type_Process": "5",
+                  "Value_Process": "4",
+                  "View_Type": "55"
+                }
+              ]
+            }
+          }
+        ],
+        "layout_gravity": "center"
+      }
+    ],
+    "k": "gggffhfhfhf"
+  },
+  "wab": {
+    "type": "Layout_Wait",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "d_onErrorText": "يرجي إدخال اسم الوحدة ",
+    "layout_marginEnd": "50dp",
+    "starticon": "@drawableFont/fa_search_solid/1/35/#438afe",
+    "lboxcolor": "@color/green",
+    "data_primary": "waittky",
+    "d_NullValue": false,
+    "d_OnErrorText": "يرجي إدخال اسم الوحدة",
+    "endicon": "@drawableFont/fa_plus_solid/1/60/#438afe",
+    "gravity": "right",
+    "paddingTop": "0dp",
+    "enabled": true,
+    "proper": {
+      "A_type_style": "THREE_BOUNCE",
+      "A_alpha": 50,
+      "A_color": "438afe",
+      "A_Dalay": 10000,
+      "A_start": true,
+      "proper": {
+        "A_type_style": "THREE_BOUNCE",
+        "A_alpha": 50,
+        "A_color": "438afe",
+        "A_Dalay": 100,
+        "A_start": true
+      },
+      "view": {
+        "type": "include",
+        "layout": "list_show",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      "daley": 10000,
+      "errorText": "Errrrrrror happen"
+    },
+    "children": [
+      {
+        "type": "include",
+        "layout": "Search",
+        "tname": "SimpleDataBindingExample",
+        "paddingBottom": "0dp"
+      },
+      {
+        "type": "RippleLayout",
+        "focusable": false,
+        "ralfa": "10",
+        "rdrotion": "10",
+        "roverlay": "false",
+        "rround": "50",
+        "layout_width": "35dp",
+        "layout_height": "wrap_content",
+        "rhover": "true",
+        "rcolor": "#fada65",
+        "tooltipText": "إضافة",
+        "layout_marginRight": "10dp",
+        "children": [
+          {
+            "type": "Button",
+            "text": "",
+            "layout_height": "35dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "typeActionName": "delete",
+            "api_base": "\n          [\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #user.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layout.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #layouts.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  },\n  {\n    #url#: #http://0.0.0.0:8080/admin3/#,\n    #murl#: #styles.json#,\n    #m#: #0#\n  }\n]\n          ",
+            "click_from_datak": "{#my#:[{medata:#name#}]}",
+            "click_from_data": "@{fn:format('{#my#:[{#typ#:#15#,#name#:#%s#,#email#:#%s#,#pic#: #%s#,#id#: #%s#}]}',@{my.unit_name},@{my.a_email},@{my.a_picuser},@{my.ID_unit})}",
+            "onClick": "m@{tag}",
+            "background": "@drawableFont/fa_plus_solid/1/60/#438afe",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Show_Dialog_With_Set_Data",
+              "Name": "form",
+              "Set_Data": [
+                {
+                  "View_Id": "mywebt",
+                  "Type_Process": "5",
+                  "Value_Process": "4",
+                  "View_Type": "55"
+                }
+              ]
+            }
+          }
+        ],
+        "layout_gravity": "center"
+      }
+    ],
+    "k": "gggffhfhfhf"
+  },
+  "RecycleUnit": {
+    "type": "SwipeRefreshLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+    "data_primary": "recyuuiopxxx",
+    "on_sweep": "recycleserchhm",
+    "on_sweep_typ": "myouto",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "ARecyclerView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+        "filter": "unit_name",
+        "data_primary": "myouto",
+        "Error_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "@{Result.Message}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+          ]
+        },
+        "Recycle": {
+          "typ": "1"
+        },
+        "mdata": {
+          "Layout_manager": {
+            "Layout_Type": "LinearLayoutManager",
+            "Orientation": "vertical",
+            "Reverse": false,
+            "Layout_Space": 10,
+            "Layout_Row": 3
+          },
+          "Data_From": {
+            "Event_Type": "CheckNull",
+            "animation": {
+              "a_enter": true,
+              "a_enter_step": true,
+              "a_expand": true,
+              "a_expand_out": true,
+              "a_anim_rev": true,
+              "a_anim_for": true,
+              "a_load_start": true,
+              "a_drage": true,
+              "CountItem": 5,
+              "a_endless_count": 20,
+              "a_endless_page": 20,
+              "a_use_endless": true,
+              "a_use_offline": false,
+              "a_use_top": false
+            },
+            "Set_Data": [
+              {
+                "View_Id": "myouto",
+                "Type_Process": "5",
+                "Key_Process": "5uurrrthello_hello_hello",
+                "Value_Key": "Unit_Name"
+              }
+            ],
+            "Name": "pic",
+            "Custome_Dataa": [
+              {
+                "Name": "helloooo"
+              }
+            ],
+            "Multiple_Views": {
+              "Filter_Views": [
+                {
+                  "Key_Name": "unit_name"
+                }
+              ],
+              "Def_Views": {
+                "type": "include",
+                "layout": "Item_A",
+                "tname": "SimpleDataBindingExample",
+                "KeyName": "recycleserchhm",
+                "paddingBottom": "0dp",
+                "FilterName": "Unit_Name",
+                "data": {
+                  "user": "@{items}",
+                  "my": "@{items[$index]}"
+                }
+              },
+              "a_enable": "1",
+              "MultipleViews": [
+                {
+                  "v_Name": "Item_B",
+                  "v_ColumnName": "ID_unit",
+                  "v_EqualValue": "20",
+                  "v_id": "1"
+                }
+              ]
+            },
+            "Return_Data": [
+              {
+                "Return_Type": "55",
+                "Return_To_Message": [
+                  {
+                    "Response_Key_Name": "0",
+                    "View_Id": "55",
+                    "Message_Text": "hhhh",
+                    "View_Type": "A"
+                  }
+                ]
+              }
+            ],
+            "Return_To_View": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              }
+            ],
+            "Use_Volley": true,
+            "Before_Process": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "1",
+                "Value_Process": "1",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "vvbbiikk",
+                "Type_Process": "3",
+                "Value_Process": "3",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "bandband",
+                "Type_Process": "15",
+                "Value_Process": "0",
+                "Custome_Value": {
+                  "Tab_Id": 2,
+                  "Tab_count": 20
+                },
+                "View_Type": "2"
+              }
+            ],
+            "After_Process": [
+              {
+                "View_Id": "saveprograss",
+                "Type_Process": "2",
+                "Value_Process": "2",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "bandband",
+                "Type_Process": "15",
+                "Value_Process": "0",
+                "Custome_Value": {
+                  "Tab_Id": 2,
+                  "Tab_count": 20
+                },
+                "View_Type": "2"
+              },
+              {
+                "View_Id": "vvbbiikk",
+                "Type_Process": "4",
+                "Value_Process": "4",
+                "View_Type": "A"
+              },
+              {
+                "View_Id": "recyuuiopxxx",
+                "Type_Process": "5",
+                "Value_Process": "5",
+                "View_Type": "A"
+              }
+            ],
+            "Finsh_Process": [
+              {
+                "View_Id": "recyuuiopxxx",
+                "Type_Process": "22",
+                "Value_Process": "55",
+                "View_Type": "A"
+              }
+            ],
+            "Sender_Data": [
+              {
+                "Data_From_View": [
+                  {
+                    "View_Id": "0",
+                    "View_Type": "5",
+                    "Index_ID": 0
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "6",
+                    "Index_ID": 1
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "6",
+                    "Index_ID": 2
+                  },
+                  {
+                    "View_Id": "0",
+                    "View_Type": "API_Acess",
+                    "Index_ID": 3
+                  }
+                ],
+                "API_Data": [
+                  {
+                    "Method_Type": "POST",
+                    "Type_Url": "local0",
+                    "Url": "http://192.168.1.103:80/api/desin/uidesin",
+                    "Response_Data": [
+                      {
+                        "Key_Name": "FromMyRecycle",
+                        "Key_Value": "data#data",
+                        "Key_Type": "Select_Key"
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "1",
+                        "Key_Type": "Refresh_Key"
+                      },
+                      {
+                        "Key_Name": "unitData",
+                        "Key_Value": "1",
+                        "Key_Type": "Offline_Key"
+                      },
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "0",
+                        "Key_Type": "Show_As_Message"
+                      }
+                    ],
+                    "Request_Header": [
+                      {
+                        "Key_Name": "heee",
+                        "Key_Value": "%1$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "heeemmm",
+                        "Key_Value": "%2$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "heeettff",
+                        "Key_Value": "%3$s",
+                        "Key_Type": "5555"
+                      },
+                      {
+                        "Key_Name": "Authorization",
+                        "Key_Value": "%4$s",
+                        "Key_Type": "5555"
+                      }
+                    ],
+                    "Request_Body": [
+                      {
+                        "Key_Name": "bbbb",
+                        "Key_Value": "[{\"head\":[{\"typ1\":\"1\",\"userID\":\"0\",\"alfraID\":\"0\",\"stockID\":\"0\",\"username\":\"0\",\"enab\":\"0\",\"typ2\":\"1\",\"IDforupdate\":\"0\",\"allwith\":\"0\",\"sandookID\":\"0\",\"parcount\":\"0\",\"parmnam\":\"24\"}],\"pramname\":[{\"paramvalue\":[\"16\",\"%1$s\",\"A2\", \"0\",\"A3\",\"A4\",\"A5\",\"A6\", \"132\"]}]}]",
+                        "Key_Type": "5555"
+                      }
+                    ],
+                    "Request_Query": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "AlertDialogLayout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "focusable": false,
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "focusable": false,
+        "background": "#80000000",
+        "children": [
+          {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "layout_marginTop": "0dp",
+            "gravity": "center",
+            "focusable": false,
+            "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+            "textSize": "18sp",
+            "text": "@{AlertDialogLayout.my[0].data}"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginTop": "10dp",
+            "gravity": "center",
+            "id": "mykk",
+            "focusable": false,
+            "textColor": "@color/white",
+            "textSize": "18sp",
+            "text": "الوحدات"
+          }
+        ],
+        "layout_height": "50dp"
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "focusable": false,
+        "Use_As_Search": "55",
+        "d_onErrorText": "الاسم",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "اسم الوحدة",
+        "id": "name",
+        "data_primary": "name",
+        "d_NullValue": true,
+        "d_OnErrorText": "يرجي إدخال الاسم",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "InputType": "text",
+            "tooltipText": "mmmmm",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "text": "@{AlertDialogLayout.my[0].name}",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "TextInputLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingLeft": "16dp",
+        "d_onErrorText": "يرجي ادخال البريد الالكتروني ",
+        "layout_marginEnd": "50dp",
+        "starticon": "@drawable/addbtn",
+        "lboxcolor": "@color/green",
+        "lhint": "رقم الوحدة",
+        "id": "email",
+        "data_primary": "email",
+        "d_NullValue": false,
+        "d_OnErrorText": "يرجي ادخال البريد الالكتروني ",
+        "endicon": "@drawable/addbbtn",
+        "gravity": "right",
+        "paddingRight": "16dp",
+        "paddingTop": "8dp",
+        "children": [
+          {
+            "type": "TextInputEditText",
+            "tooltipText": "البريد الإلكتروني ",
+            "text": "@{AlertDialogLayout.my[0].email}",
+            "paddingRight": "15dp",
+            "textAligment": "center",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "background": "@drawable/h_round",
+            "textSize": "18dp",
+            "gravity": "right"
+          }
+        ]
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "رجوع",
+        "Event": {
+          "Event_Type": "CloseDialog",
+          "Name": "AlertDialogLayout"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "Savedataa",
+        "data_primary": "vvbbiikkmy",
+        "Error_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "t@{value}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+          ]
+        },
+        "Success_Message": {
+          "Event_Type": "ShowCookie",
+          "Name": "kMM",
+          "M": "1",
+          "T": "1",
+          "Title": "رسالة تنبية ",
+          "Message": "  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh",
+          "ColorA": "ffffff",
+          "ColorB": "ffffff",
+          "ColorC": "d3212d",
+          "Locations": "b",
+          "Duration": 5000,
+          "Anim_Type": 0,
+          "AutoDismiss": true,
+          "SweepDismiss": true,
+          "Custome_View": {
+            "type": "CardView",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "@drawable/blue_btn_bkg",
+            "layout_margin": "5dp",
+            "children": [
+              {
+                "type": "LinearLayout",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "gravity": "right",
+                "focusable": false,
+                "background": "@color/green",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "layout_width": "50dp",
+                    "layout_height": "50dp",
+                    "layout_gravity": "center",
+                    "background": "@drawableFont/fa_wrench_solid/1/40/#ffffff"
+                  },
+                  {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginTop": "10dp",
+                    "gravity": "center",
+                    "textColor": "@color/white",
+                    "textSize": "18sp",
+                    "text": "@{Result}"
+                  }
+                ]
+              }
+            ]
+          },
+          "Icon": {
+            "type": "ImageView",
+            "layout_width": "50dp",
+            "layout_height": "50dp",
+            "background": "@drawableFont/fa_edit/2/40/#ffffff"
+          },
+          "Set_Data": [
+            {
+              "View_Id": "mywebr",
+              "Type_Process": "5",
+              "Value_Process": "kkm(\"#@\")",
+              "View_Type": "55"
+            }
+          ]
+        },
+        "Event": {
+          "Event_Type": "SendAll",
+          "Name": "pic",
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Use_Volley": true,
+          "Show_Confirm": {
+            "type": "include",
+            "layout": "tt",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "tname": "SimpleDataBindingExample"
+          },
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "55",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "name",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "email",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "pic",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                  "Url": "http://0.0.0.0:8080/admin3/uu.php",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "#{datxa}",
+                      "Key_Value": "data#message",
+                      "Key_Type": "Select_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "Content-Type",
+                      "Key_Value": "application/json; charset=UTF-8",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "Accept-Charset",
+                      "Key_Value": "utf-8",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "curdtype",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "curdtypek",
+                      "Key_Value": "2",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "admin",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "id",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "namee",
+                      "Key_Value": "gggggggg1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "parentid",
+                      "Key_Value": "1",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "vvvvvvv",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [
+                    {
+                      "Key_Name": "bbbb",
+                      "Key_Value": "{\"databody\":[{\"databodymmmmm\":[{\"databodymmmmmxxxxxxxxxxx\":\"2\",\"currID\":\"1\",\"typ\":\"2\",\"month\":\"0\",\"typsender\":\"1\",\"buyorsalse\":\"1\",                   \"groupID\":\"0\",\"prodID\":\"0\",\"barcode\":\"0\"}],\"currID\":\"1\",\"typ\":\"4\",\"month\":\"0\",\"typsender\":\"1\",\"buyorsalse\":\"1\",\"groupID\":\"0\",\"prodID\":\"0\",\"barcode\":\"0\"}]}",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "testerOk",
+        "Event": {
+          "Event_Type": "OkDialog",
+          "Name": "AlertDialogLayout"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "show",
+        "Event": {
+          "Event_Type": "ShowDialog",
+          "Name": "tt"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "حفظ",
+        "PrograssName": "saveprograss",
+        "key_value_show": "0",
+        "enabled": true,
+        "Save_before_refresh": "0",
+        "DisableWehen": "vvbbii",
+        "Key_from_response": "data",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#},\n{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}\n\n]",
+        "api_body": "\n                  {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#%5$s#,#pic#:#%4$s#,#typ#:#%3$s#,#name#:#%1$s#,                   #email#:#%2$s#,#prodID#:#0#,#barcode#:#0#}]}",
+        "Api_Header": "[\n{#keyName#:#Authorization#,#KeyValue#:#nameu#,#KeyType#:#apikey#, #ViewName#:#nameu#}\n ,{#keyName#:#name#,#KeyValue#:#name#,#KeyType#:#apikey#, #ViewName#:#name#}\n\n]",
+        "api_method": "post",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeAction": "SaveData",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbii",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "cxxuuu",
+        "data_primary": "vvbbiikk",
+        "Event": {
+          "Event_Type": "CheckNull",
+          "Name": "pic",
+          "Return_Data": [
+            {
+              "Return_Type": "55",
+              "Return_To_Message": [
+                {
+                  "Response_Key_Name": "0",
+                  "View_Id": "55",
+                  "Message_Text": "hhhh",
+                  "View_Type": "A"
+                }
+              ]
+            }
+          ],
+          "Return_To_View": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            }
+          ],
+          "Before_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "1",
+              "Value_Process": "1",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "3",
+              "Value_Process": "3",
+              "View_Type": "A"
+            }
+          ],
+          "After_Process": [
+            {
+              "View_Id": "saveprograss",
+              "Type_Process": "2",
+              "Value_Process": "2",
+              "View_Type": "A"
+            },
+            {
+              "View_Id": "vvbbiikk",
+              "Type_Process": "4",
+              "Value_Process": "4",
+              "View_Type": "A"
+            }
+          ],
+          "Finsh_Process": [
+            {
+              "View_Id": "55",
+              "Type_Process": "22",
+              "Value_Process": "55",
+              "View_Type": "A"
+            }
+          ],
+          "Sender_Data": [
+            {
+              "Data_From_View": [
+                {
+                  "View_Id": "name",
+                  "View_Type": "5",
+                  "Index_ID": 0
+                },
+                {
+                  "View_Id": "email",
+                  "View_Type": "6",
+                  "Index_ID": 1
+                },
+                {
+                  "View_Id": "pic",
+                  "View_Type": "6",
+                  "Index_ID": 2
+                },
+                {
+                  "View_Id": "0",
+                  "View_Type": "API_Acess",
+                  "Index_ID": 3
+                }
+              ],
+              "API_Data": [
+                {
+                  "Method_Type": "POST",
+                  "Type_Url": "local0",
+                  "Url": "https://www.astooltech.com/api/v1/u",
+                  "Response_Data": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Select_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Refresh_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Offline_Key"
+                    },
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "0",
+                      "Key_Type": "Show_As_Message"
+                    }
+                  ],
+                  "Request_Header": [
+                    {
+                      "Key_Name": "heee",
+                      "Key_Value": "%1$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeemmm",
+                      "Key_Value": "%2$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "heeettff",
+                      "Key_Value": "%3$s",
+                      "Key_Type": "5555"
+                    },
+                    {
+                      "Key_Name": "vvvvvvv",
+                      "Key_Value": "%4$s",
+                      "Key_Type": "5555"
+                    }
+                  ],
+                  "Request_Body": [],
+                  "Request_Query": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "خروج",
+        "PrograssName": "saveprograss",
+        "key_value_show": "data",
+        "enabled": true,
+        "DisableWehen": "1",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}\n,\n{#data_id#:#mid#,#data_set#:#mid#,#data_get#:#mid#}\n\n]",
+        "typeAction": "Cancel",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#@mid@#,#pic#:#@pic@#,#typ#:#@op@#,#name#:#%1$s#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",
+        "api_method": "POST",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbcancelk",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "Button",
+        "layout_height": "?Theme_AppCompat:actionBarSize",
+        "layout_width": "150dp",
+        "gravity": "center",
+        "layout_marginTop": "0dp",
+        "text": "موافق",
+        "PrograssName": "saveprograss",
+        "key_value_show": "message",
+        "enabled": true,
+        "DisableWehen": "1",
+        "show_confirm_message": "0",
+        "show_confirm_message_data": "tt",
+        "data_id": "[\n{#data_id#:#name#,#data_set#:#name#,#data_get#:#name#}\n,{#data_id#:#email#,#data_set#:#email#,#data_get#:#email#}\n,{#data_id#:#op#,#data_set#:#op#,#data_get#:#op#},\n{#data_id#:#pic#,#data_set#:#pic#,#data_get#:#pic#}\n\n]",
+        "typeAction": "OK",
+        "api_body": "\n          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#4#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currIDk#:#1#,#id#:#1377#,#pic#:#@pic@#,#typ#:#1#,#name#:#@name@#,                   #email#:#@email@#,#prodID#:#0#,#barcode#:#0#}]}",
+        "api_method": "POST",
+        "api_url": "https://www.astooltech.com/api/v1/customerastool",
+        "typeActionName": "AlertDialogLayoutkk",
+        "data_primary": "vvbbcancelm",
+        "data_api": "5555555",
+        "onClick": "@{k}",
+        "data": {
+          "k": "@{tag.mm}",
+          "hell": "mmmmmm"
+        }
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "data_primary": "op",
+        "text": "@{fn:isNull(@{AlertDialogLayout.my[0].typ}, '1',@{AlertDialogLayout.my[0].typ})}"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "data_primary": "mid",
+        "text": "@{fn:isNull(@{AlertDialogLayout.my[0].id}, '0',@{AlertDialogLayout.my[0].id})}"
+      },
+      {
+        "type": "ProgressBar",
+        "layout_height": "50dp",
+        "layout_width": "90dp",
+        "gravity": "center",
+        "mm": 1,
+        "data_primary": "saveprograss",
+        "visibility": "gone",
+        "style_bar": {
+          "color_bar": "#2cdb81",
+          "typ_bar": "1"
+        },
+        "text": "ADD gh CART"
+      }
+    ],
+    "background": {
+      "type": "shape",
+      "shape": "rectangle",
+      "Shape_Path": {
+        "Path_Width": 14,
+        "Path_Height": 14,
+        "Path_WidthA": 24,
+        "Path_HeightA": 164,
+        "Path_Object": [
+          {
+            "Path_data": "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z",
+            "Path_color": "7cb342"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": "corners",
+          "color": "#ffcc33",
+          "angle": 20,
+          "radius": "10dp",
+          "topLeftRadius": "10dp",
+          "topRightRadius": "10dp",
+          "bottomLeftRadius": "10dp",
+          "bottomRightRadius": "10dp"
+        },
+        {
+          "type": "solid",
+          "color": "#ffffff",
+          "angle": 20,
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        },
+        {
+          "type": "stroke",
+          "color": "#E52B50",
+          "width": "0dp",
+          "dashWidth": "0dp",
+          "radius": 10,
+          "topLeftRadius": 50,
+          "topRightRadius": 50,
+          "bottomLeftRadius": 50,
+          "bottomRightRadius": 50
+        }
+      ]
+    }
+  },
+  "webchat": {
+    "type": "WebView",
+    "orientation": "vertical",
+    "data_primary": "myweb",
+    "visibility": "visible",
+    "focusable": true,
+    "layout_height": "match_parent",
+    "layout_width": "match_parent",
+    "click_from_data": "@{user.name}",
+    "web_get_data": "@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+    "turl": "file:///android_asset/themes/bootstrap.min.css",
+    "DataUrl": {
+      "m_urls": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+      "Use_KeyBoard": true,
+      "Use_KeyBoardB": 50,
+      "Use_KeyBoardT": 0,
+      "use_get_data": true,
+      "update": false,
+      "enab_port": false,
+      "Use_Service": true,
+      "Use_Service_Filter": true,
+      "Use_Service_Filter_Name": "android.net.conn.CONNECTIVITY_CHANGE",
+      "Use_Service_Function": "showcokk",
+      "enab_back": true,
+      "enab_long_click": false,
+      "scroll_V": false,
+      "scroll_H": false,
+      "scroll_On_touch": false,
+      "enab_desktop": false,
+      "enab_cookies": false,
+      "enab_multiplwindow": false,
+      "enab_OverViewMode": false,
+      "enab_Open_window_Auto": true,
+      "use_error": true,
+      "m_error": "\n<!DOCTYPE html>\n<html lang=%1$sen%1$s>\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=%1$sutf-8%1$s>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n  <style>\n%4$s\n\n</style>\n<style>\n%6$s\n\n</style>\n\n<style>\n%9$s\n\n</style>\n\n  <script>\n%3$s\n</script>\n<script>\n%5$s\n</script>\n\n<script>\n%7$s\n</script>\n<script>\n%8$s\n</script>\n\n\n</head>\n<body>\n<div class=%1$sjumbotron text-center%1$s>\n  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>\n  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> \n</div>\n</body>\n</html>\n",
+      "m_html": "\n<!DOCTYPE html>\n<html lang=%1$sen%1$s>\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=%1$sutf-8%1$s>\n  <meta name=%1$sviewport%1$s content=%1$swidth=device-width, initial-scale=1%1$s>\n  <style>\n@font-face{\n    font-family:%1$smmy%1$s;\n    src:url(themes/fonts/Cairo-Bold.ttf)format(%1$struetype%1$s);\n    font-style: normal;\n    }\n    \n    \n    \n    *{\n     font-family: 'mmy';\n     -webkit-user-select: none;\n    }\n\n\n</style>\n\n\n\n<style>\n%4$s\n\n</style>\n<style>\n%6$s\n\n</style>\n\n<style>\n%9$s\n\n</style>\n<style>\n%11$s\n\n\n\n\n\n</style>\n<style>\n%15$s\n\n\n\n\n\n</style>\n\n\n<style>\n\n.table th:first-child,\n.table td:first-child {\n  position: sticky;\n  left: 0;\n  background-color: #ad6c80;\n  color: #373737;\n}\n.table td {\n  white-space: nowrap;\n}\n</style>\n\n  <script>\n%3$s\n</script>\n<script>\n%5$s\n</script>\n<script>\n%12$s\n</script>\n<script>\n%13$s\n</script>\n\n<script>\n%14$s\n</script>\n<script>\n%16$s\n</script>\n<script>\n$(function () {\n    $('#dataTable').DataTable({\n      %1$spageLength%1$s: 3,\n      %1$spaging%1$s: true,\n      %1$slengthChange%1$s: false,\n      %1$ssearching%1$s: false,\n      %1$sordering%1$s: true,\n      %1$sinfo%1$s: true,\n      %1$sautoWidth%1$s: false\n      });\n  });\n</script>\n\n<script>\n    $(document).ready(function() {\n          $('#dataTable').DataTable();\n    });\n</script>\n\n<script>\n        $(document).ready(function(){\n         \nvar touching = null;\n$('selector').each(function() {\n    this.addEventListener(%1$stouchstart%1$s, function(e) {\n        e.preventDefault();\n        touching = window.setTimeout(longTouch, 500, true);\n    }, false);\n    this.addEventListener(%1$stouchend%1$s, function(e) {\n        e.preventDefault();\n        window.clearTimeout(touching);\n    }, false);\n});\n\nfunction longTouch(e) {\n    // do something!\n}\n\n\n\n\n\n\n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n\n\nfunction  MessBoxB(messagg){\n\n\n\n\ndd(messagg);\n\n\n}\n\n        });\n        \n        \n        function msgg(typp,messagg){\n\nSwal.fire({\n    toast: false,\t\n  \n  icon: typp,\n  title: messagg,\n  showConfirmButton: false,\n  timer: 1500\n});\n}\n\nfunction api(name,email,password){\n\t\t\t\t\t\ntry{\n\n\n\n//msgg('info',email);\n\n\t\t\t\t\n\t\t\t\t//var dt=JSON.stringify( { %1$spname%1$sp:  name, %1$spemail%1$sp: email,%1$sppassword%1$sp:password} );\n\n\t\t\t\tvar uuu='mmmm';\n\t\t\t\t$.ajax({\n    url: 'https://www.astooltech.com/api/v1/u',\n    dataType: 'text',\n\n    type: 'get',\n\n      // contentType: 'application/json; charset=utf-8',\n    success: function( data, textStatus, jQxhr ){\n    \t//setTimeout(function(){ $('.btnreg').button('reset'); }, 0);\n      \nmsgg('info', data);\n if(isJson(data)){\nvar ffdd=JSON.parse(data); \nif(ffdd.success=='1'){\nmsgg('info', ffdd.message);\n}else{\nmsgg('error', ffdd.message);\n}\n}else{\nmsgg('error', data);\n}\n    },\n    error: function( jqXhr, textStatus, errorThrown ){\n    //setTimeout(function(){ $('.btnreg').button('reset'); }, 0);\n msgg('error',textStatus+'hhhhhh' );\n    }\n});\n\t\t\t\t\n\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t}catch(ddd){\n\t\t\t\t\t\t\t\nalert(ddd);\n\n}\n\t}\n\n        function ddk(vvc){\n        \nSwal.fire({\n  title: '<strong>%1$s+vvc+%1$s HTML <u>example</u></strong>',\n  icon: 'info',\n  html:\n    'سع ي د <b>bold text</b>, ' +\n    '<a href=%1$s//sweetalert2.github.io%1$s>links</a> ' +\n    'and other HTML tags',\n  showCloseButton: true,\n  showCancelButton: true,\n  focusConfirm: false,\n  confirmButtonText:\n    '<i class=%1$sfa fa-thumbs-up%1$s></i> Great!',\n  confirmButtonAriaLabel: 'Thumbs up, great!',\n  cancelButtonText:\n    '<i class=%1$sfa fa-thumbs-down%1$s></i>',\n  cancelButtonAriaLabel: 'Thumbs down'\n})\n}\n        ddk();\n        //('mmm');\n</script>\n   \n    \n    <script type=%1$stext/javascript%1$s>\n    function vb(toast) {\n        Android.AndroidFunction(toast,1);\n    }\n    \n    function showcokk(){\nvar x = document.getElementById(\"myText\").value;\nvar da=\"ShowCookie\";\n\nvar colorg=\"3b7A57\";\nif(x=='1'){\ncolorg=\"d3212d\";\n}\nvar mnv=JSON.stringify(\n{\n\n\"Event_Type\":\"ShowCookie\",\n\"Name\":\"vlayout.example.RootActivity\",\n\"Title\":\"ggggg \",\n\"Message\":x,\n\"ColorA\":\"ffffff\",\n\"ColorB\":\"ffffff\",\n\"ColorC\":colorg,\n\"Locations\":\"b\",\n\"Duration\":5000,\n\"Anim_Type\":0,\n\"AutoDismiss\":true,\n\"SweepDismiss\":true,\n\"Custome_Vieww\":{\n\"type\": \"LinearLayout\",\n      \"layout_width\": \"match_parent\",\n      \"layout_height\": \"200dp\",\n      \"background\":\"@color/green\",\n      \"orientation\": \"vertical\"\n},\n\"Icon\":{\n             \"type\": \"ImageView\",\n                  \"layout_width\": \"50dp\",\n                  \"layout_height\": \"50dp\",\n                  \"background\":\"@drawableFont/fa_edit/2/40/#ffffff\"\n}\n}\n);\nAndroid.AndroidFunctionLoadFunction(da,mnv);\n}\n    \n    \n    \n    function noti(toast) {\n        Android.AndroidFunctionNoti(toast,1);\n    }\n    function returnda(){\n\n}\n    \n    function search(input){\n//alert(input);\n  var  filter, table, tr, td, i, txtValue;\n // input = document.getElementById(\"myInput\");\n  filter = input.toUpperCase();\n  table = document.getElementById(\"chart-example\");\n  tr = table.getElementsByTagName(\"tr\");\n  for (i = 0; i < tr.length; i++) {\n    td = tr[i].getElementsByTagName(\"td\")[0];\n    if (td) {\n      txtValue = td.textContent || td.innerText;\n      if (txtValue.toUpperCase().indexOf(filter) > -1) {\n        tr[i].style.display = \"\";\n      } else {\n        tr[i].style.display = \"none\";\n      }\n    }       \n  }\n\n\n}\n    function showcook(){\nvar da=\"ShowCookie\";\nvar mnv=JSON.stringify(\n{\"Event_Type\":\"ShowCookie\",\n\"Name\":\"vlayout.example.RootActivity\",\n\"Title\":\"رسالة تنبية \",\n\"Message\":\"  dhdhdhbdhdhdjdjudhdhdhdhdytt dhdhdhhdhdhdhdhh\",\n\"ColorA\":\"ffffff\",\n\"ColorB\":\"ffffff\",\n\"ColorC\":\"d3212d\",\n\"Locations\":\"b\",\n\"Duration\":5000,\n\"Anim_Type\":0,\n\"AutoDismiss\":true,\n\"SweepDismiss\":true,\n\"Custome_View\":{\n\"type\": \"LinearLayout\",\n      \"layout_width\": \"match_parent\",\n      \"layout_height\": \"wrap_content\",\n      \"focusable\":false,\n      \"background\":\"@color/green\",\n      \"orientation\": \"vertical\",\n      \"children\":[\n{\n      \"type\": \"include\",\n      \n          \"layout\": \"AlertDialogLayout\",\n    \"tname\":\"SimpleDataBindingExample\",\n        \n          \"paddingBottom\": \"0dp\"\n}\n]\n},\n\"Icon\":{\n             \"type\": \"ImageView\",\n                  \"layout_width\": \"50dp\",\n                  \"layout_height\": \"50dp\",\n                  \"background\":\"@drawableFont/fa_edit/2/40/#ffffff\"\n}\n,\n\"Set_Data\":[\n{\n\"View_Id\":\"myweb\",\n\n\"Type_Process\":\"5\",\n\"Value_Process\":\"kkm\",\n\"View_Type\":\"55\"\n\n\n\n}\n]\n}\n\n);\n//alert(mnv);\nAndroid.AndroidFunctionLoadFunction(da,mnv);\n//return mnv;\n}\n    function loadFunction(toast) {\n   \nvar x = document.getElementById(\"myText\").value;\nvar dff=\" ggggggggg   \"; \nvar da=\"Open_Activity\";\nvar mn=\"Show_Dialog_With_Set_Data\";\n    var mnv=JSON.stringify({\n\"Event_Type\":\"Show_Dialog_With_Set_Data\",\n\"Name\":\"AlertDialogLayout\",\n\"Set_Data\":[\n{\n\"View_Id\":\"name\",\n\"Type_Process\":\"5\",\n\"Value_Process\":x,\n\"View_Type\":\"A\"\n\n},\n{\n\"View_Id\":\"email\",\n\"Type_Process\":\"5\",\n\"Value_Process\":\"5uurrrthello_hello_hello\",\n\"View_Type\":\"A\"\n\n}\n\n\n]\n\n});\n\nvar ddr=JSON.stringify({\"Name\":\"vlayout.example.RootActivity\"});\n//alert(mnv);\nvar mm=2;\nvar ww=6;\nif(mm>1){\n//alert(mnv);\n}else{\nalert(mn);\n}\n      //  Android.AndroidFunctionLoadFunction(da,ddr);\n    //  Android.AndroidFunctionLoadFunction(mn,mnv);\n    }\n    \n    function loadFunctionn(toast) {\n   \nvar x = document.getElementById(\"myText\").value;\nvar dff=\" ggggggggg   \"; \nvar da=\"Open_Activity\";\nvar mn=\"Open_Drawer\";\n    var mnv=JSON.stringify({\n\"Event_Type\":\"Open_Drawer\",\n\"Name\":\"AlertDialogLayout\",\n\"Set_Data\":[\n{\n\"View_Id\":\"name\",\n\"Type_Process\":\"5\",\n\"Value_Process\":x,\n\"View_Type\":\"A\"\n\n},\n{\n\"View_Id\":\"email\",\n\"Type_Process\":\"5\",\n\"Value_Process\":\"5uurrrthello_hello_hello\",\n\"View_Type\":\"A\"\n\n}\n\n\n]\n\n});\n\nvar ddr=JSON.stringify({\"Name\":\"vlayout.example.RootActivity\"});\n//alert(mnv);\nvar mm=2;\nvar ww=6;\nif(mm>1){\n//alert(mnv);\n}else{\n//alert(mn);\n}\n      //  Android.AndroidFunctionLoadFunction(da,ddr);\n     Android.AndroidFunctionLoadFunction(mn,mnv);\n    }\n    function sel(toast) {\n        Android.AndroidFunctionSelectFile(toast);\n    }\n    function kk(gv) {\n   var resu=Android.AndroidFunctionSelectFileResults();\n  const obj = JSON.parse(resu);\nvar uu=obj.base64Data;\nvar uuu=obj.fileType;\nvar img = document.getElementById(%1$spreview%1$s);\nimg.src = %1$sdata:image/png;base64,%1$s +uu;\nvar paragraph = document.getElementById(%1$sp%1$s);\nvar text = document.createTextNode(uuu);\n\nparagraph.appendChild(text);\n\n\n    }\n    function kkm(gv) {\n   var img = document.getElementById(%1$spreview%1$s);\nimg.src = %1$sdata:image/png;base64,%1$s +gv;\n/*var text = document.createTextNode(\"ddddddddddd\");\n\nparagraph.appendChild(text);*/\n\n\n    }\n    \n    \n    function  getdata(url){\n\nvar t=  JSON.stringify( {\n\"Event_Type\":\"Open_Activity_From_Url\",\n\"Name_Activity\":\"0\",\n\"Return_Data\":[\n{\n\"Return_Type\":\"55\",\n\n\n\"Return_To_Message\":[\n{\n\"Response_Key_Name\":\"0\",\n\"View_Id\":\"55\",\n\"Message_Text\":\"hhhh\",\n\"View_Type\":\"A\"\n\n}\n\n]\n\n\n}\n\n],\n\n\"Return_To_View\":[\n{\n\"View_Id\":\"saveprograss\",\n\"Type_Process\":\"1\",\n\"Value_Process\":\"1\",\n\"View_Type\":\"A\"\n\n}\n\n],\n\n\"Before_Process\":[\n{\n\"View_Id\":\"saveprograss\",\n\"Type_Process\":\"1\",\n\"Value_Process\":\"1\",\n\"View_Type\":\"A\"\n\n},\n{\n\"View_Id\":\"vvbbiikk\",\n\"Type_Process\":\"3\",\n\"Value_Process\":\"3\",\n\"View_Type\":\"A\"\n\n}\n\n\n],\n\"Use_Volley\":true,\n\"Show_Confirm\":{\n\"type\": \"include\",\n          \"layout\": \"tt\",\n                     \"layout_width\": \"match_parent\",\n            \"layout_height\": \"wrap_content\",\n    \"tname\":\"SimpleDataBindingExample\"\n\n}\n,\n\"After_Process\":[\n{\n\"View_Id\":\"saveprograss\",\n\"Type_Process\":\"2\",\n\"Value_Process\":\"2\",\n\"View_Type\":\"A\"\n\n},\n{\n\"View_Id\":\"vvbbiikk\",\n\"Type_Process\":\"4\",\n\"Value_Process\":\"4\",\n\"View_Type\":\"A\"\n\n}\n\n],\n\"Finsh_Process\":[\n{\n\"View_Id\":\"55\",\n\"Type_Process\":\"22\",\n\"Value_Process\":\"55\",\n\"View_Type\":\"A\"\n\n}\n\n],\n\"Sender_Data\":[\n{\n\"Data_From_View\":[\n{\"View_Id\":\"name\",\n\"View_Type\":\"5\",\n\"Index_ID\":0\n},\n{\"View_Id\":\"email\",\n\"View_Type\":\"6\",\n\"Index_ID\":1\n},\n{\"View_Id\":\"pic\",\n\"View_Type\":\"6\",\n\"Index_ID\":2\n},\n{\"View_Id\":\"0\",\n\"View_Type\":\"API_Acess\",\n\"Index_ID\":3\n}\n\n\n]\n,\"API_Data\":[\n{\n\"Method_Type\":\"POST\",\n\"Type_Url\":\"local0\",\n\"Url\":url,\n\"Response_Data\":[\n{\n\"Key_Name\":\"#{datxa}\",\n\"Key_Value\":\"data#message\",\n\"Key_Type\":\"Select_Key\"\n},\n{\n\"Key_Name\":\"heee\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"Refresh_Key\"\n},\n{\n\"Key_Name\":\"heee\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"Offline_Key\"\n}\n,\n{\n\"Key_Name\":\"heee\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"Show_As_Message\"\n}\n\n\n\n]\n,\n\n\n\"Request_Header\":[\n{\n\"Key_Name\":\"heee\",\n\"Key_Value\":\"1$s\",\n\"Key_Type\":\"5555\"\n},\n{\n\"Key_Name\":\"heeemmm\",\n\"Key_Value\":\"2$s\",\n\"Key_Type\":\"5555\"\n},\n{\n\"Key_Name\":\"heeettff\",\n\"Key_Value\":\"3$s\",\n\"Key_Type\":\"5555\"\n},\n{\n\"Key_Name\":\"vvvvvvv\",\n\"Key_Value\":\"4$s\",\n\"Key_Type\":\"5555\"\n}\n\n\n\n\n]\n,\n\"Request_Body\":[],\n\n\"Request_Query\":[]\n\n\n\n}\n\n\n]\n}\n\n]\n}\n\n\n);\n\n\n\n\n\n\n\n\nreturn t;\n\n}\n  function servi(gv) {\n   msgg('info', gv);\nvar paragraph = document.getElementById(%1$sp%1$s);\nvar text = document.createTextNode(gv);\n\nparagraph.appendChild(text);\n\n\n    }  \n    \n    function api(name,email,password){\n\t\t\t\t\t\ntry{\n\n\n\n//msgg('info',email);\n\n\t\t\t\t//name='https://www.astooltech.com/api/v1/b';\n\t\t\t\t//var dt=JSON.stringify( { %1$spname%1$sp:  name, %1$spemail%1$sp: email,%1$sppassword%1$sp:password} );\n\n\t\t\t\tvar uuu='mmmm';\n\t\t\t\t$.ajax({\n    url: name,\n    dataType: 'text',\n\n    type: 'get',\n\n      // contentType: 'application/json; charset=utf-8',\n    success: function( data, textStatus, jQxhr ){\n    \t//setTimeout(function(){ $('.btnreg').button('reset'); }, 0);\n      var paragraph = document.getElementById(%1$sp%1$s);\n\nvar x = document.getElementById(\"myText\").value;\nvar mnn='Open_Activity_From_Url';\nvar mn='Open_Activity_From_String';\nvar mnkk='ShowShitDialogSetData';\nvar mnkky='love';\nvar ddrl=JSON.stringify({\"Name\":mnkky,\n\"Set_Data\":[\n{\n\"View_Id\":\"name\",\n\"Type_Process\":\"5\",\n\"Value_Process\":x,\n\"View_Type\":\"A\"\n\n},\n{\n\"View_Id\":\"emailggx\",\n\"Type_Process\":\"5\",\n\"Value_Process\":\"5uurrrthello_hello_hello\",\n\"View_Type\":\"A\"\n\n}\n\n\n]\n});\n//var ddr=JSON.stringify({\"Activity_Data\":data});\n//var text = document.createTextNode(ddr);\n//paragraph.appendChild(text);\nvar ty=getdata(name);\n//alert(ty);\n//Android.AndroidFunctionLoadFunction(mnkk,ddrl);\nAndroid.AndroidFunctionLoadFunction(mnn,ty);\n//Android.AndroidFunctionOpenActivity(data);\n//msgg('info', data);\n if(isJson(data)){\n//var ffdd=JSON.parse(data); \nif(ffdd.success=='1'){\n//msgg('info', ffdd.message);\n}else{\n//msgg('error', ffdd.message);\n}\n}else{\n//msgg('error', data);\n}\n    },\n    error: function( jqXhr, textStatus, errorThrown ){\n    //setTimeout(function(){ $('.btnreg').button('reset'); }, 0);\n msgg('error',textStatus+'hhhhhh' );\n    }\n});\n\t\t\t\t\n\n\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t}catch(ddd){\n\t\t\t\t\t\t\t\nalert(ddd);\n\n}\n\t}\n    \n    function openactt(vv){\n\t\t\t\t\t\ntry{\n\n\n\t\t\t\t$.ajax({\n    url: 'https://www.astooltech.com/api/v1/test.json',\n    dataType: 'json',\n    type: 'get',\n    contentType:%1$sapplication/x-www-form-urlencoded%1$s,\n//    data: dt,\n       beforeSend: function (xhr) {\nxhr.setRequestHeader(%1$sContent-Type%1$s,%1$sapplication/x-www-form-urlencoded; charset=UTF-8%1$s);\n   // xhr.setRequestHeader (%1$sAuthorization%1$s, resul);\nxhr.setRequestHeader(%1$sdevicenames%1$s,%1$sweb site%1$s);\n//xhr.setRequestHeader(%1$sUser-Agent%1$s,%1$swebhhhh site%1$s);\nxhr.setRequestHeader(%1$sHost%1$s,%1$swebhhhh 192.168site%1$s);\nxhr.setRequestHeader(%1$susername%1$s,%1$swebhhhh92.168site%1$s);\n//xhr.setRequestHeader(%1$susertyp%1$s,usertyp);\nxhr.setRequestHeader(%1$semail%1$s,%1$sno@email.com%1$s);\n \n},\n    success: function(data, textStatus, jQxhr ){\n    \talert('nnnnn');\n        if(isJson(data)){\n        \tvar uuu=data.toString();\nvar ffdd=JSON.parse(data);\nalert(uuu);\n}\n\n    },\n    error: function( jqXhr, textStatus, errorThrown ){\n        alert( jqXhr.responseText+textStatus+'hhhhhhh' );\n    }\n});\n\t\t\t\t\n\t\t\t\t\t\t}catch(ddd){alert(ddd);\n\n}\n\t} \n\tfunction mreg(vv){\nalert(%1$sffff%1$s);\n\n}\n</script>    \n<script>\n%7$s\n</script>\n<script>\n%8$s\n</script>\n<script>\n%10$s\n</script>\n\n</head>\n<body>\n\n<div class=%1$sjumbotron text-center%1$s>\n  <h1>@{drugName_ar}    My First Bootstrap Page</h1>\n  <p>     سعيدResize this responsive page to see the effect!</p> \n</div>\n  \n<div class=%1$scontainer%1$s>\n  <div class=%1$srow%1$s>\n    <div class=%1$scol-sm-4%1$s>\n      <h3>Column 1</h3>\n      <p  id=%1$sp%1$s>Lorem kkkkkkipsum dolor sit amet, consectetur adipisicing elit...</p>\n      \n<img id=%1$spreview%1$s src=%1$s./id.png%1$s style=%1$sdisplay: block;margin: 0 auto;max-width: 80px;margin-top: 20px;%1$s>\n                    </img>\n\n<p> %17$s    hhhhhh%17$s fff %17$s  fff  %17$s   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n    </div>\n    <div class=%1$scol-sm-4%1$s>\n      <h3>Column 2</h3>\n      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>\n      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n    </div>\n    <div class=%1$scol-sm-4%1$s>\n      <h3>Column 3</h3>        \n      \n      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n    </div>\n  </div>\n  <input type=\"text\" id=\"myText\" value=\"Mick6667788888777e66666666y\">\n<input type=\"text\" id=\"myInput\" onkeyup=\"search(1)\" placeholder=\"Search for names..\" title=\"Type in a name\">\n\n  <button onClick=%1$s api('info','mmmm','55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Default</button>\n\n<button onClick=%1$s kk('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Default</button>\n<button onClick=%1$s ddk('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>Defaultyyy</button>\n<button onClick=%1$s noti('55');%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>notifi</button>\n<button onClick=%1$ssel('kk(1)')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>selectfilebb</button>\n<button onClick=%1$sapi('http://0.0.0.0:8080/admin3/uu.php','55','66')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>openActivity</button>\n<button onClick=%1$sloadFunction('loadFunction(1)')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>LoadFunction</button>\n<button onClick=%1$sloadFunctionn('loadFunction(1)')%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>opendrawer</button>\n\n<button onClick=%1$sshowcook()%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>cooookies2</button>\n<button onClick=%1$sshowcokk()%1$s type=%1$sbutton%1$s class=%1$s btn btn-primary %1$s>openCooke</button>\n\n\n\n\n<div id=%1$schart-example-chart%1$s></div>\n<a class=%1$sbtn primary%1$s id=%1$stoggle-chart-table%1$s>Show Table to Sort the Chart Series</a>\n<table id=%1$schart-example%1$s class=%1$stable table-bordered%1$s>\n  <thead><tr><th>City</th><th>Population</th></tr></thead>\n  <tbody>\n    <tr><td>Tokyo</td><td>34.4</td></tr>\n    <tr><td>Jakarta</td><td>21.8</td></tr>\n    <tr><td>New York</td><td>20.1</td></tr>\n    <tr><td>Seoul</td><td>20</td></tr>\n    <tr><td>Manila</td><td>19.6</td></tr>\n    <tr><td>Mumbai</td><td>19.5</td></tr>\n    <tr><td>Sao Paulo</td><td>19.1</td></tr>\n    <tr><td>Mexico City</td><td>18.4</td></tr>\n    <tr><td>Dehli</td><td>18</td></tr>\n    <tr><td>Osaka</td><td>17.3</td></tr>\n    <tr><td>Cairo</td><td>16.8</td></tr>\n    <tr><td>Kolkata</td><td>15</td></tr>\n    <tr><td>Los Angeles</td><td>14.7</td></tr>\n    <tr><td>Shanghai</td><td>14.5</td></tr>\n    <tr><td>Moscow</td><td>13.3</td></tr>\n    <tr><td>Beijing</td><td>12.8</td></tr>\n    <tr><td>Buenos Aires</td><td>12.4</td></tr>\n    <tr><td>Guangzhou</td><td>11.8</td></tr>\n    <tr><td>Shenzhen</td><td>11.7</td></tr>\n    <tr><td>Istanbul</td><td>11.2</td></tr>\n  </tbody>\n</table>\n\n<table class=%1$stable table-dark table-hover%1$s>\n  <thead>\n    <tr>\n      <th scope=%1$scol%1$s>#</th>\n      <th scope=%1$scol%1$s>Name</th>\n      <th scope=%1$scol%1$s>Surname</th>\n      <th scope=%1$scol%1$s>Username</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=%1$srow%1$s>1</th>\n      <td>Eugene</td>\n      <td>Stepnov</td>\n      <td>@e93</td>\n    </tr>\n    <tr>\n      <th scope=%1$srow%1$s>2</th>\n      <td>Mark</td>\n      <td>Dever</td>\n      <td>@md111</td>\n    </tr>\n    <tr>\n      <th scope=%1$srow%1$s>3</th>\n      <td>John</td>\n      <td>Piper</td>\n      <td>@piper</td>\n    </tr>\n  </tbody>\n</table>\n<table data-toggle=%1$stable%1$s>\n      <thead>\n        <tr>\n          <th>Item ID</th>\n          <th>Item Name</th>\n          <th>Item Price</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>1</td>\n          <td>Item 1</td>\n          <td>$1</td>\n        </tr>\n        <tr>\n          <td>2</td>\n          <td>Item 2</td>\n          <td>$2</td>\n        </tr>\n      </tbody>\n    </table>\n\n\n\n<div class=%1$scontainer%1$s>\n  <div class=%1$srow mt-3%1$s>\n    <div class=%1$scol-3%1$s></div>\n    <div class=%1$scol-6%1$s>\n      <div class=%1$stable-responsive%1$s>\n        <table id=%1$sdataTable%1$s class=%1$stable table-hover%1$s>\n          <thead>\n            <tr>\n              <th scope=%1$scol%1$s>GUID</th>\n              <th scope=%1$scol%1$s>Username</th>\n              <th scope=%1$scol%1$s>Score</th>\n              <th scope=%1$scol%1$s>Rating</th>\n              <th scope=%1$scol%1$s>Attempts</th>\n              <th scope=%1$scol%1$s>Last login</th>\n              <th scope=%1$scol%1$s>Joined</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <th>1012</th>\n              <td>hamsterclover</td>\n              <td>4,230</td>\n              <td>9</td>\n              <td>3</td>\n              <td>2020-01-24 19:52:28</td>\n              <td>2018-05-21 22:10:21</td>\n            </tr>\n            <tr>\n              <th>1013</th>\n              <td>cellofruit</td>\n              <td>4,126</td>\n              <td>7</td>\n              <td>3</td>\n              <td>2020-01-21 11:05:16</td>\n              <td>2019-02-05 17:41:19</td>\n            </tr>\n            <tr>\n              <th>1014</th>\n              <td>enchantingsun</td>\n              <td>4,085</td>\n              <td>5</td>\n              <td>4</td>\n              <td>2020-01-22 18:44:33</td>\n              <td>2019-03-28 12:16:02</td>\n            </tr>\n            <tr>\n              <th>1015</th>\n              <td>antdory</td>\n              <td>4,139</td>\n              <td>7</td>\n              <td>5</td>\n              <td>2020-01-25 18:12:58</td>\n              <td>2019-06-07 11:44:37</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n    <div class=%1$scol-3%1$s></div>\n  </div>\n</div>\n\n<div class=%1$scontainer%1$s>\n    <table class=%1$stable table-bordered%1$s id=%1$sdataTable%1$s width=%1$s100%%1$s cellspacing=%1$s0%1$s>\n        <thead>\n            <tr>\n                <th>Name</th>\n                <th>Position</th>\n                <th>Office</th>\n                <th>Age</th>\n                <th>Salary</th>\n            </tr>\n        </thead>\n        <tfoot>\n            <tr>\n                <th>Name</th>\n                <th>Position</th>\n                <th>Office</th>\n                <th>Age</th>\n                <th>Salary</th>\n            </tr>\n        </tfoot>\n        <tbody>\n            <tr>\n                <td>Tiger Nixon</td>\n                <td>System Architect</td>\n                <td>Edinburgh</td>\n                <td>61</td>\n                <td>320,800</td>\n            </tr>\n            <tr>\n                <td>Garrett Winters</td>\n                <td>Accountant</td>\n                <td>Tokyo</td>\n                <td>63</td>\n                <td>170,750</td>\n            </tr>\n            <tr>\n                <td>Ashton Cox</td>\n                <td>Junior Technical Author</td>\n                <td>San Francisco</td>\n                <td>66</td>\n                <td>86,000</td>\n            </tr>\n            <tr>\n                <td>Cedric Kelly</td>\n                <td>Senior Javascript Developer</td>\n                <td>Edinburgh</td>\n                <td>22</td>\n                <td>433,060</td>\n            </tr>\n            <tr>\n                <td>Airi Satou</td>\n                <td>Accountant</td>\n                <td>Tokyo</td>\n                <td>33</td>\n                <td>162,700</td>\n            </tr>\n            <tr>\n                <td>Brielle Williamson</td>\n                <td>Integration Specialist</td>\n                <td>New York</td>\n                <td>61</td>\n                <td>372,000</td>\n            </tr>\n            <tr>\n                <td>Herrod Chandler</td>\n                <td>Sales Assistant</td>\n                <td>San Francisco</td>\n                <td>59</td>\n                <td>137,500</td>\n            </tr>\n            <tr>\n                <td>Rhona Davidson</td>\n                <td>Integration Specialist</td>\n                <td>Tokyo</td>\n                <td>55</td>\n                <td>327,900</td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n<div class=%1$scontainer%1$s style=%1$smargin-top:150px%1$s>\n    <h1>Folium Data Table Example</h1>\n    <input type=%1$stext%1$s id=%1$ssearchBox%1$s placeholder=%1$ssearch here%1$s />\n    <table id=%1$sfoliumTableId%1$s class=%1$stable%1$s></table>\n    <p class=%1$smt-2%1$s><button id=%1$sadd%1$s class=%1$sbtn btn-danger%1$s>Add</button>\n    <button id=%1$sdelete%1$s class=%1$sbtn btn-danger%1$s>Delete</button>\n    <button id=%1$supdate%1$s class=%1$sbtn btn-danger%1$s>Update</button>\n    <button id=%1$sclear%1$s class=%1$sbtn btn-danger%1$s>Clear</button></p>\n  </div>\n</div>\n\n  \n  \n     <script>\n  const tableSettings = {\n  //Required\n        columns : [\n                    {columnId : %1$susername%1$s, displayText  : %1$sUsername%1$s},\n                    {columnId : %1$sname%1$s, displayText  : %1$sName%1$s},\n                    {columnId : %1$ssurname%1$s, displayText  : %1$sSurname%1$s},\n                    {columnId : %1$semailAddress%1$s, displayText  : %1$sE-mail Address%1$s},\n                    {columnId : %1$sage%1$s, displayText  : %1$sAge%1$s, dataType : 'integer'},\n                    {columnId : %1$sphoneNumber%1$s, displayText  : %1$sPhone Number%1$s},\n                    {columnId : %1$snationality%1$s, displayText  : %1$sNationality%1$s},\n                    {columnId : %1$slocation%1$s, displayText  : %1$sLocation%1$s}\n                  ],\n  //Required\n        rows: [\n                {username: 'jsmith', name : %1$sJohn%1$s, surname : %1$sSmith%1$s, emailAddress : 'foo@bar.com', age : 30, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'},\n                {username: 'jasmith', name : %1$sJane%1$s, surname : %1$sSmith%1$s, emailAddress : '', age : 29, phoneNumber : '', nationality : '', location : ''},\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n                ,\n                {username: 'asatou', name : %1$sAiri%1$s, surname : %1$sSatau%1$s, emailAddress : 'asatau@bar.com', age : 33, phoneNumber : '+1 111 111 111', nationality : 'American', location : 'San Francisco/CA'}\n              ],\n              sortable : true,\n              searching:true,\n              editable : true,\n              pagination : {active : true, size : 5},\n    };\n\n// Inject Folium functionality to the HTML table by providing its id.\nconst foliumTable = $('#foliumTableId').FoliumTable(tableSettings);\n$('#searchBox').on('keyup',function(){\n    const searchBoxText = $('#searchBox').val();\n\n    foliumTable.search(searchBoxText);\n\n    // Optional search searchBoxText in zeroth column (first column)\n    foliumTable.search(searchBoxText, 0);\n});\n$('#add').on('click', function(){\n  foliumTable.addRow({username: 'asatou', name : %1$sAlan%1$s, surname : %1$sWatts%1$s, emailAddress : 'awatts@foobar.com', age : 58, phoneNumber : '+1 111 111 111', nationality : 'British', location : 'California/USA'});\n});\n$('#delete').on('click', function(){\n  foliumTable.deleteRows([0, 1]);\n});\n$('#update').on('click', function(){\n  foliumTable.updateRow(0, {username: 'newUsername'});\n});\n$('#clear').on('click', function(){\n  foliumTable.clear();\n});\n</script>\n    \n  \n</body>\n</html>\n\n",
+      "html_value": [
+        {
+          "key_Name": "name",
+          "Key_Value": "name",
+          "Key_Type": "QMark",
+          "View_Name": "name"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "nameu",
+          "Key_Type": "apikey",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "http://192.168.1.100:8080/admin3/dist/js/toastr.min.css",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "http://192.168.1.100:8080/admin3/dist/js/toastr.min.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "http://192.168.1.100:8080/admin3/dist/folium.min.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "http://192.168.1.100:8080/admin3/dist/folium.css",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+          "Key_Type": "htmltag",
+          "View_Name": "nameu"
+        },
+        {
+          "key_Name": "Authorization",
+          "Key_Value": "https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+          "Key_Type": "percent",
+          "View_Name": "nameu"
+        }
+      ],
+      "m_url": "http://0.0.0.0:8080/admin3/chat.html",
+      "Use_Url": false,
+      "image_auto": true,
+      "enab_java": true
+    }
+  }
+}

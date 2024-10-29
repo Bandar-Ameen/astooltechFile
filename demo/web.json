@@ -1,0 +1,1493 @@
+{
+
+"Root_Layout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_marginTop": "0dp",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "web",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+
+
+"web":{
+  "type": "FrameLayout",
+  "orientation": "vertical",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "data": {
+    "user": "@{0}",
+    "sec": "@{sec}"
+  },
+  "children": [
+    {
+      "type": "WebViewx",
+      "orientation": "vertical",
+      "data_primary": "myweb",
+      "visibility": "visible",
+      "focusable": true,
+      "layout_height": "match_parent",
+      "layout_width": "match_parent",
+      "click_from_data": "@{user.name}",
+      "web_get_data": "@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+      "turl": "file:///android_asset/themes/bootstrap.min.css",
+      "DataUrl": {
+        "m_urls": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+        "Use_KeyBoard": true,
+        "Use_KeyBoardB": 50,
+        "Use_KeyBoardT": 0,
+        "use_get_data": true,
+        "update": false,
+        "enab_port": false,
+        "Use_Service": true,
+        "Use_Service_Filter": true,
+        "Use_Service_Filter_Name": "android.net.conn.CONNECTIVITY_CHANGE",
+        "Use_Service_Function": "showcokk",
+        "enab_back": true,
+        "enab_long_click": false,
+        "scroll_V": false,
+        "scroll_H": false,
+        "scroll_On_touch": false,
+        "enab_desktop": false,
+        "enab_cookies": false,
+        "enab_multiplwindow": false,
+        "enab_OverViewMode": false,
+        "enab_Open_window_Auto": true,
+        "use_error": true,
+        "m_error": "\n<!DOCTYPE html>\n<html lang=%1$sen%1$s>\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=%1$sutf-8%1$s>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n  <style>\n%4$s\n\n</style>\n<style>\n%6$s\n\n</style>\n\n<style>\n%9$s\n\n</style>\n\n  <script>\n%3$s\n</script>\n<script>\n%5$s\n</script>\n\n<script>\n%7$s\n</script>\n<script>\n%8$s\n</script>\n\n\n</head>\n<body>\n<div class=%1$sjumbotron text-center%1$s>\n  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>\n  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> \n</div>\n</body>\n</html>\n",
+     "m_html":"<!doctype html>
+<html lang=\"en\" class=\"deeppurple-theme\">
+
+
+<!-- Mirrored from maxartkiller.com/website/Fimobile/Fimobile-HTML/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Mar 2020 04:44:12 GMT -->
+<head>
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no\">
+    <meta name=\"description\" content=\"\">
+    <meta name=\"author\" content=\"Maxartkiller\">
+
+    <title>Home · Fimobile</title>
+
+    <!-- Material design icons CSS -->
+  <link rel=\"stylesheet\" href=\"http://0.0.0.0:8080/mob/vendor/materializeicon/material-icons.css\">
+
+
+  <style>
+
+
+</style>
+    
+    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap\" rel=\"stylesheet\">
+
+    
+    <link href=\"http://0.0.0.0:8080/mob/vendor/bootstrap-4.4.1/css/bootstrap.min.css\" rel=\"stylesheet\">
+
+    
+    <link href=\"http://0.0.0.0:8080/mob/vendor/swiper/css/swiper.min.css\" rel=\"stylesheet\">
+
+    
+    <style>
+%5$s
+
+</style>
+</head>
+
+<body>
+    
+
+    
+    <div class=\"wrapper homepage\">
+        <!-- header -->
+        
+        <!-- header ends -->
+
+        <div class=\"container\">
+            <div class=\"card-body\">
+                    <div class=\"row\">
+                        <div class=\"col-auto\">
+                            <figure class=\"avatar avatar-60\"><img src=\"http://0.0.0.0:8080/mob/img/user1.png\" alt=\"\"></figure>
+                        </div>
+                        <div class=\"col pl-0 align-self-center\">
+                            <h5 class=\"mb-1\">Ammy ban Jahnson</h5>
+                            <p class=\"text-mute small\">Work, London, UK</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class=\"container top-100\">
+            <div class=\"card mb-4 shadow\">
+                <div class=\"card-body border-bottom\">
+                    <div class=\"row\">
+                        <div class=\"col\">
+                            <h3 class=\"mb-0 font-weight-normal\">$ 1548.00</h3>
+                            <p class=\"text-mute\">My Balance</p>
+                        </div>
+                        <div class=\"col-auto\">
+                            <button class=\"btn btn-default btn-rounded-54 shadow\" data-toggle=\"modal\" data-target=\"#addmoney\"><i class=\"material-icons\">add</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=\"card-footer bg-none\">
+                    <div class=\"row\">
+                        <div class=\"col\">
+                            <p>71.00 <i class=\"material-icons text-danger vm small\">arrow_downward</i><br><small class=\"text-mute\">INR</small></p>
+                        </div>
+                        <div class=\"col text-center\">
+                            <p>1.00 <i class=\"material-icons text-success vm small\">arrow_upward</i><br><small class=\"text-mute\">USD</small></p>
+                        </div>
+                        <div class=\"col text-right\">
+                            <p><i class=\"material-icons text-success vm small mr-1\">arrow_upward</i>0.78<br><small class=\"text-mute\">GBP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"swiper-container icon-slide mb-4\">
+                    <div class=\"swiper-wrapper\">
+                        <a href=\"#\" class=\"swiper-slide text-center\" data-toggle=\"modal\" data-target=\"#paymodal\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons text-template\">local_atm</i>
+                            </div>
+                            <p class=\"small mt-2\">Pay</p>
+                        </a>
+                        <a href=\"#\" class=\"swiper-slide text-center\" data-toggle=\"modal\" data-target=\"#sendmoney\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons text-template\">send</i>
+                            </div>
+                            <p class=\"small mt-2\">Send</p>
+                        </a>
+                        <a href=\"#\" class=\"swiper-slide text-center\" data-toggle=\"modal\" data-target=\"#bookmodal\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons text-template\">directions_railway</i>
+                            </div>
+                            <p class=\"small mt-2\">Book</p>
+                        </a>
+                        <a href=\"#\" onClick=\"loa()\" class=\"swiper-slide text-center\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons text-template\">assignment</i>
+                            </div>
+                            <p class=\"small mt-2\">Billsvv</p>
+                        </a>
+                        <a href=\"#\" class=\"swiper-slide text-center\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons text-template\">camera</i>
+                            </div>
+                            <p class=\"small mt-2\">Scan</p>
+                        </a>
+                    </div>
+                    <div class=\"swiper-pagination\"></div>
+                </div>
+            </div>
+
+            <div class=\"row mb-2\">
+                <div class=\"container px-0\">
+                    <!-- Swiper -->
+                    <div class=\"swiper-container two-slide\">
+                        <div class=\"swiper-wrapper\">
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row no-gutters h-100\">
+                                            <div class=\"col\">
+                                                <p>$ 1548.00<br><small class=\"text-secondary\">Home Loan EMI</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row no-gutters h-100\">
+                                            <div class=\"col\">
+                                                <p>$ 1548.00<br><small class=\"text-secondary\">Cash Loan EMI</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row no-gutters h-100\">
+                                            <div class=\"col\">
+                                                <p>$ 1548.00<br><small class=\"text-secondary\">Car Loan EMI</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row no-gutters h-100\">
+                                            <div class=\"col\">
+                                                <p>$ 1548.00<br><small class=\"text-secondary\">Business Loan EMI</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row no-gutters h-100\">
+                                            <div class=\"col\">
+                                                <p>$ 1548.00<br><small class=\"text-secondary\">Edu Loan EMI</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row no-gutters h-100\">
+                                            <div class=\"col\">
+                                                <p>$ 1548.00<br><small class=\"text-secondary\">Home Loan EMI</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"swiper-pagination\"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"row\">
+                <div class=\"container px-0\">
+                    <!-- Swiper -->
+                    <div class=\"swiper-container offer-slide\">
+                        <div class=\"swiper-wrapper\">
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0 bg-template\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row\">
+                                            <div class=\"col-auto pr-0\">
+                                                <img src=\"http://0.0.0.0:8080/mob/img/graphics-carousel-scheme1.png\" alt=\"\" class=\"mw-100\">
+                                            </div>
+                                            <div class=\"col align-self-center\">
+                                                <h5 class=\"mb-2 font-weight-normal\">Gold loan scheme</h5>
+                                                <p class=\"text-mute\">Get all money at market rate of gold</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=\"swiper-slide\">
+                                <div class=\"card shadow border-0 bg-template\">
+                                    <div class=\"card-body\">
+                                        <div class=\"row\">
+                                            <div class=\"col pr-0 align-self-center\">
+                                                <h5 class=\"mb-2 font-weight-normal\">Gold loan scheme</h5>
+                                                <p class=\"text-mute\">Get all money at market rate of gold</p>
+                                            </div>
+                                            <div class=\"col-auto\">
+                                                <img src=\"http://0.0.0.0:8080/mob/img/graphics-carousel-scheme1.png\" alt=\"\" class=\"mw-100\">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"container\">
+            <h6 class=\"subtitle\">Upcoming Payments <a href=\"allpayment.html\" class=\"float-right small\">View All</a></h6>
+            <div class=\"card shadow border-0 mb-3\">
+                <div class=\"card-body\">
+                    <div class=\"row\">
+                        <div class=\"col\">
+                            <h5 class=\"font-weight-normal mb-1\">$ 1548.00 </h5>
+                            <p class=\"text-mute small text-secondary mb-2\">20d to pay electricity bill</p>
+                            <div class=\"progress h-4\">
+                                <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width:35%%\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+                            </div>
+                        </div>
+                        <div class=\"col-auto pl-0\">
+                            <button class=\"avatar avatar-50 no-shadow border-0 bg-template\">
+                                <i class=\"material-icons\">local_atm</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=\"card shadow border-0 mb-3\">
+                <div class=\"card-body\">
+                    <div class=\"row\">
+                        <div class=\"col\">
+                            <h5 class=\"font-weight-normal mb-1\">$ 106.00 <span class=\"badge badge-danger small vm text-white\">Prior</span></h5>
+                            <p class=\"text-mute small text-secondary mb-2\">33 days to pay gas bill</p>
+                            <div class=\"progress h-4\">
+                                <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 65%%\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+                            </div>
+                        </div>
+                        <div class=\"col-auto pl-0\">
+                            <button class=\"avatar avatar-50 no-shadow border-0 bg-template\">
+                                <i class=\"material-icons\">local_atm</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"container\">
+            <h6 class=\"subtitle\">Recent Messages</h6>
+            <div class=\"card shadow border-0 mb-3\">
+                <div class=\"card-body\">
+                    <div class=\"row align-items-center\">
+                        <div class=\"col-auto pr-0\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <img src=\"http://0.0.0.0:8080/mob/img/user1.png\" alt=\"\">
+                            </div>
+                        </div>
+                        <div class=\"col\">
+                            <h6 class=\"font-weight-normal mb-1\">Mrs. Magon Johnson </h6>
+                            <p class=\"text-mute small text-secondary\">\"Thank you for your purchase with our shop and making online payment.\"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=\"card-footer border-top bg-none\">
+                    <div class=\"input-group\">
+                        <input type=\"text\" class=\"form-control\" placeholder=\"Recipient's username\" aria-label=\"Quick reply\" aria-describedby=\"button-addon4\">
+                        <div class=\"input-group-append\">
+                            <button class=\"btn btn-default btn-rounded-36 shadow-sm\" type=\"button\" id=\"button-addon4\"><i class=\"material-icons md-18\">send</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=\"card shadow border-0 mb-3\">
+                <div class=\"card-body\">
+                    <div class=\"row align-items-center\">
+                        <div class=\"col-auto pr-0\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <img src=\"http://0.0.0.0:8080/mob/img/user2.png\" alt=\"\">
+                            </div>
+                        </div>
+                        <div class=\"col\">
+                            <h6 class=\"font-weight-normal mb-1\">Ms. Shivani Dilux</h6>
+                            <p class=\"text-mute small text-secondary\">\"Thank you for your purchase with our shop and making online payment.\"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"container\">
+            <h6 class=\"subtitle\">Loan Status </h6>
+            <div class=\"card shadow border-0 mb-3\">
+                <div class=\"card-body\">
+                    <div class=\"row align-items-center\">
+                        <div class=\"col-auto pr-0\">
+                            <div class=\"avatar avatar-50 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons vm text-template\">local_atm</i>
+                            </div>
+                        </div>
+                        <div class=\"col-auto align-self-center\">
+                            <h6 class=\"font-weight-normal mb-1\">EMI</h6>
+                            <p class=\"text-mute small text-secondary\">Home Loan</p>
+                        </div>
+                        <div class=\"col-auto align-self-center border-left\">
+                            <h6 class=\"font-weight-normal mb-1\">$ 1548.00</h6>
+                            <p class=\"text-mute small text-secondary\">Due: 15-12-2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=\"card shadow border-0 mb-3\">
+                <div class=\"card-body\">
+                    <div class=\"row align-items-center\">
+                        <div class=\"col-auto pr-0\">
+                            <div class=\"avatar avatar-50 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons vm text-template\">local_atm</i>
+                            </div>
+                        </div>
+                        <div class=\"col-auto align-self-center\">
+                            <h6 class=\"font-weight-normal mb-1\">EMI</h6>
+                            <p class=\"text-mute small text-secondary\">Car Loan</p>
+                        </div>
+                        <div class=\"col-auto align-self-center border-left\">
+                            <h6 class=\"font-weight-normal mb-1\">$ 658.00</h6>
+                            <p class=\"text-mute small text-secondary\">Due: 18-12-2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"container\">
+            <h6 class=\"subtitle\">News Updates</h6>
+            <div class=\"row\">
+                <!-- Swiper -->
+                <div class=\"swiper-container news-slide\">
+                    <div class=\"swiper-wrapper\">
+                        <div class=\"swiper-slide\">
+                            <div class=\"card shadow-sm border-0 bg-dark text-white\">
+                                <figure class=\"background\">
+                                    <img src=\"http://0.0.0.0:8080/mob/img/product2.jpg\" alt=\"\">
+                                </figure>
+                                <div class=\"card-body\">
+                                    <a href=\"#\" class=\"btn btn-default btn-rounded-36 shadow-sm float-bottom-right\"><i class=\"material-icons md-18\">arrow_forward</i></a>
+                                    <h5 class=\"small\">Multipurpose Juice allows you to grow faster</h5>
+                                    <p class=\"text-mute small\">By Anand Mangal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"swiper-slide\">
+                            <div class=\"card shadow-sm border-0 bg-dark text-white\">
+                                <figure class=\"background\">
+                                    <img src=\"http://0.0.0.0:8080/mob/img/product3.jpg\" alt=\"\">
+                                </figure>
+                                <div class=\"card-body\">
+                                    <a href=\"#\" class=\"btn btn-default btn-rounded-36 shadow-sm float-bottom-right\"><i class=\"material-icons md-18\">arrow_forward</i></a>
+                                    <h5 class=\"small\">Multipurpose Juice allows you to grow faster</h5>
+                                    <p class=\"text-mute small\">By Anand Mangal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"swiper-slide\">
+                            <div class=\"card shadow-sm border-0 bg-dark text-white\">
+                                <figure class=\"background\">
+                                    <img src=\"http://0.0.0.0:8080/mob/img/product2.jpg\" alt=\"\">
+                                </figure>
+                                <div class=\"card-body\">
+                                    <a href=\"#\" class=\"btn btn-default btn-rounded-36 shadow-sm float-bottom-right\"><i class=\"material-icons md-18\">arrow_forward</i></a>
+                                    <h5 class=\"small\">Multipurpose Juice allows you to grow faster</h5>
+                                    <p class=\"text-mute small\">By Anand Mangal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"swiper-slide\">
+                            <div class=\"card shadow-sm border-0 bg-dark text-white\">
+                                <figure class=\"background\">
+                                    <img src=\"http://0.0.0.0:8080/mob/img/product3.jpg\" alt=\"\">
+                                </figure>
+                                <div class=\"card-body\">
+                                    <a href=\"#\" class=\"btn btn-default btn-rounded-36 shadow-sm float-bottom-right\"><i class=\"material-icons md-18\">arrow_forward</i></a>
+                                    <h5 class=\"small\">Multipurpose Juice allows you to grow faster</h5>
+                                    <p class=\"text-mute small\">By Anand Mangal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"swiper-slide\">
+                            <div class=\"card shadow-sm border-0 bg-dark text-white\">
+                                <figure class=\"background\">
+                                    <img src=\"http://0.0.0.0:8080/mob/img/product2.jpg\" alt=\"\">
+                                </figure>
+                                <div class=\"card-body\">
+                                    <a href=\"#\" class=\"btn btn-default btn-rounded-36 shadow-sm float-bottom-right\"><i class=\"material-icons md-18\">arrow_forward</i></a>
+                                    <h5 class=\"small\">Multipurpose Juice allows you to grow faster</h5>
+                                    <p class=\"text-mute small\">By Anand Mangal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"swiper-slide\">
+                            <div class=\"card shadow-sm border-0 bg-dark text-white\">
+                                <figure class=\"background\">
+                                    <img src=\"http://0.0.0.0:8080/mob/img/product3.jpg\" alt=\"\">
+                                </figure>
+                                <div class=\"card-body\">
+                                    <a href=\"#\" class=\"btn btn-default btn-rounded-36 shadow-sm float-bottom-right\"><i class=\"material-icons md-18\">arrow_forward</i></a>
+                                    <h5 class=\"small\">Multipurpose Juice allows you to grow faster</h5>
+                                    <p class=\"text-mute small\">By Anand Mangal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class=\"swiper-pagination\"></div>
+                </div>
+            </div>
+        </div>
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"col text-center\">
+                    <h5 class=\"subtitle mb-1\">Most Exciting Feature</h5>
+                    <p class=\"text-secondary\">Take a look at our services</p>
+                </div>
+            </div>
+            <div class=\"row text-center mt-4\">
+                <div class=\"col-6 col-md-3\">
+                    <div class=\"card shadow border-0 mb-3\">
+                        <div class=\"card-body\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons vm md-36 text-template\">card_giftcard</i>
+                            </div>
+                            <h3 class=\"mt-3 mb-0 font-weight-normal\">2546</h3>
+                            <p class=\"text-secondary text-mute small\">Gift it out</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=\"col-6 col-md-3\">
+                    <div class=\"card shadow border-0 mb-3\">
+                        <div class=\"card-body\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons vm md-36 text-template\">subscriptions</i>
+                            </div>
+                            <h3 class=\"mt-3 mb-0 font-weight-normal\">635</h3>
+                            <p class=\"text-secondary text-mute small\">Monthly Billed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=\"col-6 col-md-3\">
+                    <div class=\"card shadow border-0 mb-3\">
+                        <div class=\"card-body\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons vm md-36 text-template\">local_florist</i>
+                            </div>
+                            <h3 class=\"mt-3 mb-0 font-weight-normal\">1542</h3>
+                            <p class=\"text-secondary text-mute small\">Eco environment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=\"col-6 col-md-3\">
+                    <div class=\"card shadow border-0 mb-3\">
+                        <div class=\"card-body\">
+                            <div class=\"avatar avatar-60 no-shadow border-0\">
+                                <div class=\"overlay bg-template\"></div>
+                                <i class=\"material-icons vm md-36 text-template\">location_city</i>
+                            </div>
+                            <h3 class=\"mt-3 mb-0 font-weight-normal\">154</h3>
+                            <p class=\"text-secondary text-mute small\">Four Offices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer-->
+        
+        
+        <!-- footer ends-->
+
+    </div>
+
+    
+    <!-- notification ends -->
+
+    <!-- color chooser menu start -->
+    <div class=\"modal fade \" id=\"colorscheme\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
+            <div class=\"modal-content \">
+                <div class=\"modal-header theme-header border-0\">
+                    <h6 class=\"\">Color Picker</h6>
+                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">
+                        <span aria-hidden=\"true\">&times;</span>
+                    </button>
+                </div>
+                <div class=\"modal-body pt-0\">
+                    <div class=\"text-center theme-color\">
+                        <button class=\"m-1 btn red-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"red-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn blue-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"blue-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn yellow-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"yellow-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn green-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"green-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn pink-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"pink-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn orange-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"orange-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn purple-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"purple-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn deeppurple-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"deeppurple-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn lightblue-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"lightblue-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn teal-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"teal-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn lime-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"lime-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn deeporange-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"deeporange-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn gray-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"gray-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                        <button class=\"m-1 btn black-theme-bg text-white btn-rounded-54 shadow-sm\" data-theme=\"black-theme\"><i class=\"material-icons w-50\">color_lens_outline</i></button>
+                    </div>
+                </div>
+                <div class=\"modal-footer\">
+                    <div class=\"col-6 text-left\">
+                        <div class=\"row\">
+                            <div class=\"col-auto text-right align-self-center\"><i class=\"material-icons text-warning vm\">wb_sunny</i></div>
+                            <div class=\"col-auto text-center align-self-center px-0\">
+                                <div class=\"custom-control custom-switch float-right\">
+                                    <input type=\"checkbox\" name=\"themelayout\" class=\"custom-control-input\" id=\"theme-dark\">
+                                    <label class=\"custom-control-label\" for=\"theme-dark\"></label>
+                                </div>
+                            </div>
+                            <div class=\"col-auto text-left align-self-center\"><i class=\"material-icons text-dark vm\">brightness_2</i></div>
+                        </div>
+                    </div>
+                    <div class=\"col-6 text-right\">
+                        <div class=\"row\">
+                            <div class=\"col-auto text-right align-self-center\">LTR</div>
+                            <div class=\"col-auto text-center align-self-center px-0\">
+                                <div class=\"custom-control custom-switch float-right\">
+                                    <input type=\"checkbox\" name=\"rtllayout\" class=\"custom-control-input\" id=\"theme-rtl\">
+                                    <label class=\"custom-control-label\" for=\"theme-rtl\"></label>
+                                </div>
+                            </div>
+                            <div class=\"col-auto text-left align-self-center\">RTL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- color chooser menu ends -->
+
+    <!-- Modal -->
+    <div class=\"modal fade\" id=\"addmoney\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal-dialog modal-sm modal-dialog-centered\" role=\"document\">
+            <div class=\"modal-content\">
+                <div class=\"modal-header border-0\">
+                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">
+                        <span aria-hidden=\"true\">&times;</span>
+                    </button>
+                </div>
+                <div class=\"modal-body text-center pt-0\">
+                    <img src=\"http://0.0.0.0:8080/mob/img/infomarmation-graphics2.png\" alt=\"logo\" class=\"logo-small\">
+                    <div class=\"form-group mt-4\">
+                        <input type=\"text\" class=\"form-control form-control-lg text-center\" placeholder=\"Enter amount\" required=\"\" autofocus=\"\">
+                    </div>
+                    <p class=\"text-mute\">You will be redirected to payment gatway to procceed further. Enter amount in USD.</p>
+                </div>
+                <div class=\"modal-footer border-0\">
+                    <button type=\"button\" class=\"btn btn-default btn-lg btn-rounded shadow btn-block\" class=\"close\" data-dismiss=\"modal\">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class=\"modal fade\" id=\"sendmoney\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal-dialog modal-sm modal-dialog-centered\" role=\"document\">
+            <div class=\"modal-content\">
+                <div class=\"modal-header border-0\">
+                    <h5>Send Money</h5>
+                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">
+                        <span aria-hidden=\"true\">&times;</span>
+                    </button>
+                </div>
+                <div class=\"modal-body pt-0\">
+                    <div class=\"form-group mt-4\">
+                        <select class=\"form-control form-control-lg text-center\">
+                            <option>Mrs. Magon Johnson</option>
+                            <option selected>Ms. Shivani Dilux</option>
+                        </select>
+                    </div>
+
+                    <div class=\"card shadow border-0 mb-3\">
+                        <div class=\"card-body\">
+                            <div class=\"row align-items-center\">
+                                <div class=\"col-auto pr-0\">
+                                    <div class=\"avatar avatar-60 no-shadow border-0\">
+                                        <img src=\"http://0.0.0.0:8080/mob/img/user2.png\" alt=\"\">
+                                    </div>
+                                </div>
+                                <div class=\"col\">
+                                    <h6 class=\"font-weight-normal mb-1\">Ms. Shivani Dilux</h6>
+                                    <p class=\"text-mute small text-secondary\">London, UK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"form-group text-center mt-4\">
+                        <input type=\"text\" class=\"form-control form-control-lg text-center\" placeholder=\"Enter amount\" required=\"\" autofocus=\"\">
+                    </div>
+                    <p class=\"text-mute text-center\">You will be redirected to payment gatway to procceed further. Enter amount in USD.</p>
+                </div>
+                <div class=\"modal-footer border-0\">
+                    <button type=\"button\" class=\"btn btn-default btn-lg btn-rounded shadow btn-block\" class=\"close\" data-dismiss=\"modal\">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class=\"modal fade\" id=\"paymodal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal-dialog modal-sm modal-dialog-centered\" role=\"document\">
+            <div class=\"modal-content\">
+                <div class=\"modal-header border-0\">
+                    <h5>Pay</h5>
+                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">
+                        <span aria-hidden=\"true\">&times;</span>
+                    </button>
+                </div>
+                <div class=\"modal-body pt-0\">
+                    <div class=\"custom-control custom-radio custom-control-inline\">
+                        <input type=\"radio\" id=\"customRadioInline1\" name=\"customRadioInline1\" class=\"custom-control-input\">
+                        <label class=\"custom-control-label\" for=\"customRadioInline1\">To Bill</label>
+                    </div>
+                    <div class=\"custom-control custom-radio custom-control-inline\">
+                        <input type=\"radio\" id=\"customRadioInline2\" name=\"customRadioInline1\" class=\"custom-control-input\" checked>
+                        <label class=\"custom-control-label\" for=\"customRadioInline2\">To Person</label>
+                    </div>
+
+                    <div class=\"form-group mt-4\">
+                        <select class=\"form-control text-center\">
+                            <option>Mrs. Magon Johnson</option>
+                            <option selected>Ms. Shivani Dilux</option>
+                        </select>
+                    </div>
+
+                    <div class=\"card shadow border-0 mb-3\">
+                        <div class=\"card-body\">
+                            <div class=\"row align-items-center\">
+                                <div class=\"col-auto pr-0\">
+                                    <div class=\"avatar avatar-60 no-shadow border-0\">
+                                        <img src=\"http://0.0.0.0:8080/mob/img/user2.png\" alt=\"\">
+                                    </div>
+                                </div>
+                                <div class=\"col align-self-center\">
+                                    <h6 class=\"font-weight-normal mb-1\">Ms. Shivani Dilux</h6>
+                                    <p class=\"text-mute small text-secondary\">London, UK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"form-group text-center mt-4\">
+                        <input type=\"text\" class=\"form-control form-control-lg text-center\" placeholder=\"Enter amount\" required=\"\" autofocus=\"\">
+                    </div>
+                    <p class=\"text-mute text-center\">You will be redirected to payment gatway to procceed further. Enter amount in USD.</p>
+                </div>
+                <div class=\"modal-footer border-0\">
+                    <button type=\"button\" class=\"btn btn-default btn-lg btn-rounded shadow btn-block\" class=\"close\" data-dismiss=\"modal\">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class=\"modal fade\" id=\"bookmodal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal-dialog modal-sm modal-dialog-centered\" role=\"document\">
+            <div class=\"modal-content\">
+                <div class=\"modal-header border-0\">
+                    <h5>Pay</h5>
+                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">
+                        <span aria-hidden=\"true\">&times;</span>
+                    </button>
+                </div>
+                <div class=\"modal-body pt-0\">
+                    <div class=\"custom-control custom-radio custom-control-inline\">
+                        <input type=\"radio\" id=\"customRadioInline12\" name=\"customRadioInline12\" class=\"custom-control-input\">
+                        <label class=\"custom-control-label\" for=\"customRadioInline12\">Flight</label>
+                    </div>
+                    <div class=\"custom-control custom-radio custom-control-inline\">
+                        <input type=\"radio\" id=\"customRadioInline22\" name=\"customRadioInline12\" class=\"custom-control-input\" checked>
+                        <label class=\"custom-control-label\" for=\"customRadioInline22\">Train</label>
+                    </div>
+                    <h6 class=\"subtitle\">Select Location</h6>
+                    <div class=\"form-group mt-4\">
+                        <input type=\"text\" class=\"form-control text-center\" placeholder=\"Select start point\" required=\"\" autofocus=\"\">
+                    </div>
+                    <div class=\"form-group mt-4\">
+                        <input type=\"text\" class=\"form-control text-center\" placeholder=\"Select end point\" required=\"\">
+                    </div>
+                    <h6 class=\"subtitle\">Select Date</h6>
+                    <div class=\"form-group mt-4\">
+                        <input type=\"date\" class=\"form-control text-center\" placeholder=\"Select end point\" required=\"\">
+                    </div>
+                    <h6 class=\"subtitle\">number of passangers</h6>
+                    <div class=\"form-group mt-4\">
+                        <select class=\"form-control  text-center\">
+                            <option>1</option>
+                            <option selected>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </div>                    
+                </div>
+                <div class=\"modal-footer border-0\">
+                    <button type=\"button\" class=\"btn btn-default btn-lg btn-rounded shadow btn-block\" class=\"close\" data-dismiss=\"modal\">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src=\"http://0.0.0.0:8080/mob/js/jquery-3.3.1.min.js\"></script>
+    <script src=\"http://0.0.0.0:8080/mob/js/popper.min.js\"></script>
+    <script src=\"http://0.0.0.0:8080/mob/vendor/bootstrap-4.4.1/js/bootstrap.min.js\"></script>
+
+    <!-- swiper js -->
+    <script src=\"http://0.0.0.0:8080/mob/vendor/swiper/js/swiper.min.js\"></script>
+
+    <!-- cookie js -->
+    <script src=\"http://0.0.0.0:8080/mob/vendor/cookie/jquery.cookie.js\"></script>
+
+    <!-- template custom js -->
+    <script>
+%6$s
+</script>
+
+    <!-- page level script -->
+    <script>
+function  getdata(url){
+//Open_Activity_From_Url
+//Show_Shit_Dialog_With_Set_Data_two
+//Show_Shit_Dialog_With_Set_Data_two_from_string
+//Show_Shit_Dialog_With_Set_Data_two_from_url
+//Show_Shit_Dialog_With_Set_Data_two_from_name
+//Value_Activity
+//com.astooltech.advancedview.vlayout.example.RootActivity
+//com.astooltech.advancedview.finaldemo.fragments.ChildFragment1
+//com.astooltech.advancedview.finaldemo.MainActivity2
+//com.astooltech.advancedview.finaldemo.MainAc
+//com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.CommonTabActivity
+var t=  JSON.stringify( {
+\"Event_Type\":\"Show_Shit_Dialog_With_Set_Data_two_from_url\",
+\"Name_Activity\":\"0\",
+\"Value_Activity\":\"0\",
+\"Show_Toolbar\":true, 
+\"Show_Drawer\":false, 
+
+\"message\":\"h llo snakbar\", 
+\"Use_Volley\":true,
+\"Name\":\"com.astooltech.advancedview.proteus.parser.webview.gm.agentweb.filechooser.AgentWebFragment\", 
+
+\"get_set_to_view\": {
+    \"Data_From_View\": [
+      {
+        \"View_Id\": \"Unit_NameSearcih\",
+        \"index_id\": 0,
+        \"View_Type\": \"A\",
+        \"use_const\": false,
+        \"const_value\": true,
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_en\"
+      },
+      {
+        \"View_Id\": \"Unit_NameSearcihi\",
+        \"index_id\": 1,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"hhhhhhh\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      },
+      {
+        \"View_Id\": \"0\",
+        \"index_id\": 2,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"data#message\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      }
+      
+    ],
+    \"Data_To_View\": [
+      {
+        \"View_Id\": \"Unit_NameSearcih\",
+        \"index_id\": 0,
+        \"View_Type\": \"A\",
+        \"use_const\": false,
+        \"const_value\": true,
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_en\"
+      },
+      {
+        \"View_Id\": \"Unit_NameSearcihi\",
+        \"index_id\": 1,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"hhhhhhh\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      },
+      {
+        \"View_Id\": \"0\",
+        \"index_id\": 2,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"data#message\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      }
+      
+    ]
+    
+    
+  
+  },
+
+\"Return_Data\":[
+{
+\"Return_Type\":\"55\",
+
+
+\"Return_To_Message\":[
+{
+\"Response_Key_Name\":\"0\",
+\"View_Id\":\"55\",
+\"Message_Text\":\"hhhh\",
+\"View_Type\":\"A\"
+
+}
+
+]
+
+
+}
+
+],
+
+\"Return_To_View\":[
+{
+\"View_Id\":\"saveprograss\",
+\"Type_Process\":\"1\",
+\"Value_Process\":\"1\",
+\"View_Type\":\"A\"
+
+}
+
+],
+
+\"Before_Process\":
+{
+\"get_set_to_view\": {
+    \"Data_From_View\": [
+      {
+        \"View_Id\": \"Unit_NameSearcih\",
+        \"index_id\": 0,
+        \"View_Type\": \"A\",
+        \"use_const\": false,
+        \"const_value\": true,
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_en\"
+      },
+      {
+        \"View_Id\": \"Unit_NameSearcihi\",
+        \"index_id\": 1,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"hhhhhhh\",
+        \"use_data_from_source\": true,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      }
+    ],
+    \"Data_To_View\": [
+      {
+        \"View_Id\": \"Unit_NameSearch\",
+        \"View_Type\": \"0\",
+        \"index_id\": 0
+      },
+      {
+        \"View_Id\": \"myouto\",
+        \"View_Type\": \"0\",
+        \"index_id\": 0
+      },
+      {
+        \"View_Id\": \"idid\",
+        \"View_Type\": \"0\",
+        \"index_id\": 1
+      }
+      
+    ]
+  
+  }
+  
+
+}
+,
+
+\"Show_Confirm\":{
+\"type\": \"include\",
+          \"layout\": \"tt\",
+                     \"layout_width\": \"match_parent\",
+            \"layout_height\": \"wrap_content\",
+    \"tname\":\"SimpleDataBindingExample\"
+
+}
+,
+\"After_Process\":
+{
+\"get_set_to_view\": {
+    \"Data_From_View\": [
+      {
+        \"View_Id\": \"Unit_NameSearcih\",
+        \"index_id\": 0,
+        \"View_Type\": \"A\",
+        \"use_const\": false,
+        \"const_value\": true,
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_en\"
+      },
+      {
+        \"View_Id\": \"Unit_NameSearcihi\",
+        \"index_id\": 1,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"hhhhhhh\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      },
+      {
+        \"View_Id\": \"0\",
+        \"index_id\": 2,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"data#message\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      }
+      
+    ],
+    \"Data_To_View\": [
+      {
+        \"View_Id\": \"Unit_NameSearcih\",
+        \"index_id\": 0,
+        \"View_Type\": \"A\",
+        \"use_const\": false,
+        \"const_value\": true,
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_en\"
+      },
+      {
+        \"View_Id\": \"Unit_NameSearcihi\",
+        \"index_id\": 1,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"hhhhhhh\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      },
+      {
+        \"View_Id\": \"0\",
+        \"index_id\": 2,
+        \"View_Type\": \"A\",
+        \"use_const\": true,
+        \"const_value\": \"data#message\",
+        \"use_data_from_source\": false,
+        \"source_key\": \"drugName_ar\",
+        \"hellohello\":\"hhhkkkkkkkkkkki\"
+      }
+      
+    ]
+    
+    
+  
+  }
+  
+},
+\"Finsh_Process\":[
+{
+\"View_Id\":\"55\",
+\"Type_Process\":\"22\",
+\"Value_Process\":\"55\",
+\"View_Type\":\"A\"
+
+}
+
+],
+\"Sender_Data\":[
+{
+\"Data_From_View\":[
+{\"View_Id\":\"name\",
+\"View_Type\":\"5\",
+\"index_id\":0,
+\"use_const\": true,
+        \"const_value\": \"data#message\"
+},
+{\"View_Id\":\"email\",
+\"View_Type\":\"6\",
+\"index_id\":1,
+\"use_const\": true,
+        \"const_value\": \"data#message\"
+},
+{\"View_Id\":\"pic\",
+\"View_Type\":\"6\",
+\"index_id\":2,
+\"use_const\": true,
+        \"const_value\": \"data#message\"
+},
+{\"View_Id\":\"0\",
+\"View_Type\":\"API_Acess\",
+\"index_id\":3,
+\"use_const\": true,
+        \"const_value\": \"data#message\"
+}
+
+
+]
+,\"API_Data\":[
+{
+\"Method_Type\":\"POST\",
+\"Type_Url\":\"local0\",
+\"Url\":url,
+\"Response_Data\":[
+{
+\"Key_Name\":\"#{datxa}\",
+\"Key_Value\":\"data#message\",
+\"Key_Type\":\"Select_Key\",
+\"index_id\": 1,
+        \"use_format\": false
+},
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"Refresh_Key\",
+\"index_id\": 1,
+        \"use_format\": false
+},
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"Offline_Key\",
+\"index_id\": 1,
+        \"use_format\": false
+}
+,
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"Show_As_Message\",
+\"index_id\": 1,
+        \"use_format\": false
+}
+
+
+
+]
+,
+
+
+\"Request_Header\":[
+{
+\"Key_Name\":\"heee\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"5555\",
+        \"index_id\": 1,
+        \"use_format\": false
+
+},
+{
+\"Key_Name\":\"heeemmm\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"5555\",
+\"index_id\": 1,
+  \"use_format\": false
+},
+{
+\"Key_Name\":\"heeettff\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"5555\",
+\"index_id\": 1,
+        \"use_format\": false
+},
+{
+\"Key_Name\":\"vvvvvvv\",
+\"Key_Value\":\"0\",
+\"Key_Type\":\"5555\",
+\"index_id\": 1,
+        \"use_format\": false
+}
+
+
+
+
+]
+,
+\"Request_Body\":[],
+
+\"Request_Query\":[]
+
+
+
+}
+
+
+]
+}
+
+]
+}
+
+
+);
+
+
+
+
+
+
+
+
+return t;
+
+}
+    
+function api(name,email,password){
+					
+try{
+
+
+
+//msgg('info',email);
+
+				//name='https://www.astooltech.com/api/v1/b';
+				//var dt=JSON.stringify( { %1$spname%1$sp:  name, %1$spemail%1$sp: email,%1$sppassword%1$sp:password} );
+
+				var uuu='mmmm';
+				$.ajax({
+    url: name,
+    dataType: 'text',
+
+    type: 'get',
+
+      // contentType: 'application/json; charset=utf-8',
+    success: function( data, textStatus, jQxhr ){
+    	//setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+      
+var x = \"hello\";//document.getElementById(\"myText\").value;
+var mnn='Open_Activity_From_Url';
+var mn='Open_Activity_From_String';
+var mnkk='ShowShitDialogSetData';
+var mnkky='love';
+var ddrl=JSON.stringify({\"Name\":mnkky,
+\"Set_Data\":[
+{
+\"View_Id\":\"name\",
+\"Type_Process\":\"5\",
+\"Value_Process\":x,
+\"View_Type\":\"A\"
+
+},
+{
+\"View_Id\":\"emailggx\",
+\"Type_Process\":\"5\",
+\"Value_Process\":\"5uurrrthello_hello_hello\",
+\"View_Type\":\"A\"
+
+}
+
+
+]
+});
+//var ddr=JSON.stringify({\"Activity_Data\":data});
+//var text = document.createTextNode(ddr);
+//paragraph.appendChild(text);
+var ty=getdata(name);
+//alert(ty);
+//Android.AndroidFunctionLoadFunction(mnkk,ddrl);
+Android.AndroidFunctionLoadFunction(mnn,ty);
+//Android.AndroidFunctionOpenActivity(data);
+//msgg('info', data);
+ if(isJson(data)){
+//var ffdd=JSON.parse(data); 
+if(ffdd.success=='1'){
+//msgg('info', ffdd.message);
+}else{
+//msgg('error', ffdd.message);
+}
+}else{
+//msgg('error', data);
+}
+    },
+    error: function( jqXhr, textStatus, errorThrown ){
+    //setTimeout(function(){ $('.btnreg').button('reset'); }, 0);
+ //msgg('error',textStatus+'hhhhhh' );
+    }
+});
+				
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+						}catch(ddd){
+							
+alert(ddd);
+
+}
+	}
+
+function loa(){
+	//alert(\"hel\");
+api('http://0.0.0.0:8080/admin3/uu.php','55','66');
+
+}
+
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from maxartkiller.com/website/Fimobile/Fimobile-HTML/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Mar 2020 04:44:12 GMT -->
+</html>
+"
+
+   ,
+ "html_value": [
+          {
+            "key_Name": "name",
+            "Key_Value": "name",
+            "Key_Type": "QMark",
+            "View_Name": "name"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "nameu",
+            "Key_Type": "apikey",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/mob/vendor/materializeicon/material-icons.css",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/mob/css/style.css",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://0.0.0.0:8080/mob/js/main6.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          
+          
+          
+          
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/admin3/dist/js/toastr.min.css",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/admin3/dist/js/toastr.min.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/admin3/dist/folium.min.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "http://192.168.1.100:8080/admin3/dist/folium.css",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+            "Key_Type": "htmltag",
+            "View_Name": "nameu"
+          },
+          {
+            "key_Name": "Authorization",
+            "Key_Value": "https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+            "Key_Type": "percent",
+            "View_Name": "nameu"
+          }
+        ],
+        "m_url": "http://0.0.0.0:8080/template-fimobile-main/",
+        "Use_Url": false,
+        "image_auto": true,
+        "enab_java": true
+      }
+    }
+  ]
+}
+}

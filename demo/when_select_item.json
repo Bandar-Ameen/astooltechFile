@@ -1,0 +1,1416 @@
+
+{
+  "RelativeLayoutExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "RelativeLayout",
+        "layout_width": "match_parent",
+        "layout_height": "100dp",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "id": "center",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "text": "Center",
+            "textColor": "#323232",
+            "textSize": "14sp",
+            "layout_centerVertical": true,
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginBottom": "4dp",
+            "layout_above": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginTop": "4dp",
+            "layout_below": "center",
+            "layout_centerHorizontal": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginLeft": "4dp",
+            "layout_toRightOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "@drawable/star_filled",
+            "layout_marginRight": "4dp",
+            "layout_toLeftOf": "center",
+            "layout_centerVertical": true
+          },
+          {
+            "type": "ImageView",
+            "src": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "layout_height": "70dp",
+            "layout_width": "120dp",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitCenter",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+          }
+        ]
+      }
+    ]
+  },
+  "SimpleDataBindingExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "orientation": "vertical",
+        "background": "#ffffff",
+        "children": [
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginBottom": "0dp",
+            "text": "Profile",
+            "style": "mini.blue"
+          },
+          {
+            "type": "RelativeLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextView",
+                "id": "name",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{user.name}"
+              },
+              {
+                "type": "TextView",
+                "id": "location",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_below": "name",
+                "layout_marginRight": "4dp",
+                "textSize": "18dp",
+                "text": "@{fn:format('%s, %s', @{user.location.city}, @{user.location.country})}"
+              },
+              {
+                "type": "TextView",
+                "text": "@{fn:format('(%s)',@{user.level})}",
+                "textColor": "#c48866",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_toRightOf": "name"
+              }
+            ]
+          },
+          {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "paddingLeft": "16dp",
+            "paddingRight": "16dp",
+            "children": [
+              {
+                "type": "HorizontalProgressBar",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "max": "@{user.experience.max}",
+                "progress": "@{user.experience.current}"
+              },
+              {
+                "type": "TextView",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginTop": "8dp",
+                "layout_marginBottom": "32dp",
+                "padding": "8dp",
+                "paddingTop": "16dp",
+                "paddingBottom": "16dp",
+                "text": "@{fn:number(@{user.credits})}",
+                "style": "money.center",
+                "background": {
+                  "type": "shape",
+                  "shape": "oval",
+                  "children": [
+                    {
+                      "type": "gradient",
+                      "startColor": "#44e73827",
+                      "endColor": "@color/green",
+                      "angle": 270
+                    }
+                  ]
+                },
+                "animation": {
+                  "interpolator": {
+                    "type": "anticipateOvershootInterpolator"
+                  },
+                  "type": "rotate",
+                  "fromDegrees": -720,
+                  "toDegrees": 0,
+                  "pivotX": "50%",
+                  "pivotY": "50%",
+                  "duration": 1500
+                }
+              }
+            ]
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "data": {
+              "date": "@{fn:date(@{sec.ll},'E, d MMM')}",
+              "loc": "@{sec.loc}"
+            },
+            "text": "@{fn:format('last login: %s from %s',@{date},@{loc})}",
+            "style": "blue"
+          },
+          {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": "14sp",
+            "text": "@{user.type}",
+            "visibility": "@{fn:ternary(@{user.type}, 'visible', 'gone')}"
+          }
+        ]
+      }
+    ]
+  },
+  "DataDrivenExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#ffffff",
+        "padding": "16dp",
+        "children": {
+          "@": {
+            "collection": "@{fn:slice(@{user.tags},0,4)}",
+            "layout": {
+              "type": "LinearLayout",
+              "data": {
+                "tag": "@{user.tags[$index]}"
+              },
+              "layout_marginRight": "8dp",
+              "layout_height": "32dp",
+              "textSize": "12sp",
+              "textColor": "@color/colorAccent",
+             "children":[{
+                       "type": "TextView",
+              "text": "@{tag}",
+              "padding": "8dp",
+              "gravity": "center",
+              "onClick": "@{tag}"
+}]
+
+
+            }
+          }
+        }
+      }
+    ]
+  },
+  "DataDrivenExampleoo": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "orientation": "horizontal",
+        "layout_width": "match_parent",
+        "background": "#ffffff",
+        "padding": "16dp",
+        "children": {
+          
+              "layout_marginRight": "8dp",
+              "layout_height": "32dp",
+              "textSize": "12sp",
+              "textColor": "@color/colorAccent",
+             "children":[{
+                       "type": "TextView",
+              "text": "@{my.name}",
+              "padding": "8dp",
+              "gravity": "center",
+              "onClick": "@{tag}"
+}]
+
+
+            }
+          
+        
+      }
+    ]
+  },
+  "DataDrivenExamplev": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+
+    "paddingBottom": "0dp",
+    "children": [
+   {
+        "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+               "rhover":"true",
+               
+               "rcolor":"#fada65",
+               "children":[{    
+          "type": "CardView",
+          "layout_marginLeft": "5dp",
+          "layout_marginRight": "5dp",
+          "layout_marginTop": "5dp",
+          "layout_marginBottom": "5dp",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              
+              "children":[
+{
+        "type":"LinearLayout",
+        "text":"@{my}",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity": "right",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"horizontal",
+              "text":"forheader",
+              "gravity": "right",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"children":[
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+
+
+{
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              
+              "layout_marginRight":"10dp",
+              "text":"@{my.a_email}"
+              },
+              
+              {
+"type": "TextView",
+          "layout_width": "wrap_content",
+              "layout_height": "50dp",
+              
+              "layout_marginRight":"10dp",
+              "text":"@{my.a_resttime}"
+              }
+
+]
+}
+
+
+
+
+,
+
+{
+                  "type": "CircleImageView",
+                  "layout_width": "50dp",
+                  "layout_height": "50dp",
+                  
+                  "src": "https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+                  "onClick": {
+                    "someKey": "someValue"
+                  }
+                  }
+
+
+
+              
+         
+]
+
+},
+
+
+
+
+{
+        "type": "ImageView",
+            
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "padding": "4dp",
+            "background": "#000000",
+            "scaleType": "fitXY",
+            "layout_alignParentTop": true,
+            "layout_alignParentRight": true
+          },
+       
+
+   {
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "match_parent",
+              "orientation":"horizontal",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+{
+
+"type": "LinearLayout",
+          "layout_width": "match_parent" ,
+              "layout_height": "match_parent",
+              "orientation":"horizontal",
+              "gravity":"right"
+              
+              
+       
+,"children":[
+
+{"type": "TextView",
+            "text":"share",
+            "gravity":"center",
+           "layout_height": "40dp",
+            "layout_width": "40dp"
+            },
+{
+
+          "type":"RippleLayout",
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"مشاركة",
+               "layout_marginRight":"35dp",
+               "layout_weight": "0",
+               
+               "children":[
+{"type": "Button",
+            "text":"",
+            
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                  "background":"https://icons.iconarchive.com/icons/pictogrammers/material/24/share-icon.png"
+  }
+]}
+]}
+
+,
+            
+           
+
+
+
+
+
+ 
+            {
+          "type":"RippleLayout",
+                  
+        
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+               "tooltipText":"@{my}",
+               "layout_marginRight":"50dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+                "click_from":"5",
+"typeAction" :"View_Edit",
+
+          "typeActionName" :"AlertDialogLayout",
+          "api_base":"
+          [
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #user.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layout.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #layouts.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  },
+  {
+    #url#: #http://0.0.0.0:8080/admin3/#,
+    #murl#: #styles.json#,
+    #m#: #0#
+  }
+]
+          ",
+                  "click_from_datak":"{#my#:[{medata:#hello#}]}",
+        "click_from_data":"@{fn:format('{#my#:[{ #data#:#@%s@#,#myfin#:#@%s@#,#test#: #@%s@# }]}',@{my.a_email},@{my.age},@{my.age})}",
+
+              "onClick": "m@{tag}",
+                  "background":"https://icons.iconarchive.com/icons/iconsmind/outline/24/Gorilla-icon.png"
+ }
+]
+}
+
+,
+
+{
+          "type":"RippleLayout",
+                  
+             
+               "ralfa":"10",
+               "rdrotion":"10",
+               "roverlay":"false",
+               "rround":"50",
+               "layout_width": "35dp",
+              "layout_height": "35dp",
+               "rhover":"true",
+               "rcolor":"#fada65",
+                       "tooltipText":"اعجبني",
+               "layout_marginRight":"0dp",
+             
+               "children":[
+{"type": "Button",
+            "text":"",
+           "layout_height": "35dp",
+            "layout_width": "35dp",
+           
+                  "background":"https://icons.iconarchive.com/icons/iconsmind/outline/24/Like-icon.png"
+
+ }
+]
+}
+
+
+
+
+
+
+
+
+
+
+ ]
+
+}
+ 
+
+,
+
+
+
+
+{
+"type": "LinearLayout",
+          "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "orientation":"vertical",
+              "text":"forooter",
+              "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg"
+,"childern":[{
+            "type": "Button",
+            "text":"mmmmm",
+       "src":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+           "layout_height": "50dp",
+            "layout_width": "50dp"
+            
+            }]
+
+}
+
+
+]
+
+
+}
+
+
+]
+     
+     
+
+
+
+
+
+
+}]
+            
+        
+        
+        
+        
+        
+        }]
+        
+      
+    
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "RecyclerViewExampleAuto": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "AutoText",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "background":"@drawable/h_round",            
+                "lhint": "hh50djhhhhp",
+        "data_primary":"myautoprimary",
+        "Set_data_when_click_item":"[
+{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#name#},
+{#data_id#:#myautoprimary#,#data_set#:#myautoprimary#,#data_get#:#name#},
+{#data_id#:#myautoprimaryv#,#data_set#:#myautoprimaryv#,#data_get#:#name#}
+]",
+        "filter":"name#age",
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager"
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "item-layout": {
+              "type": "TextView",
+            "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          },  
+          
+          "d_UseClickItem":"0",
+                "typeAction" :"Set_Data",
+                                  
+        
+        
+        
+              "layout_width": "match_parent",
+              "padding": "12dp",
+              "layout_marginBottom": "4dp",
+              "gravity": "center",
+              "text": "@{my}",
+              "textSize": "14sp",
+              "textColor": "#323232"
+            }
+          }
+        }
+      }
+    ]
+  },
+  
+    "RecyclerViewExampleSpinner": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "padding": "16dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+        "type": "Sppiner",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "background":"@drawable/h_round",            
+                "lhint": "hh50djhhhhp",
+        "data_primary":"myautoprimaryv",
+        "Set_data_when_click_item":"[
+{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#name#},
+{#data_id#:#bbkkv#,#data_set#:#bbkkv#,#data_get#:#name#}
+
+]",
+        "filter":"name#age",
+        "data": {
+          "items": "@{datam.achievementsm}"
+        },
+        "layout_manager": {
+          "type": "LinearLayoutManager"
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            "item-layout": {
+              "type": "TextView",
+            "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          },  
+          
+          "d_UseClickItem":"0",
+                "typeAction" :"Set_Data",
+                                  
+        
+        
+        
+              "layout_width": "match_parent",
+              "padding": "12dp",
+              "layout_marginBottom": "4dp",
+              "gravity": "center",
+              "text": "@{my}",
+              "textSize": "14sp",
+              "textColor": "#323232"
+            }
+          }
+        }
+      }
+    ]
+  },
+  
+  
+  "RecyclerViewExample": {
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "0dp",
+    "paddingBottom": "0dp",
+    "children": [
+      {
+      
+          
+        "type": "RecyclerView",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#ffffff",
+         "data_primary":"recycleserchh",
+         "filter":"a_email",
+         "d_key":"lovee",
+         "data_id":"[
+{#data_id#:#hell#,#data_set#:#1#,#data_get#:#1#}
+
+,{#data_id#:#bb#,#data_set#:#bb#,#data_get#:#bb#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+         "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}"
+          ,
+          "api_method":"post",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool"
+          ,
+         
+        "data": {
+          "items": "@{lovee}"
+        },
+        "layout_manager": {
+   "type": "LinearLayoutManager",
+            "orientation":"vertical",
+            "reverse":false,
+            "space":"10",
+             "use_realod":"1",
+            "prograss":"myprog",
+            "show_prograss":"1",
+            "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}"
+          ,
+          "api_method":"post",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool"
+          
+
+            
+        },
+        "adapter": {
+          "@": {
+            "type": "SimpleListAdapter",
+            "item-count": "@{items.$length}",
+            
+            "item-layout": {
+            
+            
+          "type": "include",
+          "layout": "DataDrivenExamplev",
+    
+          "paddingBottom": "0dp",
+          "data": {
+            "user": "@{items}",
+                  "my": "@{items[$index]}"
+          }
+            
+              
+
+
+
+                      
+              
+              
+              
+      
+            }
+          }
+        }
+      }
+    ]
+    
+  },
+  "AlertDialogLayout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "80dp",
+    "layout_height": "wrap_content",
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "background":"#c48866",
+    "children":[
+    
+    {
+       "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_marginTop": "0dp",
+        "gravity": "center",
+        "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+        "textSize": "18sp",
+        "text": "@{s0.my[0].data}"
+},
+{
+       "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "10dp",
+        "gravity": "center",
+        "textColor": "@color/white",
+        "textSize": "18sp",
+        "text": "@{s0.my[0].data}"
+}
+
+],
+    "layout_height": "50dp"},
+
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"اسم الصنف",
+  "id": "hellv",
+                "data_primary":"hellv",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,"text":"@{s0.my[0].data}",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"اسم الصنف",
+  "id": "hell",
+                "data_primary":"hell",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,"text":"gggggg",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          
+
+    
+
+{"type": "EditText",
+                  "data_primary":"bbkk"
+                  ,
+                  "layout_height": "55dp",
+                  "layout_width": "90dp",
+                  "padding":"0dp",
+                  "margin":"50dp",
+                  "gravity": "center",
+      "mm": "0",
+      "background":"@color/green"
+                  
+                  
+                  
+},
+
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "@{item}",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"Get_Data",
+          
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#email#:#@bbkk@#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",
+  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+ {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "textColor": "#ffaa77",
+        "textSize": "32sp",
+        "text": "@{s0.my[0].myfin}"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "text": "press ok to continue."
+      }
+    ]
+  }
+  ,
+  
+  "tt": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "80dp",
+    "layout_height": "wrap_content",
+  
+    "children": [
+     
+ {    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "background":"#c48866",
+    "children":[
+    
+    {
+       "type": "ImageView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_marginTop": "0dp",
+        "gravity": "center",
+        "src": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+        "textSize": "18sp",
+        "text": "@{s0.my[0].data}"
+},
+{
+       "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "10dp",
+        "gravity": "center",
+        "textColor": "@color/white",
+        "textSize": "18sp",
+        "text": "@{s0.my[0].data}"
+}
+
+],
+    "layout_height": "50dp"},
+
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"اسم الصنف",
+  "id": "hellv",
+                "data_primary":"hellv",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,"text":"@{s0.my[0].data}",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          {
+            "type": "TextInputLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "paddingLeft": "16dp",
+                     "paddingLeft": "16dp",
+                    "d_onErrorText":"يرجي ادخال اسم الصنف", 
+                                "layout_marginEnd":"50dp",
+                    "starticon":"@drawable/addbtn",
+      "lboxcolor":"@color/green",
+            "lhint":"اسم الصنف",
+  "id": "hell",
+                "data_primary":"hell",
+                "d_NullValue":true,
+                "d_OnErrorText":"يرجي ادخال اسم الصنف",
+                "endicon":"@drawable/addbbtn",         
+            
+"gravity":"right",
+  
+            "paddingRight": "16dp",
+            "paddingTop": "8dp",
+            "children": [
+              {
+                "type": "TextInputEditText",
+                
+                       "tooltipText":"mmmmm",   
+                         
+     "paddingRight":"15dp",
+                "textAligment":"center",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                                        "background":"@drawable/h_round",            
+                "textSize": "18dp"
+                ,"text":"gggggg",
+                "gravity":"right"
+              }
+              
+            ]
+          },
+          
+
+    
+
+{"type": "EditText",
+                  "data_primary":"bbkk"
+                  ,
+                  "layout_height": "55dp",
+                  "layout_width": "90dp",
+                  "padding":"0dp",
+                  "margin":"50dp",
+                  "gravity": "center",
+      "mm": "0",
+      "background":"@color/green"
+                  
+                  
+                  
+},
+
+
+{
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                  "layout_marginTop": "0dp",
+                  "text": "@{item}",
+                  "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+
+]",
+          "typeAction" :"Get_Data",
+          
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#email#:#@bbkk@#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",
+  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayoutkk",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+ {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "layout_marginTop": "16dp",
+        "gravity": "center",
+        "textColor": "#ffaa77",
+        "textSize": "32sp",
+        "text": "@{s0.my[0].myfin}"
+      },
+      {
+        "type": "TextView",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "gravity": "center",
+        "textSize": "22sp",
+        "text": "press ok to continue."
+      }
+    ]
+  }
+  
+  
+  
+  
+  
+  
+}
+
+
+
+#####
+{
+                  
+            "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+                  
+                  "textColor": "#000000",
+                  "textSize": "12sp"
+                ,"children":[
+                
+{
+                  "type": "AppBarLayout",
+      "layout_width": "match_parent",
+      "layout_height": "50dp",
+        
+                  "textColor": "#000000",
+                  "textSize": "12sp",
+                  "children":[
+{
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "50dp",
+      "orientation": "horizontal",
+      
+      "children": [
+{
+            "type": "EditText",
+            "layout_width": "150dp",
+            "layout_height": "50dp",
+            "hint":"بجث",
+            "text":"mmm",
+            "background":"@drawable/h_round",            
+            "textSize": "14sp",
+            "Serach_id":"recycleserch"
+            
+          },
+          {
+       "type": "BottomNavigationView",
+        "layout_width": "50dp",
+        "layout_height": "50dp",
+        "layout_marginTop": "0dp",
+
+        "background": "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-list-add-user-icon.png",
+        "textSize": "18sp"
+        
+}
+]
+      }
+
+
+]
+},
+{
+  "type": "SwipeRefreshLayout",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "on_sweep":"recycleserchh",
+    "on_sweep_typ":"1",
+  
+  
+  "scrollbars": "none",
+  "children": [
+    {
+      "type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+      "background": "#efefef",
+      "children": [
+        
+        
+        
+        
+        {
+                  "type": "LinearLayout",
+                  "orientation": "vertical",
+                  "layout_width": "match_parent",
+                  "layout_marginTop": "8dp",
+                  "children": [
+             {
+                  "type": "Button",
+                  "layout_height": "?Theme_AppCompat:actionBarSize",
+                  "layout_width": "150dp",
+                  "gravity": "center",
+                 "show_confirm_message":"0",
+                 "show_confirm_message_data":"tt",
+ "layout_marginTop": "0dp",
+                  "text": "حفظ تجريبي",
+             "data_id":"[
+{#data_id#:#hell#,#data_set#:#myres#,#data_get#:#hell#}
+
+,{#data_id#:#bbkk#,#data_set#:#bbkk#,#data_get#:#bbkk#}
+,
+{#data_id#:#vv#,#data_set#:#vv#,#data_get#:#vv#}
+,
+{#data_id#:#grou#,#data_set#:#grou#,#data_get#:#mmyk#}
+
+]",
+          "typeAction" :"OpenAlert",
+          
+          "api_body":"
+          {#databody#:[{#databodymmmmm#:[{#databodymmmmmxxxxxxxxxxx#:#2#,#currID#:#1#,#typ#:#2#,#month#:#0#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}],#currID#:#1#,#typ#:#2#,#email#:#@bbkk@#,#typsender#:#1#,#buyorsalse#:#1#,                   #groupID#:#0#,#prodID#:#0#,#barcode#:#0#}]}",
+  
+   "api_method":"POST",
+          "api_url":"https://www.astooltech.com/api/v1/customerastool",
+          "typeActionName" :"AlertDialogLayout",
+               "data_primary":"vvbb", 
+                  "data_api":"5555555",
+                                       "onClick": "@{k}",
+                  "data": {
+                "k": "@{tag.mm}",
+                "hell":"mmmmmm"
+              }
+},
+      {"type": "EditText",
+                  "data_primary":"bbkkv"
+                  ,
+                  "layout_height": "55dp",
+                  "layout_width": "90dp",
+                  "padding":"0dp",
+                  "margin":"50dp",
+                  "gravity": "center",
+      "mm": "0",
+      "background":"@color/green"
+                  
+                  
+                  
+},
+{
+        
+          "type": "include",
+          "layout": "RecyclerViewExampleAuto",
+          "padding": "0dp",
+          "layout_width": "match_parent",
+    "layout_height": "50dp",
+          "paddingBottom": "0dp"
+        },
+        
+      {
+        
+          "type": "include",
+          "layout": "RecyclerViewExampleSpinner",
+          "padding": "0dp",
+          "layout_width": "match_parent",
+    "layout_height": "50dp",
+          "paddingBottom": "0dp"
+        }  
+
+
+, {
+        
+          "type": "include",
+          "layout": "RecyclerViewExample",
+          "padding": "0dp",
+          "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+          "paddingBottom": "0dp"
+        }
+        ,
+        {
+                  "type": "ProgressBar",
+                  "layout_height": "50dp",
+                  "layout_width": "90dp",
+                  "gravity": "center",
+                  "mm":1,
+                  "visibility":"gone",
+                   "data_primary":"myprog",
+                  
+                  "style_bar":{
+                  "color_bar":"#2cdb81",
+                  "typ_bar":"3"
+},
+                                  "typ_bar":"3",
+                  "layout_marginTop": "10dp",
+                  "text": "ADD gh CART"
+
+                  }
+        
+        ]}
+      ]
+    }
+  ]
+}]
+}

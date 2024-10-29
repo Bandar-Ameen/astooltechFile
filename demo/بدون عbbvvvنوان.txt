@@ -1,0 +1,198 @@
+private void CustomMessage()
+{
+    this.radChat1.ChatElement.ChatFactory = new MyChatFactory();
+    this.radChat1.Author = new Author(Properties.Resources.nancy1, "Nancy");
+    Author author2 = new Author(Properties.Resources.andrew1,"Andrew");
+    ChatTextMessage message1 = new ChatTextMessage("Hello", author2,DateTime.Now.AddHours(1));
+    this.radChat1.AddMessage(message1);
+    ChatTextMessage message2 = new ChatTextMessage("Hi",  this.radChat1.Author,DateTime.Now.AddHours(1).AddMinutes(10));
+    this.radChat1.AddMessage(message2);
+    ChatTextMessage message3 = new ChatTextMessage("We would like to announce that in the R2 2018 release we introduced Conversational UI", author2,DateTime.Now.AddHours(3));
+    this.radChat1.AddMessage(message3);
+}
+public class MyChatFactory : ChatFactory
+{
+    public override BaseChatItemElement CreateItemElement(BaseChatDataItem item)
+    {
+        if (item.GetType() == typeof(TextMessageDataItem))
+        {
+            return new MyTextMessageItemElement();
+        }
+        return base.CreateItemElement(item);
+    }
+}
+public class MyTextMessageItemElement : TextMessageItemElement
+{
+    LightVisualButtonElement likeButton = new LightVisualButtonElement();
+    protected override void CreateChildElements()
+    {
+        base.CreateChildElements();
+        likeButton.NotifyParentOnMouseInput = true;
+        likeButton.Image = Properties.Resources.heart_empty;
+        likeButton.Click += likeButton_Click;
+        likeButton.EnableElementShadow = false;
+        likeButton.Margin = new Padding(10, 0, 10, 0);
+        this.Children.Add(likeButton);
+    }
+    private void likeButton_Click(object sender, EventArgs e)
+    {
+        if (this.Data.Tag == null)
+        {
+            this.Data.Tag = true;
+        }
+        else
+        {
+            bool isLiked = (bool)this.Data.Tag;
+            this.Data.Tag = !isLiked;
+        } 
+    }
+    public override void Synchronize()
+    {
+        base.Synchronize();
+        if (this.Data.Tag != null && (bool)this.Data.Tag == true)
+        {
+            this.likeButton.Image = Properties.Resources.heart_filled;
+        }
+        else
+        {
+            this.likeButton.Image = Properties.Resources.heart_empty;
+        }
+    }
+    protected override SizeF ArrangeOverride(SizeF finalSize)
+    {
+         SizeF baseSize = base.ArrangeOverride(finalSize);
+        RectangleF likeButtonRect;
+        RectangleF clientRect = this.GetClientRectangle(finalSize);
+        if (this.Data.ChatMessagesViewElement.ShowAvatars)
+        {
+            if (this.Data.ChatMessagesViewElement.ShowMessagesOnOneSide || !this.Data.IsOwnMessage)
+            {
+                likeButtonRect = new RectangleF(clientRect.X+this.AvatarPictureElement.DesiredSize.Width + this.MainMessageElement.DesiredSize.Width,
+                    clientRect.Y + this.NameLabelElement.DesiredSize.Height+this.MainMessageElement.DesiredSize.Height/3,
+                    this.likeButton.Image.Width, this.likeButton.Image.Height);
+            }
+            else
+            {
+                likeButtonRect = new RectangleF(clientRect.Right - likeButton.DesiredSize.Width - this.AvatarPictureElement.DesiredSize.Width - this.MainMessageElement.DesiredSize.Width,
+                    clientRect.Y + this.NameLabelElement.DesiredSize.Height+this.MainMessageElement.DesiredSize.Height/3,
+                    this.likeButton.Image.Width, this.likeButton.Image.Height);
+            }
+        }
+        else
+        { 
+         if (this.Data.ChatMessagesViewElement.ShowMessagesOnOneSide || !this.Data.IsOwnMessage)
+            {
+                likeButtonRect = new RectangleF(clientRect.X+ this.MainMessageElement.DesiredSize.Width,
+                    clientRect.Y + this.NameLabelElement.DesiredSize.Height+this.MainMessageElement.DesiredSize.Height/3,
+                   this.likeButton.Image.Width, this.likeButton.Image.Height);
+            }
+            else
+            {
+                 likeButtonRect = new RectangleF(clientRect.Right - likeButton.DesiredSize.Width -  this.MainMessageElement.DesiredSize.Width,
+                     clientRect.Y + this.NameLabelElement.DesiredSize.Height+this.MainMessageElement.DesiredSize.Height/3,
+                     this.likeButton.Image.Width, this.likeButton.Image.Height);
+            }
+        }
+        this.likeButton.Arrange(likeButtonRect);
+         return baseSize;
+    } 
+}
+
+
+
+public class MyPanelElement : RadElement
+{
+    TextPrimitive text;
+    FillPrimitive background;
+    Timer updateTime;
+    protected override void CreateChildElements()
+    {
+        base.CreateChildElements();
+        this.text = new TextPrimitive();
+        this.text.ZIndex = 2;
+        this.text.Margin = new Padding(30);
+        this.text.BindProperty(TextPrimitive.TextProperty, this,
+        MyPanelElement.CurrentTimeProperty, PropertyBindingOptions.OneWay);
+        this.background = new FillPrimitive();
+        this.background.GradientStyle = GradientStyles.OfficeGlass;
+        this.Children.Add(this.text);
+        this.Children.Add(this.background);
+        updateTime = new Timer();
+        updateTime.Interval = 100;
+        updateTime.Tick += new EventHandler(updateTime_Tick);
+        updateTime.Start();
+    }
+    bool active = true;
+    public bool Active
+    {
+        get { return active; }
+        set
+        {
+            active = value;
+            if (!value)
+            {
+                this.updateTime.Stop();
+            }
+            else
+            {
+                this.updateTime.Start();
+            }
+        }
+    }
+    void updateTime_Tick(object sender, EventArgs e)
+    {
+        this.SetValue(CurrentTimeProperty, DateTime.Now.ToString());
+    }
+    public static RadProperty CurrentTimeProperty = 
+        RadProperty.Register("CurrentTimeProperty", typeof(string), typeof(MyPanelElement),
+    new RadElementPropertyMetadata(null, ElementPropertyOptions.AffectsDisplay));
+    public string CurrentTime
+    {
+        get { return (string)this.GetValue(CurrentTimeProperty); }
+        set { this.SetValue(CurrentTimeProperty, value); }
+    }
+}
+
+
+
+[ToolboxItem(true)]
+public class MyPanel : RadControl
+{
+    private MyPanelElement panelElement;
+    public MyPanel()
+    {
+        this.AutoSize = true;
+    }
+    public MyPanelElement PanelElement
+    {
+        get
+        {
+            return this.panelElement;
+        }
+    }
+    public bool Active
+    {
+        get
+        {
+            return this.panelElement.Active;
+        }
+        set
+        {
+            this.panelElement.Active = value;
+        }
+    }
+    protected override Size DefaultSize
+    {
+        get
+        {
+            return new Size(200, 100);
+        }
+    }
+    protected override void CreateChildItems(RadElement parent)
+    {
+        this.panelElement = new MyPanelElement();
+        this.RootElement.Children.Add(panelElement);
+        base.CreateChildItems(parent);
+    }
+}
+

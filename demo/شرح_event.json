@@ -1,0 +1,169 @@
+   /*
+ملاحظات
+/*
+هنا جلب البيانات 
+Data_From_View
+
+index_id  لازم يكون فريد من نوعة
+
+عندما نريد نستخدم متعير قيمته ثابتة نستخدم 
+     "use_const": true,
+   وفيمة المتغير 
+      "const_value": "اي نوغ متغير ,
+      
+  وعندما تريد جلب البيانات من داخل RecycleView او SliderView 
+  نستخدم هذه 
+       "use_data_from_source": true,
+       وبعد ذالك اسم المفتاح 
+          "source_key": "drugName_en"
+          
+          
+          واذا نريد بيانات من View اخر 
+          نستخدم 
+          View_Id:"اسم الفيو"
+          بشرط يكون 
+             "use_const": false,
+             "use_data_from_source": false,
+          */
+          
+          هنا لتلقي البيانات
+          الي الفيو
+          
+          Data_To_View
+          index_id Data_From_View  لازم يكون نفس الرقم الموجود في 
+          
+          
+          
+          View_Type=0 اخذ نص او جلب نص
+          View_Type=1 اخفاء او اظهار الفيو
+          View_Type=2 تفعيل او إلي التفعيل
+*/
+
+
+  "Event": {
+  "Event_Type": "Set_Data_From_View_To_View",
+  "Name": "form",
+  "get_set_to_view": {
+    "Data_From_View": [
+      {
+        "View_Id": "Unit_NameSearcih",
+        "index_id": 0,
+        "View_Type": "A",
+        "use_const": false,
+        "const_value": false,
+        "use_data_from_source": true,
+        "source_key": "drugName_en"
+      },
+      {
+        "View_Id": "Unit_NameSearcih",
+        "index_id": 1,
+        "View_Type": "A",
+        "use_const": false,
+        "const_value": false,
+        "use_data_from_source": true,
+        "source_key": "drugName_en"
+      }
+    ],
+    "Data_To_View": [
+      {
+        "View_Id": "Unit_NameSearch",
+        "View_Type": "0",
+        "Index_ID": 0
+      },
+      {
+        "View_Id": "myouto",
+        "View_Type": "0",
+        "Index_ID": 0
+      }
+    ]
+  }
+}
+
+/*
+شرح جلب البياناتمن السرفر تلقي البيانات
+data#message[0]#ss#mm
+data قيمة ثابتة
+نستخدم # للاخنيار key
+
+علي سبيل المثال
+هذه ال response 
+
+{
+  "success": [
+    {
+      "tt": "gggggggg",
+      "aa": "500",
+      "ss": {
+        "mm": "ggggggggkkkkkkkk"
+      }
+    }
+  ],
+  "status": "500",
+  "message": [
+    {
+      "tt": "gggggggg",
+      "aa": "500",
+      "ss": {
+        "mm": [
+          {
+            "id": 1,
+            "drugName_en": "Rfamol 120ml Syrup",
+            "drugName_ar": "رفامول 120 مجم شراب",
+            "scientificDrugId": "292",
+            "proxyDrugId": "1",
+            "prodCompDrugId": "6",
+            "pack": "Syrup 60ml",
+            "unit": "باكت",
+            "price": "620",
+            "cashBonus": "30",
+            "yupBonus": "10",
+            "spare1": "2020\/8\/14",
+            "spare2": "5",
+            "spare3": ""
+          }
+]
+}
+}]
+}
+
+
+عندما نريد نختار mm
+نستخدم 
+data#message[0]#ss#mm
+او
+data.message[0].ss.mm
+هذه يستخدم فقط عند استخدام لل RecycleView 
+كا datasource
+استخدام الفتدنكشن في Request_Body 
+او Request_Header
+او 
+Data_To_View
+
+نستخدم هذه 
+#{data_from_view[0].get_data.GetData}
+"Key_Value":"@@{fnn:format('[{\"keyName\":15,\"KeyValue\":\"%s\",\"KeyType\":\"nonet\",\"ViewName\": \"nnb\"}]',#{data_from_view[0].get_data.GetData},#{data_from_view[0].get_data.GetData},#{data_from_view[0].get_data.GetData},#{data_from_view[0].get_data.GetData})}",
+
+nameValuePairs
+هذا عندما نريد نجلب بيانات من spinner 
+او نبحث 
+{
+                                        "View_Id": "SpinnerName",
+                                        "index_id": 0,
+                                        "View_Type": "0",
+                                        "use_const": false,
+                                        "const_value": "1",
+                                        "use_data_from_source": false,
+                                        "source_key": "drugName_en",
+                                        "from_select_item":{
+                                        
+"key_value":"drugName_en"
+}
+                                      }
+                                      
+                                      
+                                      
+                                      
+                                      عند تعديل RecyclerView الي source نغير getdata في الا api 
+
+
+*/

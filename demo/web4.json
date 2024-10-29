@@ -1,0 +1,719 @@
+{
+
+"Root_Layout": {
+    "type": "LinearLayout",
+        "on_custome_touch":{
+        "ScrollModes":3
+},
+    
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_marginTop": "0dp",
+    "layout_height": "match_parent",
+    "children": [
+      {
+            "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+          "focusable": false,
+        "paddingTop": "0dp",
+        "id":"heex",
+        "orientation": "vertical",
+        "on_custome_touch":{
+        "ScrollModes":3
+},
+    
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "sk",
+              "focusable": false,
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  
+  
+  "sk":{
+      "type": "SkeLayout",
+      "id":"waa",
+"data_primary": "waa",
+      "Daaa":{
+"ColorA":"#EEEEEE",
+  "id":"kkb",
+"ColorB":"#DEDEDE",
+  "focusable": false,
+"dir":1,
+"auto":true,
+"Duration":1000,
+"Anim_finsh":1,
+"Start_From":5000,
+"Anim_typ":1
+},
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "children":[
+{
+"type": "LinearLayout",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "orientation": "vertical",
+        "focusable": false,
+      "children":[
+
+{
+            "type": "Button",
+            "text": "ggggggggm",
+            "layout_height": "50dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "visibility":"gone",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Set_Data_From_View_To_View",
+              "Name": "form",
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "0",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "1",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "waa",
+                    "View_Type": "0",
+                    "Index_ID": 0,
+                    "use_format": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "Button",
+            "text": "ggggggggm",
+            "layout_height": "50dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "visibility":"gone",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Set_Data_From_View_To_View",
+              "Name": "form",
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "0",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "0",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "waa",
+                    "View_Type": "0",
+                    "Index_ID": 0,
+                    "use_format": false
+                  }
+                ]
+              }
+            }
+          },
+          
+
+{
+
+"type": "Button",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "text":"hellovvv",
+        "visibility":"gone",
+          "focusable": false,
+        "srcv":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+        "gravity": "center",
+             "data_primary":"midelky"
+     
+   
+   
+   
+},
+{
+     "type": "SkeView",
+   
+      "proper":{
+"ColorA":"#EEEEEE",
+"ColorB":"#DEDEDE",
+"dir":1,
+"touch_enb":false,
+  "focusable": false,
+"auto":true,
+"Duration":1000,
+"Anim_finsh":1,
+"Anim_typ":2
+
+
+},
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "children":[
+{
+
+"type": "Button",
+        "layout_width": "match_parent",
+        "layout_height": "50dp",
+        "text":"hello",
+          "focusable": false,
+        "srcv":"https://raw.githubusercontent.com/rasoulmiri/Skeleton/master/sample/src/main/res/drawable/photo_mazda_3.jpg",
+        "gravity": "center",
+             "data_primary":"midelky",
+             "visibility":"gone"
+     
+   
+   
+   
+},
+{
+            "type": "include",
+            "layout": "web",
+              "focusable": false,
+            "background":"@color/red_A200",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+
+
+]
+      
+
+}
+
+]
+
+}
+
+]
+     
+
+
+
+      },
+  
+  "ch":{
+
+"type": "LinearLayout",
+  "orientation": "vertical",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "background":"@color/red_A200",
+  
+  "children":[
+ 
+{
+            "type": "Button",
+            "text": "ggggggggm",
+            "layout_height": "50dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "focusable": false,
+            "visibilityy":"gone",
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Set_Data_From_View_To_View",
+              "Name": "form",
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "0",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhhhhhhhh",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "wa",
+                    "View_Type": "7",
+                    "Index_ID": 0,
+                    "use_format": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "Button",
+            "text": "ggggggggm",
+            "layout_height": "50dp",
+            "layout_width": "35dp",
+            "click_from": "5",
+            "typeAction": "View_Edit",
+            "visibilityy":"gone",
+            "focusable": false,
+            
+            "gravity": "center",
+            "Event": {
+              "Event_Type": "Set_Data_From_View_To_View",
+              "Name": "form",
+              "get_set_to_view": {
+                "Data_From_View": [
+                  {
+                    "View_Id": "0",
+                    "index_id": 0,
+                    "View_Type": "A",
+                    "use_const": true,
+                    "const_value": "hhhhhhhhhhhhh",
+                    "use_data_from_source": false,
+                    "source_key": "drugName_en"
+                  }
+                ],
+                "Data_To_View": [
+                  {
+                    "View_Id": "wa",
+                    "View_Type": "8",
+                    "Index_ID": 0,
+                    "use_format": false
+                  }
+                ]
+              }
+            }
+          },
+          
+
+ {
+            "type": "include",
+            "layout": "he",
+            "background":"@color/red_A200",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          },
+  
+
+]
+  
+
+},
+
+"shim":{
+"type": "shimmer_Wait",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "id":"wa",
+"data_primary": "wa",
+  "background":"@color/red_A200",
+  
+  "enabled": true,
+  
+  "proper": {
+    "A_type_style": "THREE_BOUNCE",
+    "A_alpha": 50,
+    
+    
+    "A_color": "438afe",
+    "A_Dalay": 1000,
+    "A_start": true,
+    "proper": {
+      "A_type_style": "THREE_BOUNCE",
+      "A_alpha": 50,
+      "A_color": "438afe",
+      "A_Dalay": 10000000,
+      "A_start": true
+    },
+    "view": {
+      "type": "include",
+      "layout": "web",
+      "tname": "SimpleDataBindingExample",
+      "paddingBottom": "0dp"
+    },
+    "daley": 1000,
+    "errorText": "Errrrrrror happen",
+    "show_first":true,
+  "show_prograss":true,
+  "hid_auto":true,
+  "shimmer":{
+"start_auto":true,
+"direction":0,
+"ship":1,
+"duration":100,
+"reapt":20,
+"reapt_delay":100,
+"reapt_count":1,
+"title":1,
+"alfa":0.5,
+"WidthRatio":10,
+"intensity":50,
+"dropoff":1,
+"fixedWidth":50,
+"fixedHeight":50,
+"heightRatio":50
+
+
+
+}
+    
+  }
+  },
+
+  
+"he":{
+"type": "Layout_Wait",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "id":"wa",
+"data_primary": "wa",
+  "background":"@color/red_A200",
+  
+  "enabled": true,
+  
+  "proper": {
+    "A_type_style": "THREE_BOUNCE",
+    "A_alpha": 50,
+    
+    
+    "A_color": "438afe",
+    "A_Dalay": 10000,
+    "A_start": true,
+    "proper": {
+      "A_type_style": "THREE_BOUNCE",
+      "A_alpha": 50,
+      "A_color": "438afe",
+      "A_Dalay": 10000000,
+      "A_start": true
+    },
+    "view": {
+      "type": "include",
+      "layout": "web",
+      "tname": "SimpleDataBindingExample",
+      "paddingBottom": "0dp"
+    },
+    "daley": 1000,
+    "errorText": "Errrrrrror happen",
+    "show_first":true,
+  "show_prograss":true,
+  "hid_auto":true,
+  "shimmerr":{
+"start_auto":true,
+"direction":0,
+"ship":1,
+"duration":100,
+"reapt":20,
+"reapt_delay":100,
+"reapt_count":1,
+"title":1,
+"alfa":0.5,
+"WidthRatio":10,
+"intensity":50,
+"dropoff":1,
+"fixedWidth":50,
+"fixedHeight":50,
+"heightRatio":50
+
+
+
+}
+    
+  }
+  },
+
+"stat":{
+
+  "type": "StatusLayout",
+
+  "layout_width": "250dp",
+  "layout_height": "250dp",
+  "background":"@color/red_A200",
+ "properr":{ 
+
+"show_start":false,
+"child":[{
+
+"type": "LinearLayout",
+  "orientation": "vertical",
+  "layout_width": "250dp",
+  "layout_height": "250dp",
+  "background":"@color/red_A200",
+  "children":[]
+  
+
+}
+
+
+
+]},
+"knbs":"mmm"
+},
+
+"web":{
+  "type": "FrameLayout",
+  "orientation": "vertical",
+  "selected":false,
+  "focusable": false,
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "on_custome_touch":{
+        "ScrollModes":3
+},
+    
+  "data": {
+    "user": "@{0}",
+    "sec": "@{sec}"
+  },
+  "children": [
+    {
+      "type": "WebViewx",
+      "orientation": "vertical",
+      "data_primary": "myweb",
+      "on_custome_touch":{
+        "ScrollModes":3
+},
+    
+      "visibility": "visible",
+      "selected":true,
+      "focusable": true,
+      "layout_height": "match_parent",
+      "layout_width": "match_parent",
+      "click_from_data": "@{user.name}",
+      "web_get_data": "@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+      "turl": "file:///android_asset/themes/bootstrap.min.css",
+      "DataUrl": {
+        "m_urls": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+        "Use_KeyBoard": true,
+        "Use_KeyBoardB": 50,
+        "Use_KeyBoardT": 0,
+        "use_get_data": true,
+        "update": false,
+        "enab_port": false,
+        "Use_Service": true,
+        "Use_Service_Filter": true,
+        "Use_Service_Filter_Name": "android.net.conn.CONNECTIVITY_CHANGE",
+        "Use_Service_Function": "showcokk",
+        "enab_back": true,
+        "enab_long_click": false,
+        "scroll_V": false,
+        "scroll_H": false,
+        "scroll_On_touch": false,
+        "enab_desktop": false,
+        "enab_cookies": false,
+        "enab_multiplwindow": false,
+        "enab_OverViewMode": false,
+        "enab_Open_window_Auto": true,
+        "use_error": true,
+        "m_error": "\n<!DOCTYPE html>\n<html lang=%1$sen%1$s>\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=%1$sutf-8%1$s>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n  <style>\n%4$s\n\n</style>\n<style>\n%6$s\n\n</style>\n\n<style>\n%9$s\n\n</style>\n\n  <script>\n%3$s\n</script>\n<script>\n%5$s\n</script>\n\n<script>\n%7$s\n</script>\n<script>\n%8$s\n</script>\n\n\n</head>\n<body>\n<div class=%1$sjumbotron text-center%1$s>\n  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>\n  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> \n</div>\n</body>\n</html>\n",
+    
+     
+
+"m_html": "
+<!DOCTYPE html>
+<html>
+<head>
+    <title>نموذج تسجيل دخول باستخدام AJAX</title>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>
+    <script>
+    function getipp(){
+
+return \"http://0.0.0.0:8080/\";
+}
+    function  vvmk(){
+
+var u = $('#memail').val();
+var e= $('#mpass').val();
+//var b = $('#AA_pass').val();
+//confirm(\"confirms\",u,e,b);
+
+//alert(u);
+login(\"newcus\",u,e,'1');
+
+alert(u);
+} 
+    
+    function login(btn,email,password,usertyp){
+					
+try{
+//alert(btn);
+//wating(btn,1);
+//alert(btn);
+/*let text = \"Hello World!\";
+
+//alert(result);
+		*/
+ var dt=JSON.stringify( {\"email\": email,\"password\":password} );
+//alert(dt);
+//let passhashv =CryptoJS.MD5(password).toString();
+//let passhashx = CryptoJS.MD5(passhashv.toUpperCase()).toString();  
+//let passhash= passhashx.toUpperCase().toString();  
+
+
+
+//var passhash = passhashv.toUpperCase();
+//(z)
+//var newpas=btoa(unescape(encodeURIComponent(passhash)));
+				//var resss=email+':'+newpas;
+				//var resul=\"Basic \"+btoa(unescape(encodeURIComponent(resss)));
+				 
+//alert(resul);
+//url: getipp()+'api/login.php',
+$.ajax({
+    url: getipp()+'api/login.php',
+    
+    type: 'post',
+  
+    beforeSend: function (xhr) {
+    usertyp=\"0\";
+    xhr.setRequestHeader(\"Content-Type\",\"application/x-javascript; charset:ISO-8859-1\");
+ 
+    //xhr.setRequestHeader (\"Authorization\", resul);
+xhr.setRequestHeader(\"devicenames\",\"web site\");
+xhr.setRequestHeader(\"User-Agent\",\"webhhhh site\");
+xhr.setRequestHeader(\"Host\",\"webhhhh 192.168site\");
+xhr.setRequestHeader(\"username\",\"ggg\");
+xhr.setRequestHeader(\"usertyp\",usertyp);
+xhr.setRequestHeader(\"email\",\"ggg\");
+
+},
+
+    
+    success: function(data ){
+      // wating(btn,2);
+//var uuuk=data.toString();
+alert(\"evhhh\"+JSON.stringify(data));
+//loginxx(JSON.stringify(data));
+
+//MessBoxA(\"error\",JSON.stringify(data));
+// if(isJson(uuuk)){
+ 	
+ 
+ 	var ffddv=JSON.parse(uuuk);
+      	var uuu=ffddv.statuseCode.toString();
+      var uuuv=ffddv.message.toString();
+      var datam=ffddv.data;
+      
+  //    alert(datam.usernames);
+   //   alert(uuu);
+
+	
+	
+var ffdd=datam;//JSON.parse(datam);
+/*let address = $(\"input[name*='memail']\");
+address.val(ffdd.accessToken);
+		
+*/
+
+    },
+    error: function( jqXhr, textStatus, errorThrown){
+ //wating(btn,2);
+ var dat=jqXhr.responseText;
+alert(\"error\"+JSON.stringify(jqXhr));
+ if(isJson(dat)){
+ 	var ffddv=JSON.parse(dat);
+   //   	var uuu=ffddv.statuseCode.toString();
+     // var uuuv=ffddv.message.toString();
+      var datamm=ffddv.data.toString();
+    alert(\"error\"+datamm);
+      }else{
+   //  MessBoxA(\"error\",\"يرجي الاتصال بالخادم..\");
+ 	}
+
+// var uuuk=jqXhr.toString();
+//alert(data);
+
+  //alert('errorhhhhhhhhhhhhhhhh'+jqXhr );
+    }
+});
+				
+						}catch(ddd){
+//wating(btn,2);
+//alert(ddd);
+
+}
+	} 
+    
+    
+        $(document).ready(function(){
+          
+
+
+
+  $(\"#login-formg\").submit(function(event){
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.ajax({
+                    url: \"process_login.php\",
+                    type: \"POST\",
+                    data: formData,
+                    success: function(response){
+                        // عرض رسالة النجاح أو الفشل
+                        $(\"#result\").html(response);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id=\"login-form\" method=\"post\">
+        <label for=\"memail\">اسم المستخدم:</label>
+        <input type=\"text\" id=\"memail\" name=\"username\"><br><br>
+        <label for=\"mpass\">كلمة المرور:</label>
+        <input type=\"password\" id=\"mpass\" name=\"password\"><br><br>
+                 <button  onclick=\"vvmk()\" style=\"margin :5px 5px 5px 5px; \"  id=\"newcus\" name=\"newcus\" data-dismiss=\"modal\"  class=\"btn btn-success newcus\"  data-loading-text=\"<i class='fa fa-spinner fa-spin'></i>   ...انتظر\"       type=\"button\">
+    <i class=\"k-icon k-i-save\"></i>
+دخول
+</button>
+    </form>
+    <div id=\"result\"></div>
+</body>
+</html>
+",
+
+
+"html_value":[
+{"key_Name":"name","Key_Value":"name","Key_Type":"QMark", "View_Name":"name"},
+{"key_Name":"Authorization","Key_Value":"nameu","Key_Type":"apikey", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/all.min.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/icheck-bootstrap.min.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/adminlte.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/jquery.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/bootstrap.bundle.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/core.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/md5.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/btnspiner.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/toastr.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/sweetalert2.min.js","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/toastr.min.css","Key_Type":"htmltag", "View_Name":"nameu"},
+{"key_Name":"Authorization","Key_Value":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/sweetalert2.min.css","Key_Type":"htmltag", "View_Name":"nameu"}
+
+
+
+],
+ 
+        "m_url": "http://0.0.0.0:8080/template-fimobile-main/",
+        "Use_Url": false,
+        "image_auto": true,
+        "enab_java": true
+      }
+    }
+  ]
+}
+}
