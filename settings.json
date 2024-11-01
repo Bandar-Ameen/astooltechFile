@@ -1,4 +1,5 @@
 {
+  "url_real_time":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/settings.json",
   "results": {
     "app_code": "sdksample",
     "base_url": "https://api.qiscus.com/",
