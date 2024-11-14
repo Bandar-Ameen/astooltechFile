@@ -75,7 +75,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/refs\/heads\/main\/demo\/loginsyss.json",
+        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/refs\/heads\/main\/demo\/loginsys.json",
         "UrlType": "Login",
         "Version": "1",
         "bodyy": [
@@ -512,7 +512,7 @@
     "Url": "http:\/\/0.0.0.0:8080"
   },
   "CompanyName": "bandarkAmeen",
-  "Version": "47457",
-  "login_typ": "1",
-  "setting": 0
+  "Version": "474577",
+  "login_typ": "0",
+  "setting": 1
 }
