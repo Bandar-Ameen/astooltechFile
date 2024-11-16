@@ -1,0 +1,203 @@
+{
+  "Root_Layout": {
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_marginTop": "0dp",
+    "layout_height": "match_parent",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "paddingTop": "0dp",
+        "orientation": "vertical",
+        "gravity": "right",
+        "children": [
+          {
+            "type": "include",
+            "layout": "web",
+            "tname": "SimpleDataBindingExample",
+            "paddingBottom": "0dp"
+          }
+        ]
+      }
+    ]
+  },
+  "web": {
+    "type": "FrameLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "data": {
+      "user": "@{0}",
+      "sec": "@{sec}"
+    },
+    "children": [
+      {
+        "type": "WebViewx",
+        "orientation": "vertical",
+        "data_primary": "myweb",
+        "visibility": "visible",
+        "focusable": true,
+        "layout_height": "match_parent",
+        "layout_width": "match_parent",
+        "click_from_data": "@{user.name}",
+        "web_get_data": "@{fn:format('[{#keyName#:#15#,#KeyValue#:#%s#,#KeyType#:#nonet#,#ViewName#: #nnb#}]',@{user.name},@{user.name},@{user.name},@{user.name})}",
+        "turl": "file:///android_asset/themes/bootstrap.min.css",
+        "DataUrl": {
+          "m_urls": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css#https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.js#http://192.168.1.100:8080/admin3/dist/js/toastr.min.css#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js#http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css#https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css#https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js#https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js#http://192.168.1.100:8080/admin3/dist/folium.min.js#http://192.168.1.100:8080/admin3/dist/folium.css#https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+          "Use_KeyBoard": true,
+          "Use_KeyBoardB": 10,
+          "Use_KeyBoardT": 0,
+          "use_get_data": false,
+          "update": false,
+          "enab_port": false,
+          "Use_Service": false,
+          "Use_Service_Filter": false,
+          "Use_Service_Filter_Name": "android.net.conn.CONNECTIVITY_CHANGE",
+          "Use_Service_Function": "showcokk",
+          "enab_back": true,
+          "enab_long_click": false,
+          "scroll_V": true,
+          "scroll_H": false,
+          "scroll_On_touch": false,
+          "enab_desktop": false,
+          "enab_cookies": true,
+          "enab_multiplwindow": false,
+          "enab_OverViewMode": false,
+          "enab_Open_window_Auto": true,
+          "use_error": true,
+          "m_error": "\n<!DOCTYPE html>\n<html lang=%1$sen%1$s>\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=%1$sutf-8%1$s>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n  <style>\n%4$s\n\n</style>\n<style>\n%6$s\n\n</style>\n\n<style>\n%9$s\n\n</style>\n\n  <script>\n%3$s\n</script>\n<script>\n%5$s\n</script>\n\n<script>\n%7$s\n</script>\n<script>\n%8$s\n</script>\n\n\n</head>\n<body>\n<div class=%1$sjumbotron text-center%1$s>\n  <h1> @{drugName_ar}   My First Bootstraphhhhhhhhhhhhhhhhhh Page</h1>\n  <p>Resizeuuuuuuiiiiiiii this responsive page to see the effect!</p> \n</div>\n</body>\n</html>\n",
+          "m_html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Login/Register Page</title>\n  <style>\n    /* Basic Reset */\n    @font-face{\n    font-family:'mmy';\n    src:url(themes/fonts/Cairo-Bold.ttf)format('truetype');\n    font-style: normal;\n    }\n    \n @font-face {\n  font-family: 'FontAwesome';\n  src: url('fontawesome-webfont.ttf') format('truetype');\n  font-weight: normal;\n  font-style: normal;\n}\n\n.fa {\n  font-family: 'FontAwesome';\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-rendering: auto;\n  display: inline-block;\n  line-height: 1;\n}\n\n.fa-heart:before {\n  content: \"\\f004\";\n}\n.fa-voicemail:before {\n  content: \"\\f199\"; } \n.fa-eye:before {\n  content: \"\\f06e\"; }\n\n.fa-eye-dropper:before {\n  content: \"\\f1fb\"; }\n\n.fa-eye-slash:before {\n  content: \"\\f070\"; }\n  \n  .fa-lock:before {\n  content: \"\\f023\"; }\n\n.fa-lock-open:before {\n  content: \"\\f3c1\"; }\n  \n   * {\n   \tfont-family: 'mmy';\n     -webkit-user-select: none;\n      margin: 0;\n      padding: 0;\n      box-sizing: border-box;\n    }\n    body {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      height: 100vh;\n      background-color: #f2f2f2;\n      font-family: Arial, sans-serif;\n    }\n    \n    header, footer {\n      background-color: #333;\n      color: white;\n      text-align: center;\n      padding: 10px;\n      width: 100%;\n      position: fixed;\n      left: 0;\n      z-index: 10;\n    }\n.hh{\ntext-align: center;\n\n}\n    header {\n      top: 0;\n    }\n\n    footer {\n      bottom: 0;\n    }\n    \n    .card {\n      width: 400px;\n      background-color: #fff;\n      border-radius: 8px;\n      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n      overflow: hidden;\n    }\n    .tabs {\n      display: flex;\n      justify-content: space-around;\n      background-color: #4CAF50;\n      color: #fff;\n      cursor: pointer;\n    }\n    .tab {\n      flex: 1;\n      padding: 15px;\n      text-align: center;\n      transition: background 0.3s;\n    }\n    .tab.active {\n      background-color: #388E3C;\n    }\n    .form-container {\n      padding: 20px;\n    }\n    .form-group {\n      margin-bottom: 15px;\n      position: relative;\n    }\n    .form-group label {\n      display: block;\n      font-weight: bold;\n      margin-bottom: 5px;\n    }\n    .form-group input {\n      width: 100%;\n      padding: 8px; \n      padding-right: 40px; /* Space for the eye icon */\n     padding-left: 30px; \nborder: 1px solid #ccc;\n      border-radius: 4px;\n      font-size: 16px;\n    }\n    #toggleText {\n      position: absolute;\n      right: 10px;\n      top: 70%;\n      transform: translateY(-50%);\n      cursor: pointer;\n      font-size: 27px;\n      color: #888;\n    }\n    #toggleTextv {\n      position: absolute;\n      right: 10px;\n      top: 70%;\n      transform: translateY(-50%);\n      cursor: pointer;\n      font-size: 27px;\n      color: #888;\n    }\n    #toggleTextt {\n          position: absolute;\n      direction:left;\n      left: 5px;\n      top: 70%;\n      transform: translateY(-50%);\n      \n      font-size: 27px;\n      color: #888;\n    }\n    .btn {\n      width: 100%;\n      padding: 10px;\n      font-size: 18px;\n      color: #fff;\n      background-color: #4CAF50;\n      border: none;\n      border-radius: 4px;\n      cursor: pointer;\n    }\n    .btn:disabled {\n      background-color: #9E9E9E;\n    }\n    .spinner {\n      width: 20px;\n      height: 20px;\n      border: 3px solid #fff;\n      border-top: 3px solid transparent;\n      border-radius: 50%;\n      animation: spin 1s linear infinite;\n      display: inline-block;\n    }\n    @keyframes spin {\n      from {\n        transform: rotate(0deg);\n      }\n      to {\n        transform: rotate(360deg);\n      }\n    }\n  </style>\n</head>\n<body>\n\n<div class=\"card\">\n\t\n  <h1 style=\"text-align: center;\">اسطول التقنية</h1>\n\n  <div class=\"tabs\">\n    <div class=\"tab active\" id=\"login-tab\">دخول</div>\n    <div class=\"tab\" id=\"register-tab\">تسجيل</div>\n  </div>\n  <div class=\"form-container\">\n    <div id=\"login-form\" class=\"form\">\n      <div class=\"form-group\">\n        <label for=\"login-email\">Email</label>\n     <span  id=\"toggleTextt\"   class=\"fa fa-voicemail\" onclicgk=\"togglePassword('register-password')\"></span>      \n  <input type=\"email\" id=\"login-email\" placeholder=\"Enter your email\" required>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"login-password\">Password</label>\n   <span  id=\"toggleTextt\"   class=\"fa fa-lock\" onclicgk=\"togglePassword('register-password')\"></span>         \n <input type=\"password\" id=\"login-password\" placeholder=\"Enter your password\" required>\n        <span  id=\"toggleTextv\"   class=\"fa fa-eye\" onclick=\"togglePassword('login-password','toggleTextv')\"></span>\n      </div>\n      <button class=\"btn\" id=\"login-button\" onclick=\"login()\">دخول</button>\n    </div>\n\n    <div id=\"register-form\" class=\"form\" style=\"display: none;\">\n      <div class=\"form-group\">\n        <label for=\"register-email\">Email</label>\n        <span  id=\"toggleTextt\"   class=\"fa fa-voicemail\" onclicgk=\"togglePassword('register-password')\"></span>     \n        <input type=\"email\" id=\"register-email\" placeholder=\"Enter your email\" required>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"register-password\">Password</label>\n  <span  id=\"toggleTextt\"   class=\"fa fa-lock\" onclicgk=\"togglePassword('register-password')\"></span>     \n <input type=\"password\" id=\"register-password\" placeholder=\"Enter your password\" required>\n        <span  id=\"toggleText\"   class=\"fa fa-eye\" onclick=\"togglePassword('register-password','toggleText')\"></span>\n      </div>\n      <button class=\"btn\" id=\"register-button\">تسجيل</button>\n    </div>\n  </div>\n  \n</div>\n\n\n<script>\n  const loginTab = document.getElementById('login-tab');\n  const registerTab = document.getElementById('register-tab');\n  const loginForm = document.getElementById('login-form');\n  const registerForm = document.getElementById('register-form');\n  const loginButton = document.getElementById('login-button');\n\n  loginTab.addEventListener('click', () => {\n    loginTab.classList.add('active');\n    registerTab.classList.remove('active');\n    loginForm.style.display = 'block';\n    registerForm.style.display = 'none';\n  });\n\n  registerTab.addEventListener('click', () => {\n    registerTab.classList.add('active');\n    loginTab.classList.remove('active');\n    loginForm.style.display = 'none';\n    registerForm.style.display = 'block';\n  });\n\n  function togglePassword(inputId,sp='0') {\n    const passwordInput = document.getElementById(inputId);\n    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';\n const toggleText = document.getElementById(sp);\nvar icon=toggleText.classList[1];\ntoggleText.classList.remove('fa');\ntoggleText.classList.remove(icon);\n     icon= icon === \"fa-eye\" ? \"fa-eye-slash\" : \"fa-eye\";\ntoggleText.classList.add('fa');\ntoggleText.classList.add(icon);\n\n\n }\n\n  function login() {\n  \t\n  const password = document.getElementById(\"login-password\").value;\n        \n        if (password === \"\") {\n            alert(\"Password is required.\");\n        } else {\n            //alert(\"Password entered: \" + password);\n            \n            \n            loginButton.disabled = true;\n    loginButton.innerHTML = '<div class=\"spinner\"></div>';\n    \n    // Simulate loading delay\n    setTimeout(() => {\n      loginButton.disabled = false;\n      loginButton.innerHTML = 'Login';\n      api('http://0.0.0.0:8080/admin3/uu.php','55','66');\n     // alert('Login successful!');\n    }, 2000);\n        }\n  \n    \n  }\n  function api(name,email,password){\n\t\t\t\t\t\n\nvar mnn='Open_Activity_From_Url';\nvar ty=getdata(name);\nAndroid.AndroidFunctionLoadFunction(mnn,ty);\n\n  }\n  function  getdata(url){\n//Open_Activity_From_Url\n//Show_Shit_Dialog_With_Set_Data_two\n//Show_Shit_Dialog_With_Set_Data_two_from_string\n//Show_Shit_Dialog_With_Set_Data_two_from_url\n//Show_Shit_Dialog_With_Set_Data_two_from_name\n//Value_Activity\n//com.astooltech.advancedview.vlayout.example.RootActivity\n//com.astooltech.advancedview.finaldemo.fragments.ChildFragment1\n//com.astooltech.advancedview.finaldemo.MainActivity2\n//com.astooltech.advancedview.finaldemo.MainAc\n//com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.CommonTabActivity\nvar t=  JSON.stringify( {\n\"Event_Type\":\"Show_Shit_Dialog_With_Set_Data_two_from_url\",\n\"Name_Activity\":\"0\",\n\"Value_Activity\":\"0\",\n\"Show_Toolbar\":true,\n\"Show_Drawer\":false,\n\n\"Use_Volley\":true,\n\"Name\":\"@com.astooltech.advancedview.proteus.anotherView.viewSlider.tablayout.tablayoutsamples.ui.CommonTabActivity\", \n\n\"get_set_to_view\": {\n    \"Data_From_View\": [\n      {\n        \"View_Id\": \"Unit_NameSearcih\",\n        \"index_id\": 0,\n        \"View_Type\": \"A\",\n        \"use_const\": false,\n        \"const_value\": true,\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_en\"\n      },\n      {\n        \"View_Id\": \"Unit_NameSearcihi\",\n        \"index_id\": 1,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"hhhhhhh\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      },\n      {\n        \"View_Id\": \"0\",\n        \"index_id\": 2,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"data#message\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      }\n      \n    ],\n    \"Data_To_View\": [\n      {\n        \"View_Id\": \"Unit_NameSearcih\",\n        \"index_id\": 0,\n        \"View_Type\": \"A\",\n        \"use_const\": false,\n        \"const_value\": true,\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_en\"\n      },\n      {\n        \"View_Id\": \"Unit_NameSearcihi\",\n        \"index_id\": 1,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"hhhhhhh\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      },\n      {\n        \"View_Id\": \"0\",\n        \"index_id\": 2,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"data#message\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      }\n      \n    ]\n    \n    \n  \n  },\n\n\"Return_Data\":[\n{\n\"Return_Type\":\"55\",\n\n\n\"Return_To_Message\":[\n{\n\"Response_Key_Name\":\"0\",\n\"View_Id\":\"55\",\n\"Message_Text\":\"hhhh\",\n\"View_Type\":\"A\"\n\n}\n\n]\n\n\n}\n\n],\n\n\"Return_To_View\":[\n{\n\"View_Id\":\"saveprograss\",\n\"Type_Process\":\"1\",\n\"Value_Process\":\"1\",\n\"View_Type\":\"A\"\n\n}\n\n],\n\n\"Before_Process\":\n{\n\"get_set_to_view\": {\n    \"Data_From_View\": [\n      {\n        \"View_Id\": \"Unit_NameSearcih\",\n        \"index_id\": 0,\n        \"View_Type\": \"A\",\n        \"use_const\": false,\n        \"const_value\": true,\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_en\"\n      },\n      {\n        \"View_Id\": \"Unit_NameSearcihi\",\n        \"index_id\": 1,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"hhhhhhh\",\n        \"use_data_from_source\": true,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      }\n    ],\n    \"Data_To_View\": [\n      {\n        \"View_Id\": \"Unit_NameSearch\",\n        \"View_Type\": \"0\",\n        \"index_id\": 0\n      },\n      {\n        \"View_Id\": \"myouto\",\n        \"View_Type\": \"0\",\n        \"index_id\": 0\n      },\n      {\n        \"View_Id\": \"idid\",\n        \"View_Type\": \"0\",\n        \"index_id\": 1\n      }\n      \n    ]\n  \n  }\n  \n\n}\n,\n\n\"Show_Confirm\":{\n\"type\": \"include\",\n          \"layout\": \"tt\",\n                     \"layout_width\": \"match_parent\",\n            \"layout_height\": \"wrap_content\",\n    \"tname\":\"SimpleDataBindingExample\"\n\n}\n,\n\"After_Process\":\n{\n\"get_set_to_view\": {\n    \"Data_From_View\": [\n      {\n        \"View_Id\": \"Unit_NameSearcih\",\n        \"index_id\": 0,\n        \"View_Type\": \"A\",\n        \"use_const\": false,\n        \"const_value\": true,\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_en\"\n      },\n      {\n        \"View_Id\": \"Unit_NameSearcihi\",\n        \"index_id\": 1,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"hhhhhhh\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      },\n      {\n        \"View_Id\": \"0\",\n        \"index_id\": 2,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"data#message\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      }\n      \n    ],\n    \"Data_To_View\": [\n      {\n        \"View_Id\": \"Unit_NameSearcih\",\n        \"index_id\": 0,\n        \"View_Type\": \"A\",\n        \"use_const\": false,\n        \"const_value\": true,\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_en\"\n      },\n      {\n        \"View_Id\": \"Unit_NameSearcihi\",\n        \"index_id\": 1,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"hhhhhhh\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      },\n      {\n        \"View_Id\": \"0\",\n        \"index_id\": 2,\n        \"View_Type\": \"A\",\n        \"use_const\": true,\n        \"const_value\": \"data#message\",\n        \"use_data_from_source\": false,\n        \"source_key\": \"drugName_ar\",\n        \"hellohello\":\"hhhkkkkkkkkkkki\"\n      }\n      \n    ]\n    \n    \n  \n  }\n  \n},\n\"Finsh_Process\":[\n{\n\"View_Id\":\"55\",\n\"Type_Process\":\"22\",\n\"Value_Process\":\"55\",\n\"View_Type\":\"A\"\n\n}\n\n],\n\"Sender_Data\":[\n{\n\"Data_From_View\":[\n{\"View_Id\":\"name\",\n\"View_Type\":\"5\",\n\"index_id\":0,\n\"use_const\": true,\n        \"const_value\": \"data#message\"\n},\n{\"View_Id\":\"email\",\n\"View_Type\":\"6\",\n\"index_id\":1,\n\"use_const\": true,\n        \"const_value\": \"data#message\"\n},\n{\"View_Id\":\"email\",\n\"View_Type\":\"6\",\n\"index_id\":4,\n\"use_const\": true,\n        \"const_value\": \"mypagesave\"\n},\n\n{\"View_Id\":\"pic\",\n\"View_Type\":\"6\",\n\"index_id\":2,\n\"use_const\": true,\n        \"const_value\": \"data#message\"\n},\n{\"View_Id\":\"0\",\n\"View_Type\":\"API_Acess\",\n\"index_id\":3,\n\"use_const\": true,\n        \"const_value\": \"data#message\"\n},\n{\"View_Id\":\"0\",\n\"View_Type\":\"A\",\n\"index_id\":5,\n\"use_const\": true,\n        \"const_value\": \"1\"\n}\n\n\n]\n,\"API_Data\":[\n{\n\"Method_Type\":\"POST\",\n\"Type_Url\":\"local0\",\n\"Url\":url,\n\"Response_Data\":[\n{\n\"Key_Name\":\"#{datxa}\",\n\"Key_Value\":\"data#message\",\n\"Key_Type\":\"Select_Key\",\n\"index_id\": 1,\n        \"use_format\": false\n},\n{\n\"Key_Name\":\"heeerefresh\",\n\"Key_Value\":\"1\",\n\"Key_Type\":\"Refresh_Key\",\n\"index_id\": 5,\n        \"use_format\": false\n},\n{\n\"Key_Name\":\"heeerefresh\",\n\"Key_Value\":\"1\",\n\"Key_Type\":\"Offline_Key\",\n\"index_id\": 5,\n        \"use_format\": false\n}\n,\n{\n\"Key_Name\":\"heee\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"Show_As_Message\",\n\"index_id\": 1,\n        \"use_format\": false\n}\n\n\n\n]\n,\n\n\n\"Request_Header\":[\n{\n\"Key_Name\":\"heee\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"5555\",\n        \"index_id\": 1,\n        \"use_format\": false\n\n},\n{\n\"Key_Name\":\"heeemmm\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"5555\",\n\"index_id\": 1,\n  \"use_format\": false\n},\n{\n\"Key_Name\":\"heeettff\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"5555\",\n\"index_id\": 1,\n        \"use_format\": false\n},\n{\n\"Key_Name\":\"vvvvvvv\",\n\"Key_Value\":\"0\",\n\"Key_Type\":\"5555\",\n\"index_id\": 1,\n        \"use_format\": false\n}\n\n\n\n\n]\n,\n\"Request_Body\":[],\n\n\"Request_Query\":[]\n\n\n\n}\n\n\n]\n}\n\n]\n}\n\n\n);\n\n\n\n\n\n\n\n\nreturn t;\n\n}\n  \n  \n</script>\n\n</body>\n</html>\n",
+          "html_value": [
+            {
+              "key_Name": "name",
+              "Key_Value": "name",
+              "Key_Type": "QMark",
+              "View_Name": "name"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "nameu",
+              "Key_Type": "apikey",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/mob/vendor/materializeicon/material-icons.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/mob/css/style.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://0.0.0.0:8080/mob/js/main6.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/admin3/dist/js/toastr.min.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/admin3/dist/js/toastr.min.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/admin3/plugins/sweetalert2/sweetalert2.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://raw.githubusercontent.com/alfajango/jquery-dynatable/master/vendor/jquery-1.7.2.min.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/admin3/dist/folium.min.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "http://192.168.1.100:8080/admin3/dist/folium.css",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+              "Key_Type": "htmltag",
+              "View_Name": "nameu"
+            },
+            {
+              "key_Name": "Authorization",
+              "Key_Value": "https://kendo.cdn.telerik.com/2023.2.718/js/kendo.all.min.js",
+              "Key_Type": "percent",
+              "View_Name": "nameu"
+            }
+          ],
+          "m_url": "http://192.168.1.102:8080/mf/Script/",
+          "Use_Url": false,
+          "image_auto": true,
+          "enab_java": true
+        }
+      }
+    ]
+  }
+}
