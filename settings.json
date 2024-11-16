@@ -1,5 +1,5 @@
 {
-"url_real_time":"https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/settings.json",
+  "url_real_time": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/settings.json",
   "results": {
     "app_code": "sdksample",
     "base_url": "https://api.qiscus.com/",
@@ -17,11 +17,10 @@
     "network_connection_interval": 30000
   },
   "status": 200,
-
   "BaseUrl": {
     "SettingUrl": [
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/refs\/heads\/main\/demo\/layouts.json",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/demo/layouts.json",
         "UrlType": "Layout",
         "Version": "1",
         "bodyy": [
@@ -39,7 +38,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/refs\/heads\/main\/demo\/layouts.json",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/demo/layouts.json",
         "UrlType": "Layouts",
         "Version": "1",
         "bodyy": [
@@ -57,7 +56,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/refs\/heads\/main\/demo\/styles.json",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/demo/styles.json",
         "UrlType": "styles",
         "Version": "1",
         "bodyy": [
@@ -75,7 +74,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/refs\/heads\/main\/demo\/loginsyss.json",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/demo/web33.json",
         "UrlType": "Login",
         "Version": "1",
         "bodyy": [
@@ -92,8 +91,8 @@
         ],
         "method _type": "get"
       },
-     {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/refs\/heads\/main\/demo\/loginsyss.json",
+      {
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/demo/loginsyss.json",
         "UrlType": "#",
         "Version": "1",
         "bodyy": [
@@ -109,11 +108,9 @@
           }
         ],
         "method _type": "get"
-      }, 
-      
-      
+      },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/all.min.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/all.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -131,7 +128,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/icheck-bootstrap.min.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/icheck-bootstrap.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -149,7 +146,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/all.min.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/all.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -167,7 +164,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/adminlte.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/adminlte.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -185,7 +182,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/jquery.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/jquery.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -203,7 +200,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/bootstrap.bundle.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/bootstrap.bundle.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -221,7 +218,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/btnspiner.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/btnspiner.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -239,7 +236,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/toastr.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/toastr.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -257,7 +254,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/sweetalert2.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/sweetalert2.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -275,7 +272,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/toastr.min.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/toastr.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -293,7 +290,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/sweetalert2.min.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/sweetalert2.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -311,7 +308,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/somjs\/kendo.all.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/somjs/kendo.all.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -329,7 +326,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/bootstrap-4.min.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/bootstrap-4.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -347,7 +344,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/bootstrap.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/bootstrap.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -365,7 +362,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/jquery.noty.packaged.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/friends-hybrid/jquery.noty.packaged.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -383,7 +380,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/lodash.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/friends-hybrid/lodash.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -401,7 +398,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/everlive.all.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/friends-hybrid/everlive.all.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -419,7 +416,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/kendo.mobile.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/friends-hybrid/kendo.mobile.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -437,7 +434,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/jquery.min.js",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/friends-hybrid/jquery.min.js",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -455,7 +452,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/main.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/friends-hybrid/main.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -473,7 +470,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/raw.githubusercontent.com\/Bandar-Ameen\/astooltechFile\/main\/friends-hybrid\/kendo.mobile.all.min.css",
+        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/main/friends-hybrid/kendo.mobile.all.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -491,7 +488,7 @@
         "method _type": "get"
       },
       {
-        "Url": "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/tailwindcss\/2.0.1\/tailwind.min.css",
+        "Url": "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css",
         "UrlType": "0",
         "Version": "1",
         "bodyy": [
@@ -509,10 +506,10 @@
         "method _type": "get"
       }
     ],
-    "Url": "http:\/\/0.0.0.0:8080"
+    "Url": "http://0.0.0.0:8080"
   },
   "CompanyName": "bandarkAmeen",
-  "Version": "474756577",
-  "login_typ": "0",
-  "setting": 1
+  "Version": "4747526577",
+  "login_typ": "1",
+  "setting": 0
 }
