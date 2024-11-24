@@ -513,10 +513,10 @@
   "login_typ": "2",
   "setting": {
 "Login":{
-"Login_Type":2
+"Login_Type":"2"
 },
 "Main":{
-"Main_Type":2
+"Main_Type":"2"
 }
 
 
