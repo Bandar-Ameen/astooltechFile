@@ -509,7 +509,14 @@
     "Url": "http://0.0.0.0:8080"
   },
   "CompanyName": "bandarkAmeen",
-  "Version": "475283677",
+  "Version": "47528399677",
   "login_typ": "2",
-  "setting": "{\n  \"Login\": {\n    \"Login_Type\": 2\n  },\n  \"Main\": {\n    \"Main_Type\": 2\n  }\n}"
+  "setting": {
+    "Login": {
+      "Login_Type": 2
+    },
+    "Main": {
+      "Main_Type": 2
+    }
+  }
 }
