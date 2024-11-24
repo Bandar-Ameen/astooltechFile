@@ -20,8 +20,7 @@
   "BaseUrl": {
     "SettingUrl": [
       {
-        "Url": "https://raw.githubusercontent.com/Bandar-Ameen/astooltechFile/refs/heads/main/demo/layouts.json",
-        
+        "Url": "http://0.0.0.0:8080/admin3/loginv.json",  
         "UrlType": "Layout",
         "Version": "1",
         "bodyy": [
@@ -510,7 +509,7 @@
     "Url": "http://0.0.0.0:8080"
   },
   "CompanyName": "bandarkAmeen",
-  "Version": "475281299677",
+  "Version": "4752812399677",
   "login_typ": "2",
   "setting": 2
 }
