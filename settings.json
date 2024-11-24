@@ -20,7 +20,7 @@
   "BaseUrl": {
     "SettingUrl": [
       {
-        "Url": "http://0.0.0.0:8080/admin3/loginv.json",
+        "Url": "http://0.0.0.0:8080/admin3/web33.json",
         "UrlType": "Layout",
         "Version": "1",
         "bodyy": [
