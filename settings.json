@@ -20,7 +20,7 @@
   "BaseUrl": {
     "SettingUrl": [
       {
-        "Url": "http://0.0.0.0:8080/admin3/loginv.json",  
+        "Url": "http://0.0.0.0:8080/admin3/loginv.json",
         "UrlType": "Layout",
         "Version": "1",
         "bodyy": [
@@ -511,14 +511,5 @@
   "CompanyName": "bandarkAmeen",
   "Version": "47528399677",
   "login_typ": "2",
-  "setting": {
-"Login":{
-"Login_Type":"2"
-},
-"Main":{
-"Main_Type":"2"
-}
-
-
-}
+  "setting": "{\n  \"Login\": {\n    \"Login_Type\": 2\n  },\n  \"Main\": {\n    \"Main_Type\": 2\n  }\n}"
 }
